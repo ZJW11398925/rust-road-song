@@ -32,7 +32,7 @@ RB-BOOT-001 / CHG-20261010-001 已完成本轮建库；实现提交 b367a2de018d
 
 ## 公开发布
 
-本轮 [Owner 明确授权](sources/2026-10-10-owner-publication.md) PUBLIC 远端与推送。旧库ID1411099328改名Legacy；新库ID1412930768，已首次推送main。RB-REMOTE-001 / CHG-20261010-002 只记录发布运维，不改变产品/任务准入；最终同步状态见本次变更记录。建库关闭提交为4018141，不再以建库收尾自引用代替当前HEAD。
+本轮 [Owner 明确授权](sources/2026-10-10-owner-publication.md) PUBLIC 远端与推送。旧库ID1411099328改名Legacy；新库ID1412930768，已推送独立main，实现adcc32f与GitHub远端匹配。RB-REMOTE-001 / CHG-20261010-002 只记录发布运维，不改变产品/任务准入；本地发布任务DONE，CHG-002 COMPLETED；实现adcc32f，发布关闭记录即当前HEAD；最终推送SHA在交付时现场核对。建库关闭提交为4018141，不再以建库收尾自引用代替当前HEAD。
 
 ## 下一动作
 
