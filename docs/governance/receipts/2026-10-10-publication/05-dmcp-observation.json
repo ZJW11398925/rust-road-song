@@ -1,0 +1,17 @@
+{
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "basis": {
+    "observed_canonical_state_id": "CST-a608e176-7228-4ae9-88c0-1bb845c802c0",
+    "observed_schema_version": 5,
+    "observed_design_revision": 5
+  },
+  "objectRefs": [
+    "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+    "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+    "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9"
+  ],
+  "runtimeAttestations": 0,
+  "nativeMutations": false,
+  "readinessRetried": false,
+  "claim": "完整实时只读恢复；GitHub操作回执不属于native准入"
+}

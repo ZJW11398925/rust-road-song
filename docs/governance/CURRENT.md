@@ -4,7 +4,7 @@
 
 ## 已建立
 
-- 独立本地 Git，main，无远程；产品文档先于任何游戏程序。首三提交依次为 71c9b9d（Owner/产品）、e850829（故事/序章/叙事）、02fe830（视觉/POC/Legacy/宪法）。
+- 独立 Git，main，origin 为 [公开新仓库](https://github.com/ZJW11398925/rust-road-song)；产品文档先于任何游戏程序。首三提交依次为 71c9b9d（Owner/产品）、e850829（故事/序章/叙事）、02fe830（视觉/POC/Legacy/宪法）。
 - 独立 DMCP：`ws-217bac29-7a08-437c-be5f-472693bf16ca`；不属于 C:/system 工作区。
 - Owner DECISION：`DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3`，object revision 2，含本轮方向与契约。
 - DISCOVERY PLAN：`PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7`，object revision 1，RISK_SPIKE；尚无已确认 value slice。
@@ -29,6 +29,10 @@ RB-BOOT-001 / CHG-20261010-001 已完成本轮建库；实现提交 b367a2de018d
 
 视觉胜出、引擎/平台、资产规格、主角/玛丽精确外形、异常本质、旧歌采用、成本/试玩门槛均未裁定，见 [Owner 决定](../00_OWNER_DECISIONS.md)。Godot 经验是候选，不是已锁技术。
 本次没有连接新的桌面 MCP 标准 facade，也没有真实执行 Agent/模型工具旅程。当前可用的是本项目只读 CLI 与官方 native 建库回执；工具发现不能证明标准客户端或完整 PHASE1 profile 验收。
+
+## 公开发布
+
+本轮 [Owner 明确授权](sources/2026-10-10-owner-publication.md) PUBLIC 远端与推送。旧库ID1411099328改名Legacy；新库ID1412930768，已首次推送main。RB-REMOTE-001 / CHG-20261010-002 只记录发布运维，不改变产品/任务准入；最终同步状态见本次变更记录。建库关闭提交为4018141，不再以建库收尾自引用代替当前HEAD。
 
 ## 下一动作
 

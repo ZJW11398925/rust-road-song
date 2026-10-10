@@ -25,5 +25,5 @@ Owner Decision（等级 0）→ Product Thesis / Story Bible（1）→ 当前剧
 
 先读治理绑定及工作流，再执行 `node scripts/dmcp.mjs read` 取得实时完整正式对象与独立运行记录；执行 `node scripts/check_context.mjs` 校验文档链接与范围。首次换机按 [本机工具配置说明](docs/governance/TOOLING.md)配置 DMCP。本机路径不进入项目规则或游戏资源；DMCP canonical 工作区在 Git 外，备份它不能只靠 Git。
 
-本轮仅本地建库，不创建远程、推送、发布或生成 AI 美术。Legacy 历史边界见[Legacy 定位](references/LEGACY.md)。
+初始阶段仅本地建库。2026-10-10 Owner 追加公开发布授权：[新 canonical 远端](https://github.com/ZJW11398925/rust-road-song)（PUBLIC，main）；[Legacy 远端](https://github.com/ZJW11398925/rust-road-song-legacy) 保留原历史。无游戏代码或 AI 美术生产；Legacy 历史边界见[Legacy 定位](references/LEGACY.md)。
 

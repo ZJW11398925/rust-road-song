@@ -1,0 +1,12 @@
+{
+  "legacyRepositoryId": 1411099328,
+  "recovery": "API读回新库为空HTTP409；git -c http.version=HTTP/1.1 push -u origin main成功；API与ls-remote核对SHA一致",
+  "newHead": "401814157b858cab851ff967fc793836c95482d9",
+  "forcePush": false,
+  "firstAttempt": "HTTPS Recv failure: Connection was reset",
+  "newRepositoryId": 1412930768,
+  "visibility": "PUBLIC",
+  "at": "2026-10-10T08:39:02.8299548Z",
+  "legacyRemoteMain": "9edab66b9e362f7290992e477d4f5c12ef395846",
+  "newRemoteMain": "401814157b858cab851ff967fc793836c95482d9"
+}

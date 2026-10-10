@@ -5,7 +5,7 @@
 
 旧 176 为 IN_PROGRESS、L5未覆盖；177/178/179为 BACKLOG；130人工干跑、050目标玩家试玩及已知缺陷未完成。冻结终止路线，不把它们改写为 DONE。
 
-本轮旧库有嵌套的其他会话 worktree，保留旧物理路径，避免破坏历史工作树；本机定位写在忽略的 DMCP host profile 中。旧远程名为 rust-road-song；本轮仅本地操作，不改远程名、不推送、不发布。若以后明确安排远程整理，应把 Legacy 远程改名并为新库独立创建 canonical 远程。
+本轮旧库有嵌套的其他会话 worktree，保留旧物理路径，避免破坏历史工作树；本机定位写在忽略的 DMCP host profile 中。Owner后续要求公开新远端，旧GitHub库现已改名为 [rust-road-song-legacy](https://github.com/ZJW11398925/rust-road-song-legacy)，原repository ID1411099328和历史不变。新 [rust-road-song](https://github.com/ZJW11398925/rust-road-song) 是独立ID1412930768、PUBLIC。旧本地origin已更新；旧main仍9edab66，旧冻结提交与本地legacy-0.7.183标签未在本轮推送。旧冻结文档中的“远程未改名”是先前历史检查点，当前远端定位以本文件为准。
 
 任何 Legacy 文件只能作为参考，不能成为产品规范；不通过子模块、目录联接、共享 src 或合并旧历史引入。查看旧模块只读定位，不自动复制。
 

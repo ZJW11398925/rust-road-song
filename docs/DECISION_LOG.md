@@ -10,5 +10,7 @@
 | RD-004 | 2026-10-10 | CANDIDATE | 异常暗红组织与收音机旧歌，V-01..02 | 不编造真相，方案列可选表现 |
 | RD-005 | 2026-10-10 | PROPOSED / Agent | Godot/最小输入/预算/试玩指标等技术安排，V-05..06 | 首单给有限方案，不能当已批准 |
 
+| RD-006 | 2026-10-10 | CONFIRMED / Owner（远端运维授权，非native裁决） | [公开新远端与推送](governance/sources/2026-10-10-owner-publication.md)；Legacy改名保留身份，新canonical独立PUBLIC | RB-REMOTE-001；不解锁POC或DMCP准入 |
+
 正式 IDs 与当前修订只在 [binding](governance/binding.json) / [CURRENT](governance/CURRENT.md)及回执维护。建库不批准视觉路线，POC实施不批准全序章，Owner来源不授予 Agent 自主组织裁决权。
 

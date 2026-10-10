@@ -1,10 +1,10 @@
 {
   "logicalName": "rust-road-song-legacy",
   "physicalDirectoryRenamed": false,
-  "remoteRenamed": false,
+  "remoteRenamed": true,
   "baselineCommit": "9edab66b9e362f7290992e477d4f5c12ef395846",
   "tag": "legacy-0.7.183",
-  "remote": "https://github.com/ZJW11398925/rust-road-song.git",
+  "remote": "https://github.com/ZJW11398925/rust-road-song-legacy.git",
   "ownerInstructionDate": "2026-10-10",
   "cancelledTasks": [
     {
@@ -79,5 +79,8 @@
     }
   ],
   "authority": "Legacy 最低；默认不复用；此 tag 不证明旧未完成 L5 通过。",
-  "worktreesUntouched": true
+  "worktreesUntouched": true,
+  "initialRemote": "https://github.com/ZJW11398925/rust-road-song.git",
+  "githubRepositoryId": 1411099328,
+  "remotePublicationSource": "docs/governance/sources/2026-10-10-owner-publication.md"
 }

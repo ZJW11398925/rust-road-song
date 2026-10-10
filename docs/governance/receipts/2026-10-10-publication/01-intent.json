@@ -1,0 +1,13 @@
+{
+  "legacyRepositoryId": 1411099328,
+  "newLocalHead": "401814157b858cab851ff967fc793836c95482d9",
+  "newRepository": "ZJW11398925/rust-road-song",
+  "visibility": "PUBLIC",
+  "legacyTo": "ZJW11398925/rust-road-song-legacy",
+  "change": "CHG-20261010-002",
+  "task": "RB-REMOTE-001",
+  "scope": "改名保留旧仓库身份/历史；创建独立公开新库并推送新main；不强推，不推送旧功能提交。",
+  "source": "Owner 本轮明确要求：同样的，建立新远端仓库，并推送。public",
+  "at": "2026-10-10T08:01:53.4659808Z",
+  "legacyFrom": "ZJW11398925/rust-road-song"
+}

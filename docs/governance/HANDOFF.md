@@ -8,7 +8,7 @@
 
 先读 [AGENTS](../../AGENTS.md)，再 Owner/Product/Story/Prologue/Narrative/Visual/POC/Legacy。Owner 等级 0，技术等级 4，Legacy 最低。任务是 [RB-DISC-001](../tasks/RB-DISC-001.md)，只审计与三方案，交付后等 Owner。不能把旧 UI 标杆、服务结构、测试量带成新设计权威。
 
-本机 profile `.local/dmcp-host.json` 保存新库与 Legacy 实际路径。Legacy 逻辑名 rust-road-song-legacy；物理根与远程尚未改名，以免破坏已有 worktree 与未获请求的远程动作。历史 commit 与 tag 见 [定位](../../references/LEGACY.md)和 [冻结清单](../../references/LEGACY_FREEZE.json)。本库没有远程。
+本机 profile `.local/dmcp-host.json` 保存新库与 Legacy 实际路径。Legacy 逻辑名 rust-road-song-legacy；物理根保留以保护嵌套worktree；Owner后续已授权远端分离并公开发布，旧远端为 https://github.com/ZJW11398925/rust-road-song-legacy。历史 commit 与 tag 见 [定位](../../references/LEGACY.md)和 [冻结清单](../../references/LEGACY_FREEZE.json)。本库origin为 https://github.com/ZJW11398925/rust-road-song（PUBLIC）；当前main跟踪origin/main。
 
 ## 正式状态与阻断
 
@@ -18,9 +18,13 @@
 
 ## Git 与文件所有者
 
-首三提交 71c9b9d、e850829、02fe830；建库实现与关闭哈希记在 [CHG-20261010-001](../changes/CHG-20261010-001.md)。关闭记录提交为当前 HEAD，可用 `git log -5 --oneline` 精确读取，不预编哈希。
+首三提交 71c9b9d、e850829、02fe830；建库实现与关闭哈希记在 [CHG-20261010-001](../changes/CHG-20261010-001.md)。建库关闭为4018141；本轮公开发布对应 [CHG-20261010-002](../changes/CHG-20261010-002.md)，当前HEAD用git log读取。
 
-建库实现提交 b367a2de018dcda22d0433c66969a80b5b927858；本关闭记录即 HEAD。关闭提交的变更只有 CHG/CURRENT/HANDOFF/BOOTSTRAP_PLAN，均属建库 Agent，并纳入该关闭提交；不留游戏或外部来源的未提交修改。现场最终 Git 检查见交付说明。忽略的 `.local/` 由本机宿主管理，不是未提交的游戏修改。新会话必须重新检查 git status，历史“干净”不能替代现场。
+建库实现b367a2d、关闭4018141。本轮发布文件仅README/CHANGELOG/远端定位与治理来源、回执和交接，全部由发布Agent依据Owner授权维护；实现/关闭与最终推送核验见CHG-002。无游戏改动。忽略的 `.local/` 由本机宿主管理，不是未提交的游戏修改。新会话必须重新检查 git status，历史“干净”不能替代现场。
+
+## 发布状态
+
+新GitHub repository ID1412930768，PUBLIC；旧ID1411099328保留、main仍9edab66，未推送旧冻结提交或本地Legacy标签。旧库冻结HANDOFF是改名前历史检查点，远端当前定位以本文件和references为准。克隆公开Git不能替代本机profile或外部DMCP canonical恢复。
 
 ## 验证及未覆盖
 
