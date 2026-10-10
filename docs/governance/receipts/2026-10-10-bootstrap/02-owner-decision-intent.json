@@ -1,0 +1,34 @@
+{
+  "source": "docs/governance/sources/2026-10-10-owner-reset.md",
+  "tool": "decision_add",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "expected": {
+      "canonical_state_id": "CST-3b1b6d7e-a208-4fb1-95d9-0d9ef67f0f6f",
+      "schema_version": 5,
+      "design_revision": 1
+    },
+    "decision": {
+      "question": "《锈路长歌》是否终止旧路线并以独立 Reboot 项目和 DMCP 工作流从玛丽首见验证重新开始？",
+      "alternatives": [
+        {
+          "key": "legacy_reboot_split",
+          "description": "冻结 Legacy，新 Git/DMCP 身份；先确立设计与剧情权威，再审计与三视觉路线最小方案，Owner 审查后实施。"
+        },
+        {
+          "key": "continue_legacy",
+          "description": "继续旧仓库以新增序章、改渲染或完善 176..179 作为新方向。"
+        }
+      ],
+      "selected_key": "legacy_reboot_split",
+      "reason": "Owner 本轮明确要求本地新建、DMCP 标准，并提供 Legacy/Reboot 分离与先写核心文档的方案；来源 docs/governance/sources/2026-10-10-owner-reset.md；逐项转录见 docs/00_OWNER_DECISIONS.md OD-001..022。",
+      "tradeoffs": [
+        "不复用旧历史与完整系统，承担重新证明体验价值的成本。",
+        "视觉胜出、完整序章和 POC 编码尚未批准；候选与未知保持未决。"
+      ]
+    }
+  },
+  "at": "2026-10-10T07:16:08.616Z"
+}

@@ -1,0 +1,4 @@
+{
+  "error": "DmcpFaceError: dmcp_error: {\"payload_kind\":\"EXECUTION_ERROR\",\"error\":{\"code\":\"READINESS_BASIS_INCOMPLETE\",\"category\":\"INTERNAL\",\"retry_strategy\":\"DO_NOT_RETRY\",\"summary\":\"readiness policy bundle must contain at least one gate requirement\",\"safe_details\":{}},\"audit_refs\":[],\"warnings\":[]}",
+  "recovery": "读取原操作、正式状态和回执；禁止盲目重试。"
+}

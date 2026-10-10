@@ -1,0 +1,83 @@
+{
+  "logicalName": "rust-road-song-legacy",
+  "physicalDirectoryRenamed": false,
+  "remoteRenamed": false,
+  "baselineCommit": "9edab66b9e362f7290992e477d4f5c12ef395846",
+  "tag": "legacy-0.7.183",
+  "remote": "https://github.com/ZJW11398925/rust-road-song.git",
+  "ownerInstructionDate": "2026-10-10",
+  "cancelledTasks": [
+    {
+      "id": "VS-M07-050",
+      "before": "BLOCKED",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-060",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-130",
+      "before": "VERIFYING",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-156",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-157",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-158",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-159",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-160",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-161",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-162",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-176",
+      "before": "IN_PROGRESS",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-177",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-178",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    },
+    {
+      "id": "VS-M07-179",
+      "before": "BACKLOG",
+      "after": "CANCELLED"
+    }
+  ],
+  "authority": "Legacy 最低；默认不复用；此 tag 不证明旧未完成 L5 通过。",
+  "worktreesUntouched": true
+}

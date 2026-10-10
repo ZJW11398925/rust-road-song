@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "projectIdentity": "rust-road-song Reboot 2026-10-10",
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "localProfile": ".local/dmcp-host.json",
+  "creationReceipt": "docs/governance/receipts/2026-10-10-bootstrap/01-create-result.json",
+  "source": "docs/governance/sources/2026-10-10-owner-reset.md",
+  "toolingFiles": {
+    "services/knowledge/src/dmcp/client.ts": "d47f19dd6f2593f83425b2bd75f3249378c4943a2c2f5fa1a46193fbdc50b717",
+    "services/knowledge/src/dmcp/config.ts": "866fa464e7da37540fed67ff322eb3c1f8b87240bb8aaae3a5e0efb3406afa3b",
+    "services/knowledge/src/dmcp/wire-client.ts": "9ff1f5381b7d4d3ba51a7e6faf956d9fc3121207ce65d4f8b8f0c44559cebcfa",
+    "services/knowledge/src/dmcp/envelope.ts": "6f938e6f9f9626bfc4d5f914753b9bbfaccc00d860552b113377140935da6454",
+    "services/knowledge/src/dmcp/errors.ts": "80eb91c47c8d1376d94e84018fa9c0ba8c18e7e312e771641e72e454f89f1f6d",
+    "scripts/lib/dmcp-governance-snapshot.mjs": "44f9a50a9d356bc00313937ae1ab81fcc95e724c0f3c2c8d4222660c0d6f0db4"
+  },
+  "engineCommit": "a7cd1171dd3496a0bfd8e0bf4ff2fe9febc6e7dc",
+  "toolchainCommit": "678c4dc64ae61ad7d57c42e9a7ebbf16d0dfb3be",
+  "ownerDirectiveDecisionId": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+  "discoveryPlanId": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+  "discoveryTaskId": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9"
+}

@@ -1,0 +1,8 @@
+{
+  "source": "docs/governance/sources/2026-10-10-owner-reset.md",
+  "tool": "design_create",
+  "arguments": {
+    "project_identity": "rust-road-song | Reboot 2026-10-10 | independent local canonical repository"
+  },
+  "at": "2026-10-10T07:16:07.228Z"
+}

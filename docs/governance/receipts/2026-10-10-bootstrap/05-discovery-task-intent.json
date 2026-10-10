@@ -1,0 +1,68 @@
+{
+  "source": "docs/governance/sources/2026-10-10-owner-reset.md",
+  "tool": "task_build",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "expected": {
+      "canonical_state_id": "CST-1774706e-7ad0-47c9-ae32-06b8b6c007f6",
+      "schema_version": 5,
+      "design_revision": 4
+    },
+    "primary_parent_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+      "kind": "PLAN",
+      "id": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7"
+    },
+    "task_proposal": {
+      "goal": "RB-DISC-001：反旧设计污染审计与玛丽首见三路线最小技术方案",
+      "why": "阻止新设计被重新解释为旧游戏加序章或换3D；先证明当下玩家体验的最小需要。",
+      "scope_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+        "kind": "DECISION",
+        "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+      },
+      "relevant_decision_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+        }
+      ],
+      "required_capabilities": [
+        "REPOSITORY_READ",
+        "REPOSITORY_WRITE",
+        "PROCESS_EXEC"
+      ],
+      "acceptance_criterion_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+          "facet": "contract_claims.ACCEPTANCE"
+        }
+      ],
+      "repository_basis_refs": [
+        "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      ],
+      "relevant_paths": [
+        "docs/tasks/RB-DISC-001.md",
+        "docs/00_OWNER_DECISIONS.md",
+        "docs/01_PRODUCT_THESIS.md",
+        "docs/02_STORY_BIBLE.md",
+        "docs/06_VISUAL_POC_PLAN.md",
+        "docs/07_LEGACY_REUSE_POLICY.md",
+        "docs/discovery/RB-DISC-001_REPORT.md"
+      ],
+      "forbidden_changes": [
+        "任何游戏代码/Godot工程/正式资产",
+        "搬运 Legacy 游戏模块/测试/插件",
+        "擅选视觉胜出路线",
+        "赏金/装备/世界状态/营地/经济/完整架构"
+      ],
+      "expected_output": "一份中文报告，含实际 Legacy 惯性审计、三方案最小技术比较、目录/资产/验证指标/预算与未决；交付后等 Owner 审查。"
+    }
+  },
+  "at": "2026-10-10T07:16:09.676Z"
+}

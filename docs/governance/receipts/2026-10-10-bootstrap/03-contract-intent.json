@@ -1,0 +1,102 @@
+{
+  "source": "docs/governance/sources/2026-10-10-owner-reset.md",
+  "tool": "design_update_contract",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "expected": {
+      "canonical_state_id": "CST-1eb67254-25e8-43fd-82a9-ef5ac7d8283b",
+      "schema_version": 5,
+      "design_revision": 2,
+      "object_revisions": [
+        {
+          "object_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+            "kind": "DECISION",
+            "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+          },
+          "object_revision": 1
+        }
+      ]
+    },
+    "mutations": [
+      {
+        "kind": "SET_SCALAR_CLAIM",
+        "field": "GOAL",
+        "assertion_action": "CONFIRM",
+        "value": "保留世界观种子与部分技术经验，重新决定《锈路长歌》是什么游戏；首先验证玛丽第一次出现。"
+      },
+      {
+        "kind": "SET_SCALAR_CLAIM",
+        "field": "CORE_VALUE",
+        "assertion_action": "CONFIRM",
+        "value": "这是我的旅程；这件东西我以后不会忘记。围绕离开、道路、家庭、战争、衰败、旧机器和继续前进。"
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "TECHNICAL_CONSTRAINTS",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "权威：Owner Decision → Product Thesis/Story Bible → 当前剧情 → 当前POC → 技术实现 → Legacy最低。",
+          "人物处境 → 玩家欲望 → 行为 → 必要机制 → 页面/数据/代码；所有功能开工前五项需求说明。",
+          "全部已决方向详见 docs/00_OWNER_DECISIONS.md；来源 docs/governance/sources/2026-10-10-owner-reset.md；不把 Agent 参数提案和候选写成已决。",
+          "OD-001：Legacy / Reboot 分离，新 canonical 仓库叫 rust-road-song：新 Git、新 DMCP 身份；旧历史不得导入成为新历史",
+          "OD-002：旧项目冻结为 Legacy；保留代码、测试、资料及历史：停止 176/177/178/179 和其余旧路线；冻结不等于完成旧验收",
+          "OD-003：保留世界观种子与经验，重新决定游戏是什么：不解释为加序章、换 3D 或局部重构",
+          "OD-004：人物处境先于欲望、行为、机制、页面与代码：每项功能必须证明当下体验需求；复杂度本身无价值",
+          "OD-005：主题是离开、道路、家庭、战争、衰败、旧机器和继续前进：公路 RPG 的产品主张；完整 RPG 系统未获批准",
+          "OD-006：吸收《重装机兵》的自发目标与《去月球》的克制故事精神：荒野不是任务清单；重要物件随着推进获得新意义",
+          "OD-007：持续约一年的平叛战争与加速异常衰败：父亲被征召；母子留在原家；人口迁徙；因果与阵营真相未定",
+          "OD-008：母亲留下是为了让父亲回来时仍有家：不塑造成愚蠢等待；最终由母亲自己决定离开",
+          "OD-009：父亲最后一封信报告恶化、要求立即离开、带上玛丽：保留熟悉语气“玛丽大展身手的时代到了”；不由此确认父亲死亡",
+          "OD-010：玛丽是人物级的重要对象，先感到旧，再谈别的意义：老旧家用战车、父亲多次自修改装、家庭痕迹；不是天选神器",
+          "OD-011：父亲走前的明确损伤一年后有不可能变化：私人谜团“玛丽这一年发生了什么”；不得立即解释",
+          "OD-012：序章暂名《离家》，生活在快无法存在的家并亲自离开：16 个叙事节拍只作为整体方向，当前不一次开发 S00–S15",
+          "OD-013：默认可操作剧情，普通说话保留移动/观察/有限交互：只有重要决定、重要物件首次出现、不可逆事件允许极短演出",
+          "OD-014：过去通过旧物、照片、修补、房间、机械、广播、动作、使用痕迹表达：禁止 NPC 长篇解释；对话必须服务人物意图、回避/隐瞒、关系、性格或理解变化",
+          "OD-015：三种视觉方向必须比较，当前无胜出方案：Pixel 2D / Hybrid 2.5D / Stylized 3D，同一可玩片段，静态截图不能决定",
+          "OD-016：若使用 3D，优先验证风格化资产与受约束固定/半固定镜头：不默认写实人物、真人比例、复杂面捕、大开放世界、360°镜头、AAA 精度",
+          "OD-017：AI 是生产工具，不是艺术指导：统一比例/造型/材质/配色/年代/磨损/腐败/技术规格审核后才可正式使用",
+          "OD-018：默认不复用 Legacy，必要时重新申请：“已有、测全、省代码、以后用得上”均不足以准入",
+          "OD-019：当前唯一首要里程碑是玛丽第一次出现 POC：极少对象与台词，基础移动/镜头/检查/启动/驶出；不建设完整游戏底座",
+          "OD-020：首张执行工单只审计设计惯性并比较最小技术方案：不写游戏代码；提交选择建议、目录、资产、指标后等待 Owner 审查",
+          "OD-021：每项新功能开工前必须有五项需求说明：PLAYER NEED / NARRATIVE或GAMEPLAY CONTEXT / MINIMUM IMPLEMENTATION / WHY NOT LESS / LEGACY DEPENDENCY",
+          "OD-022：本次建库与后续开发依据 DMCP 标准及工作流：原话、正式对象、依据、回执、未决与交接可追溯；不伪造准入"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "OUT_OF_SCOPE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "完整装备、多车、零件商店、赏金、技能树、派系、经济、职业、大地图、完整战斗。",
+          "继续 Legacy 176/177/178/179；自动复制 QuestService/WorldService/BountyDirector/存档/输入/本地化/测试框架。",
+          "先建完整基础设施；在 Owner 审查前实施 POC；把静态截图作为视觉路线胜出证据。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "ACCEPTANCE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "当前工作仅建立独立 Git/DMCP 与核心文档；准确读回正式依据、回执与未决项。",
+          "首张 RB-DISC-001：只读审计旧设计惯性，比较 Pixel2D/Hybrid2.5D/Stylized3D 同片段最小方案，交目录、资产、验证指标，Owner 审查前不编码。",
+          "玛丽首见 POC 必须可玩地覆盖进入/看见/接近检查/发现异常/发动/驶出；静态截图不能判视觉胜出。",
+          "每功能开工前提供 PLAYER NEED、NARRATIVE/GAMEPLAY CONTEXT、MINIMUM IMPLEMENTATION、WHY NOT LESS、LEGACY DEPENDENCY。"
+        ]
+      },
+      {
+        "kind": "SET_ASSUMPTIONS",
+        "field": "ASSUMPTIONS",
+        "assertion_action": "ASSUME",
+        "value": [
+          "暗红锈蚀/新生金属组织是候选表现，不是异常真相。",
+          "车载收音机残缺旧歌是候选母题，无正式音频资产。",
+          "Godot 4.7.1 可作为技术评估候选；视觉路线、预算、试玩门槛仍待审。"
+        ]
+      }
+    ]
+  },
+  "at": "2026-10-10T07:16:08.922Z"
+}

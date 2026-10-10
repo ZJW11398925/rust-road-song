@@ -1,0 +1,36 @@
+{
+  "contract": {
+    "contract_id": "dmcp.plan_build",
+    "contract_version": 1
+  },
+  "payload_kind": "RESULT",
+  "workspace_ref": {
+    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+  },
+  "operation_intent_ref": "OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+  "result": {
+    "primary_ref": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+    "result_refs": [
+      "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7"
+    ],
+    "effective_state": "CREATED",
+    "summary": "plan_build committed under operation intent OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7"
+  },
+  "basis": {
+    "observed_canonical_state_id": "CST-69b02e53-a561-41eb-9d99-497ea5422161",
+    "observed_schema_version": 5,
+    "observed_design_revision": 3
+  },
+  "effects": {
+    "semantic_revision_changed": true,
+    "design_revision_before": 3,
+    "design_revision_after": 4,
+    "created_refs": [
+      "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7"
+    ]
+  },
+  "audit_refs": [
+    "EVT-000007.yaml"
+  ],
+  "warnings": []
+}

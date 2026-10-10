@@ -1,0 +1,79 @@
+{
+  "source": "docs/governance/sources/2026-10-10-owner-reset.md",
+  "tool": "plan_build",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "expected": {
+      "canonical_state_id": "CST-69b02e53-a561-41eb-9d99-497ea5422161",
+      "schema_version": 5,
+      "design_revision": 3
+    },
+    "plan_proposal": {
+      "target": {
+        "scope_ref": {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+        },
+        "target_stage": "DISCOVERY",
+        "value_goal_ref": {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+        }
+      },
+      "value_anchor": {
+        "state": "NO_VALUE_SLICE_YET",
+        "reason_type": "VIABILITY_DISCOVERY_UNRESOLVED",
+        "reason_refs": [
+          {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+            "kind": "DECISION",
+            "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+          }
+        ]
+      },
+      "work_items": [
+        {
+          "local_key": "mary-first-appearance-feasibility",
+          "kind": "RISK_SPIKE",
+          "resolves_or_informs": [
+            {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+            }
+          ],
+          "question": "哪些旧设计会污染新方向，三条视觉路线怎样以最小成本验证同一家庭战车首见体验？",
+          "bounded_scope": "只审计和设计方案；六步车库片段；不写游戏代码、不迁模块。",
+          "effort_boundary": "交一份报告和三方案比较，停止于 Owner 审查；预算是报告待审提案。",
+          "expected_evidence": [
+            "Legacy 实际提交/路径与惯性证据",
+            "三路线的最小场景/输入/镜头/资产/成本",
+            "真实输入与人工试玩指标、失败路径及未覆盖面",
+            "完整五项需求说明与待裁问题"
+          ],
+          "exit_condition": "报告对等比较同六步体验且无禁用系统，提交 Owner 审查；不自动开 POC。",
+          "consumers": [
+            {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+            }
+          ]
+        }
+      ],
+      "relations": [],
+      "basis": {
+        "design_basis_fingerprint": "54d24dab16baa42bb3a4b570b4f6465aab31bf6f1ffb391534570f5764573bcc",
+        "repository_basis_refs": [
+          "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+        ],
+        "planning_policy_version": "rust-road-song-reboot-discovery-v0.1"
+      }
+    }
+  },
+  "at": "2026-10-10T07:16:09.262Z"
+}

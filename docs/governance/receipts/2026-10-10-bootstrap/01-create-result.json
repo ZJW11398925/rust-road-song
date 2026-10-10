@@ -1,0 +1,35 @@
+{
+  "contract": {
+    "contract_id": "dmcp.design_create",
+    "contract_version": 1
+  },
+  "payload_kind": "RESULT",
+  "workspace_ref": {
+    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+  },
+  "operation_intent_ref": "OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.1",
+  "result": {
+    "primary_ref": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+    "result_refs": [
+      "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    ],
+    "effective_state": "CREATED",
+    "summary": "design_create committed under operation intent OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.1"
+  },
+  "basis": {
+    "observed_canonical_state_id": "CST-3b1b6d7e-a208-4fb1-95d9-0d9ef67f0f6f",
+    "observed_schema_version": 5,
+    "observed_design_revision": 1
+  },
+  "effects": {
+    "semantic_revision_changed": true,
+    "design_revision_after": 1,
+    "created_refs": [
+      "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    ]
+  },
+  "audit_refs": [
+    "EVT-000001.yaml"
+  ],
+  "warnings": []
+}

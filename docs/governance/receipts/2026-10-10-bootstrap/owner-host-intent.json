@@ -1,0 +1,12 @@
+{
+  "source": "docs/governance/sources/2026-10-10-owner-reset.md",
+  "reason": "Owner 明确要求新本地仓库、独立 DMCP，按提供的产品重置方向建库；无 POC 编码授权。",
+  "principal": {
+    "type": "ORGANIZATION_AUTHORITY",
+    "id": "owner"
+  },
+  "project": "rust-road-song reboot 2026-10-10",
+  "repositoryRoot": "C:/game engine/game1/rust-road-song",
+  "engineRoot": "C:/system/.local/dmcp-resolution-basis",
+  "workspacesRoot": "C:/work/.dmcp-workspaces"
+}
