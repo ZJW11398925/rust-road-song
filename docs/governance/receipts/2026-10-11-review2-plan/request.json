@@ -1,0 +1,83 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-discovery-review.md",
+  "sourceSha256": "4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8",
+  "tool": "plan_build",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "plan_proposal": {
+      "target": {
+        "target_stage": "PROTOTYPE",
+        "scope_ref": {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+        },
+        "value_goal_ref": {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+        }
+      },
+      "value_anchor": {
+        "state": "NO_VALUE_SLICE_YET",
+        "reason_type": "VIABILITY_DISCOVERY_UNRESOLVED",
+        "reason_refs": [
+          {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+            "kind": "DECISION",
+            "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+          }
+        ]
+      },
+      "work_items": [
+        {
+          "local_key": "c0-spatial-spike",
+          "kind": "RISK_SPIKE",
+          "resolves_or_informs": [
+            {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+            }
+          ],
+          "question": "受约束 3D 镜头、尺度、绕车检查、控制切换、低速驶出是否舒服且成立？",
+          "bounded_scope": "仅 C0 灰盒车库/车/胶囊人/门/相机及最小移动、检查位置、上下车与驾驶；没有剧情/美术。",
+          "effort_boundary": "一轮最小空间实验：先完成五个问题的可试入口，只对所见空间问题做一次有限调整；持续失败即停止并提交反例，不扩展 C1；无30h总包。",
+          "expected_evidence": [
+            "实际入口、输入说明、版本及灰盒占位说明",
+            "五项空间/操作问题的真实输入录像、错误路径及反例",
+            "独立操控试玩原话和实际工量，未验证项与后门待裁"
+          ],
+          "exit_condition": "交五项空间问题的可审证据或准确失败结论；Owner 决定是否继续 C1。",
+          "consumers": [
+            {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+            }
+          ]
+        }
+      ],
+      "relations": [],
+      "basis": {
+        "design_basis_fingerprint": "4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8",
+        "planning_policy_version": "rust-road-song-c0-spatial-v0.1",
+        "repository_basis_refs": [
+          "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+        ]
+      }
+    },
+    "expected": {
+      "canonical_state_id": "CST-6ca9e57e-94d1-4f99-93d9-cd87a22d6da0",
+      "schema_version": 5,
+      "design_revision": 7
+    }
+  },
+  "host": {
+    "type": "SERVICE",
+    "id": "rust-road-song-c0-planner"
+  },
+  "ownerRaw": "认同"
+}

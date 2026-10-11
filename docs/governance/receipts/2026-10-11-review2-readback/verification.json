@@ -1,0 +1,48 @@
+{
+  "recordedAt": "2026-10-11T07:41:27.107Z",
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "basis": {
+    "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+    "observed_schema_version": 5,
+    "observed_design_revision": 9
+  },
+  "canonicalCount": 6,
+  "findingCount": 0,
+  "runtimeCount": 1,
+  "originalCanonicalPreserved": true,
+  "runtimeRecordsPreserved": true,
+  "decision": {
+    "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+    "revision": 2,
+    "confirmedConstraints": 9
+  },
+  "plan": {
+    "id": "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+    "revision": 1,
+    "stage": "PROTOTYPE"
+  },
+  "task": {
+    "id": "TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2",
+    "revision": 1,
+    "readinessRefAbsent": true
+  },
+  "sourceSha256": "4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8",
+  "reportSha256": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512",
+  "reportBytes": 21639,
+  "sourceSnapshotSha256": "423a4b92b2a7692757fa7f6736fdbbefd24f756484915f2aaf273b777f8ec773",
+  "projectionOmissions": [
+    "binding.engineRoot",
+    "binding.workspacesRoot"
+  ],
+  "admission": {
+    "c0ReadinessAssessed": false,
+    "c0ReadinessEstablished": false,
+    "oldReadyReusable": false,
+    "basis": "Current native document_discovery@1 is DISCOVERY-only, exact original scope and restricted Markdown paths.",
+    "upstreamModule": "apps/mcp-server/src/document-discovery.ts",
+    "upstreamSourceSha256": "5e123f512e72022219ad937fb1ab8d6a47a7637f7d314bd53ca855fd0eff1049",
+    "policySha256": "21d1dc049f707c80c254f8ef9d34cbfcd53bcab959d050afcaed937c46bbf2a4"
+  },
+  "noGameImplementation": true,
+  "notNativeTaskDone": true
+}

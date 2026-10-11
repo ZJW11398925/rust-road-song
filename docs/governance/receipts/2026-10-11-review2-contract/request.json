@@ -1,0 +1,82 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-discovery-review.md",
+  "sourceSha256": "4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8",
+  "tool": "design_update_contract",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "expected": {
+      "canonical_state_id": "CST-d28018fe-d149-410a-9437-071c37f70db4",
+      "schema_version": 5,
+      "design_revision": 6,
+      "object_revisions": [
+        {
+          "object_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+            "kind": "DECISION",
+            "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+          },
+          "object_revision": 1
+        }
+      ]
+    },
+    "mutations": [
+      {
+        "kind": "SET_SCALAR_CLAIM",
+        "field": "GOAL",
+        "assertion_action": "CONFIRM",
+        "value": "接受 RB-DISC-001 Discovery 交付，修订下一阶段实验设计；先以 C0 Spatial Spike 检验受约束 3D 空间和操作。"
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "TECHNICAL_CONSTRAINTS",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "Discovery → Greybox → Visual 三门；Garage POC 只验证空间、表现、操作，不证明完整情感关系。",
+          "Godot + Windows + 键盘作为当前 POC 环境，不锁定产品引擎。",
+          "C 为第一条风险路线；先 C0 Spatial Spike，再决定 C1 Narrative Greybox，不一次批准报告的 30h。",
+          "修改 OD-015：三路线须公平审查，只有明确体验假设的路线进入可玩实施。A 保持候选；B 暂不实施，先证明独立艺术/体验主张；C 先试不等于获胜。",
+          "作者希望的剧情顺序与世界物理限制分开；合理的提前发动、检查其他部位等原则上允许，剧情通过世界反应收束，禁止隐藏 Quest 状态硬锁。",
+          "4/5、3/5 等比例仅是诊断参考；不以家庭痕迹数量或辨认比例作为内容 KPI，不为通过指标加强提示；记录自然行为、复述与误解。",
+          "C1 以人物戏可读性为核心：不用面捕/脸部特写，仅靠站位、身体动作、停顿、声音与有限镜头，检验母亲能否像一个人。",
+          "任何启动限制须有真实物理原因；仅观察损伤不改变机械状态，禁止 damage_seen 之类叙事条件解锁发动。",
+          "C1 局部人物戏可读性不等于完整家庭情感；后者需适当前置关系，不因此实施完整序章。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "IN_SCOPE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "C0：灰盒车库、粗玛丽、胶囊人、门、相机、移动、检查位置、上下车/控制切换和低速驶出；一轮最小空间实验。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "OUT_OF_SCOPE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "C0 不做正式对白、家庭物件、异常美术、母亲完整动画、正式资产、游戏基础设施。",
+          "不批准 C1/Visual、B 实施、最终视觉路线、完整序章、装备/任务/赏金/世界状态等冻结系统。",
+          "不批准原报告 30h/60h、固定人数/比例门槛；不复用报告专属 READY 授权代码。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "ACCEPTANCE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "C0 验证固定/半固定镜头看车、人物接近尺度、绕车检查、人物/战车控制切换、门内低速驶出五个问题。",
+          "真实输入和失败路径验证、独立空间操控试玩；记录卡住、误解和反例，不以比例或美术精度判成功。",
+          "一轮空间实验后交 Owner 判断是否进入 C1；没有检验完整家庭情感或宣布 C 获胜。"
+        ]
+      }
+    ]
+  },
+  "host": {
+    "type": "ORGANIZATION_AUTHORITY",
+    "id": "owner"
+  },
+  "ownerRaw": "认同"
+}

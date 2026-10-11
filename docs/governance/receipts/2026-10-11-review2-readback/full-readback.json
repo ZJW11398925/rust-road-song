@@ -1,0 +1,1710 @@
+{
+  "binding": {
+    "schemaVersion": 1,
+    "projectIdentity": "rust-road-song Reboot 2026-10-10",
+    "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+    "localProfile": ".local/dmcp-host.json",
+    "creationReceipt": "docs/governance/receipts/2026-10-10-bootstrap/01-create-result.json",
+    "source": "docs/governance/sources/2026-10-10-owner-reset.md",
+    "toolingFiles": {
+      "services/knowledge/src/dmcp/client.ts": "d47f19dd6f2593f83425b2bd75f3249378c4943a2c2f5fa1a46193fbdc50b717",
+      "services/knowledge/src/dmcp/config.ts": "866fa464e7da37540fed67ff322eb3c1f8b87240bb8aaae3a5e0efb3406afa3b",
+      "services/knowledge/src/dmcp/wire-client.ts": "9ff1f5381b7d4d3ba51a7e6faf956d9fc3121207ce65d4f8b8f0c44559cebcfa",
+      "services/knowledge/src/dmcp/envelope.ts": "6f938e6f9f9626bfc4d5f914753b9bbfaccc00d860552b113377140935da6454",
+      "services/knowledge/src/dmcp/errors.ts": "80eb91c47c8d1376d94e84018fa9c0ba8c18e7e312e771641e72e454f89f1f6d",
+      "scripts/lib/dmcp-governance-snapshot.mjs": "44f9a50a9d356bc00313937ae1ab81fcc95e724c0f3c2c8d4222660c0d6f0db4"
+    },
+    "engineCommit": "d270067a615aef973f5c2dbe32d4c289782bb1ea",
+    "toolchainCommit": "678c4dc64ae61ad7d57c42e9a7ebbf16d0dfb3be",
+    "ownerDirectiveDecisionId": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+    "discoveryPlanId": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+    "discoveryTaskId": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+    "documentDiscoveryPolicySha256": "21d1dc049f707c80c254f8ef9d34cbfcd53bcab959d050afcaed937c46bbf2a4",
+    "documentDiscoveryProtocol": "DMCP-DOCUMENT-DISCOVERY@3/document_discovery@1",
+    "currentOwnerDecisionId": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+    "ownerReviewSource": "docs/governance/sources/2026-10-11-owner-discovery-review.md",
+    "c0PlanId": "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+    "c0TaskId": "TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2"
+  },
+  "basis": {
+    "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+    "observed_schema_version": 5,
+    "observed_design_revision": 9
+  },
+  "consistency": {
+    "canonical": "STABLE_DOUBLE_READ",
+    "runtimeAttestations": "EQUAL_DOUBLE_OBSERVATION_NOT_ATOMIC"
+  },
+  "mcp": {
+    "source": "MCP tools through SERVICE read-only client",
+    "statusBefore": {
+      "contract": {
+        "contract_id": "dmcp.design_status",
+        "contract_version": 1
+      },
+      "payload_kind": "RESULT",
+      "workspace_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      },
+      "result": {
+        "primary_ref": "WORKSPACE_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca",
+        "result_refs": [
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2"
+        ],
+        "effective_state": "READY",
+        "domain_verdict": "READY",
+        "summary": "observed 6 object(s); structure consistent"
+      },
+      "basis": {
+        "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+        "observed_schema_version": 5,
+        "observed_design_revision": 9
+      },
+      "effects": {
+        "semantic_revision_changed": false,
+        "design_revision_before": 9,
+        "design_revision_after": 9
+      },
+      "audit_refs": [],
+      "warnings": []
+    },
+    "designGet": [
+      {
+        "requested": {
+          "kind": "DECISION",
+          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+        },
+        "response": {
+          "contract": {
+            "contract_id": "dmcp.design_get",
+            "contract_version": 1
+          },
+          "payload_kind": "RESULT",
+          "workspace_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+          },
+          "result": {
+            "primary_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+            "result_refs": [
+              "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+            ],
+            "summary": "observed 1 requested object(s); content DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3: {\"kind\":\"DECISION\",\"decision_id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\",\"decision\":{\"question\":\"《锈路长歌》是否终止旧路线并以独立 Reboot 项目和 DMCP 工作流从玛丽首见验证重新开始？\",\"alternatives\":[{\"key\":\"legacy_reboot_split\",\"description\":\"冻结 Legacy，新 Git/DMCP 身份；先确立设计与剧情权威，再审计与三视觉路线最小方案，Owner 审查后实施。\"},{\"key\":\"continue_legacy\",\"description\":\"继续旧仓库以新增序章、改渲染或完善 176..179 作为新方向。\"}],\"selected_key\":\"legacy_reboot_split\",\"reason\":\"Owner 本轮明确要求本地新建、DMCP 标准，并提供 Legacy/Reboot 分离与先写核心文档的方案；来源 docs/governance/sources/2026-10-10-owner-reset.md；逐项转录见 docs/00_OWNER_DECISIONS.md OD-001..022。\",\"tradeoffs\":[\"不复用旧历史与完整系统，承担重新证明体验价值的成本。\",\"视觉胜出、完整序章和 POC 编码尚未批准；候选与未知保持未决。\"]},\"contract_claims\":[{\"kind\":\"SET_SCALAR_CLAIM\",\"field\":\"GOAL\",\"assertion_action\":\"CONFIRM\",\"value\":\"保留世界观种子与部分技术经验，重新决定《锈路长歌》是什么游戏；首先验证玛丽第一次出现。\"},{\"kind\":\"SET_SCALAR_CLAIM\",\"field\":\"CORE_VALUE\",\"assertion_action\":\"CONFIRM\",\"value\":\"这是我的旅程；这件东西我以后不会忘记。围绕离开、道路、家庭、战争、衰败、旧机器和继续前进。\"},{\"kind\":\"SET_LIST_CLAIM\",\"field\":\"TECHNICAL_CONSTRAINTS\",\"assertion_action\":\"CONFIRM\",\"value\":[\"权威：Owner Decision → Product Thesis/Story Bible → 当前剧情 → 当前POC → 技术实现 → Legacy最低。\",\"人物处境 → 玩家欲望 → 行为 → 必要机制 → 页面/数据/代码；所有功能开工前五项需求说明。\",\"全部已决方向详见 docs/00_OWNER_DECISIONS.md；来源 docs/governance/sources/2026-10-10-owner-reset.md；不把 Agent 参数提案和候选写成已决。\",\"OD-001：Legacy / Reboot 分离，新 canonical 仓库叫 rust-road-song：新 Git、新 DMCP 身份；旧历史不得导入成为新历史\",\"OD-002：旧项目冻结为 Legacy；保留代码、测试、资料及历史：停止 176/177/178/179 和其余旧路线；冻结不等于完成旧验收\",\"OD-003：保留世界观种子与经验，重新决定游戏是什么：不解释为加序章、换 3D 或局部重构\",\"OD-004：人物处境先于欲望、行为、机制、页面与代码：每项功能必须证明当下体验需求；复杂度本身无价值\",\"OD-005：主题是离开、道路、家庭、战争、衰败、旧机器和继续前进：公路 RPG 的产品主张；完整 RPG 系统未获批准\",\"OD-006：吸收《重装机兵》的自发目标与《去月球》的克制故事精神：荒野不是任务清单；重要物件随着推进获得新意义\",\"OD-007：持续约一年的平叛战争与加速异常衰败：父亲被征召；母子留在原家；人口迁徙；因果与阵营真相未定\",\"OD-008：母亲留下是为了让父亲回来时仍有家：不塑造成愚蠢等待；最终由母亲自己决定离开\",\"OD-009：父亲最后一封信报告恶化、要求立即离开、带上玛丽：保留熟悉语气“玛丽大展身手的时代到了”；不由此确认父亲死亡\",\"OD-010：玛丽是人物级的重要对象，先感到旧，再谈别的意义：老旧家用战车、父亲多次自修改装、家庭痕迹；不是天选神器\",\"OD-011：父亲走前的明确损伤一年后有不可能变化：私人谜团“玛丽这一年发生了什么”；不得立即解释\",\"OD-012：序章暂名《离家》，生活在快无法存在的家并亲自离开：16 个叙事节拍只作为整体方向，当前不一次开发 S00–S15\",\"OD-013：默认可操作剧情，普通说话保留移动/观察/有限交互：只有重要决定、重要物件首次出现、不可逆事件允许极短演出\",\"OD-014：过去通过旧物、照片、修补、房间、机械、广播、动作、使用痕迹表达：禁止 NPC 长篇解释；对话必须服务人物意图、回避/隐瞒、关系、性格或理解变化\",\"OD-015：三种视觉方向必须比较，当前无胜出方案：Pixel 2D / Hybrid 2.5D / Stylized 3D，同一可玩片段，静态截图不能决定\",\"OD-016：若使用 3D，优先验证风格化资产与受约束固定/半固定镜头：不默认写实人物、真人比例、复杂面捕、大开放世界、360°镜头、AAA 精度\",\"OD-017：AI 是生产工具，不是艺术指导：统一比例/造型/材质/配色/年代/磨损/腐败/技术规格审核后才可正式使用\",\"OD-018：默认不复用 Legacy，必要时重新申请：“已有、测全、省代码、以后用得上”均不足以准入\",\"OD-019：当前唯一首要里程碑是玛丽第一次出现 POC：极少对象与台词，基础移动/镜头/检查/启动/驶出；不建设完整游戏底座\",\"OD-020：首张执行工单只审计设计惯性并比较最小技术方案：不写游戏代码；提交选择建议、目录、资产、指标后等待 Owner 审查\",\"OD-021：每项新功能开工前必须有五项需求说明：PLAYER NEED / NARRATIVE或GAMEPLAY CONTEXT / MINIMUM IMPLEMENTATION / WHY NOT LESS / LEGACY DEPENDENCY\",\"OD-022：本次建库与后续开发依据 DMCP 标准及工作流：原话、正式对象、依据、回执、未决与交接可追溯；不伪造准入\"]},{\"kind\":\"SET_LIST_CLAIM\",\"field\":\"OUT_OF_SCOPE\",\"assertion_action\":\"CONFIRM\",\"value\":[\"完整装备、多车、零件商店、赏金、技能树、派系、经济、职业、大地图、完整战斗。\",\"继续 Legacy 176/177/178/179；自动复制 QuestService/WorldService/BountyDirector/存档/输入/本地化/测试框架。\",\"先建完整基础设施；在 Owner 审查前实施 POC；把静态截图作为视觉路线胜出证据。\"]},{\"kind\":\"SET_LIST_CLAIM\",\"field\":\"ACCEPTANCE\",\"assertion_action\":\"CONFIRM\",\"value\":[\"当前工作仅建立独立 Git/DMCP 与核心文档；准确读回正式依据、回执与未决项。\",\"首张 RB-DISC-001：只读审计旧设计惯性，比较 Pixel2D/Hybrid2.5D/Stylized3D 同片段最小方案，交目录、资产、验证指标，Owner 审查前不编码。\",\"玛丽首见 POC 必须可玩地覆盖进入/看见/接近检查/发现异常/发动/驶出；静态截图不能判视觉胜出。\",\"每功能开工前提供 PLAYER NEED、NARRATIVE/GAMEPLAY CONTEXT、MINIMUM IMPLEMENTATION、WHY NOT LESS、LEGACY DEPENDENCY。\"]},{\"kind\":\"SET_ASSUMPTIONS\",\"field\":\"ASSUMPTIONS\",\"assertion_action\":\"ASSUME\",\"value\":[\"暗红锈蚀/新生金属组织是候选表现，不是异常真相。\",\"车载收音机残缺旧歌是候选母题，无正式音频资产。\",\"Godot 4.7.1 可作为技术评估候选；视觉路线、预算、试玩门槛仍待审。\"]}]}"
+          },
+          "basis": {
+            "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+            "observed_schema_version": 5,
+            "observed_design_revision": 9
+          },
+          "effects": {
+            "semantic_revision_changed": false,
+            "design_revision_before": 9,
+            "design_revision_after": 9
+          },
+          "audit_refs": [],
+          "warnings": []
+        },
+        "parsed": {
+          "objects": [
+            {
+              "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+              "payload": {
+                "kind": "DECISION",
+                "decision_id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+                "decision": {
+                  "question": "《锈路长歌》是否终止旧路线并以独立 Reboot 项目和 DMCP 工作流从玛丽首见验证重新开始？",
+                  "alternatives": [
+                    {
+                      "key": "legacy_reboot_split",
+                      "description": "冻结 Legacy，新 Git/DMCP 身份；先确立设计与剧情权威，再审计与三视觉路线最小方案，Owner 审查后实施。"
+                    },
+                    {
+                      "key": "continue_legacy",
+                      "description": "继续旧仓库以新增序章、改渲染或完善 176..179 作为新方向。"
+                    }
+                  ],
+                  "selected_key": "legacy_reboot_split",
+                  "reason": "Owner 本轮明确要求本地新建、DMCP 标准，并提供 Legacy/Reboot 分离与先写核心文档的方案；来源 docs/governance/sources/2026-10-10-owner-reset.md；逐项转录见 docs/00_OWNER_DECISIONS.md OD-001..022。",
+                  "tradeoffs": [
+                    "不复用旧历史与完整系统，承担重新证明体验价值的成本。",
+                    "视觉胜出、完整序章和 POC 编码尚未批准；候选与未知保持未决。"
+                  ]
+                },
+                "contract_claims": [
+                  {
+                    "kind": "SET_SCALAR_CLAIM",
+                    "field": "GOAL",
+                    "assertion_action": "CONFIRM",
+                    "value": "保留世界观种子与部分技术经验，重新决定《锈路长歌》是什么游戏；首先验证玛丽第一次出现。"
+                  },
+                  {
+                    "kind": "SET_SCALAR_CLAIM",
+                    "field": "CORE_VALUE",
+                    "assertion_action": "CONFIRM",
+                    "value": "这是我的旅程；这件东西我以后不会忘记。围绕离开、道路、家庭、战争、衰败、旧机器和继续前进。"
+                  },
+                  {
+                    "kind": "SET_LIST_CLAIM",
+                    "field": "TECHNICAL_CONSTRAINTS",
+                    "assertion_action": "CONFIRM",
+                    "value": [
+                      "权威：Owner Decision → Product Thesis/Story Bible → 当前剧情 → 当前POC → 技术实现 → Legacy最低。",
+                      "人物处境 → 玩家欲望 → 行为 → 必要机制 → 页面/数据/代码；所有功能开工前五项需求说明。",
+                      "全部已决方向详见 docs/00_OWNER_DECISIONS.md；来源 docs/governance/sources/2026-10-10-owner-reset.md；不把 Agent 参数提案和候选写成已决。",
+                      "OD-001：Legacy / Reboot 分离，新 canonical 仓库叫 rust-road-song：新 Git、新 DMCP 身份；旧历史不得导入成为新历史",
+                      "OD-002：旧项目冻结为 Legacy；保留代码、测试、资料及历史：停止 176/177/178/179 和其余旧路线；冻结不等于完成旧验收",
+                      "OD-003：保留世界观种子与经验，重新决定游戏是什么：不解释为加序章、换 3D 或局部重构",
+                      "OD-004：人物处境先于欲望、行为、机制、页面与代码：每项功能必须证明当下体验需求；复杂度本身无价值",
+                      "OD-005：主题是离开、道路、家庭、战争、衰败、旧机器和继续前进：公路 RPG 的产品主张；完整 RPG 系统未获批准",
+                      "OD-006：吸收《重装机兵》的自发目标与《去月球》的克制故事精神：荒野不是任务清单；重要物件随着推进获得新意义",
+                      "OD-007：持续约一年的平叛战争与加速异常衰败：父亲被征召；母子留在原家；人口迁徙；因果与阵营真相未定",
+                      "OD-008：母亲留下是为了让父亲回来时仍有家：不塑造成愚蠢等待；最终由母亲自己决定离开",
+                      "OD-009：父亲最后一封信报告恶化、要求立即离开、带上玛丽：保留熟悉语气“玛丽大展身手的时代到了”；不由此确认父亲死亡",
+                      "OD-010：玛丽是人物级的重要对象，先感到旧，再谈别的意义：老旧家用战车、父亲多次自修改装、家庭痕迹；不是天选神器",
+                      "OD-011：父亲走前的明确损伤一年后有不可能变化：私人谜团“玛丽这一年发生了什么”；不得立即解释",
+                      "OD-012：序章暂名《离家》，生活在快无法存在的家并亲自离开：16 个叙事节拍只作为整体方向，当前不一次开发 S00–S15",
+                      "OD-013：默认可操作剧情，普通说话保留移动/观察/有限交互：只有重要决定、重要物件首次出现、不可逆事件允许极短演出",
+                      "OD-014：过去通过旧物、照片、修补、房间、机械、广播、动作、使用痕迹表达：禁止 NPC 长篇解释；对话必须服务人物意图、回避/隐瞒、关系、性格或理解变化",
+                      "OD-015：三种视觉方向必须比较，当前无胜出方案：Pixel 2D / Hybrid 2.5D / Stylized 3D，同一可玩片段，静态截图不能决定",
+                      "OD-016：若使用 3D，优先验证风格化资产与受约束固定/半固定镜头：不默认写实人物、真人比例、复杂面捕、大开放世界、360°镜头、AAA 精度",
+                      "OD-017：AI 是生产工具，不是艺术指导：统一比例/造型/材质/配色/年代/磨损/腐败/技术规格审核后才可正式使用",
+                      "OD-018：默认不复用 Legacy，必要时重新申请：“已有、测全、省代码、以后用得上”均不足以准入",
+                      "OD-019：当前唯一首要里程碑是玛丽第一次出现 POC：极少对象与台词，基础移动/镜头/检查/启动/驶出；不建设完整游戏底座",
+                      "OD-020：首张执行工单只审计设计惯性并比较最小技术方案：不写游戏代码；提交选择建议、目录、资产、指标后等待 Owner 审查",
+                      "OD-021：每项新功能开工前必须有五项需求说明：PLAYER NEED / NARRATIVE或GAMEPLAY CONTEXT / MINIMUM IMPLEMENTATION / WHY NOT LESS / LEGACY DEPENDENCY",
+                      "OD-022：本次建库与后续开发依据 DMCP 标准及工作流：原话、正式对象、依据、回执、未决与交接可追溯；不伪造准入"
+                    ]
+                  },
+                  {
+                    "kind": "SET_LIST_CLAIM",
+                    "field": "OUT_OF_SCOPE",
+                    "assertion_action": "CONFIRM",
+                    "value": [
+                      "完整装备、多车、零件商店、赏金、技能树、派系、经济、职业、大地图、完整战斗。",
+                      "继续 Legacy 176/177/178/179；自动复制 QuestService/WorldService/BountyDirector/存档/输入/本地化/测试框架。",
+                      "先建完整基础设施；在 Owner 审查前实施 POC；把静态截图作为视觉路线胜出证据。"
+                    ]
+                  },
+                  {
+                    "kind": "SET_LIST_CLAIM",
+                    "field": "ACCEPTANCE",
+                    "assertion_action": "CONFIRM",
+                    "value": [
+                      "当前工作仅建立独立 Git/DMCP 与核心文档；准确读回正式依据、回执与未决项。",
+                      "首张 RB-DISC-001：只读审计旧设计惯性，比较 Pixel2D/Hybrid2.5D/Stylized3D 同片段最小方案，交目录、资产、验证指标，Owner 审查前不编码。",
+                      "玛丽首见 POC 必须可玩地覆盖进入/看见/接近检查/发现异常/发动/驶出；静态截图不能判视觉胜出。",
+                      "每功能开工前提供 PLAYER NEED、NARRATIVE/GAMEPLAY CONTEXT、MINIMUM IMPLEMENTATION、WHY NOT LESS、LEGACY DEPENDENCY。"
+                    ]
+                  },
+                  {
+                    "kind": "SET_ASSUMPTIONS",
+                    "field": "ASSUMPTIONS",
+                    "assertion_action": "ASSUME",
+                    "value": [
+                      "暗红锈蚀/新生金属组织是候选表现，不是异常真相。",
+                      "车载收音机残缺旧歌是候选母题，无正式音频资产。",
+                      "Godot 4.7.1 可作为技术评估候选；视觉路线、预算、试玩门槛仍待审。"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "parseErrors": [],
+          "truncated": false
+        }
+      },
+      {
+        "requested": {
+          "kind": "PLAN",
+          "id": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7"
+        },
+        "response": {
+          "contract": {
+            "contract_id": "dmcp.design_get",
+            "contract_version": 1
+          },
+          "payload_kind": "RESULT",
+          "workspace_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+          },
+          "result": {
+            "primary_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+            "result_refs": [
+              "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7"
+            ],
+            "summary": "observed 1 requested object(s); content PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7: {\"kind\":\"PLAN\",\"plan_id\":\"PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7\",\"plan_proposal\":{\"target\":{\"scope_ref\":{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\"},\"target_stage\":\"DISCOVERY\",\"value_goal_ref\":{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\"}},\"value_anchor\":{\"state\":\"NO_VALUE_SLICE_YET\",\"reason_type\":\"VIABILITY_DISCOVERY_UNRESOLVED\",\"reason_refs\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\"}]},\"work_items\":[{\"local_key\":\"mary-first-appearance-feasibility\",\"kind\":\"RISK_SPIKE\",\"resolves_or_informs\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\"}],\"question\":\"哪些旧设计会污染新方向，三条视觉路线怎样以最小成本验证同一家庭战车首见体验？\",\"bounded_scope\":\"只审计和设计方案；六步车库片段；不写游戏代码、不迁模块。\",\"effort_boundary\":\"交一份报告和三方案比较，停止于 Owner 审查；预算是报告待审提案。\",\"expected_evidence\":[\"Legacy 实际提交/路径与惯性证据\",\"三路线的最小场景/输入/镜头/资产/成本\",\"真实输入与人工试玩指标、失败路径及未覆盖面\",\"完整五项需求说明与待裁问题\"],\"exit_condition\":\"报告对等比较同六步体验且无禁用系统，提交 Owner 审查；不自动开 POC。\",\"consumers\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\"}]}],\"relations\":[],\"basis\":{\"design_basis_fingerprint\":\"54d24dab16baa42bb3a4b570b4f6465aab31bf6f1ffb391534570f5764573bcc\",\"repository_basis_refs\":[\"ws-217bac29-7a08-437c-be5f-472693bf16ca\"],\"planning_policy_version\":\"rust-road-song-reboot-discovery-v0.1\"}}}"
+          },
+          "basis": {
+            "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+            "observed_schema_version": 5,
+            "observed_design_revision": 9
+          },
+          "effects": {
+            "semantic_revision_changed": false,
+            "design_revision_before": 9,
+            "design_revision_after": 9
+          },
+          "audit_refs": [],
+          "warnings": []
+        },
+        "parsed": {
+          "objects": [
+            {
+              "id": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+              "payload": {
+                "kind": "PLAN",
+                "plan_id": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+                "plan_proposal": {
+                  "target": {
+                    "scope_ref": {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                    },
+                    "target_stage": "DISCOVERY",
+                    "value_goal_ref": {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                    }
+                  },
+                  "value_anchor": {
+                    "state": "NO_VALUE_SLICE_YET",
+                    "reason_type": "VIABILITY_DISCOVERY_UNRESOLVED",
+                    "reason_refs": [
+                      {
+                        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                        "kind": "DECISION",
+                        "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                      }
+                    ]
+                  },
+                  "work_items": [
+                    {
+                      "local_key": "mary-first-appearance-feasibility",
+                      "kind": "RISK_SPIKE",
+                      "resolves_or_informs": [
+                        {
+                          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                          "kind": "DECISION",
+                          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                        }
+                      ],
+                      "question": "哪些旧设计会污染新方向，三条视觉路线怎样以最小成本验证同一家庭战车首见体验？",
+                      "bounded_scope": "只审计和设计方案；六步车库片段；不写游戏代码、不迁模块。",
+                      "effort_boundary": "交一份报告和三方案比较，停止于 Owner 审查；预算是报告待审提案。",
+                      "expected_evidence": [
+                        "Legacy 实际提交/路径与惯性证据",
+                        "三路线的最小场景/输入/镜头/资产/成本",
+                        "真实输入与人工试玩指标、失败路径及未覆盖面",
+                        "完整五项需求说明与待裁问题"
+                      ],
+                      "exit_condition": "报告对等比较同六步体验且无禁用系统，提交 Owner 审查；不自动开 POC。",
+                      "consumers": [
+                        {
+                          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                          "kind": "DECISION",
+                          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                        }
+                      ]
+                    }
+                  ],
+                  "relations": [],
+                  "basis": {
+                    "design_basis_fingerprint": "54d24dab16baa42bb3a4b570b4f6465aab31bf6f1ffb391534570f5764573bcc",
+                    "repository_basis_refs": [
+                      "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+                    ],
+                    "planning_policy_version": "rust-road-song-reboot-discovery-v0.1"
+                  }
+                }
+              }
+            }
+          ],
+          "parseErrors": [],
+          "truncated": false
+        }
+      },
+      {
+        "requested": {
+          "kind": "TASK",
+          "id": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9"
+        },
+        "response": {
+          "contract": {
+            "contract_id": "dmcp.design_get",
+            "contract_version": 1
+          },
+          "payload_kind": "RESULT",
+          "workspace_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+          },
+          "result": {
+            "primary_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+            "result_refs": [
+              "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9"
+            ],
+            "summary": "observed 1 requested object(s); content TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9: {\"kind\":\"TASK\",\"task_id\":\"TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9\",\"task_proposal\":{\"goal\":\"RB-DISC-001：反旧设计污染审计与玛丽首见三路线最小技术方案\",\"why\":\"阻止新设计被重新解释为旧游戏加序章或换3D；先证明当下玩家体验的最小需要。\",\"scope_ref\":{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\"},\"relevant_decision_refs\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\"}],\"required_capabilities\":[\"REPOSITORY_READ\",\"REPOSITORY_WRITE\",\"PROCESS_EXEC\"],\"acceptance_criterion_refs\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\",\"facet\":\"contract_claims.ACCEPTANCE\"}],\"repository_basis_refs\":[\"ws-217bac29-7a08-437c-be5f-472693bf16ca\"],\"relevant_paths\":[\"docs/tasks/RB-DISC-001.md\",\"docs/00_OWNER_DECISIONS.md\",\"docs/01_PRODUCT_THESIS.md\",\"docs/02_STORY_BIBLE.md\",\"docs/06_VISUAL_POC_PLAN.md\",\"docs/07_LEGACY_REUSE_POLICY.md\",\"docs/discovery/RB-DISC-001_REPORT.md\"],\"forbidden_changes\":[\"任何游戏代码/Godot工程/正式资产\",\"搬运 Legacy 游戏模块/测试/插件\",\"擅选视觉胜出路线\",\"赏金/装备/世界状态/营地/经济/完整架构\"],\"expected_output\":\"一份中文报告，含实际 Legacy 惯性审计、三方案最小技术比较、目录/资产/验证指标/预算与未决；交付后等 Owner 审查。\"},\"parent_ref\":\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7\"}"
+          },
+          "basis": {
+            "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+            "observed_schema_version": 5,
+            "observed_design_revision": 9
+          },
+          "effects": {
+            "semantic_revision_changed": false,
+            "design_revision_before": 9,
+            "design_revision_after": 9
+          },
+          "audit_refs": [],
+          "warnings": []
+        },
+        "parsed": {
+          "objects": [
+            {
+              "id": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+              "payload": {
+                "kind": "TASK",
+                "task_id": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+                "task_proposal": {
+                  "goal": "RB-DISC-001：反旧设计污染审计与玛丽首见三路线最小技术方案",
+                  "why": "阻止新设计被重新解释为旧游戏加序章或换3D；先证明当下玩家体验的最小需要。",
+                  "scope_ref": {
+                    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                    "kind": "DECISION",
+                    "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                  },
+                  "relevant_decision_refs": [
+                    {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                    }
+                  ],
+                  "required_capabilities": [
+                    "REPOSITORY_READ",
+                    "REPOSITORY_WRITE",
+                    "PROCESS_EXEC"
+                  ],
+                  "acceptance_criterion_refs": [
+                    {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+                      "facet": "contract_claims.ACCEPTANCE"
+                    }
+                  ],
+                  "repository_basis_refs": [
+                    "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+                  ],
+                  "relevant_paths": [
+                    "docs/tasks/RB-DISC-001.md",
+                    "docs/00_OWNER_DECISIONS.md",
+                    "docs/01_PRODUCT_THESIS.md",
+                    "docs/02_STORY_BIBLE.md",
+                    "docs/06_VISUAL_POC_PLAN.md",
+                    "docs/07_LEGACY_REUSE_POLICY.md",
+                    "docs/discovery/RB-DISC-001_REPORT.md"
+                  ],
+                  "forbidden_changes": [
+                    "任何游戏代码/Godot工程/正式资产",
+                    "搬运 Legacy 游戏模块/测试/插件",
+                    "擅选视觉胜出路线",
+                    "赏金/装备/世界状态/营地/经济/完整架构"
+                  ],
+                  "expected_output": "一份中文报告，含实际 Legacy 惯性审计、三方案最小技术比较、目录/资产/验证指标/预算与未决；交付后等 Owner 审查。"
+                },
+                "parent_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7"
+              }
+            }
+          ],
+          "parseErrors": [],
+          "truncated": false
+        }
+      },
+      {
+        "requested": {
+          "kind": "DECISION",
+          "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+        },
+        "response": {
+          "contract": {
+            "contract_id": "dmcp.design_get",
+            "contract_version": 1
+          },
+          "payload_kind": "RESULT",
+          "workspace_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+          },
+          "result": {
+            "primary_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+            "result_refs": [
+              "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+            ],
+            "summary": "observed 1 requested object(s); content DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2: {\"kind\":\"DECISION\",\"decision_id\":\"DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\",\"decision\":{\"question\":\"是否采用第二轮 Discovery 外审修订，保留交付并以 C0 空间实验进入下一阶段？\",\"alternatives\":[{\"key\":\"bounded_c0\",\"description\":\"采用七项修订与两条保护，接受 Discovery 交付，先 C0；后门独立裁决。\"},{\"key\":\"unchanged_report\",\"description\":\"直接执行原报告三路线成品、量化门槛与 C Greybox 30h。\"}],\"selected_key\":\"bounded_c0\",\"reason\":\"Owner 在核对反馈并提出七项方向和两条保护后原话“认同”；来源 docs/governance/sources/2026-10-11-owner-discovery-review.md；修订 OD-015 及原方案执行语义，原基线不改写。\",\"related_constraint_refs\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\"}],\"tradeoffs\":[\"先验证空间，延后叙事和美术，不以一次车库 POC 证明完整家庭情感。\",\"方向授权不替代实际 DMCP 执行准入；没有批准完整三路线、30h、正式资产或视觉胜出。\"]},\"contract_claims\":[{\"kind\":\"SET_SCALAR_CLAIM\",\"field\":\"GOAL\",\"assertion_action\":\"CONFIRM\",\"value\":\"接受 RB-DISC-001 Discovery 交付，修订下一阶段实验设计；先以 C0 Spatial Spike 检验受约束 3D 空间和操作。\"},{\"kind\":\"SET_LIST_CLAIM\",\"field\":\"TECHNICAL_CONSTRAINTS\",\"assertion_action\":\"CONFIRM\",\"value\":[\"Discovery → Greybox → Visual 三门；Garage POC 只验证空间、表现、操作，不证明完整情感关系。\",\"Godot + Windows + 键盘作为当前 POC 环境，不锁定产品引擎。\",\"C 为第一条风险路线；先 C0 Spatial Spike，再决定 C1 Narrative Greybox，不一次批准报告的 30h。\",\"修改 OD-015：三路线须公平审查，只有明确体验假设的路线进入可玩实施。A 保持候选；B 暂不实施，先证明独立艺术/体验主张；C 先试不等于获胜。\",\"作者希望的剧情顺序与世界物理限制分开；合理的提前发动、检查其他部位等原则上允许，剧情通过世界反应收束，禁止隐藏 Quest 状态硬锁。\",\"4/5、3/5 等比例仅是诊断参考；不以家庭痕迹数量或辨认比例作为内容 KPI，不为通过指标加强提示；记录自然行为、复述与误解。\",\"C1 以人物戏可读性为核心：不用面捕/脸部特写，仅靠站位、身体动作、停顿、声音与有限镜头，检验母亲能否像一个人。\",\"任何启动限制须有真实物理原因；仅观察损伤不改变机械状态，禁止 damage_seen 之类叙事条件解锁发动。\",\"C1 局部人物戏可读性不等于完整家庭情感；后者需适当前置关系，不因此实施完整序章。\"]},{\"kind\":\"SET_LIST_CLAIM\",\"field\":\"IN_SCOPE\",\"assertion_action\":\"CONFIRM\",\"value\":[\"C0：灰盒车库、粗玛丽、胶囊人、门、相机、移动、检查位置、上下车/控制切换和低速驶出；一轮最小空间实验。\"]},{\"kind\":\"SET_LIST_CLAIM\",\"field\":\"OUT_OF_SCOPE\",\"assertion_action\":\"CONFIRM\",\"value\":[\"C0 不做正式对白、家庭物件、异常美术、母亲完整动画、正式资产、游戏基础设施。\",\"不批准 C1/Visual、B 实施、最终视觉路线、完整序章、装备/任务/赏金/世界状态等冻结系统。\",\"不批准原报告 30h/60h、固定人数/比例门槛；不复用报告专属 READY 授权代码。\"]},{\"kind\":\"SET_LIST_CLAIM\",\"field\":\"ACCEPTANCE\",\"assertion_action\":\"CONFIRM\",\"value\":[\"C0 验证固定/半固定镜头看车、人物接近尺度、绕车检查、人物/战车控制切换、门内低速驶出五个问题。\",\"真实输入和失败路径验证、独立空间操控试玩；记录卡住、误解和反例，不以比例或美术精度判成功。\",\"一轮空间实验后交 Owner 判断是否进入 C1；没有检验完整家庭情感或宣布 C 获胜。\"]}]}"
+          },
+          "basis": {
+            "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+            "observed_schema_version": 5,
+            "observed_design_revision": 9
+          },
+          "effects": {
+            "semantic_revision_changed": false,
+            "design_revision_before": 9,
+            "design_revision_after": 9
+          },
+          "audit_refs": [],
+          "warnings": []
+        },
+        "parsed": {
+          "objects": [
+            {
+              "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+              "payload": {
+                "kind": "DECISION",
+                "decision_id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+                "decision": {
+                  "question": "是否采用第二轮 Discovery 外审修订，保留交付并以 C0 空间实验进入下一阶段？",
+                  "alternatives": [
+                    {
+                      "key": "bounded_c0",
+                      "description": "采用七项修订与两条保护，接受 Discovery 交付，先 C0；后门独立裁决。"
+                    },
+                    {
+                      "key": "unchanged_report",
+                      "description": "直接执行原报告三路线成品、量化门槛与 C Greybox 30h。"
+                    }
+                  ],
+                  "selected_key": "bounded_c0",
+                  "reason": "Owner 在核对反馈并提出七项方向和两条保护后原话“认同”；来源 docs/governance/sources/2026-10-11-owner-discovery-review.md；修订 OD-015 及原方案执行语义，原基线不改写。",
+                  "related_constraint_refs": [
+                    {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                    }
+                  ],
+                  "tradeoffs": [
+                    "先验证空间，延后叙事和美术，不以一次车库 POC 证明完整家庭情感。",
+                    "方向授权不替代实际 DMCP 执行准入；没有批准完整三路线、30h、正式资产或视觉胜出。"
+                  ]
+                },
+                "contract_claims": [
+                  {
+                    "kind": "SET_SCALAR_CLAIM",
+                    "field": "GOAL",
+                    "assertion_action": "CONFIRM",
+                    "value": "接受 RB-DISC-001 Discovery 交付，修订下一阶段实验设计；先以 C0 Spatial Spike 检验受约束 3D 空间和操作。"
+                  },
+                  {
+                    "kind": "SET_LIST_CLAIM",
+                    "field": "TECHNICAL_CONSTRAINTS",
+                    "assertion_action": "CONFIRM",
+                    "value": [
+                      "Discovery → Greybox → Visual 三门；Garage POC 只验证空间、表现、操作，不证明完整情感关系。",
+                      "Godot + Windows + 键盘作为当前 POC 环境，不锁定产品引擎。",
+                      "C 为第一条风险路线；先 C0 Spatial Spike，再决定 C1 Narrative Greybox，不一次批准报告的 30h。",
+                      "修改 OD-015：三路线须公平审查，只有明确体验假设的路线进入可玩实施。A 保持候选；B 暂不实施，先证明独立艺术/体验主张；C 先试不等于获胜。",
+                      "作者希望的剧情顺序与世界物理限制分开；合理的提前发动、检查其他部位等原则上允许，剧情通过世界反应收束，禁止隐藏 Quest 状态硬锁。",
+                      "4/5、3/5 等比例仅是诊断参考；不以家庭痕迹数量或辨认比例作为内容 KPI，不为通过指标加强提示；记录自然行为、复述与误解。",
+                      "C1 以人物戏可读性为核心：不用面捕/脸部特写，仅靠站位、身体动作、停顿、声音与有限镜头，检验母亲能否像一个人。",
+                      "任何启动限制须有真实物理原因；仅观察损伤不改变机械状态，禁止 damage_seen 之类叙事条件解锁发动。",
+                      "C1 局部人物戏可读性不等于完整家庭情感；后者需适当前置关系，不因此实施完整序章。"
+                    ]
+                  },
+                  {
+                    "kind": "SET_LIST_CLAIM",
+                    "field": "IN_SCOPE",
+                    "assertion_action": "CONFIRM",
+                    "value": [
+                      "C0：灰盒车库、粗玛丽、胶囊人、门、相机、移动、检查位置、上下车/控制切换和低速驶出；一轮最小空间实验。"
+                    ]
+                  },
+                  {
+                    "kind": "SET_LIST_CLAIM",
+                    "field": "OUT_OF_SCOPE",
+                    "assertion_action": "CONFIRM",
+                    "value": [
+                      "C0 不做正式对白、家庭物件、异常美术、母亲完整动画、正式资产、游戏基础设施。",
+                      "不批准 C1/Visual、B 实施、最终视觉路线、完整序章、装备/任务/赏金/世界状态等冻结系统。",
+                      "不批准原报告 30h/60h、固定人数/比例门槛；不复用报告专属 READY 授权代码。"
+                    ]
+                  },
+                  {
+                    "kind": "SET_LIST_CLAIM",
+                    "field": "ACCEPTANCE",
+                    "assertion_action": "CONFIRM",
+                    "value": [
+                      "C0 验证固定/半固定镜头看车、人物接近尺度、绕车检查、人物/战车控制切换、门内低速驶出五个问题。",
+                      "真实输入和失败路径验证、独立空间操控试玩；记录卡住、误解和反例，不以比例或美术精度判成功。",
+                      "一轮空间实验后交 Owner 判断是否进入 C1；没有检验完整家庭情感或宣布 C 获胜。"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "parseErrors": [],
+          "truncated": false
+        }
+      },
+      {
+        "requested": {
+          "kind": "PLAN",
+          "id": "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2"
+        },
+        "response": {
+          "contract": {
+            "contract_id": "dmcp.design_get",
+            "contract_version": 1
+          },
+          "payload_kind": "RESULT",
+          "workspace_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+          },
+          "result": {
+            "primary_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+            "result_refs": [
+              "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2"
+            ],
+            "summary": "observed 1 requested object(s); content PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2: {\"kind\":\"PLAN\",\"plan_id\":\"PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2\",\"plan_proposal\":{\"target\":{\"target_stage\":\"PROTOTYPE\",\"scope_ref\":{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\"},\"value_goal_ref\":{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\"}},\"value_anchor\":{\"state\":\"NO_VALUE_SLICE_YET\",\"reason_type\":\"VIABILITY_DISCOVERY_UNRESOLVED\",\"reason_refs\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\"}]},\"work_items\":[{\"local_key\":\"c0-spatial-spike\",\"kind\":\"RISK_SPIKE\",\"resolves_or_informs\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\"}],\"question\":\"受约束 3D 镜头、尺度、绕车检查、控制切换、低速驶出是否舒服且成立？\",\"bounded_scope\":\"仅 C0 灰盒车库/车/胶囊人/门/相机及最小移动、检查位置、上下车与驾驶；没有剧情/美术。\",\"effort_boundary\":\"一轮最小空间实验：先完成五个问题的可试入口，只对所见空间问题做一次有限调整；持续失败即停止并提交反例，不扩展 C1；无30h总包。\",\"expected_evidence\":[\"实际入口、输入说明、版本及灰盒占位说明\",\"五项空间/操作问题的真实输入录像、错误路径及反例\",\"独立操控试玩原话和实际工量，未验证项与后门待裁\"],\"exit_condition\":\"交五项空间问题的可审证据或准确失败结论；Owner 决定是否继续 C1。\",\"consumers\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\"}]}],\"relations\":[],\"basis\":{\"design_basis_fingerprint\":\"4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8\",\"planning_policy_version\":\"rust-road-song-c0-spatial-v0.1\",\"repository_basis_refs\":[\"ws-217bac29-7a08-437c-be5f-472693bf16ca\"]}}}"
+          },
+          "basis": {
+            "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+            "observed_schema_version": 5,
+            "observed_design_revision": 9
+          },
+          "effects": {
+            "semantic_revision_changed": false,
+            "design_revision_before": 9,
+            "design_revision_after": 9
+          },
+          "audit_refs": [],
+          "warnings": []
+        },
+        "parsed": {
+          "objects": [
+            {
+              "id": "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+              "payload": {
+                "kind": "PLAN",
+                "plan_id": "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+                "plan_proposal": {
+                  "target": {
+                    "target_stage": "PROTOTYPE",
+                    "scope_ref": {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                    },
+                    "value_goal_ref": {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                    }
+                  },
+                  "value_anchor": {
+                    "state": "NO_VALUE_SLICE_YET",
+                    "reason_type": "VIABILITY_DISCOVERY_UNRESOLVED",
+                    "reason_refs": [
+                      {
+                        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                        "kind": "DECISION",
+                        "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                      }
+                    ]
+                  },
+                  "work_items": [
+                    {
+                      "local_key": "c0-spatial-spike",
+                      "kind": "RISK_SPIKE",
+                      "resolves_or_informs": [
+                        {
+                          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                          "kind": "DECISION",
+                          "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                        }
+                      ],
+                      "question": "受约束 3D 镜头、尺度、绕车检查、控制切换、低速驶出是否舒服且成立？",
+                      "bounded_scope": "仅 C0 灰盒车库/车/胶囊人/门/相机及最小移动、检查位置、上下车与驾驶；没有剧情/美术。",
+                      "effort_boundary": "一轮最小空间实验：先完成五个问题的可试入口，只对所见空间问题做一次有限调整；持续失败即停止并提交反例，不扩展 C1；无30h总包。",
+                      "expected_evidence": [
+                        "实际入口、输入说明、版本及灰盒占位说明",
+                        "五项空间/操作问题的真实输入录像、错误路径及反例",
+                        "独立操控试玩原话和实际工量，未验证项与后门待裁"
+                      ],
+                      "exit_condition": "交五项空间问题的可审证据或准确失败结论；Owner 决定是否继续 C1。",
+                      "consumers": [
+                        {
+                          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                          "kind": "DECISION",
+                          "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                        }
+                      ]
+                    }
+                  ],
+                  "relations": [],
+                  "basis": {
+                    "design_basis_fingerprint": "4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8",
+                    "planning_policy_version": "rust-road-song-c0-spatial-v0.1",
+                    "repository_basis_refs": [
+                      "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "parseErrors": [],
+          "truncated": false
+        }
+      },
+      {
+        "requested": {
+          "kind": "TASK",
+          "id": "TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2"
+        },
+        "response": {
+          "contract": {
+            "contract_id": "dmcp.design_get",
+            "contract_version": 1
+          },
+          "payload_kind": "RESULT",
+          "workspace_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+          },
+          "result": {
+            "primary_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2",
+            "result_refs": [
+              "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2"
+            ],
+            "summary": "observed 1 requested object(s); content TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2: {\"kind\":\"TASK\",\"task_id\":\"TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2\",\"task_proposal\":{\"goal\":\"RB-C0-001：玛丽首见 C0 Spatial Spike\",\"why\":\"先检验 C 的空间与交互风险，避免在镜头和控制成立之前投入叙事/美术。\",\"scope_ref\":{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\"},\"relevant_decision_refs\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\"},{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\"}],\"required_capabilities\":[\"REPOSITORY_READ\",\"REPOSITORY_WRITE\",\"PROCESS_EXEC\"],\"acceptance_criterion_refs\":[{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"kind\":\"DECISION\",\"id\":\"DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\",\"facet\":\"contract_claims.ACCEPTANCE\"}],\"expected_output\":\"一份最小可玩空间灰盒与五项问题证据/反例；不得声称情感、视觉胜出或 C1 获准。\",\"relevant_paths\":[\"pocs/stylized_3d/c0/project.godot\",\"pocs/stylized_3d/c0/garage.tscn\",\"pocs/stylized_3d/c0/garage.gd\",\"pocs/stylized_3d/c0/spatial_smoke.gd\",\"pocs/stylized_3d/c0/README.md\",\"docs/tasks/RB-C0-001.md\",\"docs/pocs/RB-C0-001_REPORT.md\"],\"forbidden_changes\":[\"Legacy 代码/正式美术/对白/家庭物件/异常美术/母亲动画\",\"新增完整系统、存档框架、EventBus、任务状态\",\"C1、Visual、B 实施、最终引擎或视觉锁定\",\"改文档 Discovery 政策或复用其报告 READY\"],\"repository_basis_refs\":[\"ws-217bac29-7a08-437c-be5f-472693bf16ca\"]},\"parent_ref\":\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2\"}"
+          },
+          "basis": {
+            "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+            "observed_schema_version": 5,
+            "observed_design_revision": 9
+          },
+          "effects": {
+            "semantic_revision_changed": false,
+            "design_revision_before": 9,
+            "design_revision_after": 9
+          },
+          "audit_refs": [],
+          "warnings": []
+        },
+        "parsed": {
+          "objects": [
+            {
+              "id": "TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2",
+              "payload": {
+                "kind": "TASK",
+                "task_id": "TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2",
+                "task_proposal": {
+                  "goal": "RB-C0-001：玛丽首见 C0 Spatial Spike",
+                  "why": "先检验 C 的空间与交互风险，避免在镜头和控制成立之前投入叙事/美术。",
+                  "scope_ref": {
+                    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                    "kind": "DECISION",
+                    "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                  },
+                  "relevant_decision_refs": [
+                    {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                    },
+                    {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                    }
+                  ],
+                  "required_capabilities": [
+                    "REPOSITORY_READ",
+                    "REPOSITORY_WRITE",
+                    "PROCESS_EXEC"
+                  ],
+                  "acceptance_criterion_refs": [
+                    {
+                      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                      "kind": "DECISION",
+                      "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+                      "facet": "contract_claims.ACCEPTANCE"
+                    }
+                  ],
+                  "expected_output": "一份最小可玩空间灰盒与五项问题证据/反例；不得声称情感、视觉胜出或 C1 获准。",
+                  "relevant_paths": [
+                    "pocs/stylized_3d/c0/project.godot",
+                    "pocs/stylized_3d/c0/garage.tscn",
+                    "pocs/stylized_3d/c0/garage.gd",
+                    "pocs/stylized_3d/c0/spatial_smoke.gd",
+                    "pocs/stylized_3d/c0/README.md",
+                    "docs/tasks/RB-C0-001.md",
+                    "docs/pocs/RB-C0-001_REPORT.md"
+                  ],
+                  "forbidden_changes": [
+                    "Legacy 代码/正式美术/对白/家庭物件/异常美术/母亲动画",
+                    "新增完整系统、存档框架、EventBus、任务状态",
+                    "C1、Visual、B 实施、最终引擎或视觉锁定",
+                    "改文档 Discovery 政策或复用其报告 READY"
+                  ],
+                  "repository_basis_refs": [
+                    "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+                  ]
+                },
+                "parent_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2"
+              }
+            }
+          ],
+          "parseErrors": [],
+          "truncated": false
+        }
+      }
+    ],
+    "findings": {
+      "contract": {
+        "contract_id": "dmcp.finding_list",
+        "contract_version": 1
+      },
+      "payload_kind": "RESULT",
+      "workspace_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      },
+      "result": {
+        "result_refs": [],
+        "summary": "observed 0 finding(s)"
+      },
+      "basis": {
+        "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+        "observed_schema_version": 5,
+        "observed_design_revision": 9
+      },
+      "effects": {
+        "semantic_revision_changed": false,
+        "design_revision_before": 9,
+        "design_revision_after": 9
+      },
+      "audit_refs": [],
+      "warnings": []
+    },
+    "statusAfter": {
+      "contract": {
+        "contract_id": "dmcp.design_status",
+        "contract_version": 1
+      },
+      "payload_kind": "RESULT",
+      "workspace_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      },
+      "result": {
+        "primary_ref": "WORKSPACE_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca",
+        "result_refs": [
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2"
+        ],
+        "effective_state": "READY",
+        "domain_verdict": "READY",
+        "summary": "observed 6 object(s); structure consistent"
+      },
+      "basis": {
+        "observed_canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+        "observed_schema_version": 5,
+        "observed_design_revision": 9
+      },
+      "effects": {
+        "semantic_revision_changed": false,
+        "design_revision_before": 9,
+        "design_revision_after": 9
+      },
+      "audit_refs": [],
+      "warnings": []
+    }
+  },
+  "canonical": {
+    "source": "host supplement: engine verified canonical read faces via states.resolveWorkspace",
+    "designId": "DES-40858878-d622-4817-9760-cc6ce8c28526",
+    "objects": [
+      {
+        "ref": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+        "object_revision": 2,
+        "payload": {
+          "kind": "DECISION",
+          "decision_id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+          "decision": {
+            "question": "《锈路长歌》是否终止旧路线并以独立 Reboot 项目和 DMCP 工作流从玛丽首见验证重新开始？",
+            "alternatives": [
+              {
+                "key": "legacy_reboot_split",
+                "description": "冻结 Legacy，新 Git/DMCP 身份；先确立设计与剧情权威，再审计与三视觉路线最小方案，Owner 审查后实施。"
+              },
+              {
+                "key": "continue_legacy",
+                "description": "继续旧仓库以新增序章、改渲染或完善 176..179 作为新方向。"
+              }
+            ],
+            "selected_key": "legacy_reboot_split",
+            "reason": "Owner 本轮明确要求本地新建、DMCP 标准，并提供 Legacy/Reboot 分离与先写核心文档的方案；来源 docs/governance/sources/2026-10-10-owner-reset.md；逐项转录见 docs/00_OWNER_DECISIONS.md OD-001..022。",
+            "tradeoffs": [
+              "不复用旧历史与完整系统，承担重新证明体验价值的成本。",
+              "视觉胜出、完整序章和 POC 编码尚未批准；候选与未知保持未决。"
+            ]
+          },
+          "contract_claims": [
+            {
+              "kind": "SET_SCALAR_CLAIM",
+              "field": "GOAL",
+              "assertion_action": "CONFIRM",
+              "value": "保留世界观种子与部分技术经验，重新决定《锈路长歌》是什么游戏；首先验证玛丽第一次出现。"
+            },
+            {
+              "kind": "SET_SCALAR_CLAIM",
+              "field": "CORE_VALUE",
+              "assertion_action": "CONFIRM",
+              "value": "这是我的旅程；这件东西我以后不会忘记。围绕离开、道路、家庭、战争、衰败、旧机器和继续前进。"
+            },
+            {
+              "kind": "SET_LIST_CLAIM",
+              "field": "TECHNICAL_CONSTRAINTS",
+              "assertion_action": "CONFIRM",
+              "value": [
+                "权威：Owner Decision → Product Thesis/Story Bible → 当前剧情 → 当前POC → 技术实现 → Legacy最低。",
+                "人物处境 → 玩家欲望 → 行为 → 必要机制 → 页面/数据/代码；所有功能开工前五项需求说明。",
+                "全部已决方向详见 docs/00_OWNER_DECISIONS.md；来源 docs/governance/sources/2026-10-10-owner-reset.md；不把 Agent 参数提案和候选写成已决。",
+                "OD-001：Legacy / Reboot 分离，新 canonical 仓库叫 rust-road-song：新 Git、新 DMCP 身份；旧历史不得导入成为新历史",
+                "OD-002：旧项目冻结为 Legacy；保留代码、测试、资料及历史：停止 176/177/178/179 和其余旧路线；冻结不等于完成旧验收",
+                "OD-003：保留世界观种子与经验，重新决定游戏是什么：不解释为加序章、换 3D 或局部重构",
+                "OD-004：人物处境先于欲望、行为、机制、页面与代码：每项功能必须证明当下体验需求；复杂度本身无价值",
+                "OD-005：主题是离开、道路、家庭、战争、衰败、旧机器和继续前进：公路 RPG 的产品主张；完整 RPG 系统未获批准",
+                "OD-006：吸收《重装机兵》的自发目标与《去月球》的克制故事精神：荒野不是任务清单；重要物件随着推进获得新意义",
+                "OD-007：持续约一年的平叛战争与加速异常衰败：父亲被征召；母子留在原家；人口迁徙；因果与阵营真相未定",
+                "OD-008：母亲留下是为了让父亲回来时仍有家：不塑造成愚蠢等待；最终由母亲自己决定离开",
+                "OD-009：父亲最后一封信报告恶化、要求立即离开、带上玛丽：保留熟悉语气“玛丽大展身手的时代到了”；不由此确认父亲死亡",
+                "OD-010：玛丽是人物级的重要对象，先感到旧，再谈别的意义：老旧家用战车、父亲多次自修改装、家庭痕迹；不是天选神器",
+                "OD-011：父亲走前的明确损伤一年后有不可能变化：私人谜团“玛丽这一年发生了什么”；不得立即解释",
+                "OD-012：序章暂名《离家》，生活在快无法存在的家并亲自离开：16 个叙事节拍只作为整体方向，当前不一次开发 S00–S15",
+                "OD-013：默认可操作剧情，普通说话保留移动/观察/有限交互：只有重要决定、重要物件首次出现、不可逆事件允许极短演出",
+                "OD-014：过去通过旧物、照片、修补、房间、机械、广播、动作、使用痕迹表达：禁止 NPC 长篇解释；对话必须服务人物意图、回避/隐瞒、关系、性格或理解变化",
+                "OD-015：三种视觉方向必须比较，当前无胜出方案：Pixel 2D / Hybrid 2.5D / Stylized 3D，同一可玩片段，静态截图不能决定",
+                "OD-016：若使用 3D，优先验证风格化资产与受约束固定/半固定镜头：不默认写实人物、真人比例、复杂面捕、大开放世界、360°镜头、AAA 精度",
+                "OD-017：AI 是生产工具，不是艺术指导：统一比例/造型/材质/配色/年代/磨损/腐败/技术规格审核后才可正式使用",
+                "OD-018：默认不复用 Legacy，必要时重新申请：“已有、测全、省代码、以后用得上”均不足以准入",
+                "OD-019：当前唯一首要里程碑是玛丽第一次出现 POC：极少对象与台词，基础移动/镜头/检查/启动/驶出；不建设完整游戏底座",
+                "OD-020：首张执行工单只审计设计惯性并比较最小技术方案：不写游戏代码；提交选择建议、目录、资产、指标后等待 Owner 审查",
+                "OD-021：每项新功能开工前必须有五项需求说明：PLAYER NEED / NARRATIVE或GAMEPLAY CONTEXT / MINIMUM IMPLEMENTATION / WHY NOT LESS / LEGACY DEPENDENCY",
+                "OD-022：本次建库与后续开发依据 DMCP 标准及工作流：原话、正式对象、依据、回执、未决与交接可追溯；不伪造准入"
+              ]
+            },
+            {
+              "kind": "SET_LIST_CLAIM",
+              "field": "OUT_OF_SCOPE",
+              "assertion_action": "CONFIRM",
+              "value": [
+                "完整装备、多车、零件商店、赏金、技能树、派系、经济、职业、大地图、完整战斗。",
+                "继续 Legacy 176/177/178/179；自动复制 QuestService/WorldService/BountyDirector/存档/输入/本地化/测试框架。",
+                "先建完整基础设施；在 Owner 审查前实施 POC；把静态截图作为视觉路线胜出证据。"
+              ]
+            },
+            {
+              "kind": "SET_LIST_CLAIM",
+              "field": "ACCEPTANCE",
+              "assertion_action": "CONFIRM",
+              "value": [
+                "当前工作仅建立独立 Git/DMCP 与核心文档；准确读回正式依据、回执与未决项。",
+                "首张 RB-DISC-001：只读审计旧设计惯性，比较 Pixel2D/Hybrid2.5D/Stylized3D 同片段最小方案，交目录、资产、验证指标，Owner 审查前不编码。",
+                "玛丽首见 POC 必须可玩地覆盖进入/看见/接近检查/发现异常/发动/驶出；静态截图不能判视觉胜出。",
+                "每功能开工前提供 PLAYER NEED、NARRATIVE/GAMEPLAY CONTEXT、MINIMUM IMPLEMENTATION、WHY NOT LESS、LEGACY DEPENDENCY。"
+              ]
+            },
+            {
+              "kind": "SET_ASSUMPTIONS",
+              "field": "ASSUMPTIONS",
+              "assertion_action": "ASSUME",
+              "value": [
+                "暗红锈蚀/新生金属组织是候选表现，不是异常真相。",
+                "车载收音机残缺旧歌是候选母题，无正式音频资产。",
+                "Godot 4.7.1 可作为技术评估候选；视觉路线、预算、试玩门槛仍待审。"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "ref": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+        "object_revision": 1,
+        "payload": {
+          "kind": "PLAN",
+          "plan_id": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+          "plan_proposal": {
+            "target": {
+              "scope_ref": {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+              },
+              "target_stage": "DISCOVERY",
+              "value_goal_ref": {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+              }
+            },
+            "value_anchor": {
+              "state": "NO_VALUE_SLICE_YET",
+              "reason_type": "VIABILITY_DISCOVERY_UNRESOLVED",
+              "reason_refs": [
+                {
+                  "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                  "kind": "DECISION",
+                  "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                }
+              ]
+            },
+            "work_items": [
+              {
+                "local_key": "mary-first-appearance-feasibility",
+                "kind": "RISK_SPIKE",
+                "resolves_or_informs": [
+                  {
+                    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                    "kind": "DECISION",
+                    "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                  }
+                ],
+                "question": "哪些旧设计会污染新方向，三条视觉路线怎样以最小成本验证同一家庭战车首见体验？",
+                "bounded_scope": "只审计和设计方案；六步车库片段；不写游戏代码、不迁模块。",
+                "effort_boundary": "交一份报告和三方案比较，停止于 Owner 审查；预算是报告待审提案。",
+                "expected_evidence": [
+                  "Legacy 实际提交/路径与惯性证据",
+                  "三路线的最小场景/输入/镜头/资产/成本",
+                  "真实输入与人工试玩指标、失败路径及未覆盖面",
+                  "完整五项需求说明与待裁问题"
+                ],
+                "exit_condition": "报告对等比较同六步体验且无禁用系统，提交 Owner 审查；不自动开 POC。",
+                "consumers": [
+                  {
+                    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                    "kind": "DECISION",
+                    "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                  }
+                ]
+              }
+            ],
+            "relations": [],
+            "basis": {
+              "design_basis_fingerprint": "54d24dab16baa42bb3a4b570b4f6465aab31bf6f1ffb391534570f5764573bcc",
+              "repository_basis_refs": [
+                "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+              ],
+              "planning_policy_version": "rust-road-song-reboot-discovery-v0.1"
+            }
+          }
+        }
+      },
+      {
+        "ref": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+        "object_revision": 1,
+        "payload": {
+          "kind": "TASK",
+          "task_id": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+          "task_proposal": {
+            "goal": "RB-DISC-001：反旧设计污染审计与玛丽首见三路线最小技术方案",
+            "why": "阻止新设计被重新解释为旧游戏加序章或换3D；先证明当下玩家体验的最小需要。",
+            "scope_ref": {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+            },
+            "relevant_decision_refs": [
+              {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+              }
+            ],
+            "required_capabilities": [
+              "REPOSITORY_READ",
+              "REPOSITORY_WRITE",
+              "PROCESS_EXEC"
+            ],
+            "acceptance_criterion_refs": [
+              {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+                "facet": "contract_claims.ACCEPTANCE"
+              }
+            ],
+            "repository_basis_refs": [
+              "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+            ],
+            "relevant_paths": [
+              "docs/tasks/RB-DISC-001.md",
+              "docs/00_OWNER_DECISIONS.md",
+              "docs/01_PRODUCT_THESIS.md",
+              "docs/02_STORY_BIBLE.md",
+              "docs/06_VISUAL_POC_PLAN.md",
+              "docs/07_LEGACY_REUSE_POLICY.md",
+              "docs/discovery/RB-DISC-001_REPORT.md"
+            ],
+            "forbidden_changes": [
+              "任何游戏代码/Godot工程/正式资产",
+              "搬运 Legacy 游戏模块/测试/插件",
+              "擅选视觉胜出路线",
+              "赏金/装备/世界状态/营地/经济/完整架构"
+            ],
+            "expected_output": "一份中文报告，含实际 Legacy 惯性审计、三方案最小技术比较、目录/资产/验证指标/预算与未决；交付后等 Owner 审查。"
+          },
+          "parent_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7"
+        }
+      },
+      {
+        "ref": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+        "object_revision": 2,
+        "payload": {
+          "kind": "DECISION",
+          "decision_id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+          "decision": {
+            "question": "是否采用第二轮 Discovery 外审修订，保留交付并以 C0 空间实验进入下一阶段？",
+            "alternatives": [
+              {
+                "key": "bounded_c0",
+                "description": "采用七项修订与两条保护，接受 Discovery 交付，先 C0；后门独立裁决。"
+              },
+              {
+                "key": "unchanged_report",
+                "description": "直接执行原报告三路线成品、量化门槛与 C Greybox 30h。"
+              }
+            ],
+            "selected_key": "bounded_c0",
+            "reason": "Owner 在核对反馈并提出七项方向和两条保护后原话“认同”；来源 docs/governance/sources/2026-10-11-owner-discovery-review.md；修订 OD-015 及原方案执行语义，原基线不改写。",
+            "related_constraint_refs": [
+              {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+              }
+            ],
+            "tradeoffs": [
+              "先验证空间，延后叙事和美术，不以一次车库 POC 证明完整家庭情感。",
+              "方向授权不替代实际 DMCP 执行准入；没有批准完整三路线、30h、正式资产或视觉胜出。"
+            ]
+          },
+          "contract_claims": [
+            {
+              "kind": "SET_SCALAR_CLAIM",
+              "field": "GOAL",
+              "assertion_action": "CONFIRM",
+              "value": "接受 RB-DISC-001 Discovery 交付，修订下一阶段实验设计；先以 C0 Spatial Spike 检验受约束 3D 空间和操作。"
+            },
+            {
+              "kind": "SET_LIST_CLAIM",
+              "field": "TECHNICAL_CONSTRAINTS",
+              "assertion_action": "CONFIRM",
+              "value": [
+                "Discovery → Greybox → Visual 三门；Garage POC 只验证空间、表现、操作，不证明完整情感关系。",
+                "Godot + Windows + 键盘作为当前 POC 环境，不锁定产品引擎。",
+                "C 为第一条风险路线；先 C0 Spatial Spike，再决定 C1 Narrative Greybox，不一次批准报告的 30h。",
+                "修改 OD-015：三路线须公平审查，只有明确体验假设的路线进入可玩实施。A 保持候选；B 暂不实施，先证明独立艺术/体验主张；C 先试不等于获胜。",
+                "作者希望的剧情顺序与世界物理限制分开；合理的提前发动、检查其他部位等原则上允许，剧情通过世界反应收束，禁止隐藏 Quest 状态硬锁。",
+                "4/5、3/5 等比例仅是诊断参考；不以家庭痕迹数量或辨认比例作为内容 KPI，不为通过指标加强提示；记录自然行为、复述与误解。",
+                "C1 以人物戏可读性为核心：不用面捕/脸部特写，仅靠站位、身体动作、停顿、声音与有限镜头，检验母亲能否像一个人。",
+                "任何启动限制须有真实物理原因；仅观察损伤不改变机械状态，禁止 damage_seen 之类叙事条件解锁发动。",
+                "C1 局部人物戏可读性不等于完整家庭情感；后者需适当前置关系，不因此实施完整序章。"
+              ]
+            },
+            {
+              "kind": "SET_LIST_CLAIM",
+              "field": "IN_SCOPE",
+              "assertion_action": "CONFIRM",
+              "value": [
+                "C0：灰盒车库、粗玛丽、胶囊人、门、相机、移动、检查位置、上下车/控制切换和低速驶出；一轮最小空间实验。"
+              ]
+            },
+            {
+              "kind": "SET_LIST_CLAIM",
+              "field": "OUT_OF_SCOPE",
+              "assertion_action": "CONFIRM",
+              "value": [
+                "C0 不做正式对白、家庭物件、异常美术、母亲完整动画、正式资产、游戏基础设施。",
+                "不批准 C1/Visual、B 实施、最终视觉路线、完整序章、装备/任务/赏金/世界状态等冻结系统。",
+                "不批准原报告 30h/60h、固定人数/比例门槛；不复用报告专属 READY 授权代码。"
+              ]
+            },
+            {
+              "kind": "SET_LIST_CLAIM",
+              "field": "ACCEPTANCE",
+              "assertion_action": "CONFIRM",
+              "value": [
+                "C0 验证固定/半固定镜头看车、人物接近尺度、绕车检查、人物/战车控制切换、门内低速驶出五个问题。",
+                "真实输入和失败路径验证、独立空间操控试玩；记录卡住、误解和反例，不以比例或美术精度判成功。",
+                "一轮空间实验后交 Owner 判断是否进入 C1；没有检验完整家庭情感或宣布 C 获胜。"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "ref": "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+        "object_revision": 1,
+        "payload": {
+          "kind": "PLAN",
+          "plan_id": "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+          "plan_proposal": {
+            "target": {
+              "target_stage": "PROTOTYPE",
+              "scope_ref": {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+              },
+              "value_goal_ref": {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+              }
+            },
+            "value_anchor": {
+              "state": "NO_VALUE_SLICE_YET",
+              "reason_type": "VIABILITY_DISCOVERY_UNRESOLVED",
+              "reason_refs": [
+                {
+                  "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                  "kind": "DECISION",
+                  "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                }
+              ]
+            },
+            "work_items": [
+              {
+                "local_key": "c0-spatial-spike",
+                "kind": "RISK_SPIKE",
+                "resolves_or_informs": [
+                  {
+                    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                    "kind": "DECISION",
+                    "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                  }
+                ],
+                "question": "受约束 3D 镜头、尺度、绕车检查、控制切换、低速驶出是否舒服且成立？",
+                "bounded_scope": "仅 C0 灰盒车库/车/胶囊人/门/相机及最小移动、检查位置、上下车与驾驶；没有剧情/美术。",
+                "effort_boundary": "一轮最小空间实验：先完成五个问题的可试入口，只对所见空间问题做一次有限调整；持续失败即停止并提交反例，不扩展 C1；无30h总包。",
+                "expected_evidence": [
+                  "实际入口、输入说明、版本及灰盒占位说明",
+                  "五项空间/操作问题的真实输入录像、错误路径及反例",
+                  "独立操控试玩原话和实际工量，未验证项与后门待裁"
+                ],
+                "exit_condition": "交五项空间问题的可审证据或准确失败结论；Owner 决定是否继续 C1。",
+                "consumers": [
+                  {
+                    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                    "kind": "DECISION",
+                    "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+                  }
+                ]
+              }
+            ],
+            "relations": [],
+            "basis": {
+              "design_basis_fingerprint": "4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8",
+              "planning_policy_version": "rust-road-song-c0-spatial-v0.1",
+              "repository_basis_refs": [
+                "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+              ]
+            }
+          }
+        }
+      },
+      {
+        "ref": "TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2",
+        "object_revision": 1,
+        "payload": {
+          "kind": "TASK",
+          "task_id": "TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2",
+          "task_proposal": {
+            "goal": "RB-C0-001：玛丽首见 C0 Spatial Spike",
+            "why": "先检验 C 的空间与交互风险，避免在镜头和控制成立之前投入叙事/美术。",
+            "scope_ref": {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+            },
+            "relevant_decision_refs": [
+              {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+              },
+              {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+              }
+            ],
+            "required_capabilities": [
+              "REPOSITORY_READ",
+              "REPOSITORY_WRITE",
+              "PROCESS_EXEC"
+            ],
+            "acceptance_criterion_refs": [
+              {
+                "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                "kind": "DECISION",
+                "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+                "facet": "contract_claims.ACCEPTANCE"
+              }
+            ],
+            "expected_output": "一份最小可玩空间灰盒与五项问题证据/反例；不得声称情感、视觉胜出或 C1 获准。",
+            "relevant_paths": [
+              "pocs/stylized_3d/c0/project.godot",
+              "pocs/stylized_3d/c0/garage.tscn",
+              "pocs/stylized_3d/c0/garage.gd",
+              "pocs/stylized_3d/c0/spatial_smoke.gd",
+              "pocs/stylized_3d/c0/README.md",
+              "docs/tasks/RB-C0-001.md",
+              "docs/pocs/RB-C0-001_REPORT.md"
+            ],
+            "forbidden_changes": [
+              "Legacy 代码/正式美术/对白/家庭物件/异常美术/母亲动画",
+              "新增完整系统、存档框架、EventBus、任务状态",
+              "C1、Visual、B 实施、最终引擎或视觉锁定",
+              "改文档 Discovery 政策或复用其报告 READY"
+            ],
+            "repository_basis_refs": [
+              "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+            ]
+          },
+          "parent_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2"
+        }
+      }
+    ]
+  },
+  "runtimeAttestations": {
+    "source": "host supplement: localPlanes.mutations.listAttestations (read only)",
+    "canonical": false,
+    "records": [
+      {
+        "attestation_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-273c2b0c-9434-46bb-b118-c8030b7941cf.2",
+        "tool": "design_readiness",
+        "record": {
+          "kind": "READINESS_ASSESSMENT",
+          "assessment_id": "RDY-OPI-273c2b0c-9434-46bb-b118-c8030b7941cf.2",
+          "request": {
+            "request_id": "GRQ-OPI-273c2b0c-9434-46bb-b118-c8030b7941cf.2",
+            "scope": {
+              "kind": "DECISION",
+              "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+            },
+            "target_stage": "DISCOVERY",
+            "intended_action": {
+              "kind": "ASSESS_DESIGN_READINESS"
+            },
+            "capability_profile": [
+              "REPOSITORY_READ",
+              "REPOSITORY_WRITE",
+              "PROCESS_EXEC"
+            ]
+          },
+          "policy": {
+            "policy_id": "DMCP-DOCUMENT-DISCOVERY",
+            "version": 3
+          },
+          "policy_snapshot": {
+            "available_policies": [
+              {
+                "policy_id": "DMCP-DOCUMENT-DISCOVERY",
+                "versions": [
+                  3
+                ]
+              }
+            ],
+            "requirements": [
+              {
+                "requirement_key": "DOC-DISCOVERY-AUTHORITY",
+                "source": {
+                  "type": "POLICY",
+                  "ref": "DMCP-DOCUMENT-DISCOVERY#3"
+                },
+                "resolver": "AUTHORITY_RESOLVER",
+                "parameters": {
+                  "fact_ref": "DOC-DISCOVERY-AUTHORITY",
+                  "document_discovery_version": 1
+                },
+                "enforcement": {
+                  "mode": "BLOCKING"
+                },
+                "exception_policy": {
+                  "mode": "NON_WAIVABLE"
+                }
+              },
+              {
+                "requirement_key": "DOC-DISCOVERY-STRUCTURE",
+                "source": {
+                  "type": "POLICY",
+                  "ref": "DMCP-DOCUMENT-DISCOVERY#3"
+                },
+                "resolver": "AUTHORITY_RESOLVER",
+                "parameters": {
+                  "fact_ref": "DOC-DISCOVERY-STRUCTURE",
+                  "document_discovery_version": 1
+                },
+                "enforcement": {
+                  "mode": "BLOCKING"
+                },
+                "exception_policy": {
+                  "mode": "NON_WAIVABLE"
+                }
+              },
+              {
+                "requirement_key": "DOC-DISCOVERY-REQUEST",
+                "source": {
+                  "type": "POLICY",
+                  "ref": "DMCP-DOCUMENT-DISCOVERY#3"
+                },
+                "resolver": "AUTHORITY_RESOLVER",
+                "parameters": {
+                  "fact_ref": "DOC-DISCOVERY-REQUEST",
+                  "document_discovery_version": 1
+                },
+                "enforcement": {
+                  "mode": "BLOCKING"
+                },
+                "exception_policy": {
+                  "mode": "NON_WAIVABLE"
+                }
+              }
+            ]
+          },
+          "basis": {
+            "design_basis_fingerprint": "ab5cbe21bcd5a784ded290b21dbd922694ffb3148223fd66ea04b57661acf3e7",
+            "repository_basis_refs": [
+              "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+            ],
+            "readiness_basis_fingerprint": "f9ce2dbd8b7bd8e5ccdb890a2bf28e7fdfb6372dd2507e32fc6d36b5ae7dedb2",
+            "policy_version": 3
+          },
+          "fact_snapshot": {
+            "basis_fingerprint": "0d999bb2d8db2efcb63bb0dd75455bc9325c9784185e967b0b6067e5d5b5475c",
+            "facts": {
+              "DOC-DISCOVERY-AUTHORITY": {
+                "kind": "READINESS_FACT",
+                "fact_ref": "DOC-DISCOVERY-AUTHORITY",
+                "type": "DOCUMENT_DISCOVERY_FACT",
+                "attributes": {
+                  "state": "CURRENT",
+                  "evidence": {
+                    "contract": "DMCP-DOCUMENT-DISCOVERY-OWNER",
+                    "contract_version": 1,
+                    "decision_id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+                    "decision_revision": 2,
+                    "creation_operation": "OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+                    "contract_operation": "OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.5",
+                    "principals": [
+                      {
+                        "type": "ORGANIZATION_AUTHORITY",
+                        "id": "owner"
+                      },
+                      {
+                        "type": "ORGANIZATION_AUTHORITY",
+                        "id": "owner"
+                      }
+                    ]
+                  }
+                },
+                "basis_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+              },
+              "DOC-DISCOVERY-STRUCTURE": {
+                "kind": "READINESS_FACT",
+                "fact_ref": "DOC-DISCOVERY-STRUCTURE",
+                "type": "DOCUMENT_DISCOVERY_FACT",
+                "attributes": {
+                  "state": "CURRENT",
+                  "selection": {
+                    "version": 1,
+                    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                    "decision_id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+                    "plan_id": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+                    "task_id": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+                    "decision_revision": 2,
+                    "plan_revision": 1,
+                    "task_revision": 1,
+                    "source_decision_creation_operation": "OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+                    "source_contract_operation": "OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.5",
+                    "allowed_paths": [
+                      "docs/discovery/RB-DISC-001_REPORT.md"
+                    ]
+                  },
+                  "decision": {
+                    "kind": "DECISION",
+                    "decision_id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+                    "decision": {
+                      "question": "《锈路长歌》是否终止旧路线并以独立 Reboot 项目和 DMCP 工作流从玛丽首见验证重新开始？",
+                      "alternatives": [
+                        {
+                          "key": "legacy_reboot_split",
+                          "description": "冻结 Legacy，新 Git/DMCP 身份；先确立设计与剧情权威，再审计与三视觉路线最小方案，Owner 审查后实施。"
+                        },
+                        {
+                          "key": "continue_legacy",
+                          "description": "继续旧仓库以新增序章、改渲染或完善 176..179 作为新方向。"
+                        }
+                      ],
+                      "selected_key": "legacy_reboot_split",
+                      "reason": "Owner 本轮明确要求本地新建、DMCP 标准，并提供 Legacy/Reboot 分离与先写核心文档的方案；来源 docs/governance/sources/2026-10-10-owner-reset.md；逐项转录见 docs/00_OWNER_DECISIONS.md OD-001..022。",
+                      "tradeoffs": [
+                        "不复用旧历史与完整系统，承担重新证明体验价值的成本。",
+                        "视觉胜出、完整序章和 POC 编码尚未批准；候选与未知保持未决。"
+                      ]
+                    },
+                    "contract_claims": [
+                      {
+                        "kind": "SET_SCALAR_CLAIM",
+                        "field": "GOAL",
+                        "assertion_action": "CONFIRM",
+                        "value": "保留世界观种子与部分技术经验，重新决定《锈路长歌》是什么游戏；首先验证玛丽第一次出现。"
+                      },
+                      {
+                        "kind": "SET_SCALAR_CLAIM",
+                        "field": "CORE_VALUE",
+                        "assertion_action": "CONFIRM",
+                        "value": "这是我的旅程；这件东西我以后不会忘记。围绕离开、道路、家庭、战争、衰败、旧机器和继续前进。"
+                      },
+                      {
+                        "kind": "SET_LIST_CLAIM",
+                        "field": "TECHNICAL_CONSTRAINTS",
+                        "assertion_action": "CONFIRM",
+                        "value": [
+                          "权威：Owner Decision → Product Thesis/Story Bible → 当前剧情 → 当前POC → 技术实现 → Legacy最低。",
+                          "人物处境 → 玩家欲望 → 行为 → 必要机制 → 页面/数据/代码；所有功能开工前五项需求说明。",
+                          "全部已决方向详见 docs/00_OWNER_DECISIONS.md；来源 docs/governance/sources/2026-10-10-owner-reset.md；不把 Agent 参数提案和候选写成已决。",
+                          "OD-001：Legacy / Reboot 分离，新 canonical 仓库叫 rust-road-song：新 Git、新 DMCP 身份；旧历史不得导入成为新历史",
+                          "OD-002：旧项目冻结为 Legacy；保留代码、测试、资料及历史：停止 176/177/178/179 和其余旧路线；冻结不等于完成旧验收",
+                          "OD-003：保留世界观种子与经验，重新决定游戏是什么：不解释为加序章、换 3D 或局部重构",
+                          "OD-004：人物处境先于欲望、行为、机制、页面与代码：每项功能必须证明当下体验需求；复杂度本身无价值",
+                          "OD-005：主题是离开、道路、家庭、战争、衰败、旧机器和继续前进：公路 RPG 的产品主张；完整 RPG 系统未获批准",
+                          "OD-006：吸收《重装机兵》的自发目标与《去月球》的克制故事精神：荒野不是任务清单；重要物件随着推进获得新意义",
+                          "OD-007：持续约一年的平叛战争与加速异常衰败：父亲被征召；母子留在原家；人口迁徙；因果与阵营真相未定",
+                          "OD-008：母亲留下是为了让父亲回来时仍有家：不塑造成愚蠢等待；最终由母亲自己决定离开",
+                          "OD-009：父亲最后一封信报告恶化、要求立即离开、带上玛丽：保留熟悉语气“玛丽大展身手的时代到了”；不由此确认父亲死亡",
+                          "OD-010：玛丽是人物级的重要对象，先感到旧，再谈别的意义：老旧家用战车、父亲多次自修改装、家庭痕迹；不是天选神器",
+                          "OD-011：父亲走前的明确损伤一年后有不可能变化：私人谜团“玛丽这一年发生了什么”；不得立即解释",
+                          "OD-012：序章暂名《离家》，生活在快无法存在的家并亲自离开：16 个叙事节拍只作为整体方向，当前不一次开发 S00–S15",
+                          "OD-013：默认可操作剧情，普通说话保留移动/观察/有限交互：只有重要决定、重要物件首次出现、不可逆事件允许极短演出",
+                          "OD-014：过去通过旧物、照片、修补、房间、机械、广播、动作、使用痕迹表达：禁止 NPC 长篇解释；对话必须服务人物意图、回避/隐瞒、关系、性格或理解变化",
+                          "OD-015：三种视觉方向必须比较，当前无胜出方案：Pixel 2D / Hybrid 2.5D / Stylized 3D，同一可玩片段，静态截图不能决定",
+                          "OD-016：若使用 3D，优先验证风格化资产与受约束固定/半固定镜头：不默认写实人物、真人比例、复杂面捕、大开放世界、360°镜头、AAA 精度",
+                          "OD-017：AI 是生产工具，不是艺术指导：统一比例/造型/材质/配色/年代/磨损/腐败/技术规格审核后才可正式使用",
+                          "OD-018：默认不复用 Legacy，必要时重新申请：“已有、测全、省代码、以后用得上”均不足以准入",
+                          "OD-019：当前唯一首要里程碑是玛丽第一次出现 POC：极少对象与台词，基础移动/镜头/检查/启动/驶出；不建设完整游戏底座",
+                          "OD-020：首张执行工单只审计设计惯性并比较最小技术方案：不写游戏代码；提交选择建议、目录、资产、指标后等待 Owner 审查",
+                          "OD-021：每项新功能开工前必须有五项需求说明：PLAYER NEED / NARRATIVE或GAMEPLAY CONTEXT / MINIMUM IMPLEMENTATION / WHY NOT LESS / LEGACY DEPENDENCY",
+                          "OD-022：本次建库与后续开发依据 DMCP 标准及工作流：原话、正式对象、依据、回执、未决与交接可追溯；不伪造准入"
+                        ]
+                      },
+                      {
+                        "kind": "SET_LIST_CLAIM",
+                        "field": "OUT_OF_SCOPE",
+                        "assertion_action": "CONFIRM",
+                        "value": [
+                          "完整装备、多车、零件商店、赏金、技能树、派系、经济、职业、大地图、完整战斗。",
+                          "继续 Legacy 176/177/178/179；自动复制 QuestService/WorldService/BountyDirector/存档/输入/本地化/测试框架。",
+                          "先建完整基础设施；在 Owner 审查前实施 POC；把静态截图作为视觉路线胜出证据。"
+                        ]
+                      },
+                      {
+                        "kind": "SET_LIST_CLAIM",
+                        "field": "ACCEPTANCE",
+                        "assertion_action": "CONFIRM",
+                        "value": [
+                          "当前工作仅建立独立 Git/DMCP 与核心文档；准确读回正式依据、回执与未决项。",
+                          "首张 RB-DISC-001：只读审计旧设计惯性，比较 Pixel2D/Hybrid2.5D/Stylized3D 同片段最小方案，交目录、资产、验证指标，Owner 审查前不编码。",
+                          "玛丽首见 POC 必须可玩地覆盖进入/看见/接近检查/发现异常/发动/驶出；静态截图不能判视觉胜出。",
+                          "每功能开工前提供 PLAYER NEED、NARRATIVE/GAMEPLAY CONTEXT、MINIMUM IMPLEMENTATION、WHY NOT LESS、LEGACY DEPENDENCY。"
+                        ]
+                      },
+                      {
+                        "kind": "SET_ASSUMPTIONS",
+                        "field": "ASSUMPTIONS",
+                        "assertion_action": "ASSUME",
+                        "value": [
+                          "暗红锈蚀/新生金属组织是候选表现，不是异常真相。",
+                          "车载收音机残缺旧歌是候选母题，无正式音频资产。",
+                          "Godot 4.7.1 可作为技术评估候选；视觉路线、预算、试玩门槛仍待审。"
+                        ]
+                      }
+                    ]
+                  },
+                  "plan": {
+                    "kind": "PLAN",
+                    "plan_id": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+                    "plan_proposal": {
+                      "target": {
+                        "scope_ref": {
+                          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                          "kind": "DECISION",
+                          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                        },
+                        "target_stage": "DISCOVERY",
+                        "value_goal_ref": {
+                          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                          "kind": "DECISION",
+                          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                        }
+                      },
+                      "value_anchor": {
+                        "state": "NO_VALUE_SLICE_YET",
+                        "reason_type": "VIABILITY_DISCOVERY_UNRESOLVED",
+                        "reason_refs": [
+                          {
+                            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                            "kind": "DECISION",
+                            "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                          }
+                        ]
+                      },
+                      "work_items": [
+                        {
+                          "local_key": "mary-first-appearance-feasibility",
+                          "kind": "RISK_SPIKE",
+                          "resolves_or_informs": [
+                            {
+                              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                              "kind": "DECISION",
+                              "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                            }
+                          ],
+                          "question": "哪些旧设计会污染新方向，三条视觉路线怎样以最小成本验证同一家庭战车首见体验？",
+                          "bounded_scope": "只审计和设计方案；六步车库片段；不写游戏代码、不迁模块。",
+                          "effort_boundary": "交一份报告和三方案比较，停止于 Owner 审查；预算是报告待审提案。",
+                          "expected_evidence": [
+                            "Legacy 实际提交/路径与惯性证据",
+                            "三路线的最小场景/输入/镜头/资产/成本",
+                            "真实输入与人工试玩指标、失败路径及未覆盖面",
+                            "完整五项需求说明与待裁问题"
+                          ],
+                          "exit_condition": "报告对等比较同六步体验且无禁用系统，提交 Owner 审查；不自动开 POC。",
+                          "consumers": [
+                            {
+                              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                              "kind": "DECISION",
+                              "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                            }
+                          ]
+                        }
+                      ],
+                      "relations": [],
+                      "basis": {
+                        "design_basis_fingerprint": "54d24dab16baa42bb3a4b570b4f6465aab31bf6f1ffb391534570f5764573bcc",
+                        "repository_basis_refs": [
+                          "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+                        ],
+                        "planning_policy_version": "rust-road-song-reboot-discovery-v0.1"
+                      }
+                    }
+                  },
+                  "task": {
+                    "kind": "TASK",
+                    "task_id": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+                    "task_proposal": {
+                      "goal": "RB-DISC-001：反旧设计污染审计与玛丽首见三路线最小技术方案",
+                      "why": "阻止新设计被重新解释为旧游戏加序章或换3D；先证明当下玩家体验的最小需要。",
+                      "scope_ref": {
+                        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                        "kind": "DECISION",
+                        "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                      },
+                      "relevant_decision_refs": [
+                        {
+                          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                          "kind": "DECISION",
+                          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                        }
+                      ],
+                      "required_capabilities": [
+                        "REPOSITORY_READ",
+                        "REPOSITORY_WRITE",
+                        "PROCESS_EXEC"
+                      ],
+                      "acceptance_criterion_refs": [
+                        {
+                          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                          "kind": "DECISION",
+                          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+                          "facet": "contract_claims.ACCEPTANCE"
+                        }
+                      ],
+                      "repository_basis_refs": [
+                        "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+                      ],
+                      "relevant_paths": [
+                        "docs/tasks/RB-DISC-001.md",
+                        "docs/00_OWNER_DECISIONS.md",
+                        "docs/01_PRODUCT_THESIS.md",
+                        "docs/02_STORY_BIBLE.md",
+                        "docs/06_VISUAL_POC_PLAN.md",
+                        "docs/07_LEGACY_REUSE_POLICY.md",
+                        "docs/discovery/RB-DISC-001_REPORT.md"
+                      ],
+                      "forbidden_changes": [
+                        "任何游戏代码/Godot工程/正式资产",
+                        "搬运 Legacy 游戏模块/测试/插件",
+                        "擅选视觉胜出路线",
+                        "赏金/装备/世界状态/营地/经济/完整架构"
+                      ],
+                      "expected_output": "一份中文报告，含实际 Legacy 惯性审计、三方案最小技术比较、目录/资产/验证指标/预算与未决；交付后等 Owner 审查。"
+                    },
+                    "parent_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7"
+                  }
+                },
+                "basis_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+              },
+              "DOC-DISCOVERY-REQUEST": {
+                "kind": "READINESS_FACT",
+                "fact_ref": "DOC-DISCOVERY-REQUEST",
+                "type": "DOCUMENT_DISCOVERY_FACT",
+                "attributes": {
+                  "state": "CURRENT",
+                  "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                  "scope_ref": {
+                    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+                    "kind": "DECISION",
+                    "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+                  },
+                  "target_stage": "DISCOVERY",
+                  "capabilities": [
+                    "PROCESS_EXEC",
+                    "REPOSITORY_READ",
+                    "REPOSITORY_WRITE"
+                  ],
+                  "allowed_paths": [
+                    "docs/discovery/RB-DISC-001_REPORT.md"
+                  ]
+                },
+                "basis_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+              }
+            }
+          },
+          "effective_state": "READY",
+          "verdict": "READY",
+          "blockers": [],
+          "qualifiers": {}
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "MCP design_status indexes and finding_list may stop at 200; design_get content may stop at 4000 characters. Raw responses and parse/truncation diagnostics are preserved above; host verified envelopes supply full canonical content and revisions.",
+    "Runtime attestations are runtime sidecar observations, not canonical formal objects or authorization. This reader does not independently authenticate their evidence or interpret PASS as current admission. Two equal reads are not an atomic cross-plane transaction or protection against ABA changes.",
+    "Structural READY, tool advertisement and runtime attestations do not establish full profile admission, execution admission or product completion.",
+    "CURRENT.md is navigation only. Follow referenced original discussions and unresolved items; this snapshot does not ingest external source files."
+  ]
+}

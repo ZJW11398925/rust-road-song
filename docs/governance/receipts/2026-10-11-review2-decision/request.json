@@ -1,0 +1,46 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-discovery-review.md",
+  "sourceSha256": "4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8",
+  "tool": "decision_add",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "decision": {
+      "question": "是否采用第二轮 Discovery 外审修订，保留交付并以 C0 空间实验进入下一阶段？",
+      "alternatives": [
+        {
+          "key": "bounded_c0",
+          "description": "采用七项修订与两条保护，接受 Discovery 交付，先 C0；后门独立裁决。"
+        },
+        {
+          "key": "unchanged_report",
+          "description": "直接执行原报告三路线成品、量化门槛与 C Greybox 30h。"
+        }
+      ],
+      "selected_key": "bounded_c0",
+      "reason": "Owner 在核对反馈并提出七项方向和两条保护后原话“认同”；来源 docs/governance/sources/2026-10-11-owner-discovery-review.md；修订 OD-015 及原方案执行语义，原基线不改写。",
+      "related_constraint_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+        }
+      ],
+      "tradeoffs": [
+        "先验证空间，延后叙事和美术，不以一次车库 POC 证明完整家庭情感。",
+        "方向授权不替代实际 DMCP 执行准入；没有批准完整三路线、30h、正式资产或视觉胜出。"
+      ]
+    },
+    "expected": {
+      "canonical_state_id": "CST-a608e176-7228-4ae9-88c0-1bb845c802c0",
+      "schema_version": 5,
+      "design_revision": 5
+    }
+  },
+  "host": {
+    "type": "ORGANIZATION_AUTHORITY",
+    "id": "owner"
+  },
+  "ownerRaw": "认同"
+}

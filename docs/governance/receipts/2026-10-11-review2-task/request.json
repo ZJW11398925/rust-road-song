@@ -1,0 +1,78 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-discovery-review.md",
+  "sourceSha256": "4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8",
+  "tool": "task_build",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "primary_parent_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+      "kind": "PLAN",
+      "id": "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2"
+    },
+    "task_proposal": {
+      "goal": "RB-C0-001：玛丽首见 C0 Spatial Spike",
+      "why": "先检验 C 的空间与交互风险，避免在镜头和控制成立之前投入叙事/美术。",
+      "scope_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+        "kind": "DECISION",
+        "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+      },
+      "relevant_decision_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+        },
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+        }
+      ],
+      "required_capabilities": [
+        "REPOSITORY_READ",
+        "REPOSITORY_WRITE",
+        "PROCESS_EXEC"
+      ],
+      "acceptance_criterion_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+          "facet": "contract_claims.ACCEPTANCE"
+        }
+      ],
+      "expected_output": "一份最小可玩空间灰盒与五项问题证据/反例；不得声称情感、视觉胜出或 C1 获准。",
+      "relevant_paths": [
+        "pocs/stylized_3d/c0/project.godot",
+        "pocs/stylized_3d/c0/garage.tscn",
+        "pocs/stylized_3d/c0/garage.gd",
+        "pocs/stylized_3d/c0/spatial_smoke.gd",
+        "pocs/stylized_3d/c0/README.md",
+        "docs/tasks/RB-C0-001.md",
+        "docs/pocs/RB-C0-001_REPORT.md"
+      ],
+      "forbidden_changes": [
+        "Legacy 代码/正式美术/对白/家庭物件/异常美术/母亲动画",
+        "新增完整系统、存档框架、EventBus、任务状态",
+        "C1、Visual、B 实施、最终引擎或视觉锁定",
+        "改文档 Discovery 政策或复用其报告 READY"
+      ],
+      "repository_basis_refs": [
+        "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      ]
+    },
+    "expected": {
+      "canonical_state_id": "CST-48e65398-1f9d-4669-9045-a851f233208d",
+      "schema_version": 5,
+      "design_revision": 8
+    }
+  },
+  "host": {
+    "type": "SERVICE",
+    "id": "rust-road-song-c0-planner"
+  },
+  "ownerRaw": "认同"
+}

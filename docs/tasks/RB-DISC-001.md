@@ -1,7 +1,7 @@
 # RB-DISC-001：反旧设计污染审计与玛丽首见最小技术方案
 
-状态：SUBMITTED_FOR_OWNER_REVIEW；[报告](../discovery/RB-DISC-001_REPORT.md)已提交，未获 Owner 验收、原生 TASK 未标 DONE；正式 TASK / PLAN / 准入引用见 [CURRENT](../governance/CURRENT.md)。
-负责人：本轮执行 Agent 已提交报告；后续由 Owner 审查，下一位 Agent 仅依新决定接续；只允许设计审计和文档方案。完成后等待新的 Owner 审查决定。
+状态：DISCOVERY_DELIVERY_ACCEPTED（本地设计交付状态）；[报告](../discovery/RB-DISC-001_REPORT.md)经外审建议通过、Owner 本轮采用；原生 TASK 未标 DONE。原报告下一阶段方案由 [RD-007](../00_OWNER_DECISIONS.md) / [06 v0.3](../06_VISUAL_POC_PLAN.md)替代；以下是原 Discovery 工单范围，不是 C0 指令；正式 TASK / PLAN / 准入引用见 [CURRENT](../governance/CURRENT.md)。
+负责人：Discovery 执行 Agent 已交付；当前按新决定接续 [RB-C0-001](RB-C0-001.md)，其执行准入独立核对。原报告保持字节不变。
 
 ## PLAYER NEED
 玩家需要认出一辆属于家庭的旧战车、发现异常、亲自让它重新上路。当前先避免旧功能惯性破坏这项体验。
