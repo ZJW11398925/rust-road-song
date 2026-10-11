@@ -20,10 +20,10 @@ Godot + Windows + 键盘仅用于 POC。先 [RB-C0-001](../tasks/RB-C0-001.md)�
 
 ## Git、验证与下一步
 
-main；本轮为 RB-REVIEW-002 / [CHG-20261011-002](../changes/CHG-20261011-002.md)，文件归当前 Agent。本轮只提交本地，未推送；最后已发布基线 f5037f6。现场用 git status/log 核实际 HEAD 和修改。
+main；本轮为 RB-REVIEW-002 / [CHG-20261011-002](../changes/CHG-20261011-002.md)，文件归当前 Agent。本轮内容提交 e5e4862 已推送并核对远端 main；发布回执见 receipts/2026-10-11-review2-publication/verification.json。现场用 git status/log 核实际 HEAD 和修改。
 
 正式登记/完整读回、来源与报告摘要/原对象保留核验、上下文与只读边界验证结果见 CHG。无游戏工程，游戏 L1–L5 N/A；未进行输入/视觉/情绪试玩。
 
 下一步只处理 C0 匹配的上游准入，然后执行小工单；不重复 Discovery、不补顶层文档、不扩展全序章。迁机限制及既有上游证据见 [TOOLING](TOOLING.md)；历史状态保留在 Git 和原始回执，不再堆进当前导航。
 
-本轮文档同步/正式登记已本地提交，实现 c995c0000858f67b466fe52793469bfef95b287b；关闭记录由 Git 历史定位。本轮未推送，C0 状态仍为未实施/代码准入未成立。
+本轮文档同步/正式登记已本地提交，实现 c995c0000858f67b466fe52793469bfef95b287b；关闭记录由 Git 历史定位。Owner 随后要求主动推送，内容提交 e5e4862 已发布；C0 状态仍为未实施/代码准入未成立。

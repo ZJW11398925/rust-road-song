@@ -35,7 +35,7 @@ future AI/3D/美术工具必须先列目的、版本、许可证/使用权、成
 
 消费原生修复/证据版本 d270067（源码受验 ca002be），公开 binding 锁 engineCommit/documentDiscoveryPolicySha256；私有 profile 增 readinessPolicyFile，不提交本机路径。只读入口验证缺失/漂移政策并拒绝，仍仅 read/tools/get。
 
-政策与语义归上游，本库不设 override/temp gate。换机需获取同一原生候选与原生 policy artifact，核对摘要后配置；不要重新造 workspace/模型政策。原生候选尚未推送；游戏报告已随 f5037f6 公开，本轮修订尚未推送。远端克隆不足以重建这些本机依赖。
+政策与语义归上游，本库不设 override/temp gate。换机需获取同一原生候选与原生 policy artifact，核对摘要后配置；不要重新造 workspace/模型政策。原生候选尚未推送；游戏报告已随 f5037f6 公开，本轮修订已随 e5e4862 推送。远端克隆不足以重建这些本机依赖。
 
 真实文档 Discovery 已评估并通过固定宿主提交报告；普通 Agent SERVICE 与 Owner 转录入口分离。没有桌面 facade 接入、完整 PHASE1/profile 验收、模型带游戏工具的旅程或游戏试玩。独立跨模型静态审查在上游存证，报告交付不继承其 POC 权限。
 

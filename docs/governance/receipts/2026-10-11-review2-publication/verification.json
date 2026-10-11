@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-10-11T07:52:29.126Z",
+  "ownerRaw": "推送不用我教吧，又没有分支",
+  "remote": "https://github.com/ZJW11398925/rust-road-song.git",
+  "branch": "main",
+  "publishedContentCommit": "e5e48622d3be63096f56cd297948d768079c67b5",
+  "remoteMain": "e5e48622d3be63096f56cd297948d768079c67b5",
+  "match": true,
+  "scope": "RB-REVIEW-002 decision alignment; no game implementation or upstream publication"
+}
