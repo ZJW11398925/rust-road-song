@@ -24,6 +24,6 @@ C0已按RD-009阶段接受/六文件冻结，四项主观评价未完整记录�
 
 ## Git与首轮动作
 
-main，持续授权主动提交/推送。最新真实提交与远端核验在本轮收尾后补记；现场先git status/log，再tools/read/check_context，不能用交接替代实时依据。当前修改归本轮Agent，来源不明修改不得覆盖。
+main，持续授权主动提交/推送。镜头修订/完整设计入口已随 a25149ef20b8ecc504cf78cc44e8ce4d4ba4c1ab 发布；[远端读回](receipts/2026-10-11-c1a-camera/publication-verification.json)一致，已核Git内8运行文件与最终smoke输入SHA相同。后续收尾元数据提交从Git历史定位；现场仍先git status/log，再tools/read/check_context，不能用快照替代实时依据。工作树在收尾提交后另核，不覆盖未知修改。
 
 第一项可执行工作：在全设计理解核对之后，只完成本轮镜头必要复审与真实人类反馈。如需修正沿现有C1-A选择和固定消费者；范围变化需另有Owner裁决。**不得自动启动C1-B、A/B原型或Visual。**

@@ -1,0 +1,12 @@
+{
+  "implementationCommit": "a25149ef20b8ecc504cf78cc44e8ce4d4ba4c1ab",
+  "remoteBranch": "refs/heads/main",
+  "observedRemoteCommit": "a25149ef20b8ecc504cf78cc44e8ce4d4ba4c1ab",
+  "observedAt": "2026-10-11T13:30:06.148Z",
+  "match": true,
+  "committed8RuntimeFilesMatchFinalSmoke": true,
+  "controllerGuideIncluded": true,
+  "c1aOwnerAccepted": false,
+  "independentCameraReviewNotClaimed": true,
+  "note": "Verified implementation/guide publication; subsequent metadata commit records this observation. C1-A remains VERIFYING."
+}
