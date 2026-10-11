@@ -1,0 +1,871 @@
+{
+  "at": "2026-10-11T18:01:14.219Z",
+  "task": "RB-C1B2-001",
+  "change": "CHG-20261012-010",
+  "runs": [
+    {
+      "id": "import-1791740702115",
+      "mode": "import",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "57eafda11b4b4eb30d281d5eca98b01f8f1beb1429a4473eb3068369603b4fd0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": null,
+      "originalLogSha256": "d57a49ba4c29fcb05c0d0de1b38a7d7513ddd90974a07d798b966a7e672b85e5",
+      "excerptSha256": "d57a49ba4c29fcb05c0d0de1b38a7d7513ddd90974a07d798b966a7e672b85e5",
+      "excerpt": "logs/import-1791740702115.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "smoke-1791740723221",
+      "mode": "smoke",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "57eafda11b4b4eb30d281d5eca98b01f8f1beb1429a4473eb3068369603b4fd0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 45,
+        "failures": 1,
+        "frames": 1701
+      },
+      "originalLogSha256": "ee73e00e8a92dc6ff9978b292ca139e75e100b613eaae0353969fab2756c2e8c",
+      "excerptSha256": "ee73e00e8a92dc6ff9978b292ca139e75e100b613eaae0353969fab2756c2e8c",
+      "excerpt": "logs/smoke-1791740723221.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "import-1791740751672",
+      "mode": "import",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "a51b2c3b6e3eecf5567805ef4c910067d1a86205ab6c32cb9ca447b58fbb5c35"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": null,
+      "originalLogSha256": "d57a49ba4c29fcb05c0d0de1b38a7d7513ddd90974a07d798b966a7e672b85e5",
+      "excerptSha256": "d57a49ba4c29fcb05c0d0de1b38a7d7513ddd90974a07d798b966a7e672b85e5",
+      "excerpt": "logs/import-1791740751672.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "smoke-1791740766347",
+      "mode": "smoke",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "a51b2c3b6e3eecf5567805ef4c910067d1a86205ab6c32cb9ca447b58fbb5c35"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 1,
+        "frames": 3445
+      },
+      "originalLogSha256": "ee8ccb4936fd4d11682412abdaf57db056af42c1388fc35c321eec7b1ff617f3",
+      "excerptSha256": "ee8ccb4936fd4d11682412abdaf57db056af42c1388fc35c321eec7b1ff617f3",
+      "excerpt": "logs/smoke-1791740766347.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "smoke-1791740828602",
+      "mode": "smoke",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "a51b2c3b6e3eecf5567805ef4c910067d1a86205ab6c32cb9ca447b58fbb5c35"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "087245347058af7f89cd384c383521a5d1750106ff866b91b9b43639407fc1c2"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 1,
+        "frames": 3445
+      },
+      "originalLogSha256": "ebd3d913e79195c8e34708aec8d50c0fc68fd44f5453a17f2ac57573d8a31017",
+      "excerptSha256": "ebd3d913e79195c8e34708aec8d50c0fc68fd44f5453a17f2ac57573d8a31017",
+      "excerpt": "logs/smoke-1791740828602.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "smoke-1791740975120",
+      "mode": "smoke",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "49e5c1b6d4925c5968f75994696cbf335c2de51d282729e8c7a0951b8fd64289"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "087245347058af7f89cd384c383521a5d1750106ff866b91b9b43639407fc1c2"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 1,
+        "frames": 3445
+      },
+      "originalLogSha256": "ebd3d913e79195c8e34708aec8d50c0fc68fd44f5453a17f2ac57573d8a31017",
+      "excerptSha256": "ebd3d913e79195c8e34708aec8d50c0fc68fd44f5453a17f2ac57573d8a31017",
+      "excerpt": "logs/smoke-1791740975120.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "smoke-1791741058400",
+      "mode": "smoke",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "45609684e40747f7b2ef05f2084cda8ec2072e9e50ba7c90385a810644f70c4d"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "087245347058af7f89cd384c383521a5d1750106ff866b91b9b43639407fc1c2"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 1,
+        "frames": 3445
+      },
+      "originalLogSha256": "5d180140e1a5fc828e37cef5d27019c2c6096cea76215b4a4e7404c22743c0f8",
+      "excerptSha256": "5d180140e1a5fc828e37cef5d27019c2c6096cea76215b4a4e7404c22743c0f8",
+      "excerpt": "logs/smoke-1791741058400.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "smoke-1791741230060",
+      "mode": "smoke",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "0ddb35b8b918fcf03f748b3aa3bcadda2b664930a242ca77cec7bdf0bfadee20"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "087245347058af7f89cd384c383521a5d1750106ff866b91b9b43639407fc1c2"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 1,
+        "frames": 3445
+      },
+      "originalLogSha256": "5d180140e1a5fc828e37cef5d27019c2c6096cea76215b4a4e7404c22743c0f8",
+      "excerptSha256": "5d180140e1a5fc828e37cef5d27019c2c6096cea76215b4a4e7404c22743c0f8",
+      "excerpt": "logs/smoke-1791741230060.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "smoke-1791741342136",
+      "mode": "smoke",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "087245347058af7f89cd384c383521a5d1750106ff866b91b9b43639407fc1c2"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 0,
+        "frames": 3445
+      },
+      "originalLogSha256": "437344d68ed1e2920a39807671f3c4653dbbdaac7afbf1bf8f97488dad333075",
+      "excerptSha256": "437344d68ed1e2920a39807671f3c4653dbbdaac7afbf1bf8f97488dad333075",
+      "excerpt": "logs/smoke-1791741342136.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "smoke-1791741529356",
+      "mode": "smoke",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "bdf193a3ba4f795e84f33b1beae91eafa24947c74fff233fec39259b9bcd17c6"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 45,
+        "failures": 1,
+        "frames": 1701
+      },
+      "originalLogSha256": "ee73e00e8a92dc6ff9978b292ca139e75e100b613eaae0353969fab2756c2e8c",
+      "excerptSha256": "ee73e00e8a92dc6ff9978b292ca139e75e100b613eaae0353969fab2756c2e8c",
+      "excerpt": "logs/smoke-1791741529356.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "smoke-1791741568706",
+      "mode": "smoke",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 0,
+        "frames": 3445
+      },
+      "originalLogSha256": "1f8860c36eb07303368cf12df99e2c4af8751a98092746e20dec25e3d18df7b1",
+      "excerptSha256": "1f8860c36eb07303368cf12df99e2c4af8751a98092746e20dec25e3d18df7b1",
+      "excerpt": "logs/smoke-1791741568706.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    },
+    {
+      "id": "capture-1791741580273",
+      "mode": "capture",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/c1b_departure/project.godot",
+          "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+          "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+          "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_departure/README.md",
+          "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479"
+        },
+        {
+          "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+          "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde"
+        }
+      ],
+      "counters": {
+        "checks": 115,
+        "failures": 0,
+        "frames": 3445
+      },
+      "originalLogSha256": "9e12011a7cf12520c5e41c51d202f9fbc82586b4eb914fd284056434d080cce0",
+      "excerptSha256": "5e924a2aaac196ccc88cae4c3e3cbe520d83f0acce700a1d7e9149c86fbc2d0f",
+      "excerpt": "logs/capture-1791741580273.txt",
+      "logProjection": "仅替换本机路径，其余日志不美化"
+    }
+  ],
+  "finalSmoke": "smoke-1791741568706",
+  "finalCapture": "capture-1791741580273",
+  "runtimeHashes": [
+    {
+      "path": "pocs/stylized_3d/c1b_departure/project.godot",
+      "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+      "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+      "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/human.gd",
+      "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+      "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+      "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+      "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f"
+    }
+  ],
+  "actualFinalSmokeCounters": {
+    "checks": 89,
+    "failures": 0,
+    "frames": 3445
+  },
+  "actualFinalCaptureCounters": {
+    "checks": 115,
+    "failures": 0,
+    "frames": 3445
+  },
+  "frozen25Sha256": {
+    "docs/discovery/RB-DISC-001_REPORT.md": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512",
+    "pocs/stylized_3d/c0/README.md": "630838597311192c381154b4d3a065adcea442f42036bdeb59926859b1fe0f70",
+    "pocs/stylized_3d/c0/garage.gd": "69fa84c0ae47d8bd7f8dfcee7389f88f5e332589ef8522413dfa28890bc4c2e5",
+    "pocs/stylized_3d/c0/garage.tscn": "d79e378dcce29acb8c1ad5bfd02a862542a5b4d3883393be10f9f0cf32626097",
+    "pocs/stylized_3d/c0/project.godot": "1813cce85de841235a4c5064435f410a28ff6671bee5446cf2bf87aba676f21f",
+    "pocs/stylized_3d/c0/spatial_smoke.gd": "c30b4540e4381ebd8b1a4f92fb18270d75e09a585970b3bb345f477adb453de9",
+    "pocs/stylized_3d/c0/strings.tres": "1e7d9d6183680059c96b3aa2ee77baa3443bec4a18fe5242c05a9c814b328b7b",
+    "pocs/stylized_3d/c1a/README.md": "42bcb96369791ad83f221437f6ffba1820f4ab99e353ecab43fff5cf5087c422",
+    "pocs/stylized_3d/c1a/first_meeting.gd": "534700de932f606f2c4727148eb2c96babbd6c7750674afae227bb4f28e45db9",
+    "pocs/stylized_3d/c1a/first_meeting.tscn": "615cdace8c09efffecd1a8a1f07e77d0346654a61419f147af9d313b9c7e952e",
+    "pocs/stylized_3d/c1a/human.gd": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5",
+    "pocs/stylized_3d/c1a/human.tscn": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+    "pocs/stylized_3d/c1a/mary.tscn": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f",
+    "pocs/stylized_3d/c1a/narrative_smoke.gd": "7cf9c9dddd5c7e26cd9a45fa0b005e8b4273f3cb9684850454585512b18ca9dc",
+    "pocs/stylized_3d/c1a/project.godot": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4",
+    "pocs/stylized_3d/c1a/strings.tres": "6b916223d26468d994701aff8728cb91610e0d0b8e3d9b115c95adff7fd83ea8",
+    "pocs/stylized_3d/c1b_anomaly/README.md": "6f46899c7862b3f2690bb9d28371cfbaeeae5321d51a761db9628aee5153d0aa",
+    "pocs/stylized_3d/c1b_anomaly/anomaly.gd": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf",
+    "pocs/stylized_3d/c1b_anomaly/anomaly.tscn": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1",
+    "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b",
+    "pocs/stylized_3d/c1b_anomaly/human.gd": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534",
+    "pocs/stylized_3d/c1b_anomaly/human.tscn": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+    "pocs/stylized_3d/c1b_anomaly/mary.tscn": "0d7d3caebb48e5aa65d87c93e0b8dd7b2177f907560cccf88c1f9379f250f082",
+    "pocs/stylized_3d/c1b_anomaly/project.godot": "5108cc818c4f33655d5061285e6f0e722590a75559ae7e4c739138c152ebb672",
+    "pocs/stylized_3d/c1b_anomaly/strings.tres": "0c6cd98e9cb582dbd22e26f400dc502c673d99436a705b199fefe4032b55332c"
+  },
+  "frozen25Preserved": true,
+  "images": [
+    {
+      "file": "01-entry.png",
+      "path": ".local/departure-captures/01-entry.png",
+      "sha256": "90cb8356b5e530a4019facb8bb8095001364ad4c9fdbe1bf5caf2325276894f0"
+    },
+    {
+      "file": "02-early-no-contact.png",
+      "path": ".local/departure-captures/02-early-no-contact.png",
+      "sha256": "c430bced2246d829f5de46aec2bf406d7af816e0e70e7b71577e9227f85bef72"
+    },
+    {
+      "file": "03-hand-supplying-power.png",
+      "path": ".local/departure-captures/03-hand-supplying-power.png",
+      "sha256": "d6b8e23918a4599d6d10b61c893e3ebd57523a6a36ee7ed17ca85073adca27a1"
+    },
+    {
+      "file": "04-starting.png",
+      "path": ".local/departure-captures/04-starting.png",
+      "sha256": "bbd7a24c336f9068ba38dea8f0bf8e21ac13d46736d04f2e0806083962b1fa90"
+    },
+    {
+      "file": "05-engine-and-mother-retract.png",
+      "path": ".local/departure-captures/05-engine-and-mother-retract.png",
+      "sha256": "cc8d3e63b49eb48cae8735c86b80c609bf8bba28ab9aaf08485aa5815917c8bc"
+    },
+    {
+      "file": "06-both-seated.png",
+      "path": ".local/departure-captures/06-both-seated.png",
+      "sha256": "ba45c7949b78090e8e303df0f493c9390ae7ac5506e308ccc82ead26b442c4c5"
+    },
+    {
+      "file": "07-drive-transition.png",
+      "path": ".local/departure-captures/07-drive-transition.png",
+      "sha256": "9fb52c5b9245a0026e0bc359221d8bcca423c9364b2267649143c980070e1ce2"
+    },
+    {
+      "file": "08-door-frame-stop.png",
+      "path": ".local/departure-captures/08-door-frame-stop.png",
+      "sha256": "eb425f1c35983763918d07daef74146a31629cf9bf466bf0a28db149bf0bc87c"
+    },
+    {
+      "file": "09-outside-clear.png",
+      "path": ".local/departure-captures/09-outside-clear.png",
+      "sha256": "af076599b32727ad7de2969c887b3efa633c86427afe93940dd8a05dbdcdd3d5"
+    },
+    {
+      "file": "10-final-reset.png",
+      "path": ".local/departure-captures/10-final-reset.png",
+      "sha256": "310a016f9ae36776bda5669c2aef992a256283ffe1899792f9c0ae7f21c525ba"
+    }
+  ],
+  "aviSha256": "ea9d14c8820966a5a26b930c1cf6c198b22bd9d5790597ca9a303dd1c03f0f7c",
+  "visualInspection": {
+    "reviewer": "root，非实现者；实际view_image逐张查看10PNG",
+    "capture": "capture-1791741580273",
+    "status": "指定样本已检查，不能扩成连续动作或全部视角",
+    "observations": [
+      "接点指定样本实手靠近，可见启动反馈",
+      "双方就座及转驾指定画面人物可见",
+      "门框停有碰撞反馈，驶出样本两人随车且终点反馈明确",
+      "最终R画面回到入口两人/关闭门",
+      "指定样本未见旧共面条纹；初始HUD遮部分腿，不证明全身遮挡解决"
+    ],
+    "notVerified": [
+      "连续动作质量/实时镜头舒适",
+      "所有墙体与视角/透明排序",
+      "人类自然理解/情感"
+    ]
+  },
+  "osFocus": "仅通知逻辑探针，未实际OS切焦",
+  "independentTaskReview": {
+    "status": "APPROVED_WITH_MINOR_LIMITATIONS",
+    "critical": 0,
+    "important": 0,
+    "minor": 2,
+    "report": "task-review.md",
+    "reportSha256": "324c7d20a800227efabcba5f67d607b8170be9fd89230e807f9d7abbf4ffc4f2",
+    "issues": [
+      "踏步Mesh突出底盘碰撞体0.17m，不能称所有可视外沿均实体碰撞",
+      "smoke部分标签较强，结论只用实际状态断言与指定画面"
+    ]
+  },
+  "wholeReview": {
+    "status": "APPROVED",
+    "critical": 0,
+    "important": 0,
+    "minor": 2,
+    "reviewer": "独立gpt-6-astra",
+    "report": "whole-review.md",
+    "reportSha256": "9a22f6bfe16381979f5961942863299c5e2a132b872051055d627b948c08e305",
+    "independentLiveDmcp": "沙箱拒读外部引擎；审查完整原件、回执、日志与SHA；总控实际末读另存final-read.json"
+  },
+  "humanPlay": "未新人工接受，旧轮可以不能代替",
+  "knownUnknowns": [
+    "自然异常可读性",
+    "人物戏/情感/乐趣",
+    "全身全墙/所有镜头/快速过渡与透明排序",
+    "长期资源/驱动及实时FPS",
+    "正式产品技术/故事/Visual未裁定",
+    "踏步装饰外沿无独立碰撞形状；仅底盘实体边界已验"
+  ]
+}

@@ -1,0 +1,48 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS actualMainScene is departure
+PASS distant F has feedback and no board
+PASS walking keys cannot drive before boarding
+PASS real walking z=5.5
+PASS real E door reveals Mary
+PASS real walking z=2.4
+PASS real walking x=-2.4
+PASS real walking z=0.5
+PASS near step F boards
+PASS player visibly finishes climb
+PASS early route ignores anomaly and touch
+PASS early arrival precedes contact
+PASS pre-engine W reports mechanical stop
+PASS early F gives unsteady contact cause
+PASS power requires actual mother hand within .14m
+PASS powered partial hold accumulates only current attempt
+PASS release F stops and clears incomplete crank
+PASS logical focus probe clears crank and held input
+PASS fresh F resumes after logical focus recovery
+PASS R restores car transform
+PASS R restores both people
+PASS R clears seating engine departure
+PASS R clears input progress and mother route
+PASS R restores visible solid people
+PASS R restores camera
+PASS R restores wall opacity
+PASS real walking z=5.5
+PASS real E door reveals Mary
+PASS real walking z=2.4
+PASS real walking x=-3.1
+PASS real walking z=-1.0
+PASS real walking x=-2.3
+PASS real E left-side hand contact
+PASS real walking x=-3.1
+PASS real walking z=2.4
+PASS real walking x=2.3
+PASS real walking z=-1.0
+PASS real E right-side hand contact
+PASS real walking z=2.4
+PASS real walking x=-2.4
+PASS real walking z=0.5
+PASS near step F boards
+PASS player visibly finishes climb
+PASS power requires actual mother hand within .14m
+FAIL held F starts with actual power on first powered attempt
+DEPARTURE_SMOKE checks=45 failures=1 frames=1701

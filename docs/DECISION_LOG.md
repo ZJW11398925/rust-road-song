@@ -15,7 +15,6 @@
 | RD-009 | 2026-10-11 | CONFIRMED / Owner | [认同来源](governance/sources/2026-10-11-owner-c0-close-c1a.md)：C0阶段接受/工程冻结/四主观未知保留；C1-A最小人物戏另建，重量感不等于惯性 | RB-C1A-001，新正式对象/准入；C1-B和Visual未批准 |
 | RD-010 | 2026-10-11 | CONFIRMED / Owner（当前表现要求，非新的native DEC） | [本轮原话](governance/sources/2026-10-11-c1a-wall-transparency.md)：墙体自动透明，而不是变矮；替代CHG-006低入口墙候选 | 同RB-C1A-001恢复原墙高度/实体边界，只做场景内自动遮挡淡化；无新阶段或视觉胜出 |
 | RD-011 | 2026-10-11 | CONFIRMED / Owner（2026-10-12真实native转录，见binding） | [具体提案后“推送并继续”](governance/sources/2026-10-11-owner-c1b-anomaly.md)：携带C1-A未决项，采用C1-B第一小轮仅异常可读 | 替代RD-009中这一小轮待裁定范围；先合法Owner操作/新PLAN/TASK与独立READY，无完整C1-B/发动/驾驶/Visual |
-
 | RD-012 | 2026-10-12 | CONFIRMED / Owner（真实native转录；技术机制仍候选） | [“我认为可以，就继续”](governance/sources/2026-10-12-owner-graybox-continue.md)：当前异常灰盒阶段接受，继续承担最低POC取舍；不反复要求小灰盒复述 | RB-C1B2-001剩余启动/母亲参与/短距驶出，新对象/独立READY；只替代RD-011后段禁令，不确认故事/Visual或逐项L5 |
 
 RD-003 的路线胜出仍未定；RD-005 的 POC 环境已由 RD-007 采用，其预算/比例不因此批准。原报告及旧正式对象保留，读取新决定时识别明确被替代条款。

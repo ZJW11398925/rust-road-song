@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-11T17:59:19.565Z",
+  "mode": "deploy",
+  "assessmentRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-1c48e7dc-9c7d-4aa4-ac0e-79791b5e9799.2",
+  "sharedNativeLease": true,
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "policySha256": "55e51bd95b65c1c92d3d6b5dd19dde18d51d05c9677cf43587547bfad225e629",
+  "basis": {
+    "canonical_state_id": "CST-982a0fd9-4c16-407d-8bc9-e491b99921f8",
+    "schema_version": 5,
+    "design_revision": 25
+  },
+  "files": [
+    {
+      "path": "pocs/stylized_3d/c1b_departure/project.godot",
+      "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8",
+      "bytes": 476
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+      "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524",
+      "bytes": 8191
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+      "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e",
+      "bytes": 19355
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+      "bytes": 3455
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/human.gd",
+      "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68",
+      "bytes": 2647
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+      "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568",
+      "bytes": 11348
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+      "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb",
+      "bytes": 1334
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+      "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f",
+      "bytes": 12111
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/README.md",
+      "sha256": "3552cf33742c3defa4dfd0eac2925670fd2f879bd571974931f3cb837323f479",
+      "bytes": 5970
+    },
+    {
+      "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+      "sha256": "2d7ffd4393530ca37f553358811260cc7532d66ede74f0655faaeaefeb1debde",
+      "bytes": 4814
+    }
+  ],
+  "outcome": "WRITTEN"
+}

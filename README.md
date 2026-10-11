@@ -14,7 +14,7 @@
 4. [视觉方向](docs/05_VISUAL_DIRECTION.md)、[统一 POC 方案](docs/06_VISUAL_POC_PLAN.md)、[Legacy 重新准入](docs/07_LEGACY_REUSE_POLICY.md)。
 5. [决定日志](docs/DECISION_LOG.md)、[DMCP 当前状态](docs/governance/CURRENT.md)、[DMCP 工作流](docs/governance/WORKFLOW.md)和[交接](docs/governance/HANDOFF.md)。
 6. 新总控先按[完整设计接续入口](docs/governance/CONTROLLER_TAKEOVER.md)阅读原文、读回实时DMCP并核理解，再布置任务。
-7. [Discovery 原报告](docs/discovery/RB-DISC-001_REPORT.md)保留评审基线；当前看 [剩余链条计划](docs/plans/RB-C1B2-001_IMPLEMENTATION_PLAN.md)与 RD-012；[异常工单](docs/tasks/RB-C1B-001.md)阶段接受并冻结，C1-A及自然可读性未知保留。
+7. [Discovery 原报告](docs/discovery/RB-DISC-001_REPORT.md)保留评审基线；当前看 [剩余链条计划](docs/plans/RB-C1B2-001_IMPLEMENTATION_PLAN.md)与 RD-012、[新可运行片段](pocs/stylized_3d/c1b_departure/README.md)及[技术报告](docs/pocs/RB-C1B2-001_REPORT.md)。最终真实输入89/0、实际渲染115/0；技术核验不代替新后段人工体验接受。[异常工单](docs/tasks/RB-C1B-001.md)阶段接受并冻结，C1-A及自然可读性未知保留。
 
 ## 权威顺序
 

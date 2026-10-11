@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-11T18:13:17.159Z",
+  "runtime8AllMatchFinalSmokeAndCapture": true,
+  "projected12LogsPreservedExact": true,
+  "taskReviewFileSha256Matches": true,
+  "gitLogsAttribute": "-text",
+  "previousStageLfConversionDetectedAndCorrected": true,
+  "notHumanPlayAcceptance": true
+}

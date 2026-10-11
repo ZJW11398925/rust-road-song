@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-11T18:16:05.1178719Z",
+  "launch": "play-1791742466764",
+  "pid": 27896,
+  "creationTime": "2026-10-12T02:14:28.5596240+08:00",
+  "executableVerified": true,
+  "exactProjectVerified": true,
+  "windowTitle": "rust-road-song (DEBUG)",
+  "windowHandle": 724412,
+  "responding": true,
+  "startupErrorMarkers": false,
+  "startupSnapshotSha256": "23c97ea930da4c04695d62a1049df03c6d025d53f5a44cfd80f6c69fe78498c1",
+  "previousProbeFailure": "Get-FileHash rejected actively held log; shared-read raw snapshot used, game not relaunched",
+  "notHumanAcceptance": true,
+  "notFullLifecycleLease": true
+}

@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-11T18:07:15.101Z",
+  "basis": {
+    "observed_canonical_state_id": "CST-982a0fd9-4c16-407d-8bc9-e491b99921f8",
+    "observed_schema_version": 5,
+    "observed_design_revision": 25
+  },
+  "canonical": 18,
+  "runtime": 5,
+  "completeCanonicalAndRuntimeUnchanged": true,
+  "frozen25Preserved": true,
+  "runtime8MatchFinalSmokeAndCapture": true,
+  "fullPrivateReadSha256": "233be14fc5dd49d413425c9250f04abc6721698f0c3670c99aaf7d7420f52eec"
+}

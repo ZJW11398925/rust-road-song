@@ -1,0 +1,59 @@
+{
+  "at": "2026-10-11T18:14:26.764Z",
+  "mode": "play",
+  "assessmentRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-1c48e7dc-9c7d-4aa4-ac0e-79791b5e9799.2",
+  "sharedNativeLease": true,
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "policySha256": "55e51bd95b65c1c92d3d6b5dd19dde18d51d05c9677cf43587547bfad225e629",
+  "basis": {
+    "canonical_state_id": "CST-982a0fd9-4c16-407d-8bc9-e491b99921f8",
+    "schema_version": 5,
+    "design_revision": 25
+  },
+  "processProfile": "play",
+  "argumentSha256": "888a795ad33ff1c3f6392df6d39ec9f32cd2d563b6c430d3981b78e1a50b34de",
+  "inputFiles": [
+    {
+      "path": "pocs/stylized_3d/c1b_departure/project.godot",
+      "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+      "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+      "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/human.gd",
+      "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+      "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+      "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+      "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/README.md",
+      "sha256": "c4cd507f9d94b5c58a01c83bfdc4be4ed2f8e876d289b4523355621ecf301a53"
+    },
+    {
+      "path": "docs/pocs/RB-C1B2-001_REPORT.md",
+      "sha256": "2b38f524f90fadbfec62f5e2b6fe07656679a1b8c57a19de01d164ff1463856a"
+    }
+  ],
+  "pid": 27896,
+  "outcome": "INTERACTIVE_LAUNCHED_NOT_MANUAL_ACCEPTANCE"
+}
