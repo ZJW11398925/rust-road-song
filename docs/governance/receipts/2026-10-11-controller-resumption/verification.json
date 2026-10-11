@@ -1,0 +1,129 @@
+{
+  "observedAt": "2026-10-11T13:44:36.057Z",
+  "task": "RB-C1A-001",
+  "change": "CHG-20261011-005",
+  "source": "../../sources/2026-10-11-controller-resumption.md",
+  "gitEntryHead": "11f1510e4e243933020b7f7fb15bd7394b9ee8cf",
+  "gitBranch": "main",
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "consistency": {
+    "canonical": "STABLE_DOUBLE_READ",
+    "runtimeAttestations": "EQUAL_DOUBLE_OBSERVATION_NOT_ATOMIC"
+  },
+  "canonicalCount": 12,
+  "findingCount": 0,
+  "runtimeCount": 3,
+  "completeCanonicalAndRuntimeEqualPrevious": true,
+  "privateReadPath": ".local/controller-20261011-read.json",
+  "privateReadSha256": "4544141fb8b24cfc34659b3c99ba4ec23c545c26dac3ed1511eaf7337860361c",
+  "privateToolsPath": ".local/controller-20261011-tools.json",
+  "privateToolsSha256": "28f081d59bd7709d6b33487cf61138b21605383c6c7b6d63baf41ce6e8f6cff3",
+  "advertisedNativeTools": [
+    "decision_add",
+    "design_create",
+    "design_get",
+    "design_readiness",
+    "design_status",
+    "design_sync",
+    "design_update_contract",
+    "finding_adjudicate",
+    "finding_disposition_apply",
+    "finding_list",
+    "plan_build",
+    "review_prepare",
+    "review_submit",
+    "task_build",
+    "validation_define",
+    "validation_submit"
+  ],
+  "currentRefs": [
+    {
+      "ref": "DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2",
+      "revision": 2
+    },
+    {
+      "ref": "PLAN-OPI-a5367870-5bca-4c0a-bb74-ea2abfc706f9.2",
+      "revision": 1
+    },
+    {
+      "ref": "TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2",
+      "revision": 1
+    }
+  ],
+  "readyRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-05151b82-23d7-42d6-b603-5cb7ee0a615d.2",
+  "currentRuntimeFiles": [
+    {
+      "path": "pocs/stylized_3d/c1a/project.godot",
+      "sha256": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4",
+      "currentMatch": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.tscn",
+      "sha256": "615cdace8c09efffecd1a8a1f07e77d0346654a61419f147af9d313b9c7e952e",
+      "currentMatch": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.gd",
+      "sha256": "dfb203ac58449ae99ec8e167b1a783b1d1e6eb643db18f4c35f0c1e531db7c59",
+      "currentMatch": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+      "currentMatch": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.gd",
+      "sha256": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5",
+      "currentMatch": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/mary.tscn",
+      "sha256": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f",
+      "currentMatch": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/strings.tres",
+      "sha256": "80c72f574f15c6a74f720fbde98a58f91dd5be7c9e56a45a5f3ed9a0161e94f4",
+      "currentMatch": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/narrative_smoke.gd",
+      "sha256": "4b9e1af38a36c4daa11cddd58991e483683af34aa00ffa6ebc147160f8b56da4",
+      "currentMatch": true
+    }
+  ],
+  "c0FrozenAgainst": "4fe6cd4",
+  "discoveryFrozenAgainst": "f5037f6",
+  "contextCheck": "PASS after checkpoint edits",
+  "diffWhitespaceCheck": "PASS after checkpoint edits",
+  "independentReview": {
+    "reviewer": "/root/c1a_camera_review",
+    "status": "INCOMPLETE_SERVICE_ERROR",
+    "partialMessage": "完成指定阅读，暂未发现新增阻断；最终SHA与证据范围仍在核对。",
+    "finalMessage": "Agent errored: exceeded retry limit, last status: 429 Too Many Requests",
+    "retried": false,
+    "approvalClaimed": false
+  },
+  "gameRunThisTurn": false,
+  "gameFilesChanged": false,
+  "dmcpWritten": false,
+  "readinessRetried": false,
+  "oldPlayPid30344ObservedAbsent": true,
+  "newPlayWindowOpened": false,
+  "newL5Recorded": false,
+  "c1aStatus": "VERIFYING",
+  "changes004And005": "IN_PROGRESS",
+  "limits": [
+    "runtime两次相等观察非跨平面原子事务",
+    "READY和本检查点不替代下一次运行前固定消费者复核",
+    "本轮无游戏新运行；52/0和441/0属于前轮日志",
+    "复审中间消息不能作最终审查通过",
+    "无新人工接受或C1-B授权"
+  ]
+}

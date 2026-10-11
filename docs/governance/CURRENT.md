@@ -2,6 +2,8 @@
 
 本文件只导航；新总控按[完整设计接续入口](CONTROLLER_TAKEOVER.md)先读完设计/真实来源与实时DMCP，再布置执行任务。依据[Owner接续要求](sources/2026-10-11-owner-controller-handoff.md)。
 
+本轮新总控已完成完整设计/来源理解与实时正式对象/runtime读取，先向Owner核对后再布置当前镜头只读复审；见[接续检查点](receipts/2026-10-11-controller-resumption/checkpoint.md)。实时仍5/17、12canonical/0Finding/3runtime，八个运行文件匹配已测版本，没有游戏变更或准入重投。本轮复审Agent有中间阅读消息，最终429中断，不能作APPROVE；修后L5仍待记录。历史PID30344现场已不存在，后续试玩须沿固定消费者重新核依据后启动。
+
 ## 当前方向
 
 RD-009接受C0探索阶段；六工程文件冻结，四项主观评价缺失保留，非最终3D选择。当前仅[RB-C1A-001](../tasks/RB-C1A-001.md)，不做异常/启动/驾驶/正式资产/C1-B/Visual。
