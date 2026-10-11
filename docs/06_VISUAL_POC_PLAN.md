@@ -1,6 +1,6 @@
 # 玛丽第一次出现：分阶段 POC / P3
 
-版本：0.6；2026-10-11。依据 [Owner RD-007 / RD-008 / RD-009 / RD-011](00_OWNER_DECISIONS.md)。C0接受并冻结，C1-A暂时保留/VERIFYING；RD-011新采用[仅异常可读的小轮](pocs/C1B_ANOMALY_PROPOSAL.md)，携带未决项，尚缺新正式依据/READY。完整C1-B与Visual未批准。
+版本：0.7；2026-10-12。依据 [Owner RD-007 / RD-008 / RD-009 / RD-011](00_OWNER_DECISIONS.md)。C0接受并冻结，C1-A暂时保留/VERIFYING；RD-011新采用[仅异常可读的小轮](pocs/C1B_ANOMALY_PROPOSAL.md)，携带未决项，已取得新真实DEC/PLAN/TASK与独立READY，见binding/当前状态。完整C1-B与Visual未批准。
 
 ## 结论范围
 

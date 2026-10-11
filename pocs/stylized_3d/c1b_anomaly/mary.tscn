@@ -1,0 +1,312 @@
+[gd_scene load_steps=35 format=3]
+
+[sub_resource type="StandardMaterial3D" id="Paint"]
+albedo_color = Color(0.39, 0.43, 0.34, 1)
+roughness = 0.97
+
+[sub_resource type="StandardMaterial3D" id="Dark"]
+albedo_color = Color(0.14, 0.15, 0.14, 1)
+roughness = 0.97
+
+[sub_resource type="StandardMaterial3D" id="OldEdge"]
+albedo_color = Color(0.29, 0.25, 0.18, 1)
+roughness = 0.97
+
+[sub_resource type="StandardMaterial3D" id="Growth"]
+albedo_color = Color(0.38, 0.13, 0.10, 1)
+roughness = 0.97
+
+[sub_resource type="BoxMesh" id="Box1"]
+size = Vector3(2.88, 1.41, 5.4)
+
+[sub_resource type="BoxShape3D" id="ShapeBox1"]
+size = Vector3(2.88, 1.41, 5.4)
+
+[sub_resource type="BoxMesh" id="Box2"]
+size = Vector3(0.04, 1.45, 5.4)
+
+[sub_resource type="BoxMesh" id="Box3"]
+size = Vector3(3.2, 0.03, 5.4)
+
+[sub_resource type="BoxMesh" id="Box4"]
+size = Vector3(0.06, 1.45, 2.54)
+
+[sub_resource type="BoxMesh" id="Box5"]
+size = Vector3(0.06, 1.45, 1.54)
+
+[sub_resource type="BoxMesh" id="Box6"]
+size = Vector3(0.06, 0.84, 1.32)
+
+[sub_resource type="BoxMesh" id="Box7"]
+size = Vector3(0.06, 0.12, 1.32)
+
+[sub_resource type="BoxMesh" id="Box8"]
+size = Vector3(2.1, 0.75, 2.4)
+
+[sub_resource type="BoxMesh" id="Box9"]
+size = Vector3(0.26, 0.95, 5.4)
+
+[sub_resource type="BoxShape3D" id="ShapeBox9"]
+size = Vector3(0.26, 0.95, 5.4)
+
+[sub_resource type="BoxMesh" id="Box10"]
+size = Vector3(0.26, 0.95, 5.4)
+
+[sub_resource type="BoxShape3D" id="ShapeBox10"]
+size = Vector3(0.26, 0.95, 5.4)
+
+[sub_resource type="BoxMesh" id="Box11"]
+size = Vector3(0.045, 0.065, 1.32)
+
+[sub_resource type="BoxMesh" id="Box12"]
+size = Vector3(0.045, 0.065, 1.32)
+
+[sub_resource type="BoxMesh" id="Box13"]
+size = Vector3(0.045, 0.48, 0.055)
+
+[sub_resource type="BoxMesh" id="Box14"]
+size = Vector3(0.045, 0.48, 0.055)
+
+[sub_resource type="BoxMesh" id="Box15"]
+size = Vector3(0.07, 0.11, 0.17)
+
+[sub_resource type="BoxMesh" id="Box16"]
+size = Vector3(0.08, 0.1, 0.13)
+
+[sub_resource type="CylinderMesh" id="Rib17"]
+top_radius = 0.044000000000000004
+bottom_radius = 0.035
+height = 0.224944
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib18"]
+top_radius = 0.053000000000000005
+bottom_radius = 0.047
+height = 0.183303
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib19"]
+top_radius = 0.062
+bottom_radius = 0.059000000000000004
+height = 0.219545
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib20"]
+top_radius = 0.044000000000000004
+bottom_radius = 0.047
+height = 0.212132
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib21"]
+top_radius = 0.053000000000000005
+bottom_radius = 0.059000000000000004
+height = 0.205426
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib22"]
+top_radius = 0.062
+bottom_radius = 0.07100000000000001
+height = 0.228473
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib23"]
+top_radius = 0.044000000000000004
+bottom_radius = 0.059000000000000004
+height = 0.296816
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib24"]
+top_radius = 0.053000000000000005
+bottom_radius = 0.07100000000000001
+height = 0.203961
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib25"]
+top_radius = 0.062
+bottom_radius = 0.083
+height = 0.165529
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib26"]
+top_radius = 0.025
+bottom_radius = 0.05
+height = 0.253969
+radial_segments = 5
+rings = 1
+
+[sub_resource type="CylinderMesh" id="Rib27"]
+top_radius = 0.028
+bottom_radius = 0.045
+height = 0.239008
+radial_segments = 5
+rings = 1
+
+[node name="Mary" type="StaticBody3D"]
+collision_layer = 1
+collision_mask = 0
+[node name="Body" type="MeshInstance3D" parent="."]
+position = Vector3(0.10, 0.805, 0)
+mesh = SubResource("Box1")
+material_override = SubResource("Dark")
+
+[node name="BodyCollision" type="CollisionShape3D" parent="."]
+position = Vector3(0.10, 0.805, 0)
+shape = SubResource("ShapeBox1")
+
+[node name="RightShell" type="MeshInstance3D" parent="."]
+position = Vector3(1.58, 0.825, 0)
+mesh = SubResource("Box2")
+material_override = SubResource("Paint")
+
+[node name="Roof" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1.535, 0)
+mesh = SubResource("Box3")
+material_override = SubResource("Paint")
+
+[node name="LeftRearShell" type="MeshInstance3D" parent="."]
+position = Vector3(-1.57, 0.825, -1.43)
+mesh = SubResource("Box4")
+material_override = SubResource("Paint")
+
+[node name="LeftFrontShell" type="MeshInstance3D" parent="."]
+position = Vector3(-1.57, 0.825, 1.93)
+mesh = SubResource("Box5")
+material_override = SubResource("Paint")
+
+[node name="LeftLowerShell" type="MeshInstance3D" parent="."]
+position = Vector3(-1.57, 0.52, 0.5)
+mesh = SubResource("Box6")
+material_override = SubResource("Paint")
+
+[node name="LeftUpperShell" type="MeshInstance3D" parent="."]
+position = Vector3(-1.57, 1.49, 0.5)
+mesh = SubResource("Box7")
+material_override = SubResource("Paint")
+
+[node name="UpperBody" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1.9, -0.65)
+mesh = SubResource("Box8")
+material_override = SubResource("Paint")
+
+[node name="LeftBase" type="MeshInstance3D" parent="."]
+position = Vector3(-1.68, 0.5, 0)
+mesh = SubResource("Box9")
+material_override = SubResource("Dark")
+
+[node name="LeftBaseCollision" type="CollisionShape3D" parent="."]
+position = Vector3(-1.68, 0.5, 0)
+shape = SubResource("ShapeBox9")
+
+[node name="RightBase" type="MeshInstance3D" parent="."]
+position = Vector3(1.68, 0.5, 0)
+mesh = SubResource("Box10")
+material_override = SubResource("Dark")
+
+[node name="RightBaseCollision" type="CollisionShape3D" parent="."]
+position = Vector3(1.68, 0.5, 0)
+shape = SubResource("ShapeBox10")
+
+[node name="Anomaly" type="Node3D" parent="."]
+position = Vector3(-1.61, 1.2, 0.5)
+
+[node name="OldUpperLip" type="MeshInstance3D" parent="Anomaly"]
+position = Vector3(0, 0.24, 0)
+mesh = SubResource("Box11")
+material_override = SubResource("OldEdge")
+
+[node name="OldLowerLip" type="MeshInstance3D" parent="Anomaly"]
+position = Vector3(0, -0.235, 0)
+mesh = SubResource("Box12")
+material_override = SubResource("OldEdge")
+
+[node name="OldRearLip" type="MeshInstance3D" parent="Anomaly"]
+position = Vector3(0, 0, -0.66)
+mesh = SubResource("Box13")
+material_override = SubResource("OldEdge")
+
+[node name="OldFrontLip" type="MeshInstance3D" parent="Anomaly"]
+position = Vector3(0, 0, 0.66)
+mesh = SubResource("Box14")
+material_override = SubResource("OldEdge")
+
+[node name="TornUpperTab" type="MeshInstance3D" parent="Anomaly"]
+position = Vector3(-0.025, 0.205, -0.38)
+rotation = Vector3(0.12, 0, 0)
+mesh = SubResource("Box15")
+material_override = SubResource("OldEdge")
+
+[node name="TornLowerTab" type="MeshInstance3D" parent="Anomaly"]
+position = Vector3(-0.03, -0.2, 0.24)
+rotation = Vector3(-0.25, 0, 0)
+mesh = SubResource("Box16")
+material_override = SubResource("OldEdge")
+
+[node name="Bridge0_0" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, 0.428086, -0.903738, -0.355643, 0.844653, 0.400099, 0.934622, 0.321408, 0.152246, -0.040000, -0.165000, -0.425000)
+mesh = SubResource("Rib17")
+material_override = SubResource("Growth")
+
+[node name="Bridge0_1" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, 0.447214, -0.894427, -0.218218, 0.872872, 0.436436, 0.975900, 0.195180, 0.097590, -0.100000, 0.010000, -0.340000)
+mesh = SubResource("Rib18")
+material_override = SubResource("Growth")
+
+[node name="Bridge0_2" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, 0.380750, -0.924678, 0.546585, 0.774329, 0.318841, 0.837404, -0.505415, -0.208112, -0.060000, 0.175000, -0.265000)
+mesh = SubResource("Rib19")
+material_override = SubResource("Growth")
+
+[node name="Bridge1_0" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, 0.298275, -0.954480, -0.612826, 0.754247, 0.235702, 0.790218, 0.584930, 0.182791, -0.065000, -0.180000, -0.015000)
+mesh = SubResource("Rib20")
+material_override = SubResource("Growth")
+
+[node name="Bridge1_1" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, -0.301131, -0.953583, 0.243396, 0.924906, -0.292075, 0.969927, -0.232098, 0.073294, -0.105000, -0.005000, -0.020000)
+mesh = SubResource("Rib21")
+material_override = SubResource("Growth")
+
+[node name="Bridge1_2" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, 0.607450, -0.794358, 0.350150, 0.744070, 0.568995, 0.936693, -0.278145, -0.212699, -0.040000, 0.175000, 0.015000)
+mesh = SubResource("Rib22")
+material_override = SubResource("Growth")
+
+[node name="Bridge2_0" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, -0.554700, -0.832050, -0.235836, 0.808581, -0.539054, 0.971793, 0.196227, -0.130818, -0.035000, -0.140000, 0.380000)
+mesh = SubResource("Rib23")
+material_override = SubResource("Growth")
+
+[node name="Bridge2_1" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, 0.600000, -0.800000, -0.196116, 0.784465, 0.588348, 0.980581, 0.156893, 0.117670, -0.090000, 0.060000, 0.360000)
+mesh = SubResource("Rib24")
+material_override = SubResource("Growth")
+
+[node name="Bridge2_2" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, 0.242536, -0.970143, 0.664534, 0.724947, 0.181237, 0.747258, -0.644693, -0.161173, -0.055000, 0.200000, 0.435000)
+mesh = SubResource("Rib25")
+material_override = SubResource("Growth")
+
+[node name="Branch" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, 0.987441, 0.157991, 0.078750, -0.157500, 0.984374, 0.996894, 0.012442, -0.077761, -0.110000, 0.070000, -0.175000)
+mesh = SubResource("Rib26")
+material_override = SubResource("Growth")
+
+[node name="Fork" type="MeshInstance3D" parent="Anomaly"]
+transform = Transform3D(0.000000, 0.902861, 0.429934, 0.230117, -0.418395, 0.878630, 0.973163, 0.098935, -0.207764, -0.102500, -0.150000, 0.115000)
+mesh = SubResource("Rib27")
+material_override = SubResource("Growth")
+
+[node name="EdgeStart" type="Marker3D" parent="Anomaly"]
+position = Vector3(-0.02, 0.24, 0.38)
+
+[node name="EdgeEnd" type="Marker3D" parent="Anomaly"]
+position = Vector3(-0.02, 0.24, 0.64)

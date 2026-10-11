@@ -1,0 +1,581 @@
+{
+  "at": "2026-10-11T17:07:24.226Z",
+  "localTask": "RB-C1B-001",
+  "change": "CHG-20261012-009",
+  "runs": [
+    {
+      "id": "smoke-1791737586561",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "checks": 34,
+      "failures": 6,
+      "physicsFrames": 1107,
+      "originalLogSha256": "13d4b04e6bb355e5937d4db391b9a6103649b9ca55389c1319372cd78fa9f039",
+      "publicExcerptSha256": "ede067f3374eecc0bd0edd0f4ed8aa62ecc1c5f2bbd30b35eeb377e87efaf3ea",
+      "realEscapeExit": false,
+      "inputRuntime": [
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+          "sha256": "836df7f5e43c0d4532a4839d9466586f6f597bb6f2a185a168f80fbe0ad3f3fc"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+          "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+          "sha256": "369814e9ffecd8e81c60e76323a9bc38f667cfec8c1ace1f17ff0574eeb78b67"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+          "sha256": "d0f67e7c1c35fe85deab042ec4fe30a38ddd2558b00fb5d9ce48a7f523aa76e0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+          "sha256": "7b17150af56560dc81c42ed922b607760c13b6d52af0f4f62099ad3ed7632756"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+          "sha256": "293d5000b001bdbecb889555d04786110f8a6b4c741135de32e8a1aef351068f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+          "sha256": "fbc0aeed144e65dcb14407584b51c4b07e759bcf10932dfc67a912ee7d7b1e60"
+        }
+      ]
+    },
+    {
+      "id": "smoke-1791737618016",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "checks": 34,
+      "failures": 1,
+      "physicsFrames": 1020,
+      "originalLogSha256": "6958f4263f68b4bf58409bf9857d6cc34f02d500864f577e48d920244b8fe2b1",
+      "publicExcerptSha256": "34194d72f9f03eb08c38d1e30198e01c763d4211c7bb04549cd288d38e822f39",
+      "realEscapeExit": false,
+      "inputRuntime": [
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+          "sha256": "836df7f5e43c0d4532a4839d9466586f6f597bb6f2a185a168f80fbe0ad3f3fc"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+          "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+          "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+          "sha256": "d0f67e7c1c35fe85deab042ec4fe30a38ddd2558b00fb5d9ce48a7f523aa76e0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+          "sha256": "7b17150af56560dc81c42ed922b607760c13b6d52af0f4f62099ad3ed7632756"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+          "sha256": "293d5000b001bdbecb889555d04786110f8a6b4c741135de32e8a1aef351068f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+          "sha256": "fbc0aeed144e65dcb14407584b51c4b07e759bcf10932dfc67a912ee7d7b1e60"
+        }
+      ]
+    },
+    {
+      "id": "smoke-1791737793924",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "checks": 37,
+      "failures": 7,
+      "physicsFrames": 1107,
+      "originalLogSha256": "a6b090f9f958ebb44a85b71fa7fbf7dcefc5d2a6811ebcb8a2c2ce8212246b4a",
+      "publicExcerptSha256": "28e3bfd619944b0a3b72aaf6ab3bb5c4164efd7894c5e435eafe847588e88a30",
+      "realEscapeExit": false,
+      "inputRuntime": [
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+          "sha256": "836df7f5e43c0d4532a4839d9466586f6f597bb6f2a185a168f80fbe0ad3f3fc"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+          "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+          "sha256": "369814e9ffecd8e81c60e76323a9bc38f667cfec8c1ace1f17ff0574eeb78b67"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+          "sha256": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+          "sha256": "7b17150af56560dc81c42ed922b607760c13b6d52af0f4f62099ad3ed7632756"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+          "sha256": "293d5000b001bdbecb889555d04786110f8a6b4c741135de32e8a1aef351068f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+          "sha256": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b"
+        }
+      ]
+    },
+    {
+      "id": "smoke-1791737819282",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "checks": 37,
+      "failures": 0,
+      "physicsFrames": 1020,
+      "originalLogSha256": "a787af4d0a6fe978b550970a013c61a636d118516e78f021f9d916fa4874ff84",
+      "publicExcerptSha256": "d7f90dc148217597f709d0b623efe6d9768c3bb0fe13b341f1e226ea36685fef",
+      "realEscapeExit": true,
+      "inputRuntime": [
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+          "sha256": "836df7f5e43c0d4532a4839d9466586f6f597bb6f2a185a168f80fbe0ad3f3fc"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+          "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+          "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+          "sha256": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+          "sha256": "7b17150af56560dc81c42ed922b607760c13b6d52af0f4f62099ad3ed7632756"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+          "sha256": "293d5000b001bdbecb889555d04786110f8a6b4c741135de32e8a1aef351068f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+          "sha256": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b"
+        }
+      ]
+    },
+    {
+      "id": "capture-1791737850404",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "checks": 51,
+      "failures": 0,
+      "physicsFrames": 1020,
+      "originalLogSha256": "507343dfafff28430ad06ad9b39955acf80ca6ffc640acfa7b0029ce97dc2229",
+      "publicExcerptSha256": "3f49695f11174275f6f03dde3a6f33822f5118ea5df93bb5feb960350992658b",
+      "realEscapeExit": true,
+      "inputRuntime": [
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+          "sha256": "836df7f5e43c0d4532a4839d9466586f6f597bb6f2a185a168f80fbe0ad3f3fc"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+          "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+          "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+          "sha256": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+          "sha256": "7b17150af56560dc81c42ed922b607760c13b6d52af0f4f62099ad3ed7632756"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+          "sha256": "293d5000b001bdbecb889555d04786110f8a6b4c741135de32e8a1aef351068f"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+          "sha256": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b"
+        }
+      ]
+    },
+    {
+      "id": "smoke-1791738156409",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "checks": 37,
+      "failures": 0,
+      "physicsFrames": 1020,
+      "originalLogSha256": "a787af4d0a6fe978b550970a013c61a636d118516e78f021f9d916fa4874ff84",
+      "publicExcerptSha256": "d7f90dc148217597f709d0b623efe6d9768c3bb0fe13b341f1e226ea36685fef",
+      "realEscapeExit": true,
+      "inputRuntime": [
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+          "sha256": "836df7f5e43c0d4532a4839d9466586f6f597bb6f2a185a168f80fbe0ad3f3fc"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+          "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+          "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+          "sha256": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+          "sha256": "0d7d3caebb48e5aa65d87c93e0b8dd7b2177f907560cccf88c1f9379f250f082"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+          "sha256": "0c6cd98e9cb582dbd22e26f400dc502c673d99436a705b199fefe4032b55332c"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+          "sha256": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b"
+        }
+      ]
+    },
+    {
+      "id": "capture-1791738174464",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "checks": 51,
+      "failures": 0,
+      "physicsFrames": 1020,
+      "originalLogSha256": "961cbe1a86f5de0e72262497f5a81122d0b2f696e42f8c4645f6fce766c67325",
+      "publicExcerptSha256": "5198e5b8d8d93c56c98c4cf745d7dc0c8f07c7bc88d6d6b66c80e2cd26560474",
+      "realEscapeExit": true,
+      "inputRuntime": [
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+          "sha256": "836df7f5e43c0d4532a4839d9466586f6f597bb6f2a185a168f80fbe0ad3f3fc"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+          "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+          "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+          "sha256": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+          "sha256": "0d7d3caebb48e5aa65d87c93e0b8dd7b2177f907560cccf88c1f9379f250f082"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+          "sha256": "0c6cd98e9cb582dbd22e26f400dc502c673d99436a705b199fefe4032b55332c"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+          "sha256": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b"
+        }
+      ]
+    },
+    {
+      "id": "smoke-1791738292996",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "checks": 37,
+      "failures": 0,
+      "physicsFrames": 1020,
+      "originalLogSha256": "a787af4d0a6fe978b550970a013c61a636d118516e78f021f9d916fa4874ff84",
+      "publicExcerptSha256": "d7f90dc148217597f709d0b623efe6d9768c3bb0fe13b341f1e226ea36685fef",
+      "realEscapeExit": true,
+      "inputRuntime": [
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+          "sha256": "5108cc818c4f33655d5061285e6f0e722590a75559ae7e4c739138c152ebb672"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+          "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+          "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+          "sha256": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+          "sha256": "0d7d3caebb48e5aa65d87c93e0b8dd7b2177f907560cccf88c1f9379f250f082"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+          "sha256": "0c6cd98e9cb582dbd22e26f400dc502c673d99436a705b199fefe4032b55332c"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+          "sha256": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b"
+        }
+      ]
+    },
+    {
+      "id": "capture-1791738302311",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "checks": 51,
+      "failures": 0,
+      "physicsFrames": 1020,
+      "originalLogSha256": "861996c8d5d831e429d373f654c329ea165a8ebb662dad73a7c33460a63f08de",
+      "publicExcerptSha256": "eb2d8341cb7adb7726baa216b7bd9e002d171f1386fca50b248870606ec1dfe2",
+      "realEscapeExit": true,
+      "inputRuntime": [
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+          "sha256": "5108cc818c4f33655d5061285e6f0e722590a75559ae7e4c739138c152ebb672"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+          "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+          "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+          "sha256": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+          "sha256": "0d7d3caebb48e5aa65d87c93e0b8dd7b2177f907560cccf88c1f9379f250f082"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+          "sha256": "0c6cd98e9cb582dbd22e26f400dc502c673d99436a705b199fefe4032b55332c"
+        },
+        {
+          "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+          "sha256": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b"
+        }
+      ]
+    }
+  ],
+  "controlledBehaviorRedGreen": {
+    "red": "smoke-1791737793924",
+    "green": "smoke-1791737819282",
+    "onlyRuntimeFileDifferent": "anomaly.gd",
+    "cause": "RED错误关闭接触后输入；GREEN保持自由移动，非解析失败"
+  },
+  "finalSmoke": "smoke-1791738292996",
+  "finalCapture": "capture-1791738302311",
+  "finalEightRuntimeHashes": [
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+      "sha256": "5108cc818c4f33655d5061285e6f0e722590a75559ae7e4c739138c152ebb672"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+      "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+      "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+      "sha256": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+      "sha256": "0d7d3caebb48e5aa65d87c93e0b8dd7b2177f907560cccf88c1f9379f250f082"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+      "sha256": "0c6cd98e9cb582dbd22e26f400dc502c673d99436a705b199fefe4032b55332c"
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+      "sha256": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b"
+    }
+  ],
+  "finalMovie": {
+    "bytes": 54157538,
+    "sha256": "f786f402874eee385b362260cd44aa2d2dac3acd86ac30ac9144d166e9b75de1",
+    "movieFrames": 1022
+  },
+  "pngs": [
+    {
+      "file": "01-entry.png",
+      "bytes": 46169,
+      "sha256": "a2d078a02ad7e8a08aed4d11557365335d2a04a4f700ae3bf40f577243b430e6"
+    },
+    {
+      "file": "02-old-edge-and-reaction.png",
+      "bytes": 98417,
+      "sha256": "c8c195b14acd7401fbc1bc945e1075de6c716e6ca8b5213cf48119a843691668"
+    },
+    {
+      "file": "03-edge-sweep.png",
+      "bytes": 97895,
+      "sha256": "3aae5b9a2a12c02c0d1273ea5ad8d8847059c7b8e75c50aa54301a0942d46e3e"
+    },
+    {
+      "file": "04-hand-retracted.png",
+      "bytes": 99102,
+      "sha256": "7fc66b4fc62c689aedb2ff13aba496a1dd465bbdbad849ca724833b2c92b3963"
+    },
+    {
+      "file": "05-other-side.png",
+      "bytes": 83654,
+      "sha256": "27c9b1a158e033fa121e708c2927b1444920a1e1425f79c70ffa795cb6076e16"
+    },
+    {
+      "file": "06-reset.png",
+      "bytes": 46169,
+      "sha256": "a2d078a02ad7e8a08aed4d11557365335d2a04a4f700ae3bf40f577243b430e6"
+    }
+  ],
+  "frozen": [
+    {
+      "path": "pocs/stylized_3d/c0/garage.gd",
+      "sha256": "69fa84c0ae47d8bd7f8dfcee7389f88f5e332589ef8522413dfa28890bc4c2e5"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/garage.tscn",
+      "sha256": "d79e378dcce29acb8c1ad5bfd02a862542a5b4d3883393be10f9f0cf32626097"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/project.godot",
+      "sha256": "1813cce85de841235a4c5064435f410a28ff6671bee5446cf2bf87aba676f21f"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/README.md",
+      "sha256": "630838597311192c381154b4d3a065adcea442f42036bdeb59926859b1fe0f70"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/spatial_smoke.gd",
+      "sha256": "c30b4540e4381ebd8b1a4f92fb18270d75e09a585970b3bb345f477adb453de9"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/strings.tres",
+      "sha256": "1e7d9d6183680059c96b3aa2ee77baa3443bec4a18fe5242c05a9c814b328b7b"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.gd",
+      "sha256": "534700de932f606f2c4727148eb2c96babbd6c7750674afae227bb4f28e45db9"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.tscn",
+      "sha256": "615cdace8c09efffecd1a8a1f07e77d0346654a61419f147af9d313b9c7e952e"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.gd",
+      "sha256": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/mary.tscn",
+      "sha256": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/narrative_smoke.gd",
+      "sha256": "7cf9c9dddd5c7e26cd9a45fa0b005e8b4273f3cb9684850454585512b18ca9dc"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/project.godot",
+      "sha256": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/README.md",
+      "sha256": "42bcb96369791ad83f221437f6ffba1820f4ab99e353ecab43fff5cf5087c422"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/strings.tres",
+      "sha256": "6b916223d26468d994701aff8728cb91610e0d0b8e3d9b115c95adff7fd83ea8"
+    },
+    {
+      "path": "docs/discovery/RB-DISC-001_REPORT.md",
+      "sha256": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512"
+    }
+  ],
+  "renderObservation": {
+    "observer": "root",
+    "method": "view_image逐一读取最终六PNG；此前读取初始02/03",
+    "specifiedSamplesObserved": true,
+    "initialCoplanarStripes": "FAIL retained in initial-render-review.json and private c1b-initial-render archive",
+    "finalRightAndTopCoplanarStripes": "not observed in inspected samples after geometric fix",
+    "motherHand": "到旧边、沿边与收回在指定姿态中可见；自动距离/高度另核",
+    "limits": [
+      "不保证所有角度/全身/八墙/快速镜头过渡/透明排序和长期性能",
+      "母亲身体可能遮部分部位，普通维修/只看颜色/字幕复述等误读仍由L5判断",
+      "逻辑focus通知不等于OS切焦实测"
+    ]
+  },
+  "manualAcceptance": "OPEN / VERIFYING",
+  "notNativeTaskDone": true
+}

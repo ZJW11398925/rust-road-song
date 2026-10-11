@@ -1,0 +1,19 @@
+{
+  "operation": "play-1791738628297",
+  "at": "2026-10-12T01:11:06.9351669+08:00",
+  "pid": 56244,
+  "title": "rust-road-song (DEBUG)",
+  "windowHandle": "3149072",
+  "responding": true,
+  "projectIdentityVerified": true,
+  "privateSourceSha256": "7e8a2bcf8c9b9ad786d0887d358264de153a6f38bc79fae0f90900283ed72eff",
+  "startupLogSha256": "23c97ea930da4c04695d62a1049df03c6d025d53f5a44cfd80f6c69fe78498c1",
+  "startupErrorMarkers": false,
+  "openQuestionSent": true,
+  "manualFeedback": "PENDING",
+  "limitations": [
+    "窗口响应只为该时点观察，不保证以后存活或前台焦点",
+    "Owner熟悉设计并可看调试采样，此次不是盲测",
+    "启动不是Owner接受"
+  ]
+}

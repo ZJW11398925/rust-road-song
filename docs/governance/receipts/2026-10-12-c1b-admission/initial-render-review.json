@@ -1,0 +1,16 @@
+{
+  "kind": "LOCAL_RENDER_OBSERVATION_AND_INDEPENDENT_REVIEW",
+  "captureOperation": "capture-1791737850404",
+  "technicalOutcome": "51 checks / 0 failures; 1020 physics frames / 1022 movie frames; 6 PNG; no ERROR",
+  "visualOutcome": "FAIL",
+  "observedSamples": ["02-old-edge-and-reaction.png", "03-edge-sweep.png"],
+  "issue": "右侧车壳与顶面出现共面条纹；核心外面与外壳外面重合。",
+  "independentReviewer": "/root/c1b_task_review",
+  "reviewMethod": "只读规格与代码审查，未运行；总控另看实际采样。",
+  "quality": "Needs fixes",
+  "critical": [],
+  "important": [{"path": "pocs/stylized_3d/c1b_anomaly/mary.tscn", "line": 20, "reason": "核心右面x=1.60/顶面y=1.55与RightShell/Roof外面共面", "requiredFix": "核心右/顶面严格退入壳内，保留左面-1.34和同步碰撞"}],
+  "minor": [{"path": "pocs/stylized_3d/c1b_anomaly/strings.tres", "line": 5, "reason": "C1-B阶段编号进入玩家HUD", "requiredFix": "改为中性标题"}],
+  "notManualAcceptance": true,
+  "limitations": ["静态几何/自动烟测/截图不证明异常自然可读", "镜头舒适/完整遮挡/透明排序/情绪与L5未决", "旧失败保留，不用技术退出码0覆盖视觉缺陷"]
+}

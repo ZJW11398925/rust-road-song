@@ -21,7 +21,7 @@ for (const file of required) if (!files.includes(file)) failures.push('缺少项
 const owner = fs.readFileSync(path.join(root, 'docs/00_OWNER_DECISIONS.md'), 'utf8');
 const ids = [...owner.matchAll(/^\| (OD-\d{3}) \|/gm)].map(m => m[1]);
 if (ids.length !== 22 || new Set(ids).size !== 22) failures.push('Owner 决定覆盖或编号不完整');
-// RD-009 冻结 C0 六文件并准许 C1-A 九文件；静态范围不构成 DMCP 实施准入。
+// RD-009/C1-A与RD-011异常小轮的精确文件；静态范围不构成 DMCP 实施准入。
 const prototypeFiles = new Set([
   "pocs/stylized_3d/c0/project.godot", "pocs/stylized_3d/c0/garage.tscn",
   "pocs/stylized_3d/c0/garage.gd", "pocs/stylized_3d/c0/spatial_smoke.gd",
@@ -35,10 +35,19 @@ const prototypeFiles = new Set([
   "pocs/stylized_3d/c1a/strings.tres",
   "pocs/stylized_3d/c1a/narrative_smoke.gd",
   "pocs/stylized_3d/c1a/README.md",
+  "pocs/stylized_3d/c1b_anomaly/project.godot",
+  "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+  "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+  "pocs/stylized_3d/c1b_anomaly/human.tscn",
+  "pocs/stylized_3d/c1b_anomaly/human.gd",
+  "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+  "pocs/stylized_3d/c1b_anomaly/strings.tres",
+  "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+  "pocs/stylized_3d/c1b_anomaly/README.md",
 ]);
 for (const file of files) {
   if (/(^|\/)(inventory|equipment|bounty_system|shop|crew_jobs|skill_tree|world_state)(\/|$)/.test(file)) failures.push("冻结系统：" + file);
-  if (/\.(gd|tscn|tres|godot|uid)$/.test(file) && !prototypeFiles.has(file)) failures.push("超出 C0/C1-A 精确范围：" + file);
+  if (/\.(gd|tscn|tres|godot|uid)$/.test(file) && !prototypeFiles.has(file)) failures.push("超出 C0/C1-A/C1-B小轮精确范围：" + file);
 }
 if (failures.length) { console.error(failures.join('\n')); process.exitCode = 1; }
-else console.log('CONTEXT PASS：22 项 Owner 决定、入口/链接、编码、C0/C1-A 精确文件范围；不代表玩法或 DMCP 准入。');
+else console.log('CONTEXT PASS：22 项 Owner 决定、入口/链接、编码、C0/C1-A/C1-B小轮精确文件范围；不代表玩法或 DMCP 准入。');

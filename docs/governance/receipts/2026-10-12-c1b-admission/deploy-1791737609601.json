@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-11T16:53:29.601Z",
+  "mode": "deploy",
+  "assessmentRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-a2339b6d-8228-47db-aca4-7f7a0c56fe44.2",
+  "sharedNativeLease": true,
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "policySha256": "c84c1142b1a67920526633cd7d5955ad7681c0611e16196171ab40c79f63f42a",
+  "basis": {
+    "canonical_state_id": "CST-299c85bf-be2b-4753-90b4-bb7e454b309c",
+    "schema_version": 5,
+    "design_revision": 21
+  },
+  "files": [
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+      "sha256": "836df7f5e43c0d4532a4839d9466586f6f597bb6f2a185a168f80fbe0ad3f3fc",
+      "bytes": 479
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+      "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1",
+      "bytes": 8179
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+      "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf",
+      "bytes": 11058
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+      "bytes": 3455
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+      "sha256": "d0f67e7c1c35fe85deab042ec4fe30a38ddd2558b00fb5d9ce48a7f523aa76e0",
+      "bytes": 2323
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+      "sha256": "7b17150af56560dc81c42ed922b607760c13b6d52af0f4f62099ad3ed7632756",
+      "bytes": 10148
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+      "sha256": "293d5000b001bdbecb889555d04786110f8a6b4c741135de32e8a1aef351068f",
+      "bytes": 578
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+      "sha256": "fbc0aeed144e65dcb14407584b51c4b07e759bcf10932dfc67a912ee7d7b1e60",
+      "bytes": 6903
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/README.md",
+      "sha256": "ccf74ed909a24ec4afcb88eba516364ba4db7e7f35371cbc82ccf49beff359bf",
+      "bytes": 4593
+    },
+    {
+      "path": "docs/pocs/RB-C1B-001_REPORT.md",
+      "sha256": "52ce4df41aaed6c0f79f87da5041780242a8cb1b702de650b589b4b2dd09a2ed",
+      "bytes": 4570
+    }
+  ],
+  "outcome": "WRITTEN"
+}

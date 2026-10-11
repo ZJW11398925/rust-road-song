@@ -1,0 +1,37 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS distant interaction has visible feedback
+PASS distant action does not open door
+PASS key travel z=5.5
+PASS door reveal restores free entry
+PASS key travel z=2.4
+PASS key travel z=3.4
+PASS ignoring detail does not synthesize contact
+PASS key travel x=-3.1
+PASS key travel z=-1.0
+PASS key travel x=-2.3
+PASS left hand physically reaches shell
+PASS continued movement after first touch
+PASS mother reaction occurs once
+PASS one past-state line is present
+PASS mother hand reaches actual old edge
+PASS movement during dialogue
+PASS mother hand moves along edge
+PASS sweep stays at old lip endpoint
+PASS mother retracts once and returns to rest
+FAIL hand physically returns below shoulder
+PASS key travel z=2.5
+PASS key travel x=2.3
+PASS key travel z=-1.0
+PASS right-side shell touch uses real hand contact
+PASS second touch also retains control
+PASS return and repeated contact do not replay reaction
+PASS focus-out clears held keys
+PASS focus-out suspends movement
+PASS focus-in restores control
+PASS fresh input works after focus-in
+PASS R returns player to initial position
+PASS R clears reveal and touch
+PASS R restores single-reaction state
+PASS R clears past-state line
+C1B_SMOKE checks=34 failures=1 frames=1020

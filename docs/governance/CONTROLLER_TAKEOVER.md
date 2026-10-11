@@ -1,6 +1,8 @@
-# 新总控接续入口 / 2026-10-11
+# 新总控接续入口 / 2026-10-12
 
-依据：[Owner 总控接续要求](sources/2026-10-11-owner-controller-handoff.md)。本文件只导航，不能替代设计正文、Owner 原话或 DMCP 实时状态。当前主线 main；最新局部修订属于 RB-C1A-001 / CHG-20261011-007。开始前核最新 Git，而不是沿交接中的历史哈希盲续。
+2026-10-12现行更新：Owner明确本总控就是宿主，原“缺外部通道”是Agent误判。真实C1-B小轮DEC/PLAN/TASK与独立READY已取得，仅异常可读范围实施中；最新入口是[CURRENT](CURRENT.md)、[任务](../tasks/RB-C1B-001.md)、[实施计划](../plans/RB-C1B-001_IMPLEMENTATION_PLAN.md)及[宿主澄清原始来源](sources/2026-10-12-owner-host-clarification.md)。本文件下方2026-10-11阶段数值/待通道是历史快照，不作当前准入；全设计阅读纪律不变。禁止自动接发动/驾驶/Visual，不能因只看更新摘要开工。
+
+依据：[Owner 总控接续要求](sources/2026-10-11-owner-controller-handoff.md)。本文件只导航，不能替代设计正文、Owner 原话或 DMCP 实时状态。当前主线 main；当前实施属于 RB-C1B-001 / CHG-20261012-009，仅异常可读小轮。开始前核最新 Git，而不是沿交接中的历史哈希盲续。
 
 ## 第一轮：理解设计，然后才布置任务
 
@@ -16,7 +18,7 @@
 6. sources/2026-10-10-owner-reset.md、2026-10-11-owner-discovery-review.md、2026-10-11-owner-c0-execution.md、2026-10-11-owner-c0-close-c1a.md、2026-10-11-c0-first-playtest.md、2026-10-11-c1a-first-playtest.md：区分评审建议、Owner采用范围、真实试玩与未验证推论。其他来源按正文链接补读。
 7. 完整 Discovery/C0/C1-A 报告、当前工单、CHG-004/005/006/007和各轮证据；读[第二轮真实试玩](sources/2026-10-11-c1a-second-playtest.md)、[自动透明要求](sources/2026-10-11-c1a-wall-transparency.md)与[资源恢复授权](sources/2026-10-11-c1a-resource-recovery.md)。C0与Discovery有冻结边界；不要回头把旧实现/方案当现行要求。
 
-   本轮后续还须读[暂时收束](sources/2026-10-11-c1a-provisional-feedback.md)、[下一步要求](sources/2026-10-11-owner-next-step.md)、[具体提案后的采用“推送并继续”](sources/2026-10-11-owner-c1b-anomaly.md)、[小轮规范](../pocs/C1B_ANOMALY_PROPOSAL.md)及[准入计划](../plans/RB-C1B-001_ADMISSION_PLAN.md)。RD-011是新的有限产品授权，不是已经登记的新native DEC/TASK/READY。
+   本轮后续还须读[暂时收束](sources/2026-10-11-c1a-provisional-feedback.md)、[下一步要求](sources/2026-10-11-owner-next-step.md)、[具体提案后的采用“推送并继续”](sources/2026-10-11-owner-c1b-anomaly.md)、[小轮规范](../pocs/C1B_ANOMALY_PROPOSAL.md)及[准入计划](../plans/RB-C1B-001_ADMISSION_PLAN.md)。还须完整读2026-10-12宿主澄清、RB-C1B-001实施计划与新方向/准入回执。RD-011现已真实转录并取得独立READY；不能把它扩大为完整C1-B。
 8. 按下面入口读取完整正式对象、当前工具schema、runtime与真实回执，再检查匹配的当前执行依据。原始 DMCP 正文不能仅依赖可能截断的 design_get/status 输出。
 
 读完先给 Owner 一个有来源的简短理解核对：为什么重启；两项产品承诺怎样共存；家庭/玛丽/战争哪些已定与未定；可操作叙事为何不能锁顺序；当前实验能证明什么；当前授权到哪里；最新反例与下一项最小未知是什么。**这项核对先于执行任务分派**；不是要求新 Owner 再批准已有决定。
@@ -37,13 +39,13 @@ Garage POC不证明爱上玛丽/玛丽成为家/完整旅行欲望；完整情�
 
 - Discovery已采用，原报告冻结；GAP-DMCP-001已上游修复，旧DO_NOT_RETRY未重试。不继续扩张游戏治理或重做上游。
 - C0已由RD-009接受探索阶段，六工程文件冻结。空间无已发现致命问题，驾驶“重量”来自缓起步、有限转向、松键即停、撞墙不滑移；不是车辆模拟/产品参数。四项主观评价缺失仍保留，不能写五项全部客观通过。
-- 当前只有C1-A：另建最低人形舞台，门逐渐显露、一件细节、母亲一个动作/停顿、自由绕车/触碰结束。无异常、发动、驾驶、下车、Profile切换、完整对白、正式资产或通用系统。
+- RD-009阶段只有C1-A：另建最低人形舞台，门逐渐显露、一件细节、母亲一个动作/停顿、自由绕车/触碰结束。无异常、发动、驾驶、下车、Profile切换、完整对白、正式资产或通用系统。
 - 首轮Owner真实复述：“感觉在抚摸一个老朋友”；同时指出区域自动切镜价值低、缺母亲强调且怪。这个证据支持局部熟悉感，不是C1-A整体接受。
 - CHG-005已删除player区域往返切镜，连续构图跟随母亲/玛丽同框并保留玩家空间；未改动作/台词/输入。真实RED50/3，最终smoke52/0，无ERROR；渲染52行为+1目录+388PNG=441/0、4661帧。探针混用无窗口表面64×64/可见视口1280×800的问题已修正，录像与最终探针字节差异单列。截图/射线不等于镜头舒服。
 - 上述52/441归CHG-005历史。随后接续只读复审完成，但[第二轮真实试玩](sources/2026-10-11-c1a-second-playtest.md)指出右侧视角、强制右侧和入口墙遮挡。CHG-006复现RED60/4后最小修正连续侧向镜头、双侧真实触壳与匹配碰撞的低前景墙；最终61/0、渲染580/0，独立审查提出离开证据缺陷并复核解决，见[实际证据](receipts/2026-10-11-c1a-sides/verification.json)。直退与同侧母亲实体相遇61/1及早期429保留；绕行可离开不能证明所有路线畅通。
 - 随后Owner明确要求墙自动透明、否定CHG-006低墙；RD-010 / CHG-007恢复原3米墙，仅对已有墙独立材质按当前遮挡自动淡化/恢复，实体边界保留。有效RED66/3→66/0、实际渲染585/0；首个capture内存分配崩溃保留FAIL，经Owner授权重启OneDrive释放资源后同字节复跑通过，见[最新证据](receipts/2026-10-11-c1a-walls/verification.json)。独立静态复审完成，无可行动缺陷，原429保留。
 - 最新Owner回复[“暂时就这样吧”](sources/2026-10-11-c1a-provisional-feedback.md)：本轮暂时收束，保留自动透明候选，不主动追加修正或追问，等待下一步指示。已有本版回复但未回答各项L5体验评价，不补作完整接受；C1-A仍VERIFYING，CHG-004/005/006/007仍IN_PROGRESS。有限采样不证明八墙所有路径/全身/快速过渡/排序阴影叠层，母亲动作强调/镜头舒适、窗口/OS焦点/实时性能未知。资源恢复不证明永无代码/驱动问题。不能继承旧APPROVE或自动进入C1-B。
-- Owner随后[采用具体小轮并要求推送/继续](sources/2026-10-11-owner-c1b-anomaly.md)，RD-011产品范围现只授权C1-B第一小轮异常可读，携带C1-A未知项，不接启动/驾驶/完整C1-B或Visual。新正式Owner转录入口缺失，当前仅完成准入计划/未投递请求与原生格式核验；不自授ORG，不重复询问产品批准，也不在新READY前写工程。普通CLI只读，旧历史脚本自行设置ORG不证明本轮具有合法受信宿主入口。
+- Owner随后[采用具体小轮并要求推送/继续](sources/2026-10-11-owner-c1b-anomaly.md)，RD-011只授权C1-B第一小轮异常可读，携带C1-A未知，不接启动/驾驶/完整C1-B或Visual。2026-10-12[明确总控就是宿主](sources/2026-10-12-owner-host-clarification.md)，纠正此前Agent误报通道缺口；受限真实转录、SERVICE新PLAN/TASK和独立READY已落实，见当前状态/实际回执。
 
 ## DMCP与首轮只读动作
 
@@ -58,15 +60,15 @@ node scripts/dmcp.mjs read
 node scripts/check_context.mjs
 ```
 
-真实工作区 ws-217bac29-7a08-437c-be5f-472693bf16ca；本轮核过schema/design5/17、12canonical/0Finding/3runtime。DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2@2，PLAN-OPI-a5367870-5bca-4c0a-bb74-ea2abfc706f9.2@1，TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2@1。当前CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3；**这些是本轮核实快照，接手以实时读回为准**。
+真实工作区 ws-217bac29-7a08-437c-be5f-472693bf16ca；最新完整读回schema/design5/21、15canonical/0Finding/4runtime。DEC-OPI-4b9f03d0-7cce-48df-a87c-8ce490e5cfbd.2@2，PLAN-OPI-c853b5b7-b3eb-4abc-982c-fa4ee5ee60fa.2@1，TASK-OPI-e4b3ed6b-5890-4739-ad2c-36fa6bc41c93.2@1，CST-299c85bf-be2b-4753-90b4-bb7e454b309c。接手以实时完整读回为准。
 
-当前PROTOTYPE READY为RDY-OPI-05151b82-23d7-42d6-b603-5cb7ee0a615d.2，4requirements/4facts，仅C1-A十精确路径和固定Godot参数。结构READY、登记TASK、自动化PASS、原版Owner反馈各自不是新阶段授权。原生TASK无DONE接口，不伪造生命周期。
+当前PROTOTYPE READY为RDY-OPI-a2339b6d-8228-47db-aca4-7f7a0c56fe44.2，4requirements/4facts，仅C1-B小轮十精确路径和固定Godot参数；旧C1-A READY归档保留，不授新任务。结构READY、自动化PASS、旧Owner反馈不是产品完成。原生TASK无DONE，不伪造生命周期。
 
-同机新对话复用现有.local/dmcp-host.json、canonical、固定消费者.local/c1a-consumer.mjs、工具链与引擎；**不要创建新workspace**。普通CLI只读，桌面mcp__dmcp固定另一个项目，不能借用。每次代码部署/运行必须在固定消费者共享native lease内重新核当前basis/真实Owner操作/facts/READY，不重投已投readiness。不得擅升ORG、修改policy绕过或编辑.design。未知结果先查原意图/回执，DO_NOT_RETRY不重试。
+同机新对话复用现有.local/dmcp-host.json、canonical、固定消费者.local/c1b-consumer.mjs、工具链与引擎；**不要创建新workspace**。普通CLI只读，桌面mcp__dmcp固定另一个项目，不能借用。每次代码部署/运行必须在固定消费者共享native lease内重新核当前basis/真实Owner操作/facts/READY，不重投已投readiness。不得擅升ORG、修改policy绕过或编辑.design。未知结果先查原意图/回执，DO_NOT_RETRY不重试。
 
 上游86a8fc1已本地提交未推送，Git之外canonical及.local依赖不随public克隆携带。当前同机已验证可读；若迁机须按TOOLING迁完整身份/descriptor/状态/审计/runtime/锁定工具，不能只靠克隆重新造状态。新总控若不在canonical仓库根，先停实现并纠正项目上下文，绝不能沿Legacy提示继续旧路线。
 
-当前public工程：pocs/stylized_3d/c1a；最新运行回执在 receipts/2026-10-11-c1a-walls/verification.json及c1a-admission；sides/camera为CHG-006/005历史。原始日志/各版录像含失败保存在.local，它们不是L5。当前候选录像.local/c1a-input.avi；最新交互启动若有见walls/play-window.json，不假设进程仍在或窗口已人工接受。
+上一阶段保留工程：pocs/stylized_3d/c1a；当前小轮见RB-C1B-001/当前状态；最新运行回执在 receipts/2026-10-11-c1a-walls/verification.json及c1a-admission；sides/camera为CHG-006/005历史。原始日志/各版录像含失败保存在.local，它们不是L5。当前候选录像.local/c1a-input.avi；最新交互启动若有见walls/play-window.json，不假设进程仍在或窗口已人工接受。
 
 ## 分派与收尾纪律
 

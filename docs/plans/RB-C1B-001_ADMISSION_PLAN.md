@@ -1,5 +1,7 @@
 # RB-C1B-001 异常可读小轮：准入执行计划
 
+2026-10-12现行更正：Owner[明确本总控就是宿主](../governance/sources/2026-10-12-owner-host-clarification.md)，原“缺外部入口”是Agent身份解释错误。源包已经沿既有真实通道转录，新DEC@2、SERVICE PLAN/TASK@1与独立READY已完成，见binding和[实施计划](RB-C1B-001_IMPLEMENTATION_PLAN.md)。下文是原准备快照，未勾选项不作现行阻断；普通执行仍SERVICE。
+
 > 执行者按任务逐项推进；若以后进入游戏实施，用subagent-driven-development或executing-plans的逐项验证方式。本计划仅覆盖当前准入工作，不派游戏实施Agent、不创建新游戏代码。中文和本仓库文档布局优先于技能默认模板。
 
 **目标：** 把[已获Owner采用的具体小轮](../governance/sources/2026-10-11-owner-c1b-anomaly.md)变成新的真实执行依据；准入成立前完成可交付源请求，不冒称已有TASK/READY。

@@ -58,6 +58,10 @@ Git 外 canonical 不由 Git 提交备份。迁机按 TOOLING 迁移完整工作
 结果与投递意图见 receipts/2026-10-11-c0-admission。已有正式READY不得盲重投；同范围代码修正重核同一依据，C0→C1仍需新的具体授权/任务/选择，不因相同能力类重写协议。CLI仅读不变。原始带宿主路径的回执在私有存储，公开投影和原始SHA分别说明；不以投影冒称原始字节。
 
 
-## 当前 C1-A 原型受限消费
+## C1-A 原型受限消费（归档，仍VERIFYING）
 
 RD-009 真实 Owner 转录创建新 DEC@2/PLAN@1/TASK@1，旧9对象/2runtime原样保留。沿同一个 prototype_execution@1，仅更换精确十路径、固定 Godot 项目/参数与当前依据；不修改上游协议。新 READY 与每次部署/运行回执存 receipts/2026-10-11-c1a-admission；四事实与原生 sidecar 在共享 lease 下逐次核对，旧 C0 READY 不可消费。普通 CLI 仍只读，可信本机入口不是 OS 沙箱；实际人工可读性另验。
+
+## 当前 C1-B异常小轮受限消费
+
+Owner明确本总控承担宿主职责，仅转录已采用的具体小轮，见2026-10-12来源。两次真实Owner操作和SERVICE新PLAN/TASK已完成；沿同一prototype_execution@1选择新十路径/固定Godot参数，独立READY四事实/要求。旧12canonical/3runtime保留，C1-A选择/READY归档。当前固定SERVICE消费者.local/c1b-consumer.mjs共享native lease重核basis/事实/READY/273项依赖，部署和运行各存意图及回执；没有通用写入CLI或上游新协议。新游戏体验人工另验，不接发动/驾驶。

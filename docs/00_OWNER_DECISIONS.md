@@ -76,7 +76,7 @@
 
 来源：[具体提案后的“推送并继续”](governance/sources/2026-10-11-owner-c1b-anomaly.md)。采用C1-B第一小轮，仅检验一处旧损伤与不可能变化的自然可读性：独立灰盒、母亲一段身体反应、最多一句过去状态候选短文本，玩家可自由忽略/触碰/往返。携带C1-A未知项，不把其逐项L5补作通过；候选部位/材料/动作/措辞不是新故事真相。
 
-本指令只替代RD-009中“C1-B尚待裁定”的这一有限范围；完整C1-B的启动、机械协作、驾驶/驶出及Visual仍未批准。先落实新的合法Owner转录、PLAN/TASK与实际READY，不能借用C1-A准入。产品授权已经清楚，宿主Owner入口缺口不能靠Agent自行设ORG身份补齐。当前没有本轮新正式ID或已获READY，见[准入计划](plans/RB-C1B-001_ADMISSION_PLAN.md)。
+本指令只替代RD-009中“C1-B尚待裁定”的这一有限范围；完整C1-B的启动、机械协作、驾驶/驶出及Visual仍未批准。先落实新的合法Owner转录、PLAN/TASK与实际READY，不能借用C1-A准入。2026-10-12 Owner[明确本总控就是宿主](governance/sources/2026-10-12-owner-host-clarification.md)，纠正Agent误报通道缺口。受限真实转录已完成：新DEC@2、SERVICE PLAN/TASK@1和独立READY见[binding](governance/binding.json)、[回执](governance/receipts/2026-10-12-c1b-direction/readback-verification.json)及[准入](governance/receipts/2026-10-12-c1b-admission/assessment-projection.json)。沿同一原型协议，不是完整产品接受。
 
 ## 尚未裁定 / 不得自行确认
 

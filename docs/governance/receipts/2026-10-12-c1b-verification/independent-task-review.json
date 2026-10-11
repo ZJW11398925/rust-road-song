@@ -1,0 +1,16 @@
+{
+  "reviewer": "/root/c1b_task_review",
+  "mode": "READ_ONLY_STATIC",
+  "initial": "Needs fixes; Important core coplanar faces, Minor HUD stage title",
+  "final": "Spec compliant / Approved for code and geometry after localized re-review",
+  "remainingActionableFindings": [],
+  "references": [
+    "mary.tscn:20",
+    "mary.tscn:23",
+    "mary.tscn:157",
+    "mary.tscn:162",
+    "strings.tres:5"
+  ],
+  "notRuntimeOrL5Acceptance": true,
+  "rootSeparateRenderedObservation": "verification.json"
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "LOCAL_METADATA_CORRECTION_NOT_NATIVE_MUTATION",
+  "reason": "宿主登记脚本复用旧输出模板，私有direction-registered的previousPlanId/previousTaskId误引用C0字段。实际新DEC的related_constraint_refs指向C1-A，正式PLAN/TASK/准入和binding归档均正确。原始输出保留，不重写操作回执。",
+  "actualPreviousCurrentDecisionId": "DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2",
+  "actualPreviousCurrentPlanId": "PLAN-OPI-a5367870-5bca-4c0a-bb74-ea2abfc706f9.2",
+  "actualPreviousCurrentTaskId": "TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2",
+  "nativeObjectsOrOperationsChanged": false,
+  "allPrevious12ObjectsAnd3RuntimePreserved": true
+}

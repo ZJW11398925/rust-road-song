@@ -1,29 +1,21 @@
-# 新总控交接 / 2026-10-11
+# 新总控交接 / 2026-10-12
 
-必须按[CONTROLLER_TAKEOVER](CONTROLLER_TAKEOVER.md)读全设计/真实来源/正式对象，不凭本摘要开工。本轮已完整理解后先汇报边界，再分派；[原接续检查点](receipts/2026-10-11-controller-resumption/checkpoint.md)保留。
+本文件只导航；总控必须按[完整设计入口](CONTROLLER_TAKEOVER.md)读全正文/Owner原话/真实试玩，再读实时正式对象。不能凭摘要布置新任务。本总控已完成该核对。
 
-产品两项承诺是玩家自己的旅程与少量人物/物件逐渐改变意义；玛丽先是旧家庭车。世界/家庭基本处境已定，父亲结局/战争真相/异常本质/最终3D未定。合理操作不能由节拍硬锁，当前首见戏不证明完整家庭情感或自由旅行。
+现行范围：RD-011 / RB-C1B-001，只做独立异常可读小轮，一处旧裂口与跨隙新组织、一次母亲反应、最多一句过去信息；自由双侧/先触碰/忽略/走开返回/对白移动，触碰不结束。发动/驾驶/协作/驶出、完整C1-B、Visual、Legacy和新框架均未授权。当前可运行、VERIFYING；新工程技术核验完成，未人工接受不得DONE。[提案](../pocs/C1B_ANOMALY_PROPOSAL.md)、[实施计划](../plans/RB-C1B-001_IMPLEMENTATION_PLAN.md)、[CHG009](../changes/CHG-20261012-009.md)。
 
-C0按RD-009接受探索阶段、六文件冻结/四项主观缺失保留。只实施另建C1-A小舞台：首见、母亲一个动作/停顿、自由接近触碰结束。无异常/发动/驾驶、正式资产、C1-B/Visual或Legacy/新系统。
+Owner在具体提案后[“推送并继续”](sources/2026-10-11-owner-c1b-anomaly.md)，随后[明确本总控就是宿主](sources/2026-10-12-owner-host-clarification.md)。此前“缺外部Owner通道”是Agent身份解释错误，原准备记录保留。现已沿既有通道受限真实Owner转录，SERVICE建立计划/任务并获取独立READY，未改上游协议/未借其他workspace/未复用旧READY；普通执行仍SERVICE。
 
-最新Owner指令：[墙应自动透明而非变矮](sources/2026-10-11-c1a-wall-transparency.md)，替代CHG-006低墙；RD-010本地登记真实来源，非新native DEC。前一[真实反例](sources/2026-10-11-c1a-second-playtest.md)为右侧视角、强制右侧/入口遮挡。当前CHG-007恢复原3米墙与匹配碰撞，对八面现有墙独立材质按相机至人物/车点的AABB视线局部平滑淡化/恢复，首见前实心、R复位。双侧仍同一实际手触壳，世界WASD/移动保留，无管理器或资产。
+最新完整读回：schema/design5/21、15canonical/0Finding/4runtime，CST-299c85bf-be2b-4753-90b4-bb7e454b309c。DEC-OPI-4b9f03d0-7cce-48df-a87c-8ce490e5cfbd.2@2、PLAN-OPI-c853b5b7-b3eb-4abc-982c-fa4ee5ee60fa.2@1、TASK-OPI-e4b3ed6b-5890-4739-ad2c-36fa6bc41c93.2@1；RDY-OPI-a2339b6d-8228-47db-aca4-7f7a0c56fe44.2 READY，四事实/要求、十精确路径与固定Godot参数，见[方向读回](receipts/2026-10-12-c1b-direction/readback-verification.json)、[准入](receipts/2026-10-12-c1b-admission/assessment-projection.json)及binding。旧12对象/3runtime完整保留，TASK无DONE接口。每次消费重核真实依据。
 
-[报告](../pocs/RB-C1A-001_REPORT.md)、[CHG007](../changes/CHG-20261011-007.md)、[最新证据](receipts/2026-10-11-c1a-walls/verification.json)：RED66/3→66/0；重跑实际渲染585/0（66行为+目录+518PNG）、6220帧。最终smoke与两次capture八运行文件相同。首个capture mem null / alloc_exact及signal11崩溃保留FAIL；本机可用物理约0.3GB、OneDrive私有约24GB，经[Owner授权重启](sources/2026-10-11-c1a-resource-recovery.md)并核新实例后同字节重跑通过，支持资源压力解释，不证明代码/驱动永远无责。原/失败/低墙各录像与日志保留，不美化。
+C0按RD-009阶段接受，六工程文件冻结，四项主观评价缺失不补PASS；Discovery原报告冻结。C1-A仍VERIFYING，CHG004–007 IN_PROGRESS。[首轮“抚摸老朋友”](sources/2026-10-11-c1a-first-playtest.md)仅局部熟悉感；[第二轮反例](sources/2026-10-11-c1a-second-playtest.md)为右侧视角/强制右侧/入口遮挡；[低墙被Owner否定](sources/2026-10-11-c1a-wall-transparency.md)。CHG007恢复3米高墙，自动遮挡淡化/恢复和双侧触壳候选得到技术核验，[证据](receipts/2026-10-11-c1a-walls/verification.json)RED66/3→66/0、实际渲染585/0；这些不证明镜头舒适/母亲强调/完整家庭情感。[最新“暂时就这样吧”](sources/2026-10-11-c1a-provisional-feedback.md)暂时保留，不补完整L5。
 
-[独立静态审查](receipts/2026-10-11-c1a-walls/independent-review.json)完成，未发现可行动缺陷；首个429失败不删。审查未运行，不代表L5。总控看指定初态、墙淡化/恢复、双侧姿态，只确认这些画面。尚未逐项走全部八墙，点采样不证明全身/母亲全动作/快速过渡，透明排序/阴影叠层/残余墙色、动作强调与舒适、OS焦点/窗口/实时性能仍未知。直退与同侧母亲实体相遇保留，A/S绕行可离开不证明任意路线畅通。
+C1-A首个capture内存分配崩溃保留FAIL；经[Owner授权重启OneDrive](sources/2026-10-11-c1a-resource-recovery.md)后同字节重跑通过，不证明长期资源/驱动/代码永无问题。有限点/AABB不证明全身/所有墙路线、透明排序/阴影、快速过渡；同侧母亲实体相遇、直退受阻的历史反例保留。新轮若重现应记失败，不挪历史52/441、61/580、66/585当新证据。
 
-**C1-A VERIFYING，CHG-004/005/006/007 IN_PROGRESS**；低墙被否定。最新[Owner回复“暂时就这样吧”](sources/2026-10-11-c1a-provisional-feedback.md)，本轮暂时收束并保留自动透明候选，停止主动追加修正/追问。回复没有提供母亲动作复述或各项体验评价，不补成L5通过/完整接受，不DONE/不进入C1-B。历史44/318、52/441、61/580及各版独立复审不能继承。
+同机绑定及Git外canonical/.local消费者/锁定工具链必须保留；桌面DMCP facade固定其他项目不可用。本项目CLI仅read/tools/get，消费器.local/c1b-consumer.mjs；未知结果先查原意图/回执，DO_NOT_RETRY不重试。迁机依TOOLING，不造workspace。main已持续授权主动提交/推送，命令级HTTP/1.1/单请求曾恢复网络，无持久配置改动。上轮发布至1f8829572ab98e0f7323cc150014a1153d137b2d已核远端；本轮新实现哈希/发布待完成。
 
-正式末读与前轮完整对象/runtime相同：schema/design5/17、12canonical/0Finding/3runtime，binding的workspace/DEC@2/PLAN@1/TASK@1与既有实际C1-A READY四facts/requirements、十路径/固定Godot参数逐次消费者共享native lease重核。无正式写入/准入重投/scope或policy override/上游改动。桌面DMCP facade固定其他项目不能借用，CLI只读；原生TASK无DONE，不自授ORG或手改.design。
+新小轮[真实核验](receipts/2026-10-12-c1b-verification/verification.json)：有效对照RED37/7→GREEN37/0；最终真实输入37/0、实际渲染51/0，1020物理/1022录像帧、6PNG，smoke/capture八运行字节一致。手臂残余旋转和右侧旧bool探针已修；首个渲染技术通过但共面条纹视觉FAIL保留，核心网格/碰撞同步内缩后指定样本条纹消失。独立规格/代码审查及聚焦复核通过，[发布前全轮复审](receipts/2026-10-12-c1b-verification/independent-final-review.json)Approved。L5开放待反馈，不裁决异常可读/镜头舒适或完整情感。
 
-工程pocs/stylized_3d/c1a：WASD世界移动、E开门/左右车侧尝试触碰，R重置、Esc退出。新窗口与观察见walls/play-window.json，启动不保证之后存活或接受。旧低墙PID35624核身份关闭。最新录像.local/c1a-input.avi，失败半录像.local/c1a-walls-failed-render；低墙原录像.local/c1a-chg006-render，其余更旧归档见报告。
+首轮必须读完整设计、原始来源、真实试玩和实时全对象/runtime，先交有来源的理解/已决未决/边界/反例，再分派。当前下一动作是完成RB-C1B-001小轮及独立核验/开放L5；不是重问已经批准的范围，也不是接发动驾驶。游戏假设、实施准入、实现、独立验证、Owner接受分开报告。
 
-main；CHG007实现提交`6d9ac2f3d11373b941de5cb80bc1e3d9c3a2e8ab`已主动推送并核远端相同，完成技术部分见CHG007/[发布回执](receipts/2026-10-11-c1a-walls/publication-verification.json)，后续元数据由Git历史定位。新窗口已核响应，试玩问题已发出，尚无本版Owner接受。Git外canonical/.local消费者/descriptor与锁定engine/toolchain是同机依赖，上游86a8fc1本地提交未推送，迁机依TOOLING完整核身份，不重造workspace。
-
-最新Owner已在具体提案后[“推送并继续”](sources/2026-10-11-owner-c1b-anomaly.md)，RD-011采用C1-B第一小轮，仅一处旧伤/新组织、一段母亲反应和最多一句过去信息，携带C1-A未知项；不接启动/驾驶，部位/措辞/动作仍为实验候选。CHG008 / 本地RB-C1B-REVIEW-001不是native TASK；产品批准已经明确，无须重问范围。
-
-本轮已完成[准入执行计划](../plans/RB-C1B-001_ADMISSION_PLAN.md)、未投递的Owner decision参数与未绑定契约列表；用锁定engine原生strict contract面离线核验格式合法。下一项是受信宿主实际供给Owner转录通道，再依计划落实真实新DEC@2、SERVICE PLAN/TASK和独立READY，不是再询问产品批准。prototypeExecutionBasis消费的currentDocumentOwnerEvidence要求两条真实ORG操作，SERVICE无法替代；旧脚本设置ORG参数不构成本轮合法入口。不自授组织权限、复制旧policy凑READY或改上游协议。
-
-现行native仍为C1-A的schema/design5/17、12canonical/0Finding/3runtime，完整对象/runtime及八运行文件逐项未变。本轮未投递正式写入、未修改binding/profile/policy、未创建C1-B工程/未做游戏运行；新L1–L5为N/A（未准入），不能用文档校验PASS冒称游戏验证。
-
-准备提案及本次采用/源包/计划已发布，至`a19639f930770152a95bb03d6644b4fb01967c8a`远端与本地相同，见[真实发布回执](receipts/2026-10-11-c1b-preparation/publication-verification.json)。此前连接失败原样保留，后续元数据由Git历史定位。当前只缺受信Owner转录入口，不再要求重复范围批准，也不把恢复推送当新原型准入。
+新[试玩窗口](receipts/2026-10-12-c1b-verification/play-window.json)已于记录时点核准确进程/句柄/响应；已发开放问题，L5反馈PENDING，此次不是盲测。全量正式末读与新准入后完全相同。后续反馈先保存原话与反例，再决定当前小轮修正，不自动接后段。

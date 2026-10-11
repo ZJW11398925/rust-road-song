@@ -1,0 +1,15 @@
+; Isolated C1-B greybox. Candidate geometry; no product engine commitment.
+config_version=5
+[application]
+config/name="rust-road-song"
+run/main_scene="res://anomaly.tscn"
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/stretch/mode="canvas_items"
+[rendering]
+renderer/rendering_method="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.10,0.11,0.12,1)
+[internationalization]
+locale/fallback="zh_CN"
+locale/test="zh_CN"

@@ -1,0 +1,82 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-c1b-anomaly.md",
+  "sourceSha256": "a408e1f1f566d542a3dddc37c5db406423d10afcf0f86f4a5544dfd444e4821d",
+  "ownerRaw": "推送并继续",
+  "hostClarificationSource": "docs/governance/sources/2026-10-12-owner-host-clarification.md",
+  "hostClarificationSha256": "e81d2c79a52a22afe0d9f0c5c267fe516884758a24b51aaffff0769e9e9106aa",
+  "host": "SERVICE",
+  "tool": "plan_build",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "plan_proposal": {
+      "target": {
+        "target_stage": "PROTOTYPE",
+        "scope_ref": {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-4b9f03d0-7cce-48df-a87c-8ce490e5cfbd.2"
+        },
+        "value_goal_ref": {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-4b9f03d0-7cce-48df-a87c-8ce490e5cfbd.2"
+        }
+      },
+      "value_anchor": {
+        "state": "NO_VALUE_SLICE_YET",
+        "reason_type": "VIABILITY_DISCOVERY_UNRESOLVED",
+        "reason_refs": [
+          {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+            "kind": "DECISION",
+            "id": "DEC-OPI-4b9f03d0-7cce-48df-a87c-8ce490e5cfbd.2"
+          }
+        ]
+      },
+      "work_items": [
+        {
+          "local_key": "c1b-anomaly-readability",
+          "kind": "RISK_SPIKE",
+          "resolves_or_informs": [
+            {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-4b9f03d0-7cce-48df-a87c-8ce490e5cfbd.2"
+            }
+          ],
+          "question": "玩家自由观察一处旧损伤和新组织及母亲反应，能否读出不可能变化而非普通维修？",
+          "bounded_scope": "独立灰盒一个部位、一次母亲反应、最多一句过去信息；自由观察与双侧触碰。无发动/驾驶。",
+          "effort_boundary": "一轮局部可读性实验及失败修正，不扩建完整C1-B或通用框架。",
+          "expected_evidence": [
+            "真实输入的自由观察、提前触碰、忽略、离开返回及错误恢复",
+            "一个部位和一次反应的真实渲染",
+            "非实现者开放复述与普通维修等反例"
+          ],
+          "exit_condition": "提交局部信息表达证据与反例；未人工接受保持VERIFYING，不自动接发动/驾驶或Visual。",
+          "consumers": [
+            {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-4b9f03d0-7cce-48df-a87c-8ce490e5cfbd.2"
+            }
+          ]
+        }
+      ],
+      "relations": [],
+      "basis": {
+        "design_basis_fingerprint": "a408e1f1f566d542a3dddc37c5db406423d10afcf0f86f4a5544dfd444e4821d",
+        "planning_policy_version": "rust-road-song-c1b-anomaly-v0.1",
+        "repository_basis_refs": [
+          "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+        ]
+      }
+    },
+    "expected": {
+      "canonical_state_id": "CST-a1cee6b3-a272-4b43-9069-bf9ee61b8640",
+      "schema_version": 5,
+      "design_revision": 19
+    }
+  }
+}

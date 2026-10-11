@@ -1,0 +1,12 @@
+{
+  "basis": {
+    "observed_canonical_state_id": "CST-299c85bf-be2b-4753-90b4-bb7e454b309c",
+    "observed_schema_version": 5,
+    "observed_design_revision": 21
+  },
+  "canonicalCount": 15,
+  "runtimeCount": 4,
+  "completeCanonicalAndRuntimeUnchangedSinceAdmission": true,
+  "fullReadSha256": "6b8d9217106c3323d910421ddaedd93c6e00245b423be33346b7fd8ec7f7f43b",
+  "notNativeTaskDone": true
+}

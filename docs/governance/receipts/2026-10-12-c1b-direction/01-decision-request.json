@@ -1,0 +1,49 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-c1b-anomaly.md",
+  "sourceSha256": "a408e1f1f566d542a3dddc37c5db406423d10afcf0f86f4a5544dfd444e4821d",
+  "ownerRaw": "推送并继续",
+  "hostClarificationSource": "docs/governance/sources/2026-10-12-owner-host-clarification.md",
+  "hostClarificationSha256": "e81d2c79a52a22afe0d9f0c5c267fe516884758a24b51aaffff0769e9e9106aa",
+  "host": "ORGANIZATION_AUTHORITY",
+  "tool": "decision_add",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "decision": {
+      "question": "是否携带C1-A残余未知，先实施C1-B第一小轮，仅检验旧损伤与不可能变化可读性？",
+      "alternatives": [
+        {
+          "key": "anomaly_only",
+          "description": "采用已审提案：独立最小灰盒、一处部位、一次母亲反应、最多一句过去信息，自由观察/触碰；不接启动/驾驶。"
+        },
+        {
+          "key": "full_c1b",
+          "description": "一次接上异常、机械协作、启动与驶出；本轮未采用。"
+        },
+        {
+          "key": "more_c1a",
+          "description": "继续延长C1-A镜头/动作细调；当前未采用，残余未知保留。"
+        }
+      ],
+      "selected_key": "anomaly_only",
+      "reason": "Owner在具体提案和“是否采用并携带C1-A未决项继续、先办理新任务与独立READY”提问后直接回复“推送并继续”；真实来源 docs/governance/sources/2026-10-11-owner-c1b-anomaly.md，SHA256 a408e1f1f566d542a3dddc37c5db406423d10afcf0f86f4a5544dfd444e4821d。采用实验范围，不确认异常本质/正式资产或C1-A逐项通过。",
+      "related_constraint_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2"
+        }
+      ],
+      "tradeoffs": [
+        "先定位信息表达风险，启动/驾驶另审，不以剧情观察顺序硬锁。",
+        "C1-A保持VERIFYING、反例与主观未知携带，不据此裁决最终3D。"
+      ]
+    },
+    "expected": {
+      "canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+      "schema_version": 5,
+      "design_revision": 17
+    }
+  }
+}

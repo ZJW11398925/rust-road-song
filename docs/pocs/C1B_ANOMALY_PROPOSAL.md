@@ -1,5 +1,7 @@
 # C1-B 第一小轮提案：旧损伤与不可能变化
 
+2026-10-12现行状态：OWNER_SCOPE_ADOPTED / READY / 可运行VERIFYING。Owner[宿主澄清](../governance/sources/2026-10-12-owner-host-clarification.md)纠正Agent通道误判；新真实DEC/PLAN/TASK和独立READY见[binding](../governance/binding.json)和[实施计划](../plans/RB-C1B-001_IMPLEMENTATION_PLAN.md)。下文保留2026-10-11准备版本的完整需求与历史状态，“缺宿主/尚无新依据/未创建”属于旧时点，非现行阻断；候选表现仍非正式设定。
+
 状态：PROPOSED，2026-10-11；只供Owner审查，不是正式PLAN/TASK或实施准入。依据[开始下一步](../governance/sources/2026-10-11-owner-next-step.md)。C1-A仍VERIFYING，[暂时收束](../governance/sources/2026-10-11-c1a-provisional-feedback.md)没有补齐各项体验评价；是否携带这些未知项进入下一轮，由Owner本次裁定。
 
 后续状态：**OWNER_SCOPE_ADOPTED / WAITING_NATIVE_OWNER_CHANNEL**。[Owner“推送并继续”](../governance/sources/2026-10-11-owner-c1b-anomaly.md)已采用推荐小轮并携带未知项；上段及下文“待Owner批准/若批准”是准备版本的历史语义，范围审查已完成，不再重复请求批准。候选表现仍是实验，正式Owner操作/新PLAN/TASK/实际READY尚未落实，[具体准入计划](../plans/RB-C1B-001_ADMISSION_PLAN.md)与未投递请求已准备；未创建本小轮游戏工程。
