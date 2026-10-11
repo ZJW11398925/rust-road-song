@@ -1,0 +1,9 @@
+{
+  "implementationCommit": "4fe6cd4e5b00a695daf1825c4261445826b99de4",
+  "remoteBranch": "refs/heads/main",
+  "remoteSha": "4fe6cd4e5b00a695daf1825c4261445826b99de4",
+  "match": true,
+  "observedAt": "2026-10-11T10:20:35.5508621+00:00",
+  "c1aOwnerAcceptance": false,
+  "note": "Implementation published; subsequent metadata records this verified implementation SHA. C1-A remains VERIFYING."
+}

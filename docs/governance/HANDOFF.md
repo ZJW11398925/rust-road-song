@@ -23,3 +23,6 @@ C1-A已正规准入并运行，[报告](../pocs/RB-C1A-001_REPORT.md)和工程RE
 ## 首轮动作
 
 现场核git status/log，运行node scripts/dmcp.mjs read、node scripts/check_context.mjs，读实际回执/报告。只完成当前C1-A必要局部修正与独立试玩；已投递readiness不重试。验证范围是自由移动下的人物戏，C1-B/Visual待Owner另裁，Legacy冻结。
+
+
+已发布实现 4fe6cd4e5b00a695daf1825c4261445826b99de4；[实际远端核验](receipts/2026-10-11-c1a-admission/publication-verification.json)一致。最新元数据提交通过Git历史定位；接手仍现场核HEAD/工作树。C1-A人工接受待记录，不因发布改DONE。
