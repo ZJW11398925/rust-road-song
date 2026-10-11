@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-11T06:44:39.099Z",
+  "implementationCommit": "9f0b56654882ccc7d572eafdde4ce6ec11a8c426",
+  "reportGitBlobSha256": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512",
+  "reportWorkingBytesMatch": true,
+  "legacyHead": "3463cea9d144c281decd9c3536a3083cb17b284a",
+  "legacyWorktreeClean": true,
+  "nativeEngineVersion": "d270067a615aef973f5c2dbe32d4c289782bb1ea",
+  "upstreamGovernanceReceiptCommit": "924780a37e3c89e2d1d9dd885c1fe299ddc12d2e",
+  "ownerReviewPending": true,
+  "notPocAuthorization": true,
+  "notPushed": true
+}
