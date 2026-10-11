@@ -1,23 +1,21 @@
 # 当前状态 / 2026-10-11
 
-本文件只导航，正式状态须实时读取。当前 Owner 依据是 [RD-008](../00_OWNER_DECISIONS.md) / [执行来源](sources/2026-10-11-owner-c0-execution.md)。
+本文件只导航，正式状态须实时读取。当前 Owner 依据为 [RD-009](../00_OWNER_DECISIONS.md) / [认同来源](sources/2026-10-11-owner-c0-close-c1a.md)。
 
 ## 当前方向与交付
 
-[RB-C0-001](../tasks/RB-C0-001.md) 已有 [可运行灰盒](../../pocs/stylized_3d/c0/README.md)，状态 **VERIFYING**。只做构图、尺度、两个侧面环绕、一次进入驾驶、低速离库；门只打开，两组局部起停/转向参数，无下车或车辆物理系统。
+C0 **DONE（探索阶段接受）**，六工程文件冻结；实际驾驶/碰撞反馈保留，构图/尺度/环绕/首次进入驾驶四项主观评价没有完整记录，不补造。见 [C0 报告](../pocs/RB-C0-001_REPORT.md)。本轮 Owner 接受阶段成果与残余风险，允许下一轮；不是最终 3D 选择。
 
-真实 Owner 首次试玩选择“2”，报告持续冲撞出现不合理平移，见 [原话](sources/2026-10-11-c0-first-playtest.md)。横移已复现、局部修复并获Owner“不再横移，倒退正常”的实际确认。随后Owner指出第2组松油门滑行不符履带外观；当前改为缓起步、松键即停与有限转向，具体回归和未覆盖项见 [C0 报告](../pocs/RB-C0-001_REPORT.md)。横移/倒退和最新响应均已获Owner实际试玩确认；五项整体体验评估仍待确认，不能 DONE 或进入 C1。
+当前只做 [RB-C1A-001 First Meeting](../tasks/RB-C1A-001.md)：另建最小静态人形灰盒舞台，首见玛丽、母亲一个动作、一件细节、自由接近与触碰；无异常/启动/驾驶/正式资产。C1-B/Visual 未批准。C1-A 已有 [可玩交付与报告](../pocs/RB-C1A-001_REPORT.md)，状态 VERIFYING；人物戏人工可读性未知。
 
 ## 正式依据
 
-本项目身份与 DEC@2 / PLAN@1 / TASK@1 见 [binding](binding.json)。最新读回 schema 5 / design 13：9 canonical、0 FINDING、2 runtime。旧6对象和旧 Discovery runtime 保留；旧 DO_NOT_RETRY 未重试。
+[binding](binding.json) 绑定本项目新 DEC@2 / C1-A PLAN@1 / TASK@1。schema/design 5/17，12 canonical、0 FINDING；旧9对象及2runtime逐项原样保留。新的 prototype_execution@1 实际 READY 4 requirements / 4 facts，见 [评估投影](receipts/2026-10-11-c1a-admission/assessment-projection.json) 与 [完整性说明](receipts/2026-10-11-c1a-admission/assessment-integrity.json)。完整读回已核12 canonical/0 FINDING/3 runtime。
 
-原生 prototype_execution@1 返回 **READY，4 requirements / 4 facts**，覆盖本次精确代码/报告路径及受限 Godot 进程。见 [评估投影](receipts/2026-10-11-c0-admission/assessment-projection.json) 与 [完整性说明](receipts/2026-10-11-c0-admission/assessment-integrity.json)。它不证明产品验收，不授 C1 或通用进程权限。
+同一原型协议没有上游修改；只换新任务的精确十路径与固定 Godot 参数。旧 C0 READY 不授 C1-A，旧 DO_NOT_RETRY 不重试。原生 TASK 无 DONE 接口，本地阶段关闭由真实 Owner DEC 记录。
 
 ## 验证与下一步
 
-实际正式入口键盘事件、渲染采样、错误恢复、独立代码审查及首次人工反馈见报告；自动输入不冒称人类试玩，离线60FPS采样不冒称性能指标。变更 [CHG-20261011-003](../changes/CHG-20261011-003.md) 保持 IN_PROGRESS。
+C1-A 正式入口44行为项/0FAIL，实际渲染44行为项加目录/273PNG项共318/0，无ERROR；独立规格/代码复审通过。L4 自动键盘事件/姿态/渲染不能证明母亲像认识多年的车；需真实非实现者开放复述，未人工接受保持 VERIFYING，不进入 C1-B。移动RED和高墙遮挡/隔空触碰RED真实失败并修正；解析错误单列，不冒称有效RED。窗口已打开，开放复述请求待回答。
 
-main；本轮文件归当前 Agent，实际 HEAD/工作树必须现场核对。按 Owner 既有授权推送可审实现，未验收部分留 VERIFYING。下一步只复验修后障碍接触与五个空间问题；Owner 另裁 C1，不增剧情/资产/未来系统。上游原生候选本地已提交、未推送，迁机限制见 [TOOLING](TOOLING.md)。
-
-已发布的实现提交：2d52121b7cef356c196dfdb86acba23d87b4899d，实际远端读回一致，见 [发布核验](receipts/2026-10-11-c0-admission/publication-verification.json)。最新元数据修订通过Git历史定位，不以本文自述替代现场状态。
+main；当前修改归本轮 Agent，私有 .local 被忽略。收尾核实际 Git/完整 DMCP、冻结六文件与原报告摘要，验证后主动推送。上游86a8fc1仍本地已提交/未推送，换机依赖见 TOOLING。

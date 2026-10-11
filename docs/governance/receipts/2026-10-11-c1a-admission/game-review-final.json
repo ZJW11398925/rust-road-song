@@ -1,0 +1,54 @@
+{
+  "reviewer": "/root/c1a_game_review",
+  "spec": "PASS implementation boundary",
+  "quality": "APPROVE",
+  "readOnly": true,
+  "closed": [
+    "入口前墙遮挡P1",
+    "隔空成功P1",
+    "回返sticky假通过P2",
+    "采样目录前置"
+  ],
+  "checkedEvidence": [
+    "actual smoke44/0 and targeted RED7/4 supplied by root"
+  ],
+  "limits": [
+    "reviewer未重复运行",
+    "母亲熟悉感/自由误操作仍需真实L5",
+    "射线只证明指定入口遮挡"
+  ],
+  "reviewedFiles": [
+    {
+      "path": "pocs/stylized_3d/c1a/project.godot",
+      "sha256": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.tscn",
+      "sha256": "615cdace8c09efffecd1a8a1f07e77d0346654a61419f147af9d313b9c7e952e"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.gd",
+      "sha256": "f483b8e63d3a955db00ab5e32127cdbe7a6fb23862c19be385f56baffbbf822d"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.gd",
+      "sha256": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/mary.tscn",
+      "sha256": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/strings.tres",
+      "sha256": "80c72f574f15c6a74f720fbde98a58f91dd5be7c9e56a45a5f3ed9a0161e94f4"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/narrative_smoke.gd",
+      "sha256": "722cfdba5969c370fbb3d65e84fa5b75b7ad76189a59ce65d345e9e7c25066f1"
+    }
+  ]
+}

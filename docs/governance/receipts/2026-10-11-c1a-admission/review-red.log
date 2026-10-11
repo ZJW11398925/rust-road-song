@@ -1,0 +1,14 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: 正式入口
+PASS: 真实W/E开门进入，不传送
+FAR_PLAYER: (3.15, 0.000839, -1.039057)
+FAIL: 远侧E不得隔空标记触碰成功
+PASS: 母亲实际完成动作后检查视线
+RAY_FIRST_HIT: EntryLeft
+FAIL: 动作镜头到母亲手不得被入口墙遮挡
+RAY_FIRST_HIT: EntryLeft
+FAIL: 动作镜头到车中心不得被入口墙遮挡
+RAY_FIRST_HIT: EntryLeft
+FAIL: 首见镜头到母亲手不得被入口墙遮挡
+RESULT: 7 checks / 4 failures

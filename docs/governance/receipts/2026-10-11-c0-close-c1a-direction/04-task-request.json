@@ -1,0 +1,74 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-c0-close-c1a.md",
+  "sourceSha256": "97a688a5b2486abffb6e7ef571da5a451cbdae6ea9c898a23287ff1115ffdc23",
+  "ownerRaw": "认同",
+  "host": "SERVICE",
+  "tool": "task_build",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "primary_parent_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+      "kind": "PLAN",
+      "id": "PLAN-OPI-a5367870-5bca-4c0a-bb74-ea2abfc706f9.2"
+    },
+    "task_proposal": {
+      "goal": "RB-C1A-001：玛丽初见 First Meeting",
+      "why": "先攻击C路线剩余核心风险：局部人物戏，而非增加完整车库或美术成本。",
+      "scope_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+        "kind": "DECISION",
+        "id": "DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2"
+      },
+      "relevant_decision_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2"
+        }
+      ],
+      "required_capabilities": [
+        "REPOSITORY_READ",
+        "REPOSITORY_WRITE",
+        "PROCESS_EXEC"
+      ],
+      "acceptance_criterion_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2",
+          "facet": "contract_claims.ACCEPTANCE"
+        }
+      ],
+      "relevant_paths": [
+        "pocs/stylized_3d/c1a/project.godot",
+        "pocs/stylized_3d/c1a/first_meeting.tscn",
+        "pocs/stylized_3d/c1a/first_meeting.gd",
+        "pocs/stylized_3d/c1a/human.tscn",
+        "pocs/stylized_3d/c1a/human.gd",
+        "pocs/stylized_3d/c1a/mary.tscn",
+        "pocs/stylized_3d/c1a/strings.tres",
+        "pocs/stylized_3d/c1a/narrative_smoke.gd",
+        "pocs/stylized_3d/c1a/README.md",
+        "docs/pocs/RB-C1A-001_REPORT.md"
+      ],
+      "forbidden_changes": [
+        "C0六工程文件修改或沿garage.gd扩建",
+        "异常/发动/驾驶/下车/关门/Profile1/2",
+        "正式美术/面捕/长对白/多个热点/通用框架",
+        "Legacy复制/A或B可玩/完整序章/Visual/最终3D选择",
+        "新上游协议/伪造人工评价或旧拒绝重试"
+      ],
+      "repository_basis_refs": [
+        "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      ],
+      "expected_output": "极小C1-A静态灰盒舞台、真实输入/渲染/独立核验报告；未取得人工接受保持VERIFYING。"
+    },
+    "expected": {
+      "canonical_state_id": "CST-b9559109-0c2c-450c-8107-0b23116db35d",
+      "schema_version": 5,
+      "design_revision": 16
+    }
+  }
+}

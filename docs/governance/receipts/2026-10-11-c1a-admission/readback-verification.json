@@ -1,0 +1,15 @@
+{
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "canonicalCount": 12,
+  "findingCount": 0,
+  "runtimeCount": 3,
+  "old9CanonicalPreserved": true,
+  "old2RuntimePreserved": true,
+  "newReadinessRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-05151b82-23d7-42d6-b603-5cb7ee0a615d.2",
+  "afterRawSha256": "deb857dc9cb71511a21957774bc8d87723f63f9b3852afc6c20db4c0d656707c",
+  "newProtocolChanges": false
+}

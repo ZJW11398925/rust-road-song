@@ -1,0 +1,17 @@
+[gd_resource type="Translation" format=3]
+[resource]
+locale = "zh_CN"
+messages = {
+"TITLE": "C1-A · 初见 · 人形与旧车灰盒",
+"HELP": "WASD 移动 · E 就近开门 / 触碰 · R 重置实验 · Esc 退出",
+"DOOR_HINT": "E 打开门",
+"TOUCH_HINT": "E 触碰车身",
+"FAR": "还碰不到，请靠近门或车身右侧。",
+"REACH": "伸手试着触碰车身。",
+"TOUCH_MISS": "手没有碰到车身，请靠近再试。",
+"OPEN": "门已打开。",
+"FOCUS": "输入已清除，恢复后重新按键。",
+"MOTHER": "这块又松了。",
+"TOUCH": "漆面粗糙，边缘留着旧磨痕。",
+"END": "已触碰玛丽，实验内容到此。仍可走动、回返或 R 重置。"
+}

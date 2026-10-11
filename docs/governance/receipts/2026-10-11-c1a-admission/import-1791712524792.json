@@ -1,0 +1,57 @@
+{
+  "at": "2026-10-11T09:55:24.792Z",
+  "mode": "import",
+  "assessmentRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-05151b82-23d7-42d6-b603-5cb7ee0a615d.2",
+  "sharedNativeLease": true,
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "policySha256": "6485acd41d8d7cc525dee48d06bf74e58da038c3c853f074b51d1fb9bd28e907",
+  "basis": {
+    "canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "schema_version": 5,
+    "design_revision": 17
+  },
+  "processProfile": "import",
+  "argumentSha256": "460101707d4396775bbefe070f62111c250616cebc7c91f8baa65922aeffaa1f",
+  "inputFiles": [
+    {
+      "path": "pocs/stylized_3d/c1a/project.godot",
+      "sha256": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.tscn",
+      "sha256": "bf058cb2f22cfa66d2a9725cd323dad2030c585349c556afb13182abb6744d86"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.gd",
+      "sha256": "c9f5168b3f40f9f474f0a5b95b7f5074db958eec82dac70e8b11c5618a9a011e"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.gd",
+      "sha256": "d603b488e83743f992fd19a55fbbacd9feb4d245a87517f4c74bc2d127615a99"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/mary.tscn",
+      "sha256": "ee5e7770f203447d163417c31d8cc222e88fae7a4606d2b44746379e43602454"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/strings.tres",
+      "sha256": "1e1b01dab22a781820c12a53ec30519d3a3ea92a2d5b15e37a5fdfd475eb0df3"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/narrative_smoke.gd",
+      "sha256": "608c249ab939f5496b1304c09978fba6bd92cde17a40a134c9cb292a17a551e2"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/README.md",
+      "sha256": "de61bf703bfe85b5ba3f08fcc5662022f435a5f441ddcd5d6e3230fe33435add"
+    }
+  ],
+  "exitCode": 0,
+  "errorMarkers": true,
+  "logSha256": "311b486a681b66ac56842e81c823957fef8110e9084d70f9648b4ef2469891a3",
+  "outcome": "FAIL"
+}

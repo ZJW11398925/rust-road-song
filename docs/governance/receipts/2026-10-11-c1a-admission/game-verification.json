@@ -1,0 +1,145 @@
+{
+  "runs": {
+    "movement_red": {
+      "id": "smoke-1791712605035",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "rawLogSha256": "c8bca852c204b963a4518deaa6a5c0d8a5e53855b4ee0e1c8ac2096891fe8ea3",
+      "publicLogSha256": "9be58f94b0638a31be214dade672a42d4328d09786d151c7186126d86ce8d6d5",
+      "publicLog": "movement-red.log",
+      "resultLine": "RESULT: 7 checks / 1 failures; movement RED stopped after semantic failure"
+    },
+    "review_red": {
+      "id": "smoke-1791713238321",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "rawLogSha256": "fed2ac00b7913f282b2da63323c0f04cbdae540afa202cab32166c2b84209428",
+      "publicLogSha256": "188d7f8a526e72651efbee9cb476cf40c3121fa8cd28dce03e5298f8bb3795f8",
+      "publicLog": "review-red.log",
+      "resultLine": "RESULT: 7 checks / 4 failures"
+    },
+    "initial_green": {
+      "id": "smoke-1791712633060",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "rawLogSha256": "b36de18f6df1a6f00da99a579980eeb164531c8765d9d634e57ed0ce526affaf",
+      "publicLogSha256": "3da53d48e00a7f8314f05bbbfe97a3974da025907cdbc8c39c4bd4ff77dbfd64",
+      "publicLog": "initial-green.log",
+      "resultLine": "RESULT: 33 checks / 2 failures"
+    },
+    "timing_green": {
+      "id": "smoke-1791712817166",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "rawLogSha256": "f4df73759f1919cec24d94d9ae01d4e0a0fed5c67b5a33d5b09acb2eb14076a5",
+      "publicLogSha256": "40103d77cf8e69d6ddef3e0e9444fe71d5f77afdff79802116096b3ad8a8d2e1",
+      "publicLog": "timing-green.log",
+      "resultLine": "RESULT: 33 checks / 0 failures"
+    },
+    "smoke": {
+      "id": "smoke-1791713909117",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "rawLogSha256": "ad65105b19fd70f364a5fa990d696681fec37aece4719c097e4c0d081756dd76",
+      "publicLogSha256": "3a349ad0cb3b63fff137269bf85198fe01360ab61b04c9b2697d94819013cdf0",
+      "publicLog": "smoke.log",
+      "resultLine": "RESULT: 44 checks / 0 failures"
+    },
+    "capture": {
+      "id": "capture-1791713298722",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "rawLogSha256": "e6e2b5b84ae5b10b50317e0d662ef6f1de47fdbf65699ba0c5fb0b3da9fe82c5",
+      "publicLogSha256": "372d2fdb35bb70890b28ab15199ce25e96611a29f4674f40da5b4d366cd800a6",
+      "publicLog": "capture.log",
+      "resultLine": "RESULT: 318 checks / 0 failures"
+    },
+    "import_failure": {
+      "id": "import-1791712524792",
+      "outcome": "FAIL",
+      "exitCode": 0,
+      "errorMarkers": true,
+      "rawLogSha256": "311b486a681b66ac56842e81c823957fef8110e9084d70f9648b4ef2469891a3",
+      "publicLogSha256": "8f17bcfe818fa71073fb2679877180ca8669a87ced42e307ef4850183c91c69a",
+      "publicLog": "import-failure.log",
+      "note": "解析错误，不是有效RED"
+    },
+    "final_import": {
+      "id": "import-1791713267286",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "rawLogSha256": "d57a49ba4c29fcb05c0d0de1b38a7d7513ddd90974a07d798b966a7e672b85e5",
+      "publicLogSha256": "bb750db5c6bfc05cf8a7236bbdd3c56ca6f08d6d5132e9d25d68cc040dfba69b",
+      "publicLog": "final-import.log"
+    }
+  },
+  "logProjection": [
+    "LF normalization",
+    "repository absolute path replaced with <REPOSITORY>"
+  ],
+  "behaviourChecks": 44,
+  "renderChecks": 318,
+  "pngCount": 273,
+  "pngDirectoryCheck": 1,
+  "recordedFrames": 3281,
+  "movie": {
+    "privateIgnored": true,
+    "bytes": 176761718,
+    "sha256": "edbf682461ae9bb73808b8096dc575efb65f00a818a1b99531457380e1419df8",
+    "viewport": "1280x800",
+    "fps": 60,
+    "realTimeBenchmark": false
+  },
+  "selectedFrames": [
+    {
+      "privatePath": ".local/c1a-captures/frame_00000.png",
+      "sha256": "d08333e1bf42e03d5c512592b3fe3a8e5bbc3d15ddc89c165ddf0a472acdc01e"
+    },
+    {
+      "privatePath": ".local/c1a-captures/frame_00054.png",
+      "sha256": "f45f8f9b4240be34005a98648ef95c9799cb654c37c3c7ffb41c7f5729e577f6"
+    },
+    {
+      "privatePath": ".local/c1a-captures/frame_00057.png",
+      "sha256": "113db204100348858599e8b7eefb98c9316cfb815f3a80e4e4ae029f2fc85742"
+    },
+    {
+      "privatePath": ".local/c1a-captures/frame_00060.png",
+      "sha256": "80c0c6041f8e281b85bc8bdbaeb852a8e463bc45ef6c09c7de99036e9dad36b0"
+    },
+    {
+      "privatePath": ".local/c1a-captures/frame_00064.png",
+      "sha256": "6819591d40382894f78e24055cb7f564de0ae96c3407d343eba386239cb27114"
+    }
+  ],
+  "visualInspection": {
+    "reader": "root multimodal inspection",
+    "observed": "初始实体门遮车；母亲走/转/伸手到左侧板的占位姿态可见",
+    "limits": [
+      "只有指定帧和实际渲染证据，不是人类L5",
+      "指定射线不等于全空间无遮挡",
+      "实际人物戏熟悉感未知"
+    ]
+  },
+  "manualPlay": {
+    "launchedReceipt": "play-1791713427015.json",
+    "accepted": false,
+    "pendingQuestion": "母亲在做什么，与车是什么关系，镜头/移动哪里别扭"
+  },
+  "c0Frozen": {
+    "project.godot": "1813cce85de841235a4c5064435f410a28ff6671bee5446cf2bf87aba676f21f",
+    "garage.tscn": "d79e378dcce29acb8c1ad5bfd02a862542a5b4d3883393be10f9f0cf32626097",
+    "garage.gd": "69fa84c0ae47d8bd7f8dfcee7389f88f5e332589ef8522413dfa28890bc4c2e5",
+    "spatial_smoke.gd": "c30b4540e4381ebd8b1a4f92fb18270d75e09a585970b3bb345f477adb453de9",
+    "strings.tres": "1e7d9d6183680059c96b3aa2ee77baa3443bec4a18fe5242c05a9c814b328b7b",
+    "README.md": "630838597311192c381154b4d3a065adcea442f42036bdeb59926859b1fe0f70"
+  },
+  "originalDiscoverySha256": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512"
+}

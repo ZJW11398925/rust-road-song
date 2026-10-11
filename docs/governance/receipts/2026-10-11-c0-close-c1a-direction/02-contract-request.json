@@ -1,0 +1,80 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-c0-close-c1a.md",
+  "sourceSha256": "97a688a5b2486abffb6e7ef571da5a451cbdae6ea9c898a23287ff1115ffdc23",
+  "ownerRaw": "认同",
+  "host": "ORGANIZATION_AUTHORITY",
+  "tool": "design_update_contract",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "expected": {
+      "canonical_state_id": "CST-f94f8e58-e444-47fc-ade9-853dffba31a1",
+      "schema_version": 5,
+      "design_revision": 14,
+      "object_revisions": [
+        {
+          "object_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+            "kind": "DECISION",
+            "id": "DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2"
+          },
+          "object_revision": 1
+        }
+      ]
+    },
+    "mutations": [
+      {
+        "kind": "SET_SCALAR_CLAIM",
+        "field": "GOAL",
+        "assertion_action": "CONFIRM",
+        "value": "接受C0探索交付并保留四项主观评估缺口；冻结旧实验。实施极小C1-A First Meeting，验证自由行动中的母亲/玛丽局部人物戏可读性。"
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "IN_SCOPE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "门打开逐渐显露玛丽，两个人同场进入，自由绕车，母亲一个小动作/停顿，一件可自然观察的占位细节，极少候选文本或沉默，玩家第一次主动触碰即结束。",
+          "静态场景组织粗车/灰盒车库/最低人形，场景内有限构图和局部脚本。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "TECHNICAL_CONSTRAINTS",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "Godot + Windows + 键盘仅POC；不锁正式引擎或最终3D。",
+          "C0六工程文件冻结；仅提炼移动、受约束相机、输入清理经验，不复制或升级garage.gd；C0 Profile1/2不进入C1-A。",
+          "母亲无需脸/面捕/特写，只头躯干上下臂腿和极少动作；候选侧板/台词不是正式设定。",
+          "玩家提前触碰、走任一侧、忽略细节、往返/离开均允许；观看顺序不锁操作，门只打开。",
+          "不用CameraManager/DialogueManager/Quest/EventBus/车辆物理/存档等通用框架。",
+          "沿现有prototype_execution@1，新的真实Owner DEC/PLAN/TASK、精确路径与固定进程依据；旧READY不可授新任务，不改上游协议。",
+          "缓起步+有限转向+松键即停/撞墙不滑移是C0候选经验；重量感不等于滑行惯性，驾驶到C1-B再申请。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "OUT_OF_SCOPE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "C1-B异常/自愈解释/发动/驾驶/驶出、下车/关门、全序章/A/B可玩/Visual/视觉胜出。",
+          "正式资产、漂亮玛丽、面捕特写、长对白、多个热点/家庭标识数量KPI、完整人物动画或通用框架。",
+          "伪造缺失四项C0人工评价、把自动化姿态/READY冒称人物情感成功、重写历史拒绝/旧对象或扩张上游协议。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "ACCEPTANCE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "C0按Owner阶段接受关闭，保留原始反例/局部人工反馈/未记录四项主观评价；不声称最终路线。",
+          "正式入口真实输入：实体门逐渐显露既有玛丽，人物可移动；两个侧面、先触碰/忽略细节/往返自由，不以观看动作解锁。",
+          "灰盒母亲走/转身/停顿/一个动作与玛丽同场；自动测试只证明动作执行，局部“以前认识”由非实现者开放复述，不等于完整家庭情感。",
+          "真实生命周期/输入/失败反馈/失焦重置、有效RED→GREEN、渲染采样、独立审查、真实L5分别保存；未人工接受C1-A保持VERIFYING。",
+          "只完成一次最小人物戏并报告事实/失败/未知；不为数字KPI加强提示，不偷跑C1-B。"
+        ]
+      }
+    ]
+  }
+}

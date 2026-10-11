@@ -20,7 +20,7 @@
   "discoveryTaskId": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
   "documentDiscoveryPolicySha256": "21d1dc049f707c80c254f8ef9d34cbfcd53bcab959d050afcaed937c46bbf2a4",
   "documentDiscoveryProtocol": "DMCP-DOCUMENT-DISCOVERY@3/document_discovery@1",
-  "currentOwnerDecisionId": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2",
+  "currentOwnerDecisionId": "DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2",
   "ownerReviewSource": "docs/governance/sources/2026-10-11-owner-discovery-review.md",
   "c0PlanId": "PLAN-OPI-a3f17423-6c85-45a7-9059-cd6725db22a3.2",
   "c0TaskId": "TASK-OPI-72672dc0-37a4-40b1-84cc-a21626265509.2",
@@ -29,9 +29,25 @@
     "planId": "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
     "taskId": "TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2"
   },
-  "ownerExecutionSource": "docs/governance/sources/2026-10-11-owner-c0-execution.md",
+  "ownerExecutionSource": "docs/governance/sources/2026-10-11-owner-c0-close-c1a.md",
   "documentDiscoveryEngineCommit": "d270067a615aef973f5c2dbe32d4c289782bb1ea",
   "prototypeProtocol": "DMCP-PROTOTYPE-EXECUTION@1/prototype_execution@1",
-  "prototypePolicySha256": "af364cb0d153951509ddb6f63af665e10c6d340ea18bf542f4ca48c743fe8789",
-  "prototypeRuntimeManifestSha256": "19779db7c48f68d775c6f85474d6711548d36ec8f923ca62da0d6ce6d7e563ae"
+  "prototypePolicySha256": "6485acd41d8d7cc525dee48d06bf74e58da038c3c853f074b51d1fb9bd28e907",
+  "prototypeRuntimeManifestSha256": "19779db7c48f68d775c6f85474d6711548d36ec8f923ca62da0d6ce6d7e563ae",
+  "archivedC0Prototype": {
+    "decisionId": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2",
+    "planId": "PLAN-OPI-a3f17423-6c85-45a7-9059-cd6725db22a3.2",
+    "taskId": "TASK-OPI-72672dc0-37a4-40b1-84cc-a21626265509.2",
+    "policySha256": "af364cb0d153951509ddb6f63af665e10c6d340ea18bf542f4ca48c743fe8789",
+    "basis": {
+      "observed_canonical_state_id": "CST-50ab0b22-8066-47e9-9458-0889c396ad3b",
+      "observed_schema_version": 5,
+      "observed_design_revision": 13
+    },
+    "assessment": "docs/governance/receipts/2026-10-11-c0-admission/assessment-projection.json",
+    "frozenImplementationCommit": "2d52121b7cef356c196dfdb86acba23d87b4899d"
+  },
+  "c0OwnerDecisionId": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2",
+  "c1aPlanId": "PLAN-OPI-a5367870-5bca-4c0a-bb74-ea2abfc706f9.2",
+  "c1aTaskId": "TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2"
 }

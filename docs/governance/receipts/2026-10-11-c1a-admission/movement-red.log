@@ -1,0 +1,10 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: 正式main scene入口
+PASS: 正式SceneTree生命周期与落地
+PASS: 母亲/玛丽实际同场，未spawn
+PASS: 门前初态未首见
+PASS: 实体门实际遮挡初始镜头到车体
+PASS: 远处E给玩家可见反馈
+FAIL: 真实W键推动人物水平运动
+RESULT: 7 checks / 1 failures; movement RED stopped after semantic failure

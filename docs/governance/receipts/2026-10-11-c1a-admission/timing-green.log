@@ -1,0 +1,42 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: 正式main scene入口
+PASS: 正式SceneTree生命周期与落地
+PASS: 母亲/玛丽实际同场，未spawn
+PASS: 门前初态未首见
+PASS: 实体门实际遮挡初始镜头到车体
+PASS: 远处E给玩家可见反馈
+PASS: 真实W键推动人物水平运动
+PASS: 闭门实体阻止穿越
+PASS: 实体门逐渐打开而非瞬间删车/门
+PASS: 开门显露期间保留玩家控制
+PASS: 就近E打开门并首见，非检查前置
+PASS: 打开后的实体门离开入口
+PASS: 重复E不关闭门
+PASS: 真实输入从门外进入
+PASS: 自由先到右边，不等母亲动作
+PASS: 玩家可主动触碰普通车身
+MOTHER_STATE: first right-side/untended begin from_open_s=5.95 stage=1 clock=4.81666666666665 reach=0.0 hand_distance=3.89402031898499
+MOTHER_STATE: first right-side/untended end from_open_s=11.45 stage=4 clock=1.41666666666667 reach=1.0 hand_distance=0.0594565756619
+PASS: 未看细节不阻塞母亲走/停/转身/搭扶（从开门起12秒有界）
+PASS: 母亲在车侧实际停下
+PASS: 母亲转向车而非面向玩家
+PASS: 母亲手与侧板真实空间接触关系
+PASS: 触碰后走开并回返，控制不锁
+PASS: R恢复完整实验初态
+PASS: R恢复门外位置
+PASS: 先触碰路径无需等待母亲动作完成
+MOTHER_STATE: touch-first then leave begin from_open_s=7.41666666666667 stage=1 clock=6.28333333333332 reach=0.0 hand_distance=3.15949940681458
+MOTHER_STATE: touch-first then leave end from_open_s=11.45 stage=4 clock=1.41666666666667 reach=1.0 hand_distance=0.0594565756619
+PASS: 走开/未看母亲仍完成，非隐藏解锁（12秒有界）
+PASS: 回返仍可触碰
+PASS: 真实输入也可自由接近车身左侧
+MOTHER_STATE: left-side then leave begin from_open_s=7.6 stage=1 clock=6.46666666666665 reach=0.0 hand_distance=3.0221962928772
+MOTHER_STATE: left-side then leave end from_open_s=11.45 stage=4 clock=1.41666666666667 reach=1.0 hand_distance=0.0594565756619
+PASS: 先左侧再走开不阻塞母亲动作（12秒有界）
+PASS: 构图变化不重映射W输入方向
+PASS: 失焦通知清held且停止，不代表OS焦点已验
+PASS: 恢复不消费旧按键
+PASS: 恢复后新真实键响应
+PASS: 重置清输入且不漏旧键
+RESULT: 33 checks / 0 failures

@@ -1,0 +1,57 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"contract\":{\"contract_id\":\"dmcp.task_build\",\"contract_version\":1},\"payload_kind\":\"RESULT\",\"workspace_ref\":{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\"},\"operation_intent_ref\":\"OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2\",\"result\":{\"primary_ref\":\"TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2\",\"result_refs\":[\"TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2\"],\"effective_state\":\"CREATED\",\"summary\":\"task_build committed under operation intent OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2\"},\"basis\":{\"observed_canonical_state_id\":\"CST-b9559109-0c2c-450c-8107-0b23116db35d\",\"observed_schema_version\":5,\"observed_design_revision\":16},\"effects\":{\"semantic_revision_changed\":true,\"design_revision_before\":16,\"design_revision_after\":17,\"created_refs\":[\"TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2\"]},\"audit_refs\":[\"EVT-000035.yaml\"],\"warnings\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "contract": {
+        "contract_id": "dmcp.task_build",
+        "contract_version": 1
+      },
+      "payload_kind": "RESULT",
+      "workspace_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      },
+      "operation_intent_ref": "OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2",
+      "result": {
+        "primary_ref": "TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2",
+        "result_refs": [
+          "TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2"
+        ],
+        "effective_state": "CREATED",
+        "summary": "task_build committed under operation intent OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2"
+      },
+      "basis": {
+        "observed_canonical_state_id": "CST-b9559109-0c2c-450c-8107-0b23116db35d",
+        "observed_schema_version": 5,
+        "observed_design_revision": 16
+      },
+      "effects": {
+        "semantic_revision_changed": true,
+        "design_revision_before": 16,
+        "design_revision_after": 17,
+        "created_refs": [
+          "TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2"
+        ]
+      },
+      "audit_refs": [
+        "EVT-000035.yaml"
+      ],
+      "warnings": []
+    },
+    "isError": false,
+    "resultType": "complete",
+    "_meta": {
+      "io.modelcontextprotocol/serverInfo": {
+        "name": "design-maturity-mcp",
+        "version": "0.0.0",
+        "description": "Design Maturity MCP bootstrap; no Phase1 capability claim is made."
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

@@ -2,28 +2,24 @@
 
 ## 接手结论
 
-Owner 已“执行” RD-008；C0 正式准入 READY，最小 Godot 灰盒已运行，**RB-C0-001 VERIFYING**。首次真实试玩偏好2，发现持续撞障碍横移；已局部修复、保留RED→GREEN并获Owner实际确认；后续惯性反馈要求第2组取消松油门滑行，保留缓起步/有限转向。最新响应已获Owner“更符合，当前可用”的实玩确认；完整五项整体评估仍未完成，不继续 C1。
+RD-009 / Owner“认同”接受 C0 探索交付并带残余风险进入 C1-A。C0 工程冻结，四项缺失主观评价仍未知；已有实际局部驾驶反馈不能扩成全部五项通过。下一轮只做 First Meeting，不升级 garage.gd。
 
 ## 先读与范围
 
-读 AGENTS、00–07、RD-008、[任务](../tasks/RB-C0-001.md)、[报告](../pocs/RB-C0-001_REPORT.md)、[试玩原话](sources/2026-10-11-c0-first-playtest.md)，再 binding/CURRENT/WORKFLOW。只一次进入驾驶、门打开不关闭、两组局部参数；检查参照不是热点或解锁。无母亲、对白、异常、正式资产或未来系统。
+读 AGENTS、00–07、RD-009、[新任务](../tasks/RB-C1A-001.md)、[认同来源](sources/2026-10-11-owner-c0-close-c1a.md)，再 binding/CURRENT/WORKFLOW；C0 报告保存实验经验。C1-A 为门前两人、实体门逐渐显露玛丽、最低人形、母亲一个动作、一件自然观察细节、少量候选文本或沉默、玩家主动触碰结束。自由行动保留，无异常/发动/驾驶/正式资产/Profile UI/C1-B。
 
 ## 正式状态与工具
 
-schema/design 5/13，9 canonical/0 FINDING/2 runtime，新 DEC@2/PLAN@1/TASK@1 精确ID见 [binding](binding.json)。prototype READY 4 facts/requirements 仅限当前代码/报告/进程。旧对象、Discovery READY、拒绝回执保留。原生TASK无DONE接口，不以Markdown状态冒称原生关闭。
+schema/design 5/17，12 canonical/0 FINDING，旧9对象/2runtime逐项保留；新 DEC@2/PLAN@1/TASK@1 的 ID 见 binding。C1-A 实际原型 READY 4facts/requirements，仅限十路径与固定Godot参数。原生TASK无DONE接口，C0阶段关闭由新OwnerDEC转录。完整读回已核3runtime，旧2项逐项一致。
 
-只读 CLI 仍 read/tools/get，无通用写/readiness权限；桌面固定其他项目 facade 不可用。固定本机消费者经审核、共享native lease与新鲜事实校验后才写精确路径/启动指定二进制。可信LOCAL_RUNTIME不是OS沙箱；换机依赖见 [TOOLING](TOOLING.md)。
+同一 prototype_execution@1，不修改上游协议；固定SERVICE消费者共享native lease重核当前basis/四事实/实际attestation后才部署与启动。普通CLI仍仅read/tools/get；桌面固定另一项目facade不可用。本机依赖见TOOLING；交互租约只覆盖启动，不是OS沙箱或试玩全程权限证明。
 
 ## Git 与验证
 
-分支 main；本轮所有 tracked/untracked 修改归当前 Agent，私有 .local 被忽略；真实内容提交见 [CHG](../changes/CHG-20261011-003.md)，发布证据由后续实际回执补充。接手运行 git status/log，不能把这里的历史记录代替现场。
+main；本轮tracked/untracked修改归当前Agent，私有.local忽略。收尾提交必须包含 RB-C1A-001/CHG-20261011-004，主动推送核远端。C0已公开实现2d52121，六工程文件不得改。
 
-L1/L2局部行为数据在真实SceneTree探针中合并验证，未移入Legacy测试框架；L3上下文范围/只读边界，L4正式入口真实键盘事件与GPU离线录像。L5已有Owner初次物理键盘反馈，横移/倒退及最新响应均获Owner实际确认，五项完整结论仍待独立评估。OS失焦、任意门柱斜转/旋转扫掠、窗口变化、实时性能未验。
+C1-A已正规准入并运行，[报告](../pocs/RB-C1A-001_REPORT.md)和工程README有入口：WASD移动，E开门/尝试触碰，R重置/Esc退出。44行为项与实际渲染318项均0FAIL/无ERROR；其中273项只是PNG写入，不能冒充更多体验测试。移动/隔空触碰/高墙遮挡RED保留，局部修正后独立规格/代码复审APPROVE。实际试玩窗口已打开，开放复述待回答。不能把解析错误算RED、把手部坐标/静态截图算人物戏成立。无新的真实L5反馈保持VERIFYING；未知OS焦点/窗口/实时性能与自然叙事可读性如实保留。
 
 ## 首轮动作
 
-在 canonical 根执行 git status --short --branch、git log -5 --oneline、node scripts/dmcp.mjs read、node scripts/check_context.mjs。运行项目 pocs/stylized_3d/c0/project.godot，按2比较，先检撞后持续W是否横移及S能否脱离，再记录构图/尺度/环绕/进入/离库的自然行为。无需重新开发上游协议；同类C0缺陷仍属当前范围。不要重投已完成readiness，未知操作先查原回执。
-
-Legacy冻结，不续176..179；无新视觉胜出、产品引擎锁定或完整家庭情感结论。完整人工验收后由Owner决定下一轮，而不是自动扩大任务。
-
-已发布的实现提交：2d52121b7cef356c196dfdb86acba23d87b4899d，实际远端读回一致，见 [发布核验](receipts/2026-10-11-c0-admission/publication-verification.json)。最新元数据修订通过Git历史定位，不以本文自述替代现场状态。
+现场核git status/log，运行node scripts/dmcp.mjs read、node scripts/check_context.mjs，读实际回执/报告。只完成当前C1-A必要局部修正与独立试玩；已投递readiness不重试。验证范围是自由移动下的人物戏，C1-B/Visual待Owner另裁，Legacy冻结。

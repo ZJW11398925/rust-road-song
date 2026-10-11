@@ -10,3 +10,5 @@ pocs/** text eol=lf
 
 # Preserve raw Windows verification logs while checking other whitespace.
 docs/governance/receipts/2026-10-11-c0-admission/*.log whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+docs/governance/receipts/2026-10-11-c1a-admission/*.log whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

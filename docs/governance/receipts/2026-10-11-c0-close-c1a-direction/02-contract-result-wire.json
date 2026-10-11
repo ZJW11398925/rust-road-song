@@ -1,0 +1,57 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"contract\":{\"contract_id\":\"dmcp.design_update_contract\",\"contract_version\":1},\"payload_kind\":\"RESULT\",\"workspace_ref\":{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\"},\"operation_intent_ref\":\"OPI-5f2b3466-79c3-425f-a6df-a19f6c667861.2\",\"result\":{\"primary_ref\":\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2\",\"result_refs\":[\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2\"],\"effective_state\":\"UPDATED\",\"summary\":\"design_update_contract committed under operation intent OPI-5f2b3466-79c3-425f-a6df-a19f6c667861.2\"},\"basis\":{\"observed_canonical_state_id\":\"CST-f94f8e58-e444-47fc-ade9-853dffba31a1\",\"observed_schema_version\":5,\"observed_design_revision\":14},\"effects\":{\"semantic_revision_changed\":true,\"design_revision_before\":14,\"design_revision_after\":15,\"updated_refs\":[\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2\"]},\"audit_refs\":[\"EVT-000031.yaml\"],\"warnings\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "contract": {
+        "contract_id": "dmcp.design_update_contract",
+        "contract_version": 1
+      },
+      "payload_kind": "RESULT",
+      "workspace_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      },
+      "operation_intent_ref": "OPI-5f2b3466-79c3-425f-a6df-a19f6c667861.2",
+      "result": {
+        "primary_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2",
+        "result_refs": [
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2"
+        ],
+        "effective_state": "UPDATED",
+        "summary": "design_update_contract committed under operation intent OPI-5f2b3466-79c3-425f-a6df-a19f6c667861.2"
+      },
+      "basis": {
+        "observed_canonical_state_id": "CST-f94f8e58-e444-47fc-ade9-853dffba31a1",
+        "observed_schema_version": 5,
+        "observed_design_revision": 14
+      },
+      "effects": {
+        "semantic_revision_changed": true,
+        "design_revision_before": 14,
+        "design_revision_after": 15,
+        "updated_refs": [
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2"
+        ]
+      },
+      "audit_refs": [
+        "EVT-000031.yaml"
+      ],
+      "warnings": []
+    },
+    "isError": false,
+    "resultType": "complete",
+    "_meta": {
+      "io.modelcontextprotocol/serverInfo": {
+        "name": "design-maturity-mcp",
+        "version": "0.0.0",
+        "description": "Design Maturity MCP bootstrap; no Phase1 capability claim is made."
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 2
+}

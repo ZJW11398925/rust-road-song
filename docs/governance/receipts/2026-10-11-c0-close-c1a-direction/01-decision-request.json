@@ -1,0 +1,43 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-c0-close-c1a.md",
+  "sourceSha256": "97a688a5b2486abffb6e7ef571da5a451cbdae6ea9c898a23287ff1115ffdc23",
+  "ownerRaw": "认同",
+  "host": "ORGANIZATION_AUTHORITY",
+  "tool": "decision_add",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "decision": {
+      "question": "是否接受C0探索交付并带残余风险进入极小C1-A First Meeting？",
+      "alternatives": [
+        {
+          "key": "accept_c0_minimal_c1a",
+          "description": "接受C0阶段成果，保留缺失四项主观评价；冻结C0，另建最小人物戏C1-A，异常/启动/驾驶留C1-B。"
+        },
+        {
+          "key": "full_c1_or_final_3d",
+          "description": "直接扩建C0为完整叙事车库或宣布3D路线胜出。"
+        }
+      ],
+      "selected_key": "accept_c0_minimal_c1a",
+      "reason": "Owner 在外部C0评审及执行Agent逐项核对分析后原话“认同”，见 docs/governance/sources/2026-10-11-owner-c0-close-c1a.md。阶段接受不补造五项完整L5，授权仅限C1-A。",
+      "related_constraint_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2"
+        }
+      ],
+      "tradeoffs": [
+        "接受当前探索价值与残余风险，而非全部主观项客观证明；不锁最终3D。",
+        "重新组织小舞台，不升级C0 monolith；同类原型协议复用，只更新正式对象与选择。"
+      ]
+    },
+    "expected": {
+      "canonical_state_id": "CST-50ab0b22-8066-47e9-9458-0889c396ad3b",
+      "schema_version": 5,
+      "design_revision": 13
+    }
+  }
+}

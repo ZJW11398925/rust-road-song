@@ -1,0 +1,20 @@
+{
+  "verdict": "APPROVE",
+  "reviewer": "/root/c1a_basis_review",
+  "readOnly": true,
+  "assessedBeforeReadiness": true,
+  "checks": [
+    "DEC@2 PLAN@1 TASK@1/basis17",
+    "两真实Owner成功操作和source hash",
+    "精确十路径三能力四固定Godot配置",
+    "273运行文件和6客户端hash/policy/Godot SHA",
+    "共享native lease/currentbasis/4facts+requirements/sidecar精确核对"
+  ],
+  "limits": [
+    "审查时尚无READY，不冒称已验证READY",
+    "未运行Godot或做人类试玩",
+    "交互lease仅启动；可信LOCAL_RUNTIME不是OS沙箱"
+  ],
+  "consumerSha256": "c414deedad3eb23f7c3f254c351a474bd8309ad526738335fe7d2617057f6919",
+  "policySha256": "6485acd41d8d7cc525dee48d06bf74e58da038c3c853f074b51d1fb9bd28e907"
+}

@@ -43,10 +43,13 @@ future AI/3D/美术工具必须先列目的、版本、许可证/使用权、成
 
 RD-007 已批准 Godot + Windows + 键盘用于当前 POC，不锁产品引擎/版本。C0 实际使用 Godot 4.7.1.stable.official.a13da4feb，二进制已核实并记录；没有新插件、AI 美术工具、外部服务或正式资产准入。document_discovery@1 不是原型代码执行协议，不能用更换 Markdown 路径来授权 Godot。
 
-## 当前 C0 执行依赖
+## 原型执行依赖
 
 引擎为本地受审候选86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca；旧文档政策/引擎版本单独保留于binding。原型协议与两项摘要见binding；私有profile另含 prototypePolicyFile / prototypeRuntimeManifestFile，运行manifest锁273项dist/spec/exports文件。只读CLI也校验政策/manifest自身摘要，固定消费者逐项重核运行内容，不提供通用进程工具。
 
 真正运行的官方Godot二进制178997256字节，SHA-256 323f9c4cc5db674e98815cdd8e69da007d5efc779abedc8c0e42883b7fdea12a；不是console启动包装器。Windows/键盘、Compatibility渲染；本机AMD Radeon Graphics已实际离线渲染采样，未做实时FPS基准。项目不含插件、AI资产或Legacy模块。
 
 上游候选已本地提交、完整检查及独立审查，摘要见 [上游证据](receipts/2026-10-11-c0-admission/upstream-verification.json)，尚未推送；公开克隆可查看/运行Godot样本，但不能因此恢复本机DMCP执行依赖。换机仍需完整canonical、同一引擎候选/政策/manifest、客户端和真实二进制，核身份与hash；不复制自造state或政策凑READY。
+
+
+C1-A 使用同一受审引擎/运行 manifest，新的 prototypePolicyFile 选择精确十路径与 C1-A Godot 参数；新 policy 摘要见 binding。旧 C0 选择/READY 仅归档，不授新任务。没有新增上游协议或工具插件。

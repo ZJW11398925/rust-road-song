@@ -1,6 +1,6 @@
 # 《锈路长歌》Reboot 项目宪法
 
-版本：0.3；2026-10-11。作用于本仓库全部内容。进入项目必须先读本文件。
+版本：0.4；2026-10-11。作用于本仓库全部内容。进入项目必须先读本文件。
 本仓库是产品级重置，不是旧版本加序章、换 3D 或继续系统建设。旧仓库及其 AGENTS、UI 标杆、编号、测试基线仅为 Legacy 参考。
 
 ## 1. 必读顺序与权威
@@ -22,8 +22,8 @@
 ## 3. 当前范围
 
 唯一首要里程碑：玛丽第一次出现 POC。进入车库 → 首见 → 接近检查 → 发现异常 → 发动 → 驶出。
-RB-DISC-001 Discovery 交付已获本轮 Owner 采用，原报告保留；下一阶段方案按 RD-007 修订。当前实施方向是 RB-C0-001 Spatial Spike，按 RD-008 收缩为单次进入驾驶、门只打开和最小驾驶响应比较；本轮已取得精确范围的原型 READY，实际样本与人工反馈处于 VERIFYING，见 CURRENT/报告。
-A/B/C 均须公平审查；只有明确体验假设的路线才进入可玩实施。C 先试 C0；A 保留；B 暂不实施。C1/Visual 独立审查。不得一次实现序章 16 节拍。
+RB-DISC-001 Discovery 交付已获本轮 Owner 采用，原报告保留；下一阶段方案按 RD-007 修订。C0 已按 RD-009 阶段接受，六工程文件冻结，四项缺失主观评价保留。当前只实施 RB-C1A-001 First Meeting：另建最小人物戏舞台，首见、母亲一个动作、自由接近与触碰结束；不升级 garage.gd，不做异常/启动/驾驶或 Profile UI。新任务必须另取实际原型 READY，见 CURRENT/报告。
+A/B/C 均须公平审查；只有明确体验假设的路线才进入可玩实施。C 先试 C0；A 保留；B 暂不实施。C1-A 已单独授权，C1-B/Visual 另审。不得一次实现序章 16 节拍。
 Garage POC 只验证空间、表现与操作，不证明完整家庭情感。比例/细节数量只作诊断，不作内容 KPI。合理操作不能因剧情节拍硬锁；仅观察损伤不得解锁发动。
 
 暂不创建 inventory/、equipment/、bounty_system/、shop/、crew_jobs/、skill_tree/、world_state/，也不通过其他目录名建立同等系统。完整战斗、多车、经济、派系、大地图均冻结。
@@ -45,7 +45,7 @@ Legacy 默认不复用；任何进入申请按 docs/07_LEGACY_REUSE_POLICY.md，
 - 禁止手改 .design、伪造 ID/回执、用 Markdown 任务冒充 TASK、用结构 READY 冒充实施准入。
 - 宿主缺能力时记录准确缺口；推进不依赖它的授权工作，不能换 scope 或削弱验收凑 READY。
 - 每轮更新 CURRENT 和 HANDOFF，新增讨论来源/检查点，保存未决问题与下一步。
-- RD-007 / RD-008 已批准 C0 方向；报告专属 READY 不授权代码。登记 PLAN/TASK 不等于实施准入；本轮另有原型 READY，须核实际事实/修订/精确路径。缺口归上游，不在本库建 override/temp gate。
+- RD-007 / RD-008 已批准 C0 方向；报告专属 READY 不授权代码。登记 PLAN/TASK 不等于实施准入；C0 READY 不能授 C1-A；新任务须核自己的实际事实/修订/精确路径。缺口归上游，不在本库建 override/temp gate。
 
 ## 6. 实现与资产
 
@@ -66,4 +66,4 @@ ERROR/脚本错误/崩溃即失败，退出码 0 无效；交互失败需玩家�
 
 ## 8. 开场动作
 
-先完成必读与 `git status --short --branch`，运行 `node scripts/dmcp.mjs read` 与 `node scripts/check_context.mjs`。取得实时依据后读 RD-007 / RD-008 与 RB-C0-001；核对新的代码执行准入，不能继续按原报告下一阶段方案开工。不得从 Legacy HANDOFF 继续 176..179。
+先完成必读与 `git status --short --branch`，运行 `node scripts/dmcp.mjs read` 与 `node scripts/check_context.mjs`。取得实时依据后读 RD-009 与 RB-C1A-001；核对新的代码执行准入，不能继续按原报告下一阶段方案开工。不得从 Legacy HANDOFF 继续 176..179。
