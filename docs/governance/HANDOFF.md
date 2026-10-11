@@ -20,4 +20,6 @@ C0按RD-009接受探索阶段、六文件冻结/四项主观缺失保留。只�
 
 main；CHG007实现提交`6d9ac2f3d11373b941de5cb80bc1e3d9c3a2e8ab`已主动推送并核远端相同，完成技术部分见CHG007/[发布回执](receipts/2026-10-11-c1a-walls/publication-verification.json)，后续元数据由Git历史定位。新窗口已核响应，试玩问题已发出，尚无本版Owner接受。Git外canonical/.local消费者/descriptor与锁定engine/toolchain是同机依赖，上游86a8fc1本地提交未推送，迁机依TOOLING完整核身份，不重造workspace。
 
-接续动作：等待Owner下一步指示，不主动扩展开发或重复追问。本轮仅归档原话、实时完整对象/runtime读回与前轮逐项相同、更新交接，未改代码或启动新运行。Owner之后恢复工作时，先完整设计与实时依据核对，再落实明确范围；不能因“老朋友”、“暂时就这样吧”、66/585或重启成功扩大阶段。
+最新[Owner“开始下一步”](sources/2026-10-11-owner-next-step.md)恢复推进。本轮依据正文与完整实时schema/对象/runtime完成[具体提案](../pocs/C1B_ANOMALY_PROPOSAL.md)，CHG008 / 本地RB-C1B-REVIEW-001不是native TASK。推荐仅一处旧伤/新组织、一段母亲反应和最多一句过去信息，检验自然异常理解；不一起做启动/驾驶。部位/措辞/动作仍为候选，不作新设定。
+
+下一项：Owner对具体范围及携带C1-A未知项继续作裁定，再核合法Owner转录/PLAN/TASK与新精确选择READY。当前只有C1-A实际依据；CLI只读/桌面facade错误scope，不能自行创建ORG通道、改policy或复用READY。本轮完整正式对象/runtime逐项未变，无游戏代码修改/新运行/正式写入。不能因泛称下一步、旧反馈或自动化扩大阶段；当前准备单元提交/推送后等待这项具体裁定。

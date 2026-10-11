@@ -12,4 +12,6 @@
 
 本轮实时正式全对象/runtime逐项相同：schema/design5/17、12canonical/0Finding/3runtime；binding的DEC@2/PLAN@1/TASK@1，原实际PROTOTYPE READY四facts/requirements、十路径逐次消费者重核。RD-010只登记真实Owner当前表现要求，不冒称新native DEC。无正式写入/准入重投/上游或policy改动。
 
-当前不再主动追加修正或追问，等待Owner下一步指示；没有进入新阶段。旧低墙窗口已核身份关闭，[新窗口/现场进程](receipts/2026-10-11-c1a-walls/play-window.json)仅为当时响应记录，不假设当前仍存活。本轮仅归档回复、核完整正式对象/runtime未变、更新交接；无代码修改/新运行。报告中61/580、52/441、44/318属于各历史版本，不能挪作最新接受。main持续授权主动提交/推送，哈希及发布核验见CHG007/Git历史；迁机依TOOLING核Git外canonical与同机锁定依赖。
+Owner已给出[“开始下一步”](sources/2026-10-11-owner-next-step.md)，恢复推进。当前完成[下一阶段具体提案](../pocs/C1B_ANOMALY_PROPOSAL.md)（CHG008 / 本地RB-C1B-REVIEW-001）：推荐C1-B第一小轮仅检验旧损伤/异常可读，暂不接发动/驾驶；具体部位、动作与一句短文本均为候选。待Owner裁定是否携带C1-A未知项进入该范围；不自动扩大代码授权，不冒称C1-A完整接受或新TASK/READY。
+
+本轮仅读schema及完整正式对象/runtime，与前轮逐项相同，形成可审提案和交接；无代码修改/新游戏运行/DMCP写入。CLI仅read/tools/get，下一任务还须合法转录与新选择准入，不能借用固定其他项目的桌面facade。旧低墙窗口已核身份关闭，[新窗口/现场进程](receipts/2026-10-11-c1a-walls/play-window.json)仅为历史观察。报告中61/580、52/441、44/318属于各历史版本，不能挪作最新接受。main持续授权主动提交/推送；迁机依TOOLING核Git外canonical与同机锁定依赖。

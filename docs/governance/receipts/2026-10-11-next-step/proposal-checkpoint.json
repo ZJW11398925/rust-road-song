@@ -1,0 +1,29 @@
+{
+  "observedAt": "2026-10-11T15:49:19.964Z",
+  "localReviewId": "RB-C1B-REVIEW-001",
+  "change": "CHG-20261011-008",
+  "localIdIsNotNativeTask": true,
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "fullCanonicalAndRuntimeEqualToPrevious": true,
+  "readSha256": "deb857dc9cb71511a21957774bc8d87723f63f9b3852afc6c20db4c0d656707c",
+  "readPath": ".local/c1b-proposal-read.json",
+  "toolsSha256": "8337e153455a7992d9ec69dcc07ed33cdd3e343e6e4fb8ef4d223712127aa22b",
+  "toolCount": 16,
+  "source": "../../sources/2026-10-11-owner-next-step.md",
+  "sourceSha256": "e72f96995e0eed6edd00f55460e9aa565ed8e2200dfba74f486f3666882da695",
+  "proposal": "../../../pocs/C1B_ANOMALY_PROPOSAL.md",
+  "proposalSha256": "33d05bd61d06de52d2c8ba819767f50956de3cb8fe7e03e962bdd2da6f4527e1",
+  "proposalStatus": "PROPOSED",
+  "c1aStatus": "VERIFYING",
+  "c1bImplementationApproved": false,
+  "dmcpWritten": false,
+  "newReady": false,
+  "newGameCode": false,
+  "newGameRun": false,
+  "runtimeHashesMatchLastWallVerification": true
+}
