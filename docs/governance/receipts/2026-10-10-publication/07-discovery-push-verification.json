@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-11T07:06:18.463Z",
+  "ownerSource": "docs/governance/sources/2026-10-10-owner-publication.md",
+  "repository": "https://github.com/ZJW11398925/rust-road-song.git",
+  "branch": "main",
+  "before": "d80f058c9f10622ab09d6b32948a7ee04a3f3bb0",
+  "pushedHead": "6ece962e1243c32996599d6f28302118fe0a7aba",
+  "remoteReadbackHead": "6ece962e1243c32996599d6f28302118fe0a7aba",
+  "normalFastForward": true,
+  "forcePush": false,
+  "legacyPushed": false,
+  "upstreamPushed": false,
+  "usedExistingSystemProxyForThisCommandOnly": true,
+  "proxyConfigurationChanged": false,
+  "notPocAuthorization": true
+}

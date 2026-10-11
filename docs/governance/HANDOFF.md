@@ -1,5 +1,12 @@
 # Reboot 建库交接 / 2026-10-10
 
+## 2026-10-11 最新发布状态
+
+Owner 随后明确要求“推送”，依据 [追加授权](sources/2026-10-10-owner-publication.md)。RB-DISC-001 报告/交接的三项提交已正常推送新游戏 origin/main，远端读回与6ece962e1243c32996599d6f28302118fe0a7aba一致；[核对回执](receipts/2026-10-10-publication/07-discovery-push-verification.json)。本发布记录随收尾提交再次推送，最终HEAD以实际Git查询及交付为准。
+
+此前“本轮未推送”是本次授权前历史。当前报告已公开，仍待Owner/外部审查；无新游戏/资产/POC权限。没有推送Legacy或DMCP上游；本机依赖恢复限制仍见TOOLING。只借用已开启的系统代理完成本次Git连接，没有修改网络配置。
+
+
 ## 2026-10-11 当前接续：Discovery 报告已提交，待 Owner 审查
 
 GAP-DMCP-001 在本次有限文档 Discovery 路径已解除。原生源码 ca002be 完整核验，消费/证据版本 d270067a615aef973f5c2dbe32d4c289782bb1ea；DMCP-DOCUMENT-DISCOVERY@3，selection v1。原 FINDING 规则仍有效，默认政策不改；不是给所有 Discovery 或完整 profile 发通行证。上游未推送发布，旧消费镜像和 system 产品准入不变。

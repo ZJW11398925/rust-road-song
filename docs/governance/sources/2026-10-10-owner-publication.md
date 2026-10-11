@@ -6,3 +6,7 @@
 
 在已确认 Legacy/Reboot 分离、新 canonical 名称 rust-road-song 的上下文中执行。GitHub 同名旧库改名为 rust-road-song-legacy，保留原 repository ID与历史；创建独立 PUBLIC 新库、推送新main。新旧本机目录不移动，不强推，不推送旧路线提交。
 该指令追加远端发布授权，不选择视觉路线、不解锁 POC、不修 DMCP 宿主门禁。本文件是真实来源，GitHub 回执为远端运维证据，不冒充 native DECISION/TASK 或阶段准入。
+
+## 2026-10-11 Discovery 报告推送接续
+
+Owner 新原话：**推送**。直接上下文为已完成、尚未推送的 RB-DISC-001 报告与交接。本次仅授权新游戏仓库 main 正常推送，不推送 Legacy 或 DMCP 上游，不批准 Greybox/Visual。
