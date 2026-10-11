@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-11T06:39:33.786Z",
+  "isolatedFixtures": true,
+  "actualProfileUntouched": true,
+  "results": [
+    {
+      "label": "missing policy fails before client",
+      "exitCode": 1,
+      "expectedMessageObserved": true,
+      "nativeCallAttempted": false
+    },
+    {
+      "label": "policy SHA drift fails before client",
+      "exitCode": 1,
+      "expectedMessageObserved": true,
+      "nativeCallAttempted": false
+    }
+  ]
+}

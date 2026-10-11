@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-11T06:35:10.495Z",
+  "assessmentRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-273c2b0c-9434-46bb-b118-c8030b7941cf.2",
+  "allowedWrites": [
+    "docs/discovery/RB-DISC-001_REPORT.md"
+  ],
+  "spawnedExecutionCommands": [],
+  "sha256": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512",
+  "bytes": 21639
+}

@@ -13,9 +13,11 @@
     "services/knowledge/src/dmcp/errors.ts": "80eb91c47c8d1376d94e84018fa9c0ba8c18e7e312e771641e72e454f89f1f6d",
     "scripts/lib/dmcp-governance-snapshot.mjs": "44f9a50a9d356bc00313937ae1ab81fcc95e724c0f3c2c8d4222660c0d6f0db4"
   },
-  "engineCommit": "a7cd1171dd3496a0bfd8e0bf4ff2fe9febc6e7dc",
+  "engineCommit": "d270067a615aef973f5c2dbe32d4c289782bb1ea",
   "toolchainCommit": "678c4dc64ae61ad7d57c42e9a7ebbf16d0dfb3be",
   "ownerDirectiveDecisionId": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
   "discoveryPlanId": "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
-  "discoveryTaskId": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9"
+  "discoveryTaskId": "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+  "documentDiscoveryPolicySha256": "21d1dc049f707c80c254f8ef9d34cbfcd53bcab959d050afcaed937c46bbf2a4",
+  "documentDiscoveryProtocol": "DMCP-DOCUMENT-DISCOVERY@3/document_discovery@1"
 }

@@ -6,7 +6,7 @@
 2. 核 `git status --short --branch`、`git log -5 --oneline`，确认修改所有者。查实际工具版本，不能沿用聊天中的修订。
 3. `node scripts/dmcp.mjs tools` 取得当前 native schema；`node scripts/dmcp.mjs read` 获取完整正式对象与独立运行 sidecar；`node scripts/check_context.mjs` 校验本阶段文档。
 4. 逐项核 DECISION/contract、PLAN、TASK、FINDING 和 attestation。完整读取器保留 MCP 截断诊断，并以引擎完整性校验读面补足所有对象；不能仅依靠 status 索引或前 4000 字。
-5. 按实时正式工具与合法准入判定范围。当前 GAP-DMCP-001 尚未解决，停止正式执行写入；可只读理解。工具广告、结构 READY、测试 PASS 都不能替代阶段准入。
+5. 按实时正式工具与合法准入判定范围。GAP-DMCP-001 已对本次受限文档 Discovery 实际恢复，见 CURRENT 的新评估/报告提交回执；不能复用它批准 POC 或其他写路径。工具广告、结构 READY、测试 PASS 均不能替代当前阶段准入。
 
 ## 四种记录
 
@@ -15,7 +15,7 @@
 - DMCP canonical：通过正规工具登记 DECISION、契约、PLAN/TASK、REVIEW/FINDING/VALIDATION；以 workspace/ref/revision/basis 追踪。Markdown 不冒充这些对象。
 - runtime sidecar：实际能力/证据观测，不是 canonical 裁决或新的 Owner 权限。不存在时明确为空。
 
-## 正式写入纪律（宿主准入恢复后）
+## 正式写入纪律
 
 先检实际 schema 和适用能力，取得最新 `observed_canonical_state_id`、`observed_schema_version`、`observed_design_revision`；工具需要时提供目标对象当前 revision。只通过本项目专用、固定 SERVICE、代码约束 workspace 的合法写入入口操作。当前仓库提供的 CLI **仅能读**，不冒充尚未接入的执行通道。
 
@@ -36,3 +36,13 @@ RB-DISC-001 只交审计与三方案，不执行 POC。Owner 审查保留原话�
 变更记录先 IN_PROGRESS，提交已验证实现取得哈希，再关闭确实完成的工作。Owner 验收、产品假设验证、任务执行准入各自单列，不混淆。每轮更新 CURRENT/HANDOFF，原始依据与未覆盖项随证据留存；提交包含任务号+CHG。未达到验收的 TASK 不能宣布 DONE；本轮只关闭建库，不关闭 RB-DISC-001，也不宣布 POC 完成。
 
 Git 外 canonical 不由 Git 提交备份。迁机按 TOOLING 迁移完整工作区/descriptor/对象/审计/runtime 并校验身份，禁止靠旧截图或复制一份 state 文件重建。
+
+## 2026-10-11 本次实际受限消费
+
+只读 CLI 额外校验受审 Discovery policy SHA-256 并传给宿主；未知/缺失/漂移配置拒绝。写通道不进入该 CLI，模型仍不能自授 ORG。
+
+本轮受信宿主固定 SERVICE，仅一次 design_readiness 和唯一报告路径；提交前在同一 native lease 下重核原生 Owner 操作、当前 CST/修订、PLAN/TASK、能力、三 facts/requirements、实际 READY sidecar 与政策摘要。入口、dist/全部 specification/包 exports 和薄客户端分别锁摘要；没有任意进程或调用方路径参数。这是可信 LOCAL_RUNTIME 的一次有限入口，不是抵抗恶意 OS 的通用沙箱。
+
+评估与提交共用 receipts/2026-10-11-discovery-admission；未知结果先查该目录与实际状态，不能再调用同目录或自行换新操作。已提交报告不覆盖。报告版本见 report-submitted.json 的 SHA；公开 full-readback 是仅删两项本机路径的完整对象投影，原始文件摘要见 consumer-verification.json。
+
+当前 RB-DISC-001 是 SUBMITTED_FOR_OWNER_REVIEW，未签原生 TASK DONE。任何下一阶段需新的 Owner 决定/具体正式对象/当前准入。CLI 本身仍没有通用写入或 readiness 查询。

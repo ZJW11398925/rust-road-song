@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-11T06:35:10.500Z",
+  "path": "docs/discovery/RB-DISC-001_REPORT.md",
+  "sha256": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512",
+  "basis": {
+    "canonical_state_id": "CST-a608e176-7228-4ae9-88c0-1bb845c802c0",
+    "schema_version": 5,
+    "design_revision": 5
+  },
+  "sharedCanonicalLease": true,
+  "notOwnerAcceptance": true
+}

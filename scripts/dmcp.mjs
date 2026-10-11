@@ -18,6 +18,11 @@ for (const [relative, expected] of Object.entries(binding.toolingFiles)) {
 }
 const engineCommit = execFileSync('git', ['-C', profile.engineRoot, 'rev-parse', 'HEAD'], { encoding: 'utf8' }).trim();
 if (engineCommit !== binding.engineCommit) throw Error('DMCP 引擎版本已漂移；先审查再更新绑定。');
+if (binding.documentDiscoveryPolicySha256) {
+  if (!profile.readinessPolicyFile) throw Error('缺少受审 Discovery 政策的本机配置。');
+  const actual = crypto.createHash('sha256').update(fs.readFileSync(profile.readinessPolicyFile)).digest('hex');
+  if (actual !== binding.documentDiscoveryPolicySha256) throw Error('Discovery 政策已漂移；先审查再更新绑定。');
+}
 const load = relative => import(pathToFileURL(path.join(profile.toolchainRoot, relative)).href);
 const { dmcpConfigFromEnv } = await load('services/knowledge/src/dmcp/config.ts');
 const config = dmcpConfigFromEnv({
@@ -27,6 +32,7 @@ const config = dmcpConfigFromEnv({
   KNOWLEDGE_DMCP_PRINCIPAL_ID: 'rust-road-song-governance-reader',
   KNOWLEDGE_DMCP_GRANTED_CAPABILITY_FAMILIES: 'DESIGN_STATE_READ,REPOSITORY_READ',
 });
+if (binding.documentDiscoveryPolicySha256) config.env.DMCP_READINESS_POLICY_FILE = profile.readinessPolicyFile;
 if (mode === 'tools') {
   const { DmcpWireClient } = await load('services/knowledge/src/dmcp/wire-client.ts');
   const wire = new DmcpWireClient({ command: config.command, args: config.args, cwd: config.cwd, env: config.env, timeoutMs: 20000 });

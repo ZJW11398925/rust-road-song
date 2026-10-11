@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-11T06:36:35.517Z",
+  "basis": {
+    "observed_canonical_state_id": "CST-a608e176-7228-4ae9-88c0-1bb845c802c0",
+    "observed_schema_version": 5,
+    "observed_design_revision": 5
+  },
+  "canonicalObjects": 3,
+  "canonicalPayloadsUnchanged": true,
+  "findingObjects": 0,
+  "runtimeRecordsBefore": 0,
+  "runtimeRecordsAfter": 1,
+  "gateRequirements": 3,
+  "verifiedFacts": 3,
+  "reportSha256": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512",
+  "reportBytes": 21639,
+  "legacyEvidencePathsVerified": 24,
+  "originalReadbackSha256": "33f9a5d1e504d885c1d9f787bd5ae9b0180d7b74327db382a7223047b89c8cf2",
+  "publicProjectionOmitted": [
+    "binding.engineRoot",
+    "binding.workspacesRoot"
+  ],
+  "notOwnerAcceptance": true,
+  "taskNotMarkedDone": true
+}

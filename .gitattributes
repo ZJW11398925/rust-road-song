@@ -3,3 +3,6 @@
 *.json text eol=lf
 *.mjs text eol=lf
 
+
+# Preserve the admitted report bytes recorded by its receipt.
+docs/discovery/RB-DISC-001_REPORT.md -text

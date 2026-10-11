@@ -1,0 +1,29 @@
+{
+  "request": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "scope_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+      "kind": "DECISION",
+      "id": "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3"
+    },
+    "target_stage": "DISCOVERY",
+    "intended_capabilities": [
+      "REPOSITORY_READ",
+      "REPOSITORY_WRITE",
+      "PROCESS_EXEC"
+    ],
+    "expected": {
+      "canonical_state_id": "CST-a608e176-7228-4ae9-88c0-1bb845c802c0",
+      "schema_version": 5,
+      "design_revision": 5
+    }
+  },
+  "at": "2026-10-11T06:29:18.194Z",
+  "host": "SERVICE",
+  "engineCommit": "d270067a615aef973f5c2dbe32d4c289782bb1ea",
+  "policySha256": "21d1dc049f707c80c254f8ef9d34cbfcd53bcab959d050afcaed937c46bbf2a4",
+  "newOperationAfterVerifiedRepair": true,
+  "notRetryOfHistoricalAttempt": true
+}
