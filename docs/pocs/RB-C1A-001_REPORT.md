@@ -101,3 +101,5 @@ L1/L2局部动作/输入/状态在同一真实SceneTree探针合并验证，没�
 资源释放后**游戏字节未改**，同固定配置重跑capture-1791732097773实际585/0（66行为+目录+518PNG）、6220帧、1280×800@60，录像341347482字节，无ERROR。smoke/崩溃capture/通过capture八运行文件SHA逐项相同，支持资源压力解释，不保证任意环境或长期无代码/驱动问题。[完整证据](../governance/receipts/2026-10-11-c1a-walls/verification.json)保存原/节选日志、失败与新录像、资源恢复、冻结边界及摘要。总控查看四张初态/墙淡化/恢复/左侧触碰真实帧，只确认指定表现，不作L5。
 
 [独立静态复审](../governance/receipts/2026-10-11-c1a-walls/independent-review.json)在首个429中断后完成，无可行动静态缺陷；明确指出alpha/几何诊断不等于实际可读，八墙未逐条走遍、快速过渡/全身/母亲全动作、透明排序/阴影叠层仍需体验。复审不解释崩溃根因、不替代运行。**自动透明版新的L5尚缺失**，C1-A VERIFYING、CHG-004/005/006/007 IN_PROGRESS；不进入C1-B/Visual。实时完整正式对象/runtime与前轮相同，未重投准入或改变上游/范围。
+
+真实实现提交`6d9ac2f3d11373b941de5cb80bc1e3d9c3a2e8ab`已推送，见[远端核验](../governance/receipts/2026-10-11-c1a-walls/publication-verification.json)。暂存版本的八运行文件逐项匹配smoke、两次capture与新play，14份新旧公开日志节选暂存字节匹配各自记录的SHA；单独diff检查通过。[自动透明版窗口现场](../governance/receipts/2026-10-11-c1a-walls/play-window.json)核身份且响应，已发起真实试玩提问；启动和推送均不构成L5或阶段接受。后续完成部分元数据由Git历史定位。

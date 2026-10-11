@@ -18,6 +18,6 @@ C0按RD-009接受探索阶段、六文件冻结/四项主观缺失保留。只�
 
 工程pocs/stylized_3d/c1a：WASD世界移动、E开门/左右车侧尝试触碰，R重置、Esc退出。新窗口与观察见walls/play-window.json，启动不保证之后存活或接受。旧低墙PID35624核身份关闭。最新录像.local/c1a-input.avi，失败半录像.local/c1a-walls-failed-render；低墙原录像.local/c1a-chg006-render，其余更旧归档见报告。
 
-main；Owner持续授权验证后主动提交/推送，真实哈希与完成部分记录到CHG007，最终元数据由Git历史定位。Git外canonical/.local消费者/descriptor与锁定engine/toolchain是同机依赖，上游86a8fc1本地提交未推送，迁机依TOOLING完整核身份，不重造workspace。
+main；CHG007实现提交`6d9ac2f3d11373b941de5cb80bc1e3d9c3a2e8ab`已主动推送并核远端相同，完成技术部分见CHG007/[发布回执](receipts/2026-10-11-c1a-walls/publication-verification.json)，后续元数据由Git历史定位。新窗口已核响应，试玩问题已发出，尚无本版Owner接受。Git外canonical/.local消费者/descriptor与锁定engine/toolchain是同机依赖，上游86a8fc1本地提交未推送，迁机依TOOLING完整核身份，不重造workspace。
 
 第一项可执行工作：完整设计与实时依据核对后，记录自动透明版实际试玩并仅修当前任务；不能因“老朋友”、66/585或重启成功扩大阶段。

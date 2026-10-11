@@ -1,0 +1,13 @@
+{
+  "observedAt": "2026-10-11T15:35:20.4996278+00:00",
+  "task": "RB-C1A-001",
+  "change": "CHG-20261011-007",
+  "implementationCommit": "6d9ac2f3d11373b941de5cb80bc1e3d9c3a2e8ab",
+  "remoteBranch": "refs/heads/main",
+  "remoteCommit": "6d9ac2f3d11373b941de5cb80bc1e3d9c3a2e8ab",
+  "trackingCommit": "6d9ac2f3d11373b941de5cb80bc1e3d9c3a2e8ab",
+  "verifiedEqual": true,
+  "covers": "已实现代码、当时的来源与测试/审查/失败证据；后续完成部分元数据另由Git历史定位",
+  "c1aStatus": "VERIFYING",
+  "ownerAcceptance": false
+}
