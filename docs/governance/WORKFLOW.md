@@ -27,17 +27,17 @@
 
 ## 评审与验证
 
-RB-DISC-001 的 Discovery 交付已被 RD-007 采用，原报告保留。C0 PLAN/TASK 已登记，但当前文档 Discovery 协议不能授权其原型代码/进程路径；取得匹配的正规准入后才实施。C1/Visual 独立审查。Owner 原话与新决定分开存证，普通 Agent 不能自行作组织裁决。游戏阶段用每条体验验收映射运行证据及独立人工试玩；截图只能辅助。
+RB-DISC-001 的 Discovery 交付已被 RD-007 采用，原报告保留。C0 已另获匹配的原型执行准入并运行；文档 Discovery 协议仍不能授权代码/进程路径。C1/Visual 独立审查。Owner 原话与新决定分开存证，普通 Agent 不能自行作组织裁决。游戏阶段用每条体验验收映射运行证据及独立人工试玩；截图只能辅助。
 
 不把“实施反馈”伪称宿主已有的接口：本版本 native 仅广告 16 个工具，含 review/validation 面；广告存在不等于 HUMAN_RUBRIC、完整 profile 或某执行路径可消费。缺能力记缺口和依赖，不能用自写 YAML/伪造 PASS 补齐。
 
 ## 收尾
 
-变更记录先 IN_PROGRESS，提交已验证实现取得哈希，再关闭确实完成的工作。Owner 验收、产品假设验证、任务执行准入各自单列，不混淆。每轮更新 CURRENT/HANDOFF，原始依据与未覆盖项随证据留存；提交包含任务号+CHG。未达到验收的 TASK 不能宣布 DONE；本轮只关闭 RB-REVIEW-002 的方向转录/文档同步/正式登记，不冒称原生 TASK DONE、C0 已实施或 POC 完成。
+变更记录先 IN_PROGRESS，提交已验证实现取得哈希，再关闭确实完成的工作。Owner 验收、产品假设验证、任务执行准入各自单列，不混淆。每轮更新 CURRENT/HANDOFF，原始依据与未覆盖项随证据留存；提交包含任务号+CHG。未达到验收的 TASK 不能宣布 DONE；历史 RB-REVIEW-002 只关闭方向转录/文档同步/正式登记；当前 C0 可审实现与未验收部分分列，状态 VERIFYING，不冒称原生 TASK DONE 或 POC 完成。
 
 Git 外 canonical 不由 Git 提交备份。迁机按 TOOLING 迁移完整工作区/descriptor/对象/审计/runtime 并校验身份，禁止靠旧截图或复制一份 state 文件重建。
 
-## 2026-10-11 本次实际受限消费
+## 2026-10-11 文档 Discovery 受限消费（历史）
 
 只读 CLI 额外校验受审 Discovery policy SHA-256 并传给宿主；未知/缺失/漂移配置拒绝。写通道不进入该 CLI，模型仍不能自授 ORG。
 
@@ -45,4 +45,12 @@ Git 外 canonical 不由 Git 提交备份。迁机按 TOOLING 迁移完整工作
 
 评估与提交共用 receipts/2026-10-11-discovery-admission；未知结果先查该目录与实际状态，不能再调用同目录或自行换新操作。已提交报告不覆盖。报告版本见 report-submitted.json 的 SHA；公开 full-readback 是仅删两项本机路径的完整对象投影，原始文件摘要见 consumer-verification.json。
 
-上述受限消费描述的是已交 Discovery 报告路径。当前 Owner 已采用交付并修订下一阶段，新 C0 决定/PLAN/TASK 已登记；未签原生 TASK DONE，未取得 C0 代码准入。CLI 仍没有通用写入或 readiness 查询。本轮一次性 Owner 转录仅消费原话“认同”及七项/两条保护，不授予未来 Agent ORG 权限。
+上述受限消费描述的是已交 Discovery 报告路径。当前 Owner 已采用交付并修订下一阶段，新 C0 决定/PLAN/TASK 已登记；当时未签原生 TASK DONE，也未取得 C0 代码准入；当前情况见下节。CLI 仍没有通用写入或 readiness 查询。本轮一次性 Owner 转录仅消费原话“认同”及七项/两条保护，不授予未来 Agent ORG 权限。
+
+## 当前 C0 原型受限消费
+
+原生 prototype_execution@1 与文档 Discovery 独立， Finding 路径继续有效。本次新 DEC@2/PROTOTYPE风险PLAN/TASK及真实Owner操作建立4 requirements/4 facts，实际返回READY；只选择六个C0工程文件和报告路径、三个必要能力及固定Godot参数配置。旧拒绝不重试，不伪造FINDING。
+
+本机固定SERVICE消费者在共享native lease下校验当前CST/schema/design、Owner真实操作、policy、READY sidecar和新鲜事实；写路径/二进制/参数与运行文件摘要逐次记回执，不接收调用方任意路径或参数。引擎HEAD、273项运行摘要和薄客户端摘要均校验。此为可信LOCAL_RUNTIME有限入口，不是OS通用沙箱；交互窗口租约只涵盖启动，不宣称覆盖整个试玩会话。
+
+结果与投递意图见 receipts/2026-10-11-c0-admission。已有正式READY不得盲重投；同范围代码修正重核同一依据，C0→C1仍需新的具体授权/任务/选择，不因相同能力类重写协议。CLI仅读不变。原始带宿主路径的回执在私有存储，公开投影和原始SHA分别说明；不以投影冒称原始字节。

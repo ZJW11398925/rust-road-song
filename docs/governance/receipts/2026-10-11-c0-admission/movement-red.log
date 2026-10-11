@@ -1,0 +1,7 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS central Translation registered and Chinese title resolves
+PASS initial person and closed solid door
+PASS far action produces visible feedback
+FAIL mapped input moves during SceneTree physics lifecycle
+C0_SMOKE_RED missing movement

@@ -1,0 +1,88 @@
+{
+  "at": "2026-10-11T09:21:03.885Z",
+  "logs": [
+    {
+      "label": "movement-red",
+      "operation": "smoke-1791708049403",
+      "originalSha256": "2652b41a4065c1ebc09d6932918fb109b06333b71f2dd28f18c4720b1917e581",
+      "publishedSha256": "2652b41a4065c1ebc09d6932918fb109b06333b71f2dd28f18c4720b1917e581",
+      "passCount": 3,
+      "failCount": 1,
+      "redactions": []
+    },
+    {
+      "label": "collision-red",
+      "operation": "smoke-1791709005879",
+      "originalSha256": "bf73066134debca5adcae60922d3da30e0421b255ec60dd4a42dbc501ee369da",
+      "publishedSha256": "bf73066134debca5adcae60922d3da30e0421b255ec60dd4a42dbc501ee369da",
+      "passCount": 43,
+      "failCount": 1,
+      "redactions": []
+    },
+    {
+      "label": "braking-red",
+      "operation": "smoke-1791710029154",
+      "originalSha256": "90f40bf809bc5d2460887ec9c4229a719e1e9d8982c4d9c6628260b8de584454",
+      "publishedSha256": "90f40bf809bc5d2460887ec9c4229a719e1e9d8982c4d9c6628260b8de584454",
+      "passCount": 45,
+      "failCount": 1,
+      "redactions": []
+    },
+    {
+      "label": "smoke",
+      "operation": "smoke-1791710423779",
+      "originalSha256": "843b494e751956e412d63d19a635af753627d77a5e795ec17d0d91c8ccae3ed7",
+      "publishedSha256": "843b494e751956e412d63d19a635af753627d77a5e795ec17d0d91c8ccae3ed7",
+      "passCount": 47,
+      "failCount": 0,
+      "redactions": []
+    },
+    {
+      "label": "capture",
+      "operation": "capture-1791710126019",
+      "originalSha256": "fa3d1a12b77c1c8f581768f4ea469ae4aef2e78179794bbd76cfd5a406678bd5",
+      "publishedSha256": "261a72974cf137b765b6f7faad4f746ef204cd1a9b485ecdf5426c14126551d9",
+      "passCount": 47,
+      "failCount": 0,
+      "redactions": [
+        "repository movie output path"
+      ]
+    }
+  ],
+  "movie": {
+    "path": ".local/c0-input.avi",
+    "sha256": "e635af9a867019852b46355996f9eaa0334ac425a540e8ab88c9723f9e37345e",
+    "bytes": 144934554,
+    "frames": 2522,
+    "captureFramesPerSecond": 60,
+    "renderedPngSamples": 211,
+    "realTimeBenchmark": false
+  },
+  "code": [
+    {
+      "path": "pocs/stylized_3d/c0/project.godot",
+      "sha256": "1813cce85de841235a4c5064435f410a28ff6671bee5446cf2bf87aba676f21f"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/garage.tscn",
+      "sha256": "d79e378dcce29acb8c1ad5bfd02a862542a5b4d3883393be10f9f0cf32626097"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/garage.gd",
+      "sha256": "69fa84c0ae47d8bd7f8dfcee7389f88f5e332589ef8522413dfa28890bc4c2e5"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/spatial_smoke.gd",
+      "sha256": "c30b4540e4381ebd8b1a4f92fb18270d75e09a585970b3bb345f477adb453de9"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/strings.tres",
+      "sha256": "1e7d9d6183680059c96b3aa2ee77baa3443bec4a18fe5242c05a9c814b328b7b"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/README.md",
+      "sha256": "e9eea28e58948a82ffa8f12273d497660f9c0f51215f5590bb265bf51384d77a"
+    }
+  ],
+  "notIndependentHumanReplay": true
+}

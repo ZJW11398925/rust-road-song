@@ -1,29 +1,21 @@
 # 当前状态 / 2026-10-11
 
-本文件是导航；正式状态须实时读取。来源：[第二轮外审与 Owner“认同”](sources/2026-10-11-owner-discovery-review.md)。
+本文件只导航，正式状态须实时读取。当前 Owner 依据是 [RD-008](../00_OWNER_DECISIONS.md) / [执行来源](sources/2026-10-11-owner-c0-execution.md)。
 
-## 当前方向
+## 当前方向与交付
 
-RB-DISC-001 Discovery 交付已被 Owner 采用；原报告的下一阶段方案不原样批准。[报告](../discovery/RB-DISC-001_REPORT.md)保持原字节，修订见 [RD-007](../00_OWNER_DECISIONS.md)、[06 v0.3](../06_VISUAL_POC_PLAN.md)。
+[RB-C0-001](../tasks/RB-C0-001.md) 已有 [可运行灰盒](../../pocs/stylized_3d/c0/README.md)，状态 **VERIFYING**。只做构图、尺度、两个侧面环绕、一次进入驾驶、低速离库；门只打开，两组局部起停/转向参数，无下车或车辆物理系统。
 
-Godot + Windows + 键盘仅用于 POC。先 [RB-C0-001](../tasks/RB-C0-001.md)：镜头、尺度、绕车检查、控制切换、低速驶出。C1/Visual 独立审查；A 保留，B 暂不实施，无视觉胜出。无30h/60h授权，不硬锁剧情，不以比例/物件数量优化内容，不以车库实验证明完整情感。
+真实 Owner 首次试玩选择“2”，报告持续冲撞出现不合理平移，见 [原话](sources/2026-10-11-c0-first-playtest.md)。横移已复现、局部修复并获Owner“不再横移，倒退正常”的实际确认。随后Owner指出第2组松油门滑行不符履带外观；当前改为缓起步、松键即停与有限转向，具体回归和未覆盖项见 [C0 报告](../pocs/RB-C0-001_REPORT.md)。修后完整独立体验验收仍待确认，不能 DONE 或进入 C1。
 
-## 正式对象与实际准入
+## 正式依据
 
-工作区及新 DEC/PLAN/TASK 精确身份见 [binding](binding.json)。本轮完整读回：schema 5 / design 9，6 canonical、0 FINDING、1 runtime；新 DEC@2、C0 PLAN/TASK@1。逐次请求/回执见 receipts/2026-10-11-review2-decision、-contract、-plan、-task；[核验](receipts/2026-10-11-review2-readback/verification.json)。
+本项目身份与 DEC@2 / PLAN@1 / TASK@1 见 [binding](binding.json)。最新读回 schema 5 / design 13：9 canonical、0 FINDING、2 runtime。旧6对象和旧 Discovery runtime 保留；旧 DO_NOT_RETRY 未重试。
 
-原建库 3 对象和旧 DO_NOT_RETRY 原样保留；新裁决仅替代指定实施语义。原生 TASK 无 DONE 操作，不以本地接受状态冒称原生关闭。
+原生 prototype_execution@1 返回 **READY，4 requirements / 4 facts**，覆盖本次精确代码/报告路径及受限 Godot 进程。见 [评估投影](receipts/2026-10-11-c0-admission/assessment-projection.json) 与 [完整性说明](receipts/2026-10-11-c0-admission/assessment-integrity.json)。它不证明产品验收，不授 C1 或通用进程权限。
 
-原 [Discovery READY](receipts/2026-10-11-discovery-admission/result.json)仅覆盖已提交 Markdown 报告，3 requirements / 3 facts。登记 C0 PLAN/TASK 不等于代码准入。现上游 document_discovery@1 限定 DISCOVERY/精确旧 scope/受限 Markdown 路径，不能授权 PROTOTYPE 的 Godot 工程；C0 未查询或取得新 readiness，未重试旧操作。
+## 验证与下一步
 
-这一适用范围问题须在 DMCP 所属项目提供正规原型执行依据；本库不加 override/temp gate、不改 selector、不造 FINDING。上游代码未在本轮修改，旧 GAP-DMCP-001 的文档交付修复仍有效。
+实际正式入口键盘事件、渲染采样、错误恢复、独立代码审查及首次人工反馈见报告；自动输入不冒称人类试玩，离线60FPS采样不冒称性能指标。变更 [CHG-20261011-003](../changes/CHG-20261011-003.md) 保持 IN_PROGRESS。
 
-## Git、验证与下一步
-
-main；本轮为 RB-REVIEW-002 / [CHG-20261011-002](../changes/CHG-20261011-002.md)，文件归当前 Agent。本轮内容提交 e5e4862 已推送并核对远端 main；发布回执见 receipts/2026-10-11-review2-publication/verification.json。现场用 git status/log 核实际 HEAD 和修改。
-
-正式登记/完整读回、来源与报告摘要/原对象保留核验、上下文与只读边界验证结果见 CHG。无游戏工程，游戏 L1–L5 N/A；未进行输入/视觉/情绪试玩。
-
-下一步只处理 C0 匹配的上游准入，然后执行小工单；不重复 Discovery、不补顶层文档、不扩展全序章。迁机限制及既有上游证据见 [TOOLING](TOOLING.md)；历史状态保留在 Git 和原始回执，不再堆进当前导航。
-
-本轮文档同步/正式登记已本地提交，实现 c995c0000858f67b466fe52793469bfef95b287b；关闭记录由 Git 历史定位。Owner 随后要求主动推送，内容提交 e5e4862 已发布；C0 状态仍为未实施/代码准入未成立。
+main；本轮文件归当前 Agent，实际 HEAD/工作树必须现场核对。按 Owner 既有授权推送可审实现，未验收部分留 VERIFYING。下一步只复验修后障碍接触与五个空间问题；Owner 另裁 C1，不增剧情/资产/未来系统。上游原生候选本地已提交、未推送，迁机限制见 [TOOLING](TOOLING.md)。

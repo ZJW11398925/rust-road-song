@@ -31,14 +31,22 @@ GAP-DMCP-001：空 FINDING 项目无法生成非空 readiness gate bundle。依�
 
 future AI/3D/美术工具必须先列目的、版本、许可证/使用权、成本、数据输入范围与审核方式，经 Owner 决定后采用。当前不存在推荐或采购决定。
 
-## 2026-10-11 当前绑定
+## 2026-10-11 文档 Discovery 绑定（历史）
 
 消费原生修复/证据版本 d270067（源码受验 ca002be），公开 binding 锁 engineCommit/documentDiscoveryPolicySha256；私有 profile 增 readinessPolicyFile，不提交本机路径。只读入口验证缺失/漂移政策并拒绝，仍仅 read/tools/get。
 
 政策与语义归上游，本库不设 override/temp gate。换机需获取同一原生候选与原生 policy artifact，核对摘要后配置；不要重新造 workspace/模型政策。原生候选尚未推送；游戏报告已随 f5037f6 公开，本轮修订已随 e5e4862 推送。远端克隆不足以重建这些本机依赖。
 
-真实文档 Discovery 已评估并通过固定宿主提交报告；普通 Agent SERVICE 与 Owner 转录入口分离。没有桌面 facade 接入、完整 PHASE1/profile 验收、模型带游戏工具的旅程或游戏试玩。独立跨模型静态审查在上游存证，报告交付不继承其 POC 权限。
+真实文档 Discovery 已评估并通过固定宿主提交报告；普通 Agent SERVICE 与 Owner 转录入口分离。当时没有桌面 facade 接入、完整 PHASE1/profile 验收、模型带游戏工具的旅程或游戏试玩；当前 C0 运行与人工反馈见报告。独立跨模型静态审查在上游存证，报告交付不继承其 POC 权限。
 
 ## 当前 POC 环境
 
-RD-007 已批准 Godot + Windows + 键盘用于当前 POC，不锁产品引擎/版本。C0 实施前核实实际二进制版本并记录；没有新插件、AI 美术工具、外部服务或正式资产准入。document_discovery@1 不是原型代码执行协议，不能用更换 Markdown 路径来授权 Godot。
+RD-007 已批准 Godot + Windows + 键盘用于当前 POC，不锁产品引擎/版本。C0 实际使用 Godot 4.7.1.stable.official.a13da4feb，二进制已核实并记录；没有新插件、AI 美术工具、外部服务或正式资产准入。document_discovery@1 不是原型代码执行协议，不能用更换 Markdown 路径来授权 Godot。
+
+## 当前 C0 执行依赖
+
+引擎为本地受审候选86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca；旧文档政策/引擎版本单独保留于binding。原型协议与两项摘要见binding；私有profile另含 prototypePolicyFile / prototypeRuntimeManifestFile，运行manifest锁273项dist/spec/exports文件。只读CLI也校验政策/manifest自身摘要，固定消费者逐项重核运行内容，不提供通用进程工具。
+
+真正运行的官方Godot二进制178997256字节，SHA-256 323f9c4cc5db674e98815cdd8e69da007d5efc779abedc8c0e42883b7fdea12a；不是console启动包装器。Windows/键盘、Compatibility渲染；本机AMD Radeon Graphics已实际离线渲染采样，未做实时FPS基准。项目不含插件、AI资产或Legacy模块。
+
+上游候选已本地提交、完整检查及独立审查，摘要见 [上游证据](receipts/2026-10-11-c0-admission/upstream-verification.json)，尚未推送；公开克隆可查看/运行Godot样本，但不能因此恢复本机DMCP执行依赖。换机仍需完整canonical、同一引擎候选/政策/manifest、客户端和真实二进制，核身份与hash；不复制自造state或政策凑READY。

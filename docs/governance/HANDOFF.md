@@ -2,40 +2,26 @@
 
 ## 接手结论
 
-Owner 已“认同”第二轮审查修订，接受 Discovery 交付并批准 C0 先试方向。下一步是 [RB-C0-001](../tasks/RB-C0-001.md)，不是执行原报告 30h 方案。C0 正式 PLAN/TASK 已登记，适用代码执行准入尚未成立；没有游戏工程。
+Owner 已“执行” RD-008；C0 正式准入 READY，最小 Godot 灰盒已运行，**RB-C0-001 VERIFYING**。首次真实试玩偏好2，发现持续撞障碍横移；已局部修复、保留RED→GREEN并获Owner实际确认；后续惯性反馈要求第2组取消松油门滑行，保留缓起步/有限转向。最新响应与完整五项独立验收尚未成立，不继续 C1。
 
-## 权威与当前边界
+## 先读与范围
 
-先读 [AGENTS](../../AGENTS.md)、00–07、RD-007、[来源](sources/2026-10-11-owner-discovery-review.md)，再 [binding](binding.json)/[CURRENT](CURRENT.md)/[WORKFLOW](WORKFLOW.md)。原 Discovery 报告不修改，后续实施方案以 06 v0.3 为准；外评不冒充原生 REVIEW/FINDING。
+读 AGENTS、00–07、RD-008、[任务](../tasks/RB-C0-001.md)、[报告](../pocs/RB-C0-001_REPORT.md)、[试玩原话](sources/2026-10-11-c0-first-playtest.md)，再 binding/CURRENT/WORKFLOW。只一次进入驾驶、门打开不关闭、两组局部参数；检查参照不是热点或解锁。无母亲、对白、异常、正式资产或未来系统。
 
-C0 仅灰盒车库、粗车、胶囊人、门、相机、最小移动/检查位置/上下车/低速驶出。不做母亲叙事、家庭物件、异常美术或正式对白。C1/Visual 后审，A 保留、B 暂不实施。Garage 不证明完整情感；比例非 KPI；仅看损伤不得解锁发动。
+## 正式状态与工具
 
-Legacy 保持冻结、只读参考；定位见 [references](../../references/LEGACY.md)，不续 176..179，不继承旧系统/标杆/治理要求。
+schema/design 5/13，9 canonical/0 FINDING/2 runtime，新 DEC@2/PLAN@1/TASK@1 精确ID见 [binding](binding.json)。prototype READY 4 facts/requirements 仅限当前代码/报告/进程。旧对象、Discovery READY、拒绝回执保留。原生TASK无DONE接口，不以Markdown状态冒称原生关闭。
 
-## 正式状态及依赖
-
-完整读回 schema/design 5/9，6 canonical/0 FINDING/1 runtime；新 DEC@2、C0 PLAN/TASK@1 的精确 ID 和回执见 CURRENT/binding/[核验](receipts/2026-10-11-review2-readback/verification.json)。旧三个对象/报告字节/历史拒绝均保留。
-
-现绑定引擎 d270067 的文档 Discovery READY 只覆盖已交报告。协议严格限制 Markdown、旧 scope 和 DISCOVERY，不能给 C0 PROTOTYPE/代码路径准入。没有投递新 C0 readiness，也不盲重试旧 DO_NOT_RETRY。须在上游建立适用依据；不得在本库改政策凑 READY。
+只读 CLI 仍 read/tools/get，无通用写/readiness权限；桌面固定其他项目 facade 不可用。固定本机消费者经审核、共享native lease与新鲜事实校验后才写精确路径/启动指定二进制。可信LOCAL_RUNTIME不是OS沙箱；换机依赖见 [TOOLING](TOOLING.md)。
 
 ## Git 与验证
 
-分支 main，本轮内容提交 e5e4862 已推送并核对远端 main。当前实现/关闭提交见 [CHG](../changes/CHG-20261011-002.md)；本轮修改归当前 Agent，忽略的 .local 是私有宿主资料。接手必须现场检查，历史“干净”不能代替实际状态。
+分支 main；本轮所有 tracked/untracked 修改归当前 Agent，私有 .local 被忽略；真实内容提交见 [CHG](../changes/CHG-20261011-003.md)，发布证据由后续实际回执补充。接手运行 git status/log，不能把这里的历史记录代替现场。
 
-本轮仅文档和正式对象登记；上下文、只读边界测试、完整读回、保留摘要及 diff 验证见 CHG。游戏 L1–L5 N/A，没有人工游戏试玩；Owner 接受 Discovery 不证明空间/情感假设成立。
+L1/L2局部行为数据在真实SceneTree探针中合并验证，未移入Legacy测试框架；L3上下文范围/只读边界，L4正式入口真实键盘事件与GPU离线录像。L5已有Owner初次物理键盘反馈，修后与五项完整结论仍待独立确认。OS失焦、任意门柱斜转/旋转扫掠、窗口变化、实时性能未验。
 
 ## 首轮动作
 
-在 canonical 根运行：
+在 canonical 根执行 git status --short --branch、git log -5 --oneline、node scripts/dmcp.mjs read、node scripts/check_context.mjs。运行项目 pocs/stylized_3d/c0/project.godot，按2比较，先检撞后持续W是否横移及S能否脱离，再记录构图/尺度/环绕/进入/离库的自然行为。无需重新开发上游协议；同类C0缺陷仍属当前范围。不要重投已完成readiness，未知操作先查原回执。
 
-~~~powershell
-git status --short --branch
-git log -5 --oneline
-node scripts/dmcp.mjs tools
-node scripts/dmcp.mjs read
-node scripts/check_context.mjs
-~~~
-
-完整读新 DEC 契约、C0 PLAN/TASK 及原始回执。核对上游是否已有适用原型依据；没有则在其所属项目按已授权范围正规处理，不复制工作区、不转移 facade 身份。适用准入成立后按 C0 五问题实施一轮、一次有限调整、独立操控试玩并交 Owner，再裁 C1。普通 Agent 固定 SERVICE，不获自授 ORG 权限；当前只读 CLI 无通用写接口，迁机见 TOOLING。
-
-本轮文档同步/正式登记已本地提交，实现 c995c0000858f67b466fe52793469bfef95b287b；关闭记录由 Git 历史定位。Owner 随后要求主动推送，内容提交 e5e4862 已发布；C0 状态仍为未实施/代码准入未成立。
+Legacy冻结，不续176..179；无新视觉胜出、产品引擎锁定或完整家庭情感结论。完整人工验收后由Owner决定下一轮，而不是自动扩大任务。

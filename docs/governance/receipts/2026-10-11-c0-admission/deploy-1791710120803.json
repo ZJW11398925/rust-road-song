@@ -1,0 +1,51 @@
+{
+  "at": "2026-10-11T09:15:20.803Z",
+  "mode": "deploy",
+  "assessmentRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-953858db-6765-4b4c-96f7-192a48123642.2",
+  "sharedNativeLease": true,
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "policySha256": "af364cb0d153951509ddb6f63af665e10c6d340ea18bf542f4ca48c743fe8789",
+  "basis": {
+    "canonical_state_id": "CST-50ab0b22-8066-47e9-9458-0889c396ad3b",
+    "schema_version": 5,
+    "design_revision": 13
+  },
+  "files": [
+    {
+      "path": "pocs/stylized_3d/c0/project.godot",
+      "sha256": "674459aa2c5ddb2691a165ce676cc380026e1707bcd8144ea73b569c6c565d20",
+      "bytes": 433
+    },
+    {
+      "path": "pocs/stylized_3d/c0/garage.tscn",
+      "sha256": "d79e378dcce29acb8c1ad5bfd02a862542a5b4d3883393be10f9f0cf32626097",
+      "bytes": 153
+    },
+    {
+      "path": "pocs/stylized_3d/c0/garage.gd",
+      "sha256": "69fa84c0ae47d8bd7f8dfcee7389f88f5e332589ef8522413dfa28890bc4c2e5",
+      "bytes": 10723
+    },
+    {
+      "path": "pocs/stylized_3d/c0/spatial_smoke.gd",
+      "sha256": "c30b4540e4381ebd8b1a4f92fb18270d75e09a585970b3bb345f477adb453de9",
+      "bytes": 11238
+    },
+    {
+      "path": "pocs/stylized_3d/c0/strings.tres",
+      "sha256": "1e7d9d6183680059c96b3aa2ee77baa3443bec4a18fe5242c05a9c814b328b7b",
+      "bytes": 954
+    },
+    {
+      "path": "pocs/stylized_3d/c0/README.md",
+      "sha256": "e9eea28e58948a82ffa8f12273d497660f9c0f51215f5590bb265bf51384d77a",
+      "bytes": 3322
+    },
+    {
+      "path": "docs/pocs/RB-C0-001_REPORT.md",
+      "sha256": "8a046e663e86bb2c6ddb7055a34c5ce2f64589ca1cd3435443223ed476f4fd32",
+      "bytes": 7838
+    }
+  ],
+  "outcome": "WRITTEN"
+}

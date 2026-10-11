@@ -1,0 +1,34 @@
+{
+  "at": "2026-10-11T09:21:03.881Z",
+  "basis": {
+    "observed_canonical_state_id": "CST-50ab0b22-8066-47e9-9458-0889c396ad3b",
+    "observed_schema_version": 5,
+    "observed_design_revision": 13
+  },
+  "canonical": 9,
+  "findings": 0,
+  "runtime": 2,
+  "originalReadbackSha256": "79b92db23452863c0b8a1c528d688cec4de0784562c842d65ecc0545c275cef7",
+  "stableRead": {
+    "canonical": "STABLE_DOUBLE_READ",
+    "runtimeAttestations": "EQUAL_DOUBLE_OBSERVATION_NOT_ATOMIC"
+  },
+  "oldCanonicalPreserved": [
+    "DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+    "PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+    "TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+    "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+    "PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+    "TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2"
+  ],
+  "oldRuntimePreserved": [
+    "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-273c2b0c-9434-46bb-b118-c8030b7941cf.2"
+  ],
+  "noCanonicalMutationAfterRegistration": true,
+  "prototypeAssessment": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-953858db-6765-4b4c-96f7-192a48123642.2",
+  "requirements": 4,
+  "facts": 4,
+  "verdict": "READY",
+  "notProductAcceptance": true,
+  "fullOriginalPrivate": true
+}

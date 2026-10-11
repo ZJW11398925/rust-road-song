@@ -1,0 +1,24 @@
+{
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "producerReportSha256": "fb31a782f19bd81aa8b270f5e829a8eb6c3032854e38ace21e9b0b56e55c61ac",
+  "independentReviewSha256": "9c22f04eacb67ad14b1ee3b0ecd177cc5736f26a082bf8b51f4efdb1c01d5691",
+  "prototypeTests": {
+    "passed": 50
+  },
+  "unitContractPlatform": {
+    "files": 176,
+    "passed": 3457,
+    "existingSkipped": 6
+  },
+  "integration": {
+    "passed": 22,
+    "existingSkipped": 2
+  },
+  "formatLintTypeSpecBoundariesBuild": "PASS",
+  "independentDocumentPrototypeTests": {
+    "passed": 69
+  },
+  "consumerExtraArgumentNegative": "REFUSED_BEFORE_EFFECTS",
+  "notProductAcceptance": true,
+  "upstreamPushed": false
+}

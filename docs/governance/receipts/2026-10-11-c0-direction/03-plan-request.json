@@ -1,0 +1,80 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-c0-execution.md",
+  "sourceSha256": "f73b64acec7bf9cce678b2b30b919d11bd3a191909fd15b584c5f326a4ba87a9",
+  "ownerRaw": "执行",
+  "host": "SERVICE",
+  "tool": "plan_build",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "plan_proposal": {
+      "target": {
+        "target_stage": "PROTOTYPE",
+        "scope_ref": {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2"
+        },
+        "value_goal_ref": {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2"
+        }
+      },
+      "value_anchor": {
+        "state": "NO_VALUE_SLICE_YET",
+        "reason_type": "VIABILITY_DISCOVERY_UNRESOLVED",
+        "reason_refs": [
+          {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+            "kind": "DECISION",
+            "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2"
+          }
+        ]
+      },
+      "work_items": [
+        {
+          "local_key": "c0-one-way-spatial-spike",
+          "kind": "RISK_SPIKE",
+          "resolves_or_informs": [
+            {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2"
+            }
+          ],
+          "question": "人物接近/环绕与一次进入驾驶、低速离库是否成立，最少迟钝是否像旧机器且仍可控？",
+          "bounded_scope": "单场景灰盒；一次进入驾驶、门只打开；即时/轻微迟钝两组局部参数，无叙事/美术/通用系统。",
+          "effort_boundary": "一轮最小五问题灰盒及有限空间/参数调整，记录实际投入；有稳定失败则交反例，不延伸C1/资产。",
+          "expected_evidence": [
+            "实际Godot入口/键盘说明/版本与占位",
+            "真实输入碰撞流程、两响应差异、先上车未开门与失焦重置",
+            "独立操控试玩原话/反例/未验证项"
+          ],
+          "exit_condition": "最小可玩灰盒与五问题事实/反例交Owner，不自动批准下一门。",
+          "consumers": [
+            {
+              "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+              "kind": "DECISION",
+              "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2"
+            }
+          ]
+        }
+      ],
+      "relations": [],
+      "basis": {
+        "design_basis_fingerprint": "f73b64acec7bf9cce678b2b30b919d11bd3a191909fd15b584c5f326a4ba87a9",
+        "planning_policy_version": "rust-road-song-c0-one-way-v0.2",
+        "repository_basis_refs": [
+          "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+        ]
+      }
+    },
+    "expected": {
+      "canonical_state_id": "CST-7f4c1eab-e66a-4ac9-ba5c-86ec9b7a0473",
+      "schema_version": 5,
+      "design_revision": 11
+    }
+  }
+}

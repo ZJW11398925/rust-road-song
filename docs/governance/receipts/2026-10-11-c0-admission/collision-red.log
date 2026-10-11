@@ -1,0 +1,48 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS central Translation registered and Chinese title resolves
+PASS initial person and closed solid door
+PASS far action produces visible feedback
+PASS mapped input moves during SceneTree physics lifecycle
+PASS walk to first distinct side
+PASS walk around rear clearance
+PASS cross behind tank without overlap
+PASS walk to second side / spatial reference
+PASS spatial reference changes no mechanical state
+PASS enter from second side
+PASS repeat E cannot dismount
+PASS real input reaches left boarding side
+PASS one enter changes control without inspection unlock
+PASS closed door physically stops early-board driving
+PASS closed door collision feedback visible
+PASS early-board route can open door while driving
+PASS opened placeholder slab no longer occludes tank composition
+PASS repeat open stays open with no exit control
+PASS low-speed input drives fully through exit
+PASS POC ending bounds continued throttle without leaving floor / camera
+PASS POC ending ignores continued turn
+PASS R restores identical initial scene
+PASS reset restores visible closed door slab
+PASS walking can approach closed exit
+PASS door placeholder also available walking
+PASS walking repeat open never closes
+PASS real input reaches left boarding side
+PASS one enter changes control without inspection unlock
+PASS profile 2 real W+A then W reaches oblique solid obstacle with visible feedback
+C0_COLLISION_REPRO heading=0.3520 contact_x=-2.6659 final_x=-3.0521 drift=0.3861
+FAIL holding W against oblique obstacle must not cause automatic lateral tank slide (<0.08m)
+PASS real input reaches left boarding side
+PASS one enter changes control without inspection unlock
+PASS profile 1 stops immediately
+PASS profile key resets same initial conditions
+PASS real input reaches left boarding side
+PASS one enter changes control without inspection unlock
+PASS profile 2 slight acceleration differs under identical input
+PASS profile 2 limited turn responds
+PASS profile 2 decelerates rather than instant stop
+PASS profile 2 reaches stopped state
+PASS injected focus-loss notification clears motion and held keys (not OS focus evidence)
+PASS stale held key never restarts after injected focus-in
+PASS fresh movement press after injected focus-in responds
+PASS reset after focus safety
+C0_SMOKE_RESULT failures=1 captures=0

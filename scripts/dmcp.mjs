@@ -23,6 +23,11 @@ if (binding.documentDiscoveryPolicySha256) {
   const actual = crypto.createHash('sha256').update(fs.readFileSync(profile.readinessPolicyFile)).digest('hex');
   if (actual !== binding.documentDiscoveryPolicySha256) throw Error('Discovery 政策已漂移；先审查再更新绑定。');
 }
+if (binding.prototypePolicySha256) {
+  for (const [field, expected] of [["prototypePolicyFile", binding.prototypePolicySha256], ["prototypeRuntimeManifestFile", binding.prototypeRuntimeManifestSha256]]) {
+    if (!profile[field] || crypto.createHash("sha256").update(fs.readFileSync(profile[field])).digest("hex") !== expected) throw Error("原型政策或运行清单缺失/漂移；先审查再更新绑定。");
+  }
+}
 const load = relative => import(pathToFileURL(path.join(profile.toolchainRoot, relative)).href);
 const { dmcpConfigFromEnv } = await load('services/knowledge/src/dmcp/config.ts');
 const config = dmcpConfigFromEnv({

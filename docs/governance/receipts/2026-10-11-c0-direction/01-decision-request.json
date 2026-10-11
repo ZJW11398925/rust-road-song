@@ -1,0 +1,43 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-c0-execution.md",
+  "sourceSha256": "f73b64acec7bf9cce678b2b30b919d11bd3a191909fd15b584c5f326a4ba87a9",
+  "ownerRaw": "执行",
+  "host": "ORGANIZATION_AUTHORITY",
+  "tool": "decision_add",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "decision": {
+      "question": "是否按第三轮外审收缩并执行 C0 灰盒，去掉下车/关门且只比较最小驾驶响应？",
+      "alternatives": [
+        {
+          "key": "one_way_c0",
+          "description": "单次进入驾驶、一次开门、两组局部驾驶响应；五空间问题，正规原型准入后实施。"
+        },
+        {
+          "key": "reusable_vehicle_door",
+          "description": "保留通用上下车/开关门与更完整的车辆物理。"
+        }
+      ],
+      "selected_key": "one_way_c0",
+      "reason": "Owner 在第三轮外评及执行 Agent 核对/分析后原话“执行”；来源 docs/governance/sources/2026-10-11-owner-c0-execution.md。替代 RD-007/C0 工单中的上下车往返、开关门与对应验证，保留其余保护。",
+      "related_constraint_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2"
+        }
+      ],
+      "tradeoffs": [
+        "不预建未来下车/门控/车辆物理；当前结果只限空间与操作，不证明情感或路线胜出。",
+        "新原型政策需保留旧文档和 Finding 规则，精确绑定任务/路径/进程；方向授权不冒称已准入。"
+      ]
+    },
+    "expected": {
+      "canonical_state_id": "CST-56ee7f33-c06c-4a94-a137-b4eac962e963",
+      "schema_version": 5,
+      "design_revision": 9
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-c0-execution.md",
+  "sourceSha256": "f73b64acec7bf9cce678b2b30b919d11bd3a191909fd15b584c5f326a4ba87a9",
+  "ownerRaw": "执行",
+  "host": "SERVICE",
+  "tool": "task_build",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "primary_parent_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+      "kind": "PLAN",
+      "id": "PLAN-OPI-a3f17423-6c85-45a7-9059-cd6725db22a3.2"
+    },
+    "task_proposal": {
+      "goal": "RB-C0-001 v0.2：单向进入驾驶与最小机械响应 Spatial Spike",
+      "why": "削去未来上下车/开关门惯性，真正以灰盒回答当前空间与操控。",
+      "scope_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+        "kind": "DECISION",
+        "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2"
+      },
+      "relevant_decision_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2"
+        }
+      ],
+      "required_capabilities": [
+        "REPOSITORY_READ",
+        "REPOSITORY_WRITE",
+        "PROCESS_EXEC"
+      ],
+      "acceptance_criterion_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2",
+          "facet": "contract_claims.ACCEPTANCE"
+        }
+      ],
+      "relevant_paths": [
+        "pocs/stylized_3d/c0/project.godot",
+        "pocs/stylized_3d/c0/garage.tscn",
+        "pocs/stylized_3d/c0/garage.gd",
+        "pocs/stylized_3d/c0/spatial_smoke.gd",
+        "pocs/stylized_3d/c0/strings.tres",
+        "pocs/stylized_3d/c0/README.md",
+        "docs/pocs/RB-C0-001_REPORT.md"
+      ],
+      "forbidden_changes": [
+        "下车/关门/通用车辆物理/完整系统",
+        "母亲/信件/异常/家庭物件/正式资产/全序章/C1/Visual",
+        "扩张旧文档准入或改游戏override",
+        "复用Legacy代码/资产"
+      ],
+      "repository_basis_refs": [
+        "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      ],
+      "expected_output": "单场景最小可玩 C0、两种局部驾驶响应与五问题证据/反例；独立试玩未完成保持VERIFYING。"
+    },
+    "expected": {
+      "canonical_state_id": "CST-6a0f7f1a-823b-4987-bca9-7eb9f0cb4c0f",
+      "schema_version": 5,
+      "design_revision": 12
+    }
+  }
+}

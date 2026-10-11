@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-11T08:25:37.609Z",
+  "basis": {
+    "observed_canonical_state_id": "CST-50ab0b22-8066-47e9-9458-0889c396ad3b",
+    "observed_schema_version": 5,
+    "observed_design_revision": 13
+  },
+  "canonicalObjects": 9,
+  "findingObjects": 0,
+  "oldCanonicalObjectsPreserved": 6,
+  "oldRuntimePreserved": true,
+  "sourceSha256": "f73b64acec7bf9cce678b2b30b919d11bd3a191909fd15b584c5f326a4ba87a9",
+  "newDecision": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2",
+  "decisionRevision": 2,
+  "newPlan": "PLAN-OPI-a3f17423-6c85-45a7-9059-cd6725db22a3.2",
+  "newTask": "TASK-OPI-72672dc0-37a4-40b1-84cc-a21626265509.2",
+  "notExecutionReadiness": true
+}

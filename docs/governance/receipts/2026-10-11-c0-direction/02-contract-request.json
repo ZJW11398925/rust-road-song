@@ -1,0 +1,78 @@
+{
+  "source": "docs/governance/sources/2026-10-11-owner-c0-execution.md",
+  "sourceSha256": "f73b64acec7bf9cce678b2b30b919d11bd3a191909fd15b584c5f326a4ba87a9",
+  "ownerRaw": "执行",
+  "host": "ORGANIZATION_AUTHORITY",
+  "tool": "design_update_contract",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "expected": {
+      "canonical_state_id": "CST-b6fe0c56-ad28-43e1-baaa-b8a121791936",
+      "schema_version": 5,
+      "design_revision": 10,
+      "object_revisions": [
+        {
+          "object_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+            "kind": "DECISION",
+            "id": "DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2"
+          },
+          "object_revision": 1
+        }
+      ]
+    },
+    "mutations": [
+      {
+        "kind": "SET_SCALAR_CLAIM",
+        "field": "GOAL",
+        "assertion_action": "CONFIRM",
+        "value": "实施收缩后的 C0 Spatial Spike：胶囊人绕灰盒玛丽、一次进入驾驶、开门后低速驶出，比较即时与轻微机械迟钝响应。"
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "IN_SCOPE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "灰盒车库/粗车/胶囊人/一次性打开的门/受约束相机/移动/一个检查位置/一次进入驾驶/低速驶出；同场景起步、转向、停车两组最小响应。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "TECHNICAL_CONSTRAINTS",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "Godot + Windows + 键盘仅用于 POC，不锁产品引擎；实际版本核实。",
+          "删除下车、车外落点、反复上下车、关门/toggle与对应验证。",
+          "一次性开门占位交互在步行/驾驶均可用，不产生先上车陷阱或强制顺序；不建立遥控门系统/正式设定。",
+          "检查位是空间参照，不是打卡热点或发动前置；合理提前行动不受剧情bool锁。",
+          "同场景/镜头/碰撞只比较即时与轻微加减速/有限转向，兼顾可控性与重量感，不造VehiclePhysics。",
+          "原型执行须由真实 Owner 来源/当前契约/PLAN/TASK/路径及固定进程依据形成，保留旧文档规则、FINDING阻断/历史DO_NOT_RETRY；后续同类能力换任务/依据不重写协议。",
+          "Garage 只验证空间/表现/操作；C1局部戏不等于完整情感；数字只作诊断，不加强提示凑比例。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "OUT_OF_SCOPE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "母亲/信件/异常/家庭物件/正式对白或资产，完整序章、C1/Visual、B实施与视觉胜出。",
+          "下车/关闭车库门/通用车辆物理、装备/赏金/任务/世界状态/EventBus/存档等未来系统。",
+          "扩大旧READY、在游戏库创建override/temp gate、伪造Finding/Owner事实、普通Agent自授ORG或篡改旧拒绝。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "ACCEPTANCE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "五问题：自由移动时人物/玛丽/出口构图；靠近车体尺度；自然绕到两个不同侧面；一次进入驾驶无输入/镜头/空间错误；低速狭窄离库的转向、碰撞与机械感。",
+          "两种响应只作局部参数比较；先上车未开门可继续开门离库，检查未触发也能驾驶；门保持打开。",
+          "真实SceneTree/输入/碰撞/失焦/重置证据及独立操控试玩；保存反例，未试玩不标DONE、不宣称情感/路线胜出。",
+          "一轮最小灰盒与有限调整后报告成立/失败/未验证；无30h/60h或人数比例KPI。"
+        ]
+      }
+    ]
+  }
+}

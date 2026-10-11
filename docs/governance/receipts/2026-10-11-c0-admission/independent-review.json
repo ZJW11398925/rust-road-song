@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-11T09:17:46.036Z",
+  "verdict": "APPROVE_LIMITED_CODE_REVIEW",
+  "reviewReportSha256": "f6656a2b2276ea07b9d9ecba332483159ee37384a73b6abff25db170684baf2e",
+  "scope": [
+    "C0 exact six files",
+    "one entry/no dismount",
+    "one-way door",
+    "collision translation and reverse recovery",
+    "P2 local no-coast response and genuine input regression"
+  ],
+  "readLogs": [
+    "smoke-1791709005879",
+    "smoke-1791709491745",
+    "capture-1791709495660",
+    "smoke-1791710029154",
+    "smoke-1791710123329"
+  ],
+  "collisionHumanConfirmation": "不再横移，倒退正常",
+  "latestResponseHumanAcceptance": "PENDING",
+  "limits": [
+    "no rotational collision sweep",
+    "not five-question product acceptance",
+    "not C1 authorization"
+  ],
+  "code": [
+    {
+      "path": "pocs/stylized_3d/c0/garage.gd",
+      "sha256": "69fa84c0ae47d8bd7f8dfcee7389f88f5e332589ef8522413dfa28890bc4c2e5"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/spatial_smoke.gd",
+      "sha256": "c30b4540e4381ebd8b1a4f92fb18270d75e09a585970b3bb345f477adb453de9"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/strings.tres",
+      "sha256": "1e7d9d6183680059c96b3aa2ee77baa3443bec4a18fe5242c05a9c814b328b7b"
+    }
+  ]
+}

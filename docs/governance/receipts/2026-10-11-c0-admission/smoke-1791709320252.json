@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-11T09:02:00.252Z",
+  "mode": "smoke",
+  "assessmentRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-953858db-6765-4b4c-96f7-192a48123642.2",
+  "sharedNativeLease": true,
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "policySha256": "af364cb0d153951509ddb6f63af665e10c6d340ea18bf542f4ca48c743fe8789",
+  "basis": {
+    "canonical_state_id": "CST-50ab0b22-8066-47e9-9458-0889c396ad3b",
+    "schema_version": 5,
+    "design_revision": 13
+  },
+  "processProfile": "smoke",
+  "argumentSha256": "38f60f94108b369568e8c669baa04ff559454d0441f48de275a18083001bbbcb",
+  "inputFiles": [
+    {
+      "path": "pocs/stylized_3d/c0/project.godot",
+      "sha256": "674459aa2c5ddb2691a165ce676cc380026e1707bcd8144ea73b569c6c565d20"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/garage.tscn",
+      "sha256": "d79e378dcce29acb8c1ad5bfd02a862542a5b4d3883393be10f9f0cf32626097"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/garage.gd",
+      "sha256": "8a76aac797936ecf95d88f8b1b25500994422c50634ad4d7c9045f0c5af1556e"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/spatial_smoke.gd",
+      "sha256": "90e9a905fa59884b2ae1db79028a176bdab9999f647b906ad393caff2c1bb33b"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/strings.tres",
+      "sha256": "1f13f1f222bb278c02c6c5a3eb618d2ba61ee5655315873c9c63303645f74d8b"
+    },
+    {
+      "path": "pocs/stylized_3d/c0/README.md",
+      "sha256": "c50b85565d121abdc56e47c370de5e09b625819d74be90397cfdd7c726688137"
+    },
+    {
+      "path": "docs/pocs/RB-C0-001_REPORT.md",
+      "sha256": "71b1394a2126dd54e98546d54e73cd867dea0ce080e60fe76fce4072e15e5654"
+    }
+  ],
+  "exitCode": 0,
+  "errorMarkers": false,
+  "logSha256": "699e8c588eb658a19bef52ba94b3cfe75ecc155c9727e140f2a4ce72c5f92564",
+  "outcome": "PASS"
+}

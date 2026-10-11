@@ -6,3 +6,7 @@
 
 # Preserve the admitted report bytes recorded by its receipt.
 docs/discovery/RB-DISC-001_REPORT.md -text
+pocs/** text eol=lf
+
+# Preserve raw Windows verification logs while checking other whitespace.
+docs/governance/receipts/2026-10-11-c0-admission/*.log whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
