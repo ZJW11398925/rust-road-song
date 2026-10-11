@@ -1,0 +1,13 @@
+{
+  "originalSha256": "749f27653ac90284f2f33b8cb712c3579c0a84782abb93ab679eb4cb8ddacf24",
+  "redactions": [
+    "process project_root/executable and host scratch output paths"
+  ],
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "policySha256": "55e51bd95b65c1c92d3d6b5dd19dde18d51d05c9677cf43587547bfad225e629",
+  "basis": {
+    "observed_canonical_state_id": "CST-982a0fd9-4c16-407d-8bc9-e491b99921f8",
+    "observed_schema_version": 5,
+    "observed_design_revision": 25
+  }
+}

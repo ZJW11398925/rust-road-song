@@ -1,0 +1,43 @@
+{
+  "result": {
+    "contract": {
+      "contract_id": "dmcp.design_update_contract",
+      "contract_version": 1
+    },
+    "payload_kind": "RESULT",
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "operation_intent_ref": "OPI-219e0beb-1f52-4321-be40-f7b4bce13fcc.2",
+    "result": {
+      "primary_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2",
+      "result_refs": [
+        "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2"
+      ],
+      "effective_state": "UPDATED",
+      "summary": "design_update_contract committed under operation intent OPI-219e0beb-1f52-4321-be40-f7b4bce13fcc.2"
+    },
+    "basis": {
+      "observed_canonical_state_id": "CST-bc909307-be23-46e7-b6f6-2d734b8d02a9",
+      "observed_schema_version": 5,
+      "observed_design_revision": 22
+    },
+    "effects": {
+      "semantic_revision_changed": true,
+      "design_revision_before": 22,
+      "design_revision_after": 23,
+      "updated_refs": [
+        "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2"
+      ]
+    },
+    "audit_refs": [
+      "EVT-000049.yaml"
+    ],
+    "warnings": []
+  },
+  "basis": {
+    "observed_canonical_state_id": "CST-659c646e-b57e-4e88-a0db-089c6dd19f42",
+    "observed_schema_version": 5,
+    "observed_design_revision": 23
+  }
+}

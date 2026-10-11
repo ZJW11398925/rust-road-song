@@ -55,3 +55,5 @@ RD-007 已批准 Godot + Windows + 键盘用于当前 POC，不锁产品引擎/�
 C1-A 使用同一受审引擎/运行 manifest，新的 prototypePolicyFile 选择精确十路径与 C1-A Godot 参数；新 policy 摘要见 binding。旧 C0 选择/READY 仅归档，不授新任务。没有新增上游协议或工具插件。
 
 C1-B异常小轮沿同一引擎/273项manifest；新的精确选择/消费器与独立READY见binding和2026-10-12-c1b-admission。C1-A选择/READY原样归档；受限宿主Owner转录依据2026-10-12明确指定，普通执行仍SERVICE，不新增通用通道或上游协议。
+
+当前RB-C1B2-001沿同一受审引擎/273项manifest；新policy仅选择c1b_departure十路径与固定Godot过程，新独立READY见binding/2026-10-12-departure-admission。C1B异常选择/READY归档，未改上游协议；当前消费器.local/departure-consumer.mjs，不因Git推送恢复Git外canonical/本机依赖。

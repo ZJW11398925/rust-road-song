@@ -1,0 +1,66 @@
+{
+  "result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"contract\":{\"contract_id\":\"dmcp.design_status\",\"contract_version\":1},\"payload_kind\":\"RESULT\",\"workspace_ref\":{\"workspace_id\":\"ws-217bac29-7a08-437c-be5f-472693bf16ca\"},\"result\":{\"primary_ref\":\"WORKSPACE_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca\",\"result_refs\":[\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-4b9f03d0-7cce-48df-a87c-8ce490e5cfbd.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-a3f17423-6c85-45a7-9059-cd6725db22a3.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-a5367870-5bca-4c0a-bb74-ea2abfc706f9.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-c853b5b7-b3eb-4abc-982c-fa4ee5ee60fa.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-72672dc0-37a4-40b1-84cc-a21626265509.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2\",\"OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-e4b3ed6b-5890-4739-ad2c-36fa6bc41c93.2\"],\"effective_state\":\"READY\",\"domain_verdict\":\"READY\",\"summary\":\"observed 15 object(s); structure consistent\"},\"basis\":{\"observed_canonical_state_id\":\"CST-299c85bf-be2b-4753-90b4-bb7e454b309c\",\"observed_schema_version\":5,\"observed_design_revision\":21},\"effects\":{\"semantic_revision_changed\":false,\"design_revision_before\":21,\"design_revision_after\":21},\"audit_refs\":[],\"warnings\":[]}"
+      }
+    ],
+    "structuredContent": {
+      "contract": {
+        "contract_id": "dmcp.design_status",
+        "contract_version": 1
+      },
+      "payload_kind": "RESULT",
+      "workspace_ref": {
+        "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+      },
+      "result": {
+        "primary_ref": "WORKSPACE_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca",
+        "result_refs": [
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-1093f782-2177-4d58-bd83-d665a81d9772.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-380f1ae7-0e74-4e63-b434-e3b3179dba03.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-4b9f03d0-7cce-48df-a87c-8ce490e5cfbd.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.3",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-2cbcdb8a-daa4-4c8b-b97a-df91a7fcf5a6.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.7",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-a3f17423-6c85-45a7-9059-cd6725db22a3.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-a5367870-5bca-4c0a-bb74-ea2abfc706f9.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:PLAN-OPI-c853b5b7-b3eb-4abc-982c-fa4ee5ee60fa.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-3bb2876f-89de-4e7b-bbf9-5ae9f2bada04.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-72672dc0-37a4-40b1-84cc-a21626265509.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-93f62b9d-d8c0-4c37-a2b3-397d6b175383.9",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-9fe1ff3e-ef7b-4b81-ab7c-94cff5a56105.2",
+          "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:TASK-OPI-e4b3ed6b-5890-4739-ad2c-36fa6bc41c93.2"
+        ],
+        "effective_state": "READY",
+        "domain_verdict": "READY",
+        "summary": "observed 15 object(s); structure consistent"
+      },
+      "basis": {
+        "observed_canonical_state_id": "CST-299c85bf-be2b-4753-90b4-bb7e454b309c",
+        "observed_schema_version": 5,
+        "observed_design_revision": 21
+      },
+      "effects": {
+        "semantic_revision_changed": false,
+        "design_revision_before": 21,
+        "design_revision_after": 21
+      },
+      "audit_refs": [],
+      "warnings": []
+    },
+    "isError": false,
+    "resultType": "complete",
+    "_meta": {
+      "io.modelcontextprotocol/serverInfo": {
+        "name": "design-maturity-mcp",
+        "version": "0.0.0",
+        "description": "Design Maturity MCP bootstrap; no Phase1 capability claim is made."
+      }
+    }
+  },
+  "jsonrpc": "2.0",
+  "id": 1
+}

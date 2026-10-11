@@ -1,0 +1,82 @@
+{
+  "source": "docs/governance/sources/2026-10-12-owner-graybox-continue.md",
+  "sourceSha256": "5641e1541d9322ed7d979e6d41df63704f90024ca7643588a356e1d7d171ff9f",
+  "ownerRaw": "不要再问这种可笑的问题，我认为可以，就继续。我没有为了这样一个小灰盒思考的理由",
+  "hostClarificationSource": "docs/governance/sources/2026-10-12-owner-host-clarification.md",
+  "hostClarificationSha256": "e81d2c79a52a22afe0d9f0c5c267fe516884758a24b51aaffff0769e9e9106aa",
+  "host": "ORGANIZATION_AUTHORITY",
+  "tool": "design_update_contract",
+  "arguments": {
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "expected": {
+      "canonical_state_id": "CST-bc909307-be23-46e7-b6f6-2d734b8d02a9",
+      "schema_version": 5,
+      "design_revision": 22,
+      "object_revisions": [
+        {
+          "object_ref": {
+            "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+            "kind": "DECISION",
+            "id": "DEC-OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2"
+          },
+          "object_revision": 1
+        }
+      ]
+    },
+    "mutations": [
+      {
+        "kind": "SET_SCALAR_CLAIM",
+        "field": "GOAL",
+        "assertion_action": "CONFIRM",
+        "value": "Owner阶段接受当前灰盒并要求继续；在既定玛丽首次出现POC内完成剩余最小启动/母亲具体参与/短距驶出，由SERVICE承担可撤回灰盒选择，不裁定新故事真相。"
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "IN_SCOPE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "独立最小人物/车库灰盒接续首见和自由接近，玩家亲自启动、母亲具体参与、低速驶出到车库外短空地。",
+          "当前场景内最低登车/启动/驾车/镜头/恢复，用户文本可本地化；接点/供电/动作/按键由SERVICE作为候选选择，不是Owner指定正式结构。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "TECHNICAL_CONSTRAINTS",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "Godot + Windows + 键盘仅POC；同prototype_execution@1，用新正式DEC@2/PLAN@1/TASK@1、十精确路径和固定进程取得自己的实际READY。",
+          "观察/触碰/对白/检查顺序不得解锁发动，不强制首次失败；限制须对应候选世界物理条件，失败必须可见反馈。",
+          "旧C0/C1A/C1B异常工程及Discovery原报告冻结，Legacy NONE；仅逐文件评估必要Reboot经验。",
+          "静态类型GDScript、场景唯一状态所有者；不建未来抽象，不加入外部资产/网络SDK/插件。",
+          "当前Owner可以是灰盒阶段接受，不是具体假设L5证明；新后段不借此伪造人工验收或native TASK DONE。",
+          "普通执行SERVICE；组织身份只受限转录真实Owner来源，不自作产品裁决，不改上游协议或workspace。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "OUT_OF_SCOPE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "完整序章/母亲离家决定/信/标题/道路旅行、战斗/经济/多车/存档/任务框架、正式资产/声音生产/Visual胜出。",
+          "异常真相/父亲结局/正式车辆型号与结构/最终台词或动作；修理小游戏、物品系统、复杂电路或车辆动力模型。",
+          "下车/重复上下车/关门/多个模式ProfileUI、强制特写/观察硬锁/检查计数/第一次必败。",
+          "改旧工程/旧原报告/复用旧READY、编辑.design/伪造Finding或回执/把自动输入和渲染当情感证明。"
+        ]
+      },
+      {
+        "kind": "SET_LIST_CLAIM",
+        "field": "ACCEPTANCE",
+        "assertion_action": "CONFIRM",
+        "value": [
+          "真实键路径能开门、两侧触碰/忽略细节/提前登车启动，母亲实际到接点/接触/收手/上车，玩家可亲自完成启动和低速驶出，无ERROR/脚本错误/崩溃。",
+          "启动约束只读取实际机械接触/操纵，不读取异常观察/对白/触碰；可晚到第一次成功，提前尝试有明确场内反馈，松启动键/失焦/重置可恢复。",
+          "松驾驶键停止，有限转向，撞门框/墙停止且不沿墙滑；镜头与高墙自动透明延续当前候选，完整重置/Esc退出真实核验。",
+          "L1/L2、有效行为RED/L3、正式入口实际生命周期/输入/渲染、独立审查分别存证；保留失败和未覆盖项，旧25文件冻结。",
+          "不反复请求Owner复述小灰盒；开放可运行片段，阶段接受与自然可读性/舒适/情感假设分别记录，新后段人工未接受保持VERIFYING。"
+        ]
+      }
+    ]
+  }
+}

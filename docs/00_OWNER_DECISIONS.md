@@ -78,6 +78,14 @@
 
 本指令只替代RD-009中“C1-B尚待裁定”的这一有限范围；完整C1-B的启动、机械协作、驾驶/驶出及Visual仍未批准。先落实新的合法Owner转录、PLAN/TASK与实际READY，不能借用C1-A准入。2026-10-12 Owner[明确本总控就是宿主](governance/sources/2026-10-12-owner-host-clarification.md)，纠正Agent误报通道缺口。受限真实转录已完成：新DEC@2、SERVICE PLAN/TASK@1和独立READY见[binding](governance/binding.json)、[回执](governance/receipts/2026-10-12-c1b-direction/readback-verification.json)及[准入](governance/receipts/2026-10-12-c1b-admission/assessment-projection.json)。沿同一原型协议，不是完整产品接受。
 
+## 2026-10-12 Owner 灰盒阶段接受并继续 / RD-012
+
+来源：[真实原话](governance/sources/2026-10-12-owner-graybox-continue.md)：“不要再问这种可笑的问题，我认为可以，就继续。我没有为了这样一个小灰盒思考的理由”。当前RB-C1B-001阶段接受；自然可读性、镜头舒适、情感等未逐项观测，不补PASS。C1-A未知仍保留。
+
+总控依既定首见POC剩余链条继续启动、母亲具体参与和短距离驶出；此为连续执行指令的有限解释，不称Owner指定接点/供电/按键/动作，它们由SERVICE选为可撤回灰盒候选。不要反复要求Owner复述小灰盒。只在后段最小POC范围替代RD-011“后段未授权”，不批准完整序章、离家决定、正式故事/资产或Visual。
+
+另建RB-C1B2-001：新DEC@2/PLAN@1/TASK@1和独立READY见[binding](governance/binding.json)、[方向读回](governance/receipts/2026-10-12-departure-direction/readback-verification.json)、[新准入](governance/receipts/2026-10-12-departure-admission/assessment-projection.json)。旧工程冻结，不用旧READY授新阶段。具体因果和五项需求见[执行计划](plans/RB-C1B2-001_IMPLEMENTATION_PLAN.md)；新后段不借旧轮“可以”冒称人工已验。
+
 ## 尚未裁定 / 不得自行确认
 
 - V-01：暗红锈蚀 / 新生金属组织是首个异常的候选表现；像腐败又像修复/生长，不等于设定真相。

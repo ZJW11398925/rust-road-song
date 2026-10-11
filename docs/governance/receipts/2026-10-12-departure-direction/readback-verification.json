@@ -1,0 +1,19 @@
+{
+  "basis": {
+    "observed_canonical_state_id": "CST-982a0fd9-4c16-407d-8bc9-e491b99921f8",
+    "observed_schema_version": 5,
+    "observed_design_revision": 25
+  },
+  "canonicalCount": 18,
+  "runtimeCount": 4,
+  "previous15CanonicalPreserved": true,
+  "previous4RuntimePreserved": true,
+  "newRefs": [
+    "DEC-OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2",
+    "PLAN-OPI-55598956-003d-4787-8f17-7784f4324298.2",
+    "TASK-OPI-e53db210-2e1a-46d3-b5a7-dccdb3dd0df6.2"
+  ],
+  "beforeSha256": "6b8d9217106c3323d910421ddaedd93c6e00245b423be33346b7fd8ec7f7f43b",
+  "afterSha256": "5932d9b710c04a9bc974beb95c1193083a8df2ffacbaa46a5252e0ca0a09e7e9",
+  "nativeTaskDoneNotClaimed": true
+}

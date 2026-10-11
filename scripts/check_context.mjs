@@ -21,7 +21,7 @@ for (const file of required) if (!files.includes(file)) failures.push('缺少项
 const owner = fs.readFileSync(path.join(root, 'docs/00_OWNER_DECISIONS.md'), 'utf8');
 const ids = [...owner.matchAll(/^\| (OD-\d{3}) \|/gm)].map(m => m[1]);
 if (ids.length !== 22 || new Set(ids).size !== 22) failures.push('Owner 决定覆盖或编号不完整');
-// RD-009/C1-A与RD-011异常小轮的精确文件；静态范围不构成 DMCP 实施准入。
+// RD-009/C1-A、RD-011异常与RD-012独立READY后段的精确文件；静态范围不构成 DMCP 实施准入。
 const prototypeFiles = new Set([
   "pocs/stylized_3d/c0/project.godot", "pocs/stylized_3d/c0/garage.tscn",
   "pocs/stylized_3d/c0/garage.gd", "pocs/stylized_3d/c0/spatial_smoke.gd",
@@ -44,6 +44,15 @@ const prototypeFiles = new Set([
   "pocs/stylized_3d/c1b_anomaly/strings.tres",
   "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
   "pocs/stylized_3d/c1b_anomaly/README.md",
+  "pocs/stylized_3d/c1b_departure/project.godot",
+  "pocs/stylized_3d/c1b_departure/departure.tscn",
+  "pocs/stylized_3d/c1b_departure/departure.gd",
+  "pocs/stylized_3d/c1b_departure/human.tscn",
+  "pocs/stylized_3d/c1b_departure/human.gd",
+  "pocs/stylized_3d/c1b_departure/mary.tscn",
+  "pocs/stylized_3d/c1b_departure/strings.tres",
+  "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+  "pocs/stylized_3d/c1b_departure/README.md",
 ]);
 for (const file of files) {
   if (/(^|\/)(inventory|equipment|bounty_system|shop|crew_jobs|skill_tree|world_state)(\/|$)/.test(file)) failures.push("冻结系统：" + file);

@@ -1,6 +1,8 @@
 # 新总控接续入口 / 2026-10-12
 
-2026-10-12现行更新：Owner明确本总控就是宿主，原“缺外部通道”是Agent误判。真实C1-B小轮DEC/PLAN/TASK与独立READY已取得，仅异常可读范围实施中；最新入口是[CURRENT](CURRENT.md)、[任务](../tasks/RB-C1B-001.md)、[实施计划](../plans/RB-C1B-001_IMPLEMENTATION_PLAN.md)及[宿主澄清原始来源](sources/2026-10-12-owner-host-clarification.md)。本文件下方2026-10-11阶段数值/待通道是历史快照，不作当前准入；全设计阅读纪律不变。禁止自动接发动/驾驶/Visual，不能因只看更新摘要开工。
+2026-10-12最新：Owner[“我认为可以，就继续”](sources/2026-10-12-owner-graybox-continue.md)阶段接受异常灰盒，不再要求小灰盒复述；当前RB-C1B2-001首见POC剩余启动/母亲具体参与/短距驶出，新独立对象与READY已取，具体机制仍SERVICE候选。读[最新计划](../plans/RB-C1B2-001_IMPLEMENTATION_PLAN.md)和[新方向/准入](receipts/2026-10-12-departure-admission/assessment-projection.json)，核当前完整设计与真实状态后接续。下方RD-011阶段“后段未授权”为历史，不套为当前禁令。完整序章/离家决定/Visual仍未批准。
+
+2026-10-12较早现行更新：Owner明确本总控就是宿主，原“缺外部通道”是Agent误判。真实C1-B小轮DEC/PLAN/TASK与独立READY已取得，仅异常可读范围实施中；最新入口是[CURRENT](CURRENT.md)、[任务](../tasks/RB-C1B-001.md)、[实施计划](../plans/RB-C1B-001_IMPLEMENTATION_PLAN.md)及[宿主澄清原始来源](sources/2026-10-12-owner-host-clarification.md)。本文件下方2026-10-11阶段数值/待通道是历史快照，不作当前准入；全设计阅读纪律不变。禁止自动接发动/驾驶/Visual，不能因只看更新摘要开工。
 
 依据：[Owner 总控接续要求](sources/2026-10-11-owner-controller-handoff.md)。本文件只导航，不能替代设计正文、Owner 原话或 DMCP 实时状态。当前主线 main；当前实施属于 RB-C1B-001 / CHG-20261012-009，仅异常可读小轮。开始前核最新 Git，而不是沿交接中的历史哈希盲续。
 

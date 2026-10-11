@@ -65,3 +65,7 @@ RD-009 真实 Owner 转录创建新 DEC@2/PLAN@1/TASK@1，旧9对象/2runtime原
 ## 当前 C1-B异常小轮受限消费
 
 Owner明确本总控承担宿主职责，仅转录已采用的具体小轮，见2026-10-12来源。两次真实Owner操作和SERVICE新PLAN/TASK已完成；沿同一prototype_execution@1选择新十路径/固定Godot参数，独立READY四事实/要求。旧12canonical/3runtime保留，C1-A选择/READY归档。当前固定SERVICE消费者.local/c1b-consumer.mjs共享native lease重核basis/事实/READY/273项依赖，部署和运行各存意图及回执；没有通用写入CLI或上游新协议。新游戏体验人工另验，不接发动/驾驶。
+
+## RD-012剩余首见POC（当前）
+
+最新Owner阶段接受并继续指令已保存，替代RD-011后段未授权的有限范围；SERVICE选择的机械因果仍候选。新DEC@2/PLAN@1/TASK@1与独立READY四事实/要求见CURRENT。沿同一原型协议，当前消费者.local/departure-consumer.mjs，十精确新路径/固定Godot过程；旧三工程25文件冻结。普通执行SERVICE，不自授产品裁决；不反复要求小灰盒复述，阶段接受与具体假设未观测分列，新后段人工状态不借旧轮“可以”冒称通过。

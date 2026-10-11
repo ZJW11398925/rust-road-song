@@ -1,0 +1,43 @@
+{
+  "result": {
+    "contract": {
+      "contract_id": "dmcp.decision_add",
+      "contract_version": 1
+    },
+    "payload_kind": "RESULT",
+    "workspace_ref": {
+      "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+    },
+    "operation_intent_ref": "OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2",
+    "result": {
+      "primary_ref": "DEC-OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2",
+      "result_refs": [
+        "DEC-OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2"
+      ],
+      "effective_state": "CREATED",
+      "summary": "decision_add committed under operation intent OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2"
+    },
+    "basis": {
+      "observed_canonical_state_id": "CST-299c85bf-be2b-4753-90b4-bb7e454b309c",
+      "observed_schema_version": 5,
+      "observed_design_revision": 21
+    },
+    "effects": {
+      "semantic_revision_changed": true,
+      "design_revision_before": 21,
+      "design_revision_after": 22,
+      "created_refs": [
+        "DEC-OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2"
+      ]
+    },
+    "audit_refs": [
+      "EVT-000047.yaml"
+    ],
+    "warnings": []
+  },
+  "basis": {
+    "observed_canonical_state_id": "CST-bc909307-be23-46e7-b6f6-2d734b8d02a9",
+    "observed_schema_version": 5,
+    "observed_design_revision": 22
+  }
+}

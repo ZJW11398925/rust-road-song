@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-11T17:34:23.448Z",
+  "source": "docs/governance/sources/2026-10-12-owner-graybox-continue.md",
+  "sourceSha256": "5641e1541d9322ed7d979e6d41df63704f90024ca7643588a356e1d7d171ff9f",
+  "raw": "不要再问这种可笑的问题，我认为可以，就继续。我没有为了这样一个小灰盒思考的理由",
+  "status": "OWNER_STAGE_ACCEPTED_WITH_UNMEASURED_HYPOTHESES",
+  "notOpenRecallMeasurement": true,
+  "notNativeTaskDone": true,
+  "remainingUnknowns": [
+    "异常自然可读性",
+    "镜头舒适/全身遮挡/透明排序",
+    "情感/乐趣"
+  ],
+  "implementationCommit": "d724c41e6d7dae66279d4386c75023a8b138470f",
+  "publishedCommit": "90982c0cec3ea88f763464d01d3ddc983b33ccb2",
+  "remoteMainVerified": "90982c0cec3ea88f763464d01d3ddc983b33ccb2",
+  "previousPushFailure": "Recv failure: Connection was reset",
+  "failureRecovery": "远端读回仍1f88295，随后重新推送成功并核对main",
+  "followupTask": "RB-C1B2-001"
+}
