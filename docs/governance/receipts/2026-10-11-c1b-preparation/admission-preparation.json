@@ -1,0 +1,70 @@
+{
+  "observedAt": "2026-10-11T16:14:26.222Z",
+  "localReviewId": "RB-C1B-REVIEW-001",
+  "change": "CHG-20261011-008",
+  "source": "docs/governance/sources/2026-10-11-owner-c1b-anomaly.md",
+  "sourceSha256": "a408e1f1f566d542a3dddc37c5db406423d10afcf0f86f4a5544dfd444e4821d",
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "runtimeManifestSha256": "19779db7c48f68d775c6f85474d6711548d36ec8f923ca62da0d6ce6d7e563ae",
+  "lockedRuntimeFilesVerified": 273,
+  "toolsReadSha256": "8337e153455a7992d9ec69dcc07ed33cdd3e343e6e4fb8ef4d223712127aa22b",
+  "fullReadSha256": "deb857dc9cb71511a21957774bc8d87723f63f9b3852afc6c20db4c0d656707c",
+  "fullCanonicalAndRuntimeUnchanged": true,
+  "canonicalCount": 12,
+  "runtimeCount": 3,
+  "first": {
+    "valid": true,
+    "errors": []
+  },
+  "unboundClaimsFormat": {
+    "valid": true,
+    "errors": []
+  },
+  "firstRequestSha256": "62310f3ea4b05a376770d86cf7ae436bc0fd91d17fd024c5c5ce000b290088dd",
+  "unboundClaimsSha256": "00db024e7cc9b89dd44813590363f4e92077a9f9b19f34356d013d9e17b4e541",
+  "contractNotBoundToNewObject": true,
+  "dispatched": false,
+  "dmcpWritten": false,
+  "bindingOrProfileChanged": false,
+  "newReadiness": false,
+  "newGameCode": false,
+  "newGameRun": false,
+  "c1aEightRuntimeFilesUnchanged": true,
+  "productScopeApproved": true,
+  "c1aCompleteAcceptance": false,
+  "gameValidation": "N/A：未取得新任务实际准入，未运行本小轮",
+  "hostCapabilityGap": {
+    "kind": "MISSING_TRUSTED_OWNER_TRANSCRIPTION_CHANNEL",
+    "ordinaryAgentPrincipal": "SERVICE",
+    "requiredEvidence": "Actual successful Owner decision_add and design_update_contract operations with host-supplied ORGANIZATION_AUTHORITY principal",
+    "engineConsumer": "apps/mcp-server/src/decision-resolution-basis.ts::currentDocumentOwnerEvidence",
+    "modelSelfElevationForbidden": true,
+    "cliReadOnly": true,
+    "desktopFacadeWrongWorkspace": true,
+    "historicalOrgEnvironmentScriptsNotAuthorityForThisTurn": true
+  },
+  "gitFailuresThisTurn": [
+    {
+      "operation": "git push origin main",
+      "exitCode": 1,
+      "error": "Recv failure: Connection was reset",
+      "remoteReadAfter": "8a38f999eba430640f4e4a4b5b7b61cd33c034fa"
+    },
+    {
+      "operation": "git -c http.version=HTTP/1.1 push origin main",
+      "exitCode": 1,
+      "error": "Failed to connect to github.com port 443 after 21103 ms"
+    }
+  ],
+  "finalReadSha256": "deb857dc9cb71511a21957774bc8d87723f63f9b3852afc6c20db4c0d656707c",
+  "finalFullReadEqual": true,
+  "c0FrozenManifestMatched": true,
+  "originalDiscoveryUnchanged": true,
+  "remoteReadAfterSecondFailedPush": "8a38f999eba430640f4e4a4b5b7b61cd33c034fa"
+}

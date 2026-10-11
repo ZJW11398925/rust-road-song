@@ -1,0 +1,76 @@
+{
+  "status": "UNBOUND_CLAIMS_NOT_A_TOOL_REQUEST",
+  "source": "docs/governance/sources/2026-10-11-owner-c1b-anomaly.md",
+  "sourceSha256": "a408e1f1f566d542a3dddc37c5db406423d10afcf0f86f4a5544dfd444e4821d",
+  "ordinaryAgentPrincipal": "SERVICE",
+  "requiresTrustedHostOwnerChannel": true,
+  "notReadiness": true,
+  "notOperationReceipt": true,
+  "tool": "design_update_contract",
+  "targetRule": "Only bind actual new DEC@1 from successful owner-decision receipt and fresh basis; expected.object_revisions must select that actual object. No fabricated object ref.",
+  "allowedPaths": [
+    "pocs/stylized_3d/c1b_anomaly/project.godot",
+    "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+    "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+    "pocs/stylized_3d/c1b_anomaly/human.tscn",
+    "pocs/stylized_3d/c1b_anomaly/human.gd",
+    "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+    "pocs/stylized_3d/c1b_anomaly/strings.tres",
+    "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+    "pocs/stylized_3d/c1b_anomaly/README.md",
+    "docs/pocs/RB-C1B-001_REPORT.md"
+  ],
+  "mutations": [
+    {
+      "kind": "SET_SCALAR_CLAIM",
+      "field": "GOAL",
+      "assertion_action": "CONFIRM",
+      "value": "携带C1-A未决项，实施独立C1-B异常可读小轮：检验自由观察中旧损伤与当前不可能变化的局部信息表达；不证明完整家庭情感或异常真相。"
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "IN_SCOPE",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "独立灰盒门/人车同场、自由绕车/观察/触碰、一处旧损伤与新组织并置、母亲一次身体反应、最多一句过去状态候选短文本。",
+        "仅当前场景局部输入/构图/字幕/恢复，静态定义与唯一运行状态分开，用户文本可本地化。"
+      ]
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "TECHNICAL_CONSTRAINTS",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "Godot + Windows + 键盘仅POC，沿既有prototype_execution@1，新的真实DEC/PLAN/TASK/精确十路径及固定Godot过程独立取得实际READY；旧C1-A READY不可复用。",
+        "旧裂口部位、新组织造型/暗红材质、母亲手沿边缘收回与一句短文本均为可检验候选，不锁最终异常设定/造型/台词或资产。",
+        "任一侧/先触碰/忽略细节/走开返回/打断可行，观察不改变机械状态，不建damage_seen发动前置。",
+        "C0六工程及Discovery原报告保持冻结；C1-A当前候选保留，不改其工程来扩阶段；Reboot必要经验逐文件说明，Legacy NONE。",
+        "C1-A仍VERIFYING，残余主观评价/遮挡与过渡/母亲强调未知及历史失败保留；范围采用不补造逐项L5或native TASK DONE。",
+        "普通Agent固定SERVICE，真实Owner转录须受信宿主供给身份；不自授ORG、不编辑.design，不扩协议/服务或policy resolver。"
+      ]
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "OUT_OF_SCOPE",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "发动/驾驶/机械修理或协作/驶出/下车/关门、完整C1-B与完整序章、正式资产/声音生产/视觉胜出。",
+        "异常本质/生物金属/自愈解释/父亲死亡、主角及母亲完整传记、正式损伤部位与车辆结构。",
+        "发光热点清单/检查计数/属性页/强制特写/观察锁操作、长解说、CameraManager/DialogueManager/Quest/EventBus/车辆物理/存档框架。",
+        "复用旧READY/更改workspace/上游protocol/伪造Finding或运行回执、将L1–L4或来源包当L5通过。"
+      ]
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "ACCEPTANCE",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "真实入口可开门、自由两侧接近与触碰；忽略部位、走开返回、文本期间移动/打断、R恢复/E远处反馈、Esc退出都有实际证据，无脚本ERROR。",
+        "只一个部位表达旧损伤与当前变化，一个母亲反应和最多一句过去状态候选文本；不以发光标记或字幕宣布异常，不锁输入。",
+        "局部逻辑/数据流、已知失败静态探针、正式入口实际键路径/渲染、独立审查、非实现者开放复述分别记录；有效RED不得是解析失败，失败/未覆盖项不删除。",
+        "L5先开放问注意到什么/接下来想做什么，不提示异常；普通维修/只记颜色/仅字幕复述/需强特写/母亲像指路NPC等误读保留，不为数字KPI增加提示。",
+        "本轮只提交可读/不可读证据与当前投入给Owner；未经新明确范围批准不接启动/驾驶或Visual，未人工接受保持VERIFYING。"
+      ]
+    }
+  ]
+}

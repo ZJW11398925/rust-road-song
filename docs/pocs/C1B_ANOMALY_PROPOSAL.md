@@ -2,6 +2,8 @@
 
 状态：PROPOSED，2026-10-11；只供Owner审查，不是正式PLAN/TASK或实施准入。依据[开始下一步](../governance/sources/2026-10-11-owner-next-step.md)。C1-A仍VERIFYING，[暂时收束](../governance/sources/2026-10-11-c1a-provisional-feedback.md)没有补齐各项体验评价；是否携带这些未知项进入下一轮，由Owner本次裁定。
 
+后续状态：**OWNER_SCOPE_ADOPTED / WAITING_NATIVE_OWNER_CHANNEL**。[Owner“推送并继续”](../governance/sources/2026-10-11-owner-c1b-anomaly.md)已采用推荐小轮并携带未知项；上段及下文“待Owner批准/若批准”是准备版本的历史语义，范围审查已完成，不再重复请求批准。候选表现仍是实验，正式Owner操作/新PLAN/TASK/实际READY尚未落实，[具体准入计划](../plans/RB-C1B-001_ADMISSION_PLAN.md)与未投递请求已准备；未创建本小轮游戏工程。
+
 ## 当前理解与来源
 
 玛丽先是家中多年使用的旧车；父亲走前有明确损伤，一年后出现不可能变化，留下私人问题“玛丽这一年发生了什么”，不解释异常来源（[故事基础](../02_STORY_BIBLE.md)）。车库检查发生在玩家亲自行走、观察与行动中（[序章](../03_PROLOGUE_DESIGN.md)、[叙事语言](../04_NARRATIVE_LANGUAGE.md)）。C1-B最终候选是旧损伤→异常→尝试启动→母亲参与→驶出，但应另裁范围，不能把观看顺序写成世界限制（[分阶段方案](../06_VISUAL_POC_PLAN.md)、[RD-009原始决定](../governance/sources/2026-10-11-owner-c0-close-c1a.md)）。

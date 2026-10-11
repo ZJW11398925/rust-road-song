@@ -72,6 +72,12 @@
 
 正式 DEC DEC-OPI-50e5092d-5afe-478d-b0d0-9a465c8d3605.2@2、C1-A PLAN/TASK@1 见 [binding](governance/binding.json)。C0 原生 TASK 没有 DONE 生命周期接口，本地阶段关闭由本次真实 Owner DEC 记录，不伪称原生 TASK 已改 DONE。
 
+## 2026-10-11 Owner 采用异常可读小轮 / RD-011
+
+来源：[具体提案后的“推送并继续”](governance/sources/2026-10-11-owner-c1b-anomaly.md)。采用C1-B第一小轮，仅检验一处旧损伤与不可能变化的自然可读性：独立灰盒、母亲一段身体反应、最多一句过去状态候选短文本，玩家可自由忽略/触碰/往返。携带C1-A未知项，不把其逐项L5补作通过；候选部位/材料/动作/措辞不是新故事真相。
+
+本指令只替代RD-009中“C1-B尚待裁定”的这一有限范围；完整C1-B的启动、机械协作、驾驶/驶出及Visual仍未批准。先落实新的合法Owner转录、PLAN/TASK与实际READY，不能借用C1-A准入。产品授权已经清楚，宿主Owner入口缺口不能靠Agent自行设ORG身份补齐。当前没有本轮新正式ID或已获READY，见[准入计划](plans/RB-C1B-001_ADMISSION_PLAN.md)。
+
 ## 尚未裁定 / 不得自行确认
 
 - V-01：暗红锈蚀 / 新生金属组织是首个异常的候选表现；像腐败又像修复/生长，不等于设定真相。

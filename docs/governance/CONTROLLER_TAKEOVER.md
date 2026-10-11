@@ -15,6 +15,8 @@
 5. 本目录 binding.json、CURRENT.md、WORKFLOW.md、HANDOFF.md、TOOLING.md。
 6. sources/2026-10-10-owner-reset.md、2026-10-11-owner-discovery-review.md、2026-10-11-owner-c0-execution.md、2026-10-11-owner-c0-close-c1a.md、2026-10-11-c0-first-playtest.md、2026-10-11-c1a-first-playtest.md：区分评审建议、Owner采用范围、真实试玩与未验证推论。其他来源按正文链接补读。
 7. 完整 Discovery/C0/C1-A 报告、当前工单、CHG-004/005/006/007和各轮证据；读[第二轮真实试玩](sources/2026-10-11-c1a-second-playtest.md)、[自动透明要求](sources/2026-10-11-c1a-wall-transparency.md)与[资源恢复授权](sources/2026-10-11-c1a-resource-recovery.md)。C0与Discovery有冻结边界；不要回头把旧实现/方案当现行要求。
+
+   本轮后续还须读[暂时收束](sources/2026-10-11-c1a-provisional-feedback.md)、[下一步要求](sources/2026-10-11-owner-next-step.md)、[具体提案后的采用“推送并继续”](sources/2026-10-11-owner-c1b-anomaly.md)、[小轮规范](../pocs/C1B_ANOMALY_PROPOSAL.md)及[准入计划](../plans/RB-C1B-001_ADMISSION_PLAN.md)。RD-011是新的有限产品授权，不是已经登记的新native DEC/TASK/READY。
 8. 按下面入口读取完整正式对象、当前工具schema、runtime与真实回执，再检查匹配的当前执行依据。原始 DMCP 正文不能仅依赖可能截断的 design_get/status 输出。
 
 读完先给 Owner 一个有来源的简短理解核对：为什么重启；两项产品承诺怎样共存；家庭/玛丽/战争哪些已定与未定；可操作叙事为何不能锁顺序；当前实验能证明什么；当前授权到哪里；最新反例与下一项最小未知是什么。**这项核对先于执行任务分派**；不是要求新 Owner 再批准已有决定。
@@ -41,7 +43,7 @@ Garage POC不证明爱上玛丽/玛丽成为家/完整旅行欲望；完整情�
 - 上述52/441归CHG-005历史。随后接续只读复审完成，但[第二轮真实试玩](sources/2026-10-11-c1a-second-playtest.md)指出右侧视角、强制右侧和入口墙遮挡。CHG-006复现RED60/4后最小修正连续侧向镜头、双侧真实触壳与匹配碰撞的低前景墙；最终61/0、渲染580/0，独立审查提出离开证据缺陷并复核解决，见[实际证据](receipts/2026-10-11-c1a-sides/verification.json)。直退与同侧母亲实体相遇61/1及早期429保留；绕行可离开不能证明所有路线畅通。
 - 随后Owner明确要求墙自动透明、否定CHG-006低墙；RD-010 / CHG-007恢复原3米墙，仅对已有墙独立材质按当前遮挡自动淡化/恢复，实体边界保留。有效RED66/3→66/0、实际渲染585/0；首个capture内存分配崩溃保留FAIL，经Owner授权重启OneDrive释放资源后同字节复跑通过，见[最新证据](receipts/2026-10-11-c1a-walls/verification.json)。独立静态复审完成，无可行动缺陷，原429保留。
 - 最新Owner回复[“暂时就这样吧”](sources/2026-10-11-c1a-provisional-feedback.md)：本轮暂时收束，保留自动透明候选，不主动追加修正或追问，等待下一步指示。已有本版回复但未回答各项L5体验评价，不补作完整接受；C1-A仍VERIFYING，CHG-004/005/006/007仍IN_PROGRESS。有限采样不证明八墙所有路径/全身/快速过渡/排序阴影叠层，母亲动作强调/镜头舒适、窗口/OS焦点/实时性能未知。资源恢复不证明永无代码/驱动问题。不能继承旧APPROVE或自动进入C1-B。
-- C1-B、A/B实施、Visual及最终3D选择都未授权。Owner随后[要求开始下一步](sources/2026-10-11-owner-next-step.md)，本轮已完成[仅异常可读的小轮提案](../pocs/C1B_ANOMALY_PROPOSAL.md)供具体裁定，未实施；不要因泛称下一步、“老朋友”或“暂时就这样吧”自行进入异常/启动。当前C1-A仍VERIFYING，是否携带未知项进入下一小轮须Owner明确审查。
+- Owner随后[采用具体小轮并要求推送/继续](sources/2026-10-11-owner-c1b-anomaly.md)，RD-011产品范围现只授权C1-B第一小轮异常可读，携带C1-A未知项，不接启动/驾驶/完整C1-B或Visual。新正式Owner转录入口缺失，当前仅完成准入计划/未投递请求与原生格式核验；不自授ORG，不重复询问产品批准，也不在新READY前写工程。普通CLI只读，旧历史脚本自行设置ORG不证明本轮具有合法受信宿主入口。
 
 ## DMCP与首轮只读动作
 
