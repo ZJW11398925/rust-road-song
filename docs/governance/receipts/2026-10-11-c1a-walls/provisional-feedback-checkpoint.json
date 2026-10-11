@@ -1,0 +1,23 @@
+{
+  "observedAt": "2026-10-11T15:41:42.878Z",
+  "task": "RB-C1A-001",
+  "change": "CHG-20261011-007",
+  "source": "../../sources/2026-10-11-c1a-provisional-feedback.md",
+  "sourceSha256": "8736aee17013e4e34071ea3fbc71a6d6afb39e00b347f2553bcf61ba90b0603f",
+  "rawRead": ".local/c1a-provisional-read.json",
+  "rawReadSha256": "deb857dc9cb71511a21957774bc8d87723f63f9b3852afc6c20db4c0d656707c",
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "fullSnapshotEqualToPrevious": true,
+  "previousRead": ".local/c1a-walls-final-read.json",
+  "ownerReply": "暂时就这样吧",
+  "handling": "本轮暂时收束，保留候选，停止主动修正/追问，待Owner下一步指示",
+  "c1aStatus": "VERIFYING",
+  "completeOwnerAcceptance": false,
+  "dmcpWritten": false,
+  "codeChanged": false,
+  "newRuntimeRun": false
+}

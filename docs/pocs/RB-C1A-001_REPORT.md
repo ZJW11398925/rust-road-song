@@ -103,3 +103,5 @@ L1/L2局部动作/输入/状态在同一真实SceneTree探针合并验证，没�
 [独立静态复审](../governance/receipts/2026-10-11-c1a-walls/independent-review.json)在首个429中断后完成，无可行动静态缺陷；明确指出alpha/几何诊断不等于实际可读，八墙未逐条走遍、快速过渡/全身/母亲全动作、透明排序/阴影叠层仍需体验。复审不解释崩溃根因、不替代运行。**自动透明版新的L5尚缺失**，C1-A VERIFYING、CHG-004/005/006/007 IN_PROGRESS；不进入C1-B/Visual。实时完整正式对象/runtime与前轮相同，未重投准入或改变上游/范围。
 
 真实实现提交`6d9ac2f3d11373b941de5cb80bc1e3d9c3a2e8ab`已推送，见[远端核验](../governance/receipts/2026-10-11-c1a-walls/publication-verification.json)。暂存版本的八运行文件逐项匹配smoke、两次capture与新play，14份新旧公开日志节选暂存字节匹配各自记录的SHA；单独diff检查通过。[自动透明版窗口现场](../governance/receipts/2026-10-11-c1a-walls/play-window.json)核身份且响应，已发起真实试玩提问；启动和推送均不构成L5或阶段接受。后续完成部分元数据由Git历史定位。
+
+后续[真实回复](../governance/sources/2026-10-11-c1a-provisional-feedback.md)为“暂时就这样吧”。本轮暂时收束并保留候选，不主动追加修正/追问；原话未提供墙效果、母亲动作复述、镜头舒适或操作评价。此前“新的L5尚缺失”现应理解为**已有回复、逐项体验证据仍缺失**，不把回复美化为各项通过/完整接受。C1-A仍VERIFYING，不进入C1-B。本次仅来源与交接归档，完整正式对象/runtime读回逐项未变，无代码修改/新运行；历史反例、崩溃与未知项保留。
