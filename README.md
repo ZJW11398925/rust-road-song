@@ -4,7 +4,7 @@
 
 我们保留世界观种子与技术经验，重新决定这到底是什么游戏。内容产生顺序是：**人物处境 → 玩家自然产生的欲望 → 玩家行为 → 必要机制 → 页面、数据与代码。**
 
-当前唯一首要里程碑是**玛丽第一次出现 POC**：进入地下车库 → 看见玛丽 → 接近并检查 → 发现异常 → 发动 → 开出车库。Discovery 交付已被 Owner 接受，下一阶段方案按 RD-007 修订：先 C0 Spatial Spike，检验空间与操作，再审 C1/Visual。当前 [C0 灰盒](pocs/stylized_3d/c0/README.md) 与 [报告](docs/pocs/RB-C0-001_REPORT.md) 已阶段接受并冻结，四项缺失主观评价保留；当前 [C1-A First Meeting](pocs/stylized_3d/c1a/README.md) 已可运行，报告/任务保持 VERIFYING，待实际人物戏反馈；尚无获胜视觉路线，车库实验不证明完整家庭情感。
+当前唯一首要里程碑是**玛丽第一次出现 POC**：进入地下车库 → 看见玛丽 → 接近并检查 → 发现异常 → 发动 → 开出车库。Discovery 交付已被 Owner 接受，下一阶段方案按 RD-007 修订：先 C0 Spatial Spike，检验空间与操作，再审 C1/Visual。当前 [C0 灰盒](pocs/stylized_3d/c0/README.md) 与 [报告](docs/pocs/RB-C0-001_REPORT.md) 已阶段接受并冻结，四项缺失主观评价保留；当前 [C1-A First Meeting](pocs/stylized_3d/c1a/README.md) 已可运行，报告/任务保持 VERIFYING，首轮已读出“老朋友”但镜头有反例，修后体验待接受；尚无获胜视觉路线，车库实验不证明完整家庭情感。
 
 ## 从这里进入
 
@@ -13,7 +13,8 @@
 3. [故事基础](docs/02_STORY_BIBLE.md)、[序章规范](docs/03_PROLOGUE_DESIGN.md)、[叙事语言](docs/04_NARRATIVE_LANGUAGE.md)。
 4. [视觉方向](docs/05_VISUAL_DIRECTION.md)、[统一 POC 方案](docs/06_VISUAL_POC_PLAN.md)、[Legacy 重新准入](docs/07_LEGACY_REUSE_POLICY.md)。
 5. [决定日志](docs/DECISION_LOG.md)、[DMCP 当前状态](docs/governance/CURRENT.md)、[DMCP 工作流](docs/governance/WORKFLOW.md)和[交接](docs/governance/HANDOFF.md)。
-6. [Discovery 原报告](docs/discovery/RB-DISC-001_REPORT.md)保留评审基线；当前看 [C1-A 工单](docs/tasks/RB-C1A-001.md)和 RD-009。
+6. 新总控先按[完整设计接续入口](docs/governance/CONTROLLER_TAKEOVER.md)阅读原文、读回实时DMCP并核理解，再布置任务。
+7. [Discovery 原报告](docs/discovery/RB-DISC-001_REPORT.md)保留评审基线；当前看 [C1-A 工单](docs/tasks/RB-C1A-001.md)和 RD-009。
 
 ## 权威顺序
 

@@ -1,0 +1,160 @@
+{
+  "baselineCommit": "9c18925b852a632f3d8e2c59b303ab1c2ac1b1d5",
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "canonicalObjects": 12,
+  "runtimeRecords": 3,
+  "fullCanonicalAndRuntimeUnchanged": true,
+  "source": "../../sources/2026-10-11-c1a-first-playtest.md",
+  "sourceSha256": "6ee8861d030dfbc7861df69a772a2b1ee5418edfcb12245e36d420a3758aa1cf",
+  "sameExistingPrototypeReadiness": true,
+  "readinessNotRetried": true,
+  "upstreamUnchanged": true,
+  "c0SixFilesFrozen": true,
+  "originalDiscoveryFrozen": true,
+  "runs": {
+    "route_probe": {
+      "id": "smoke-1791723908139",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "resultLine": "RESULT: 50 checks / 2 failures",
+      "originalLogSha256": "e689889989f3818977fae49dc3b8a8db6d478883a31bbcaf75a77fea3a079093",
+      "publicLogSha256": "643a0f11d16f30a5476d4edb7178e1c7bb960f4a33b2cf495b4e06f3ad464563"
+    },
+    "camera_red": {
+      "id": "smoke-1791724109442",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "resultLine": "RESULT: 50 checks / 3 failures",
+      "originalLogSha256": "5a0a3f83cb8cc4880735005b5de7d3d12752e8c03fe728edc78a5d59a6b4c4db",
+      "publicLogSha256": "066558cd071c7084108ba957d2b25e6b4657f1dfe9f49a7a811a8a660cc065f9"
+    },
+    "initial_green": {
+      "id": "smoke-1791724157127",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "resultLine": "RESULT: 50 checks / 0 failures",
+      "originalLogSha256": "6e170e6477e0db1d1ff6f3425a3c713ad9b57fc4b2473c0ef508db4fc04eed69",
+      "publicLogSha256": "a70f99428fce982984d6ce441905268a58e7fec5dec4d5fef0435111e2dda4e4"
+    },
+    "headless_probe_error": {
+      "id": "smoke-1791724476497",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "resultLine": "RESULT: 52 checks / 2 failures",
+      "originalLogSha256": "e2732e4b7dd5e8dd97413cc93b44d77d0c2a69a3b2f39b2740badd34e635f7d2",
+      "publicLogSha256": "548f45ac9cfeb16229af315d298b8820ce9dfb8623f89f87fa7dcde4b5a8afb4"
+    },
+    "final_smoke": {
+      "id": "smoke-1791724632257",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "resultLine": "RESULT: 52 checks / 0 failures",
+      "originalLogSha256": "e01358a1e07e65a9ae5bea7adb959b0af1c2e66918afa27ca57b24c087860aa0",
+      "publicLogSha256": "c989aed16f77f7ba47ceeea30c799fe9577ced5fd7344bb63f69a3617396e635"
+    },
+    "capture": {
+      "id": "capture-1791724240112",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "resultLine": "RESULT: 441 checks / 0 failures",
+      "originalLogSha256": "1f25192377838e47a3b1f4b3e8ecb0f8edaf0b119d1f42993db09fa5f2b27dff",
+      "publicLogSha256": "b8d17ae54c38d34f65f15b8622d6f613583bdb4d1d2c222390cb5859577df93d"
+    }
+  },
+  "probeCorrections": [
+    "First boundary probe hit the physical entrance wall: corrected real input to pass through door before sidestepping; not counted as the final camera RED.",
+    "Headless root.size is64x64 while camera projection viewport is1280x800: fixed probe to use actual visible rect; camera game code unchanged."
+  ],
+  "render": {
+    "frames": 4661,
+    "behaviourChecks": 52,
+    "pngChecks": 388,
+    "directoryChecks": 1,
+    "totalChecks": 441,
+    "failures": 0,
+    "movieBytes": 253035726,
+    "movieSha256": "49b85a19f2aaa917a856215832572c0fc1bcd80b8a952c324c6709cec9ff2c1b",
+    "resolution": "1280x800",
+    "fps": 60,
+    "realTimePerformanceClaim": false,
+    "originalMoviePreservedAt": ".local/c1a-camera-original-render/c1a-input.avi",
+    "originalSha256": "edbf682461ae9bb73808b8096dc575efb65f00a818a1b99531457380e1419df8",
+    "inspectedFrames": [
+      {
+        "path": ".local/c1a-captures/frame_00054.png",
+        "sha256": "e766ac769ee9a9cea1f2699c97aa2d41c8081faa7cb1e2ea0e7bea4eed336f42"
+      },
+      {
+        "path": ".local/c1a-captures/frame_00064.png",
+        "sha256": "8620e91df47323d7f3816fd89408fff64fd828f19b483b6a73f21b78a206405b"
+      },
+      {
+        "path": ".local/c1a-captures/frame_00344.png",
+        "sha256": "272e62aa568c3cf6ef9207fd68d289e89b14c39a7c9a7749aa81a8be9b7be432"
+      }
+    ],
+    "captureVsFinalSmoke": "After capture only the viewport-size diagnostic was corrected; game camera code same, final actual smoke52/0 checks the final probe bytes."
+  },
+  "cameraBoundary": {
+    "oldMeters": 9.912114,
+    "newMeters": 0.196418,
+    "playerTravelMeters": 0.6,
+    "diagnosticOnly": true
+  },
+  "manual": {
+    "initialOwnerQuoteRecorded": true,
+    "initialFamiliarityRead": "抚摸一个老朋友",
+    "initialCameraRejected": true,
+    "revisedCameraAcceptance": false
+  },
+  "independentReview": {
+    "status": "UNAVAILABLE",
+    "attempts": 2,
+    "reason": "429 Too Many Requests",
+    "previousVersionApprovalNotInherited": true
+  },
+  "runtimeFiles": [
+    {
+      "path": "pocs/stylized_3d/c1a/project.godot",
+      "sha256": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.tscn",
+      "sha256": "615cdace8c09efffecd1a8a1f07e77d0346654a61419f147af9d313b9c7e952e"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.gd",
+      "sha256": "dfb203ac58449ae99ec8e167b1a783b1d1e6eb643db18f4c35f0c1e531db7c59"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.gd",
+      "sha256": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/mary.tscn",
+      "sha256": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/strings.tres",
+      "sha256": "80c72f574f15c6a74f720fbde98a58f91dd5be7c9e56a45a5f3ed9a0161e94f4"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/narrative_smoke.gd",
+      "sha256": "4b9e1af38a36c4daa11cddd58991e483683af34aa00ffa6ebc147160f8b56da4"
+    }
+  ]
+}

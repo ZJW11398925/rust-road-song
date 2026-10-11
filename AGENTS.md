@@ -1,6 +1,6 @@
 # 《锈路长歌》Reboot 项目宪法
 
-版本：0.4；2026-10-11。作用于本仓库全部内容。进入项目必须先读本文件。
+版本：0.5；2026-10-11。作用于本仓库全部内容。进入项目必须先读本文件。
 本仓库是产品级重置，不是旧版本加序章、换 3D 或继续系统建设。旧仓库及其 AGENTS、UI 标杆、编号、测试基线仅为 Legacy 参考。
 
 ## 1. 必读顺序与权威
@@ -11,6 +11,7 @@
 4. docs/05_VISUAL_DIRECTION.md → docs/06_VISUAL_POC_PLAN.md → docs/07_LEGACY_REUSE_POLICY.md。
 5. docs/DECISION_LOG.md → docs/governance/binding.json → CURRENT.md → WORKFLOW.md → HANDOFF.md（后三份同目录）。
 6. 当前任务、相关来源、正式 DMCP 对象和实际回执；涉及工具/资产时再读 docs/governance/TOOLING.md。
+7. 总控对话还须完整读取 docs/governance/CONTROLLER_TAKEOVER.md；按Owner接续要求，先完整理解上述设计并给出有来源的理解/边界核对，再布置执行任务。交接不能代替设计正文。
 
 权威等级：0 Owner Decision；1 Product Thesis / Story Bible；2 当前剧情；3 POC / Milestone；4 技术实现；Legacy 最低。数字高低不代表文件时间新旧。DMCP 是治理事实载体，不赋予 Agent 产品裁决权。冲突必须先定位和修正文档，不凭猜测实现。Owner 明确的新指令优先，保存来源并登记被替代决定。
 
@@ -66,4 +67,4 @@ ERROR/脚本错误/崩溃即失败，退出码 0 无效；交互失败需玩家�
 
 ## 8. 开场动作
 
-先完成必读与 `git status --short --branch`，运行 `node scripts/dmcp.mjs read` 与 `node scripts/check_context.mjs`。取得实时依据后读 RD-009 与 RB-C1A-001；核对新的代码执行准入，不能继续按原报告下一阶段方案开工。不得从 Legacy HANDOFF 继续 176..179。
+先完成必读与 `git status --short --branch`，运行 `node scripts/dmcp.mjs read` 与 `node scripts/check_context.mjs`。取得实时依据后读 RD-009、RB-C1A-001与本轮C1-A试玩来源；总控依CONTROLLER_TAKEOVER先核完整设计再分派。核对新的代码执行准入，不能继续按原报告下一阶段方案开工。不得从 Legacy HANDOFF 继续 176..179。

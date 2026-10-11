@@ -5,9 +5,8 @@ const HumanScript = preload("res://human.gd")
 const PLAYER_START: Vector3 = Vector3(-0.75, 0.0, 6.8)
 const MOTHER_START: Vector3 = Vector3(0.75, 0.0, 6.8)
 const FIRST_CAMERA: Vector3 = Vector3(0.0, 4.5, 13.0)
-const SIDE_CAMERA: Vector3 = Vector3(-8.0, 10.0, 11.0)
+const RELATION_OFFSET: Vector3 = Vector3(-5.0, 4.4, 7.0)
 const FIRST_TARGET: Vector3 = Vector3(0.0, 1.0, 0.0)
-const SIDE_TARGET: Vector3 = Vector3(0.0, 1.0, -1.0)
 const MOTHER_PATH: Array[Vector3] = [Vector3(0.75, 0.0, 2.4), Vector3(-2.35, 0.0, 2.4), Vector3(-2.35, 0.0, -0.68)]
 @onready var player: HumanScript = $Player
 @onready var mother: HumanScript = $Mother
@@ -32,7 +31,7 @@ var touch_contacted: bool = false
 var narrative_clock: float = 0.0
 var feedback_key: String = ""
 var feedback_clock: float = 0.0
-var camera_mix: float = 0.0
+var camera_focus: Vector3 = FIRST_TARGET
 
 func _ready() -> void:
 	var copy: Translation = load("res://strings.tres") as Translation
@@ -96,11 +95,25 @@ func _physics_process(delta: float) -> void:
 		if door_progress >= 0.95:
 			first_reveal = true
 		_update_mother(delta)
-	var wanted_mix: float = 1.0 if first_reveal and player.position.z < 2.5 else 0.0
-	camera_mix = move_toward(camera_mix, wanted_mix, delta * 0.8)
-	camera.position = FIRST_CAMERA.lerp(SIDE_CAMERA, camera_mix)
-	camera.look_at(FIRST_TARGET.lerp(SIDE_TARGET, camera_mix), Vector3.UP)
+	_update_camera(delta)
 	_update_text(delta)
+
+func _update_camera(delta: float) -> void:
+	# Frame the existing relationship, not which side of a boundary the player crossed.
+	var car_focus: Vector3 = $Mary.global_position + Vector3(0.0, 1.1, 0.3)
+	var mother_focus: Vector3 = mother.global_position + Vector3(0.0, 1.1, 0.0)
+	var relation_focus: Vector3 = car_focus.lerp(mother_focus, 0.62)
+	# A small continuous allowance keeps a wandering player in the shared space.
+	var player_offset: Vector3 = player.global_position - relation_focus
+	player_offset = Vector3(clampf(player_offset.x, -2.0, 2.0), 0.0, clampf(player_offset.z, -2.5, 2.5))
+	var wanted_focus: Vector3 = FIRST_TARGET.lerp(relation_focus + player_offset * 0.22, door_progress)
+	var spread: float = maxf(player.global_position.distance_to(relation_focus) - 5.0, 0.0)
+	var distance_scale: float = 1.0 + minf(spread * 0.06, 0.3)
+	var wanted_position: Vector3 = FIRST_CAMERA.lerp(wanted_focus + RELATION_OFFSET * distance_scale, door_progress)
+	var response: float = 1.0 - exp(-delta * 2.2)
+	camera_focus = camera_focus.lerp(wanted_focus, response)
+	camera.position = camera.position.lerp(wanted_position, response)
+	camera.look_at(camera_focus, Vector3.UP)
 
 func _update_mother(delta: float) -> void:
 	mother_clock += delta
@@ -221,7 +234,7 @@ func reset_experiment() -> void:
 	narrative_clock = 0.0
 	feedback_key = ""
 	feedback_clock = 0.0
-	camera_mix = 0.0
+	camera_focus = FIRST_TARGET
 	panel.rotation.z = 0.025
 	narrative.text = ""
 	feedback.text = ""

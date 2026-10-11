@@ -2,6 +2,8 @@
 
 ## 首轮恢复
 
+总控按[Owner接续要求](sources/2026-10-11-owner-controller-handoff.md)先遵循[CONTROLLER_TAKEOVER](CONTROLLER_TAKEOVER.md)：完整理解设计和原始决定，读回实时状态，给出有来源的理解/边界核对后再布置执行任务。交接摘要和READY不能替代这一顺序。
+
 1. 读 AGENTS、Owner/产品/故事/当前剧情与 POC，再读 binding、CURRENT、HANDOFF、任务及来源原文。
 2. 核 `git status --short --branch`、`git log -5 --oneline`，确认修改所有者。查实际工具版本，不能沿用聊天中的修订。
 3. `node scripts/dmcp.mjs tools` 取得当前 native schema；`node scripts/dmcp.mjs read` 获取完整正式对象与独立运行 sidecar；`node scripts/check_context.mjs` 校验本阶段文档。

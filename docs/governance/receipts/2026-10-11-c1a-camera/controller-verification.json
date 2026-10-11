@@ -1,0 +1,116 @@
+{
+  "sameHostResumptionVerified": true,
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "canonicalCount": 12,
+  "runtimeCount": 3,
+  "gitBranch": "main",
+  "liveReadSha256": "4544141fb8b24cfc34659b3c99ba4ec23c545c26dac3ed1511eaf7337860361c",
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "engineHeadMatches": true,
+  "sameExistingProfileAndConsumerPresent": true,
+  "consumerSha256": "93c7cfe7fabfde6c334a09c8fd37d077085669ca7b774ed3d06013b8350e7a15",
+  "allTestedRuntimeBytesUnchanged": true,
+  "c0Frozen": true,
+  "readinessNotRetried": true,
+  "readFullDesignBeforeAssigning": true,
+  "documents": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "790d0f81b1fa9ef0755a10ab0a37eb1f95824e894171dd2df371c4e140cf8f62"
+    },
+    {
+      "path": "README.md",
+      "sha256": "a88c9060148d3dcaacd0910630fe13b0ddac6a4d4ae3e7ae68e900de21f16096"
+    },
+    {
+      "path": "docs/00_OWNER_DECISIONS.md",
+      "sha256": "f33085afe62020adafe5bdb4e8627a35f1e49ccf4bf525204d6a0a8e54f99f3c"
+    },
+    {
+      "path": "docs/01_PRODUCT_THESIS.md",
+      "sha256": "3fd95163d15684278ab950f35a1c656ee956515f6cbbc4c1fa5ee8e6fbb5dc84"
+    },
+    {
+      "path": "docs/02_STORY_BIBLE.md",
+      "sha256": "1fc229804d9fcb8e92fee800f6f1a4566ab3e5c39e98670a3b098900e46d1540"
+    },
+    {
+      "path": "docs/03_PROLOGUE_DESIGN.md",
+      "sha256": "7a76ef8ffb9d62740d7f455db7710049a1eac6d48e8e5a86537731497bec830b"
+    },
+    {
+      "path": "docs/04_NARRATIVE_LANGUAGE.md",
+      "sha256": "9d7fa8bf81e0a71a0de8f262b48400a8d18e00b6c4f63988fed1462ff5f58d4a"
+    },
+    {
+      "path": "docs/05_VISUAL_DIRECTION.md",
+      "sha256": "8b56286f0a1634feb26d7156b02d6d5029934212d7de45775450b3b0d4101692"
+    },
+    {
+      "path": "docs/06_VISUAL_POC_PLAN.md",
+      "sha256": "a736de8fba6bf865f20535c8ab06490793720fdb121de3ce893a99c6ecc2516d"
+    },
+    {
+      "path": "docs/07_LEGACY_REUSE_POLICY.md",
+      "sha256": "9d2855f85fed18e1bcb771a4a4853eb47433a78e35046e70392a42782d67352d"
+    },
+    {
+      "path": "docs/DECISION_LOG.md",
+      "sha256": "8a678fc05c98fa24b0d9613c5a8bfa58cb0ac04df71fdf466917d0a04f392b27"
+    },
+    {
+      "path": "docs/governance/CONTROLLER_TAKEOVER.md",
+      "sha256": "5fde19ae5bbe12402458ed503586b9b154420d7032f74eb2f904da4c0c868a3c"
+    },
+    {
+      "path": "docs/governance/WORKFLOW.md",
+      "sha256": "dee2efb5d49c1e168a7855ce6e83d99972fa83d00eb8b089c532ec5f9777b92d"
+    },
+    {
+      "path": "docs/governance/TOOLING.md",
+      "sha256": "50d0086e0e1a22f9ce89d79015589eda973f22d9dc2c3e625e407f4af2267a03"
+    },
+    {
+      "path": "docs/governance/binding.json",
+      "sha256": "ae3be27c2d454b4471f9c0a19a1cbcbfa26f83b099ab9125897a81d881d4baf5"
+    },
+    {
+      "path": "docs/governance/sources/2026-10-10-owner-reset.md",
+      "sha256": "7e0cd5fc84b874ced8b2bb6a147c82c1e6c06146f69d513ff862913f997a460d"
+    },
+    {
+      "path": "docs/governance/sources/2026-10-11-owner-discovery-review.md",
+      "sha256": "4259e43d6f44fefe9c577cadda2c28ccc0e152f0a3b39c779987b873f9488fd8"
+    },
+    {
+      "path": "docs/governance/sources/2026-10-11-owner-c0-execution.md",
+      "sha256": "f73b64acec7bf9cce678b2b30b919d11bd3a191909fd15b584c5f326a4ba87a9"
+    },
+    {
+      "path": "docs/governance/sources/2026-10-11-owner-c0-close-c1a.md",
+      "sha256": "97a688a5b2486abffb6e7ef571da5a451cbdae6ea9c898a23287ff1115ffdc23"
+    },
+    {
+      "path": "docs/governance/sources/2026-10-11-c0-first-playtest.md",
+      "sha256": "f4b042fb763d97b150d7949e6e344bb040820bf6d36d97edbcd5215dc720dfc1"
+    },
+    {
+      "path": "docs/governance/sources/2026-10-11-c1a-first-playtest.md",
+      "sha256": "6ee8861d030dfbc7861df69a772a2b1ee5418edfcb12245e36d420a3758aa1cf"
+    },
+    {
+      "path": "docs/governance/sources/2026-10-11-owner-controller-handoff.md",
+      "sha256": "66e248ba8ad7d5d3b9d1997aec272d0258649c447de10cd9be53e97771b3b967"
+    }
+  ],
+  "limits": [
+    "同机接续已核；Git外canonical/.local/上游本地候选不随public克隆迁移",
+    "新总控仍必须现场读回，不消费本快照为未来授权",
+    "新镜头L5未接受，独立复审429未执行，C1-B/Visual未授权"
+  ]
+}

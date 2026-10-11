@@ -1,28 +1,29 @@
-# Reboot 当前交接 / 2026-10-11
+# 新总控交接 / 2026-10-11
 
 ## 接手结论
 
-RD-009 / Owner“认同”接受 C0 探索交付并带残余风险进入 C1-A。C0 工程冻结，四项缺失主观评价仍未知；已有实际局部驾驶反馈不能扩成全部五项通过。下一轮只做 First Meeting，不升级 garage.gd。
+Owner要求新总控**完整理解整个设计后才布置执行任务**。首轮先读[CONTROLLER_TAKEOVER](CONTROLLER_TAKEOVER.md)，完整AGENTS/00–07/原始Owner来源；再读实时DMCP、当前报告/工单/回执；输出设计理解和授权边界核对。交接摘要不能替代这些原文，不沿Legacy的176..179或旧UI标杆继续。
 
-## 先读与范围
+两项承诺是玩家自己的旅程和物件/人物逐渐改变意义；玛丽先旧、属于家庭，不是神器。世界/家庭基本处境已定，父亲结局/战争真相/异常本质/正式3D均未定。可操作叙事、世界因果和默认不复用Legacy是长期约束。完整情感、离家后自由旅行仍未验证，不为当前实验扩大整款游戏。
 
-读 AGENTS、00–07、RD-009、[新任务](../tasks/RB-C1A-001.md)、[认同来源](sources/2026-10-11-owner-c0-close-c1a.md)，再 binding/CURRENT/WORKFLOW；C0 报告保存实验经验。C1-A 为门前两人、实体门逐渐显露玛丽、最低人形、母亲一个动作、一件自然观察细节、少量候选文本或沉默、玩家主动触碰结束。自由行动保留，无异常/发动/驾驶/正式资产/Profile UI/C1-B。
+## 当前范围与证据
 
-## 正式状态与工具
+C0已按RD-009阶段接受/六文件冻结，四项主观评价未完整记录；重量感候选不等于滑行惯性。当前只做C1-A First Meeting，不升级C0、不做C1-B异常/启动/驾驶/Visual或正式美术。
 
-schema/design 5/17，12 canonical/0 FINDING，旧9对象/2runtime逐项保留；新 DEC@2/PLAN@1/TASK@1 的 ID 见 binding。C1-A 实际原型 READY 4facts/requirements，仅限十路径与固定Godot参数。原生TASK无DONE接口，C0阶段关闭由新OwnerDEC转录。完整读回已核3runtime，旧2项逐项一致。
+[首轮Owner原话](sources/2026-10-11-c1a-first-playtest.md)：感觉抚摸老朋友；区域自动切镜怪，缺母亲视角强调。CHG-005只移除区域切镜，连续同框随母亲走/停，保留自由输入。旧边界走0.6米导致镜头9.912米变化，修后约0.196米；RED50/3→最终smoke52/0，渲染441/0（52行为+目录+388PNG），4661帧。原版44/318仅历史。无窗口尺寸探针错误单列，录像与最终探针摘要分别保留。
 
-同一 prototype_execution@1，不修改上游协议；固定SERVICE消费者共享native lease重核当前basis/四事实/实际attestation后才部署与启动。普通CLI仍仅read/tools/get；桌面固定另一项目facade不可用。本机依赖见TOOLING；交互租约只覆盖启动，不是OS沙箱或试玩全程权限证明。
+[报告](../pocs/RB-C1A-001_REPORT.md)、[任务](../tasks/RB-C1A-001.md)、[CHG005](../changes/CHG-20261011-005.md)、[本轮证据](receipts/2026-10-11-c1a-camera/verification.json)。初次局部熟悉感已被一名Owner读出，镜头修后未人工接受；本轮独立复审因429两次未执行，前版APPROVE不继承。C1-A仍VERIFYING/CHG004与005 IN_PROGRESS；任意遮挡、右侧玩家被车局部挡住、OS焦点/窗口/实时性能保留未知。
 
-## Git 与验证
+## 正式状态与本机依赖
 
-main；本轮tracked/untracked修改归当前Agent，私有.local忽略。收尾提交必须包含 RB-C1A-001/CHG-20261011-004，主动推送核远端。C0已公开实现2d52121，六工程文件不得改。
+本轮逐项相同的实时完整读回：schema/design5/17，12canonical/0Finding/3runtime，当前DEC@2/PLAN@1/TASK@1和workspaceID见binding及CONTROLLER_TAKEOVER。实际C1-A prototype READY4facts/requirements仅十路径与固定Godot参数；同任务修正逐次重核，无readiness重投/新协议。CLI仅read/tools/get，桌面facade固定其他项目不可用。原生TASK无DONE接口。
 
-C1-A已正规准入并运行，[报告](../pocs/RB-C1A-001_REPORT.md)和工程README有入口：WASD移动，E开门/尝试触碰，R重置/Esc退出。44行为项与实际渲染318项均0FAIL/无ERROR；其中273项只是PNG写入，不能冒充更多体验测试。移动/隔空触碰/高墙遮挡RED保留，局部修正后独立规格/代码复审APPROVE。实际试玩窗口已打开，开放复述待回答。不能把解析错误算RED、把手部坐标/静态截图算人物戏成立。无新的真实L5反馈保持VERIFYING；未知OS焦点/窗口/实时性能与自然叙事可读性如实保留。
+同机新仓库对话复用.local/dmcp-host.json、canonical/descriptor、.local/c1a-consumer.mjs及锁定engine/toolchain；旧拒绝不重试、不自授ORG/改policy/建新workspace。上游86a8fc1本地已提交未推送。Git外canonical和本机依赖不随public克隆携带，迁机依TOOLING核身份和全量迁移。
 
-## 首轮动作
+新候选工程pocs/stylized_3d/c1a；输入WASD、E开门/尝试右侧触碰、R重置、Esc退出；移动不锁。录像.local/c1a-input.avi，首版原样归档.local/c1a-camera-original-render。交互进程是否存活须现场核本轮play-window.json/PID/启动时刻/命令，不把打开窗口等同人工接受。
 
-现场核git status/log，运行node scripts/dmcp.mjs read、node scripts/check_context.mjs，读实际回执/报告。只完成当前C1-A必要局部修正与独立试玩；已投递readiness不重试。验证范围是自由移动下的人物戏，C1-B/Visual待Owner另裁，Legacy冻结。
+## Git与首轮动作
 
+main，持续授权主动提交/推送。最新真实提交与远端核验在本轮收尾后补记；现场先git status/log，再tools/read/check_context，不能用交接替代实时依据。当前修改归本轮Agent，来源不明修改不得覆盖。
 
-已发布实现 4fe6cd4e5b00a695daf1825c4261445826b99de4；[实际远端核验](receipts/2026-10-11-c1a-admission/publication-verification.json)一致。最新元数据提交通过Git历史定位；接手仍现场核HEAD/工作树。C1-A人工接受待记录，不因发布改DONE。
+第一项可执行工作：在全设计理解核对之后，只完成本轮镜头必要复审与真实人类反馈。如需修正沿现有C1-A选择和固定消费者；范围变化需另有Owner裁决。**不得自动启动C1-B、A/B原型或Visual。**

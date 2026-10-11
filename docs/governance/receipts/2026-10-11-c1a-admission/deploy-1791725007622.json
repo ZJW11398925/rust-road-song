@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-11T13:23:27.623Z",
+  "mode": "deploy",
+  "assessmentRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-05151b82-23d7-42d6-b603-5cb7ee0a615d.2",
+  "sharedNativeLease": true,
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "policySha256": "6485acd41d8d7cc525dee48d06bf74e58da038c3c853f074b51d1fb9bd28e907",
+  "basis": {
+    "canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "schema_version": 5,
+    "design_revision": 17
+  },
+  "files": [
+    {
+      "path": "pocs/stylized_3d/c1a/project.godot",
+      "sha256": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4",
+      "bytes": 470
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.tscn",
+      "sha256": "615cdace8c09efffecd1a8a1f07e77d0346654a61419f147af9d313b9c7e952e",
+      "bytes": 8375
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.gd",
+      "sha256": "dfb203ac58449ae99ec8e167b1a783b1d1e6eb643db18f4c35f0c1e531db7c59",
+      "bytes": 8913
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+      "bytes": 3455
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.gd",
+      "sha256": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5",
+      "bytes": 1808
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/mary.tscn",
+      "sha256": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f",
+      "bytes": 2493
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/strings.tres",
+      "sha256": "80c72f574f15c6a74f720fbde98a58f91dd5be7c9e56a45a5f3ed9a0161e94f4",
+      "bytes": 686
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/narrative_smoke.gd",
+      "sha256": "4b9e1af38a36c4daa11cddd58991e483683af34aa00ffa6ebc147160f8b56da4",
+      "bytes": 15226
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/README.md",
+      "sha256": "a1401543243386cd4cefce4460523b93b4ede4b972c628a5d4d7b1b26acbf663",
+      "bytes": 3841
+    },
+    {
+      "path": "docs/pocs/RB-C1A-001_REPORT.md",
+      "sha256": "a5a04fec46cc7f872648cdc51bbcd11d3bf39d1da828239a6e923f10a0903a15",
+      "bytes": 9007
+    }
+  ],
+  "outcome": "WRITTEN"
+}

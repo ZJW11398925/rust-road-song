@@ -187,6 +187,14 @@ func _run() -> void:
 	check(entry_clear(camera.global_position, scene.get_node("Mary/Body").global_position), "开门后车内动作镜头到玛丽不被入口墙或门遮挡")
 	check(entry_clear(MeetingScript.FIRST_CAMERA, hand.global_position), "首见构图到搭扶手不被入口墙或门遮挡")
 	check(entry_clear(MeetingScript.FIRST_CAMERA, scene.get_node("Mary/Body").global_position), "首见构图到玛丽不被入口墙或门遮挡")
+	var mother_head: Vector3 = mother.global_position + Vector3(0.0, 1.65, 0.0)
+	var head_screen: Vector2 = camera.unproject_position(mother_head)
+	var hand_screen: Vector2 = camera.unproject_position(hand.global_position)
+	# Projection uses the stretched viewport, not the headless 64x64 window surface.
+	var visible_size: Vector2 = camera.get_viewport().get_visible_rect().size
+	print("CAMERA_SCREEN: head=", head_screen, " hand=", hand_screen, " viewport=", visible_size, " window_surface=", root.size, " camera=", camera.global_position)
+	check(not camera.is_position_behind(mother_head) and Rect2(Vector2(16.0, 16.0), Vector2(visible_size.x - 32.0, visible_size.y * 0.67 - 16.0)).has_point(head_screen), "母亲头部在当前可见画面内，非面部特写")
+	check(not camera.is_position_behind(hand.global_position) and Rect2(Vector2(16.0, 16.0), Vector2(visible_size.x - 32.0, visible_size.y * 0.67 - 16.0)).has_point(hand_screen), "搭手接触在画面内且不落入底部操作面板")
 	# The contact pose is held in the same real-input journey for inspectable frames.
 	await frames(90)
 	var mother_before: Vector3 = mother.position
@@ -252,5 +260,33 @@ func _run() -> void:
 	var reset_position: Vector3 = player.position
 	await frames(15)
 	check(player.position.distance_to(reset_position) < 0.03 and scene.held.is_empty(), "重置清输入且不漏旧键")
+	# Same real keyboard journey: a still player must not leave mother's walk unframed.
+	await reset()
+	await walk(KEY_W, 25)
+	await tap(KEY_E)
+	await frames(150)
+	var still_position: Vector3 = player.position
+	var walking_camera: Vector3 = camera.global_position
+	check(await wait_for_mother("camera stationary observer"), "门口静止观察者不阻塞母亲动作")
+	await frames(120)
+	print("CAMERA_MOTHER: from=", walking_camera, " to=", camera.global_position, " player=", player.position)
+	check(player.position.distance_to(still_position) < 0.02 and camera.global_position.distance_to(walking_camera) > 0.6, "玩家静止时构图仍随母亲走向车身，不靠玩家区域触发")
+	# Enter through the open doorway before moving laterally behind its wall.
+	await walk(KEY_W, 55)
+	await walk_to_x(3.1)
+	await frames(120)
+	var boundary_before: Vector3 = camera.global_position
+	var before_z: float = player.position.z
+	await walk(KEY_W, 12)
+	await frames(120)
+	print("CAMERA_BOUNDARY: z=", before_z, " -> ", player.position.z, " distance=", camera.global_position.distance_to(boundary_before))
+	check(before_z > 2.5 and player.position.z < 2.5, "真实W路线跨过旧切镜边界")
+	check(camera.global_position.distance_to(boundary_before) < 1.0, "跨旧边界只作连续小幅构图调整，没有区域切镜")
+	var boundary_inside: Vector3 = camera.global_position
+	await walk(KEY_S, 12)
+	await frames(120)
+	check(camera.global_position.distance_to(boundary_inside) < 1.0, "反复回跨旧边界不反复切换视角")
+	await reset()
+	check(camera.global_position.distance_to(MeetingScript.FIRST_CAMERA) < 0.001, "镜头重置回实际门前构图")
 	print("RESULT: ", checks, " checks / ", failures, " failures")
 	quit(0 if failures == 0 else 1)
