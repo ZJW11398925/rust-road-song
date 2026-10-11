@@ -1,0 +1,284 @@
+{
+  "task": "RB-C1A-001",
+  "change": "CHG-20261011-006",
+  "baselineCommit": "32eb2d5",
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "canonicalCount": 12,
+  "findingCount": 0,
+  "runtimeCount": 3,
+  "source": "../../sources/2026-10-11-c1a-second-playtest.md",
+  "sourceSha256": "afb2dda59060d546c628ab27c03337198363dd725634f60eeb69fddba6159287",
+  "samePrototypeReady": true,
+  "readinessRetried": false,
+  "dmcpWritten": false,
+  "upstreamUnchanged": true,
+  "c0SixFilesFrozen": true,
+  "originalDiscoveryFrozen": true,
+  "runs": [
+    {
+      "id": "smoke-1791727630561",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/smoke-1791727630561.log",
+      "originalLogSha256": "504d7f5a1189c40a21a7ff52515399ab08cb80ec294ccdc09e620c0d17c728bd",
+      "resultLine": "RESULT: 59 checks / 3 failures",
+      "publicExcerptPath": "smoke-1791727630561.log",
+      "publicExcerptSha256": "05ed0d983ef9a21876093ded782848b2fc0bfc7305c7c1b990dcbd5642feb631",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    },
+    {
+      "id": "smoke-1791727729167",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/smoke-1791727729167.log",
+      "originalLogSha256": "4c8ae7cc4bda1afa502c8fcd4b87ebaee52f4568ba8f4610fb507cf56448fcf5",
+      "resultLine": "RESULT: 60 checks / 4 failures",
+      "publicExcerptPath": "smoke-1791727729167.log",
+      "publicExcerptSha256": "061f45103fad8e37df894e554eb4f882f46237ba0763722ee7a8694f6225251d",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    },
+    {
+      "id": "smoke-1791727795930",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/smoke-1791727795930.log",
+      "originalLogSha256": "2b3134bb0c5e42952fe3e03088c81cc45b9e8efff93556c1851e7af800ad825a",
+      "resultLine": "RESULT: 60 checks / 2 failures",
+      "publicExcerptPath": "smoke-1791727795930.log",
+      "publicExcerptSha256": "d4665f6d7346ea2657c02684fd1c435d112e3f0a59414fcae381d01a4c687e02",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    },
+    {
+      "id": "smoke-1791727889810",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/smoke-1791727889810.log",
+      "originalLogSha256": "909198838eb8b5d377b9abe5653041b71dbcb61805095892c4522b9e5d21c247",
+      "resultLine": "RESULT: 60 checks / 1 failures",
+      "publicExcerptPath": "smoke-1791727889810.log",
+      "publicExcerptSha256": "4ef2c12b85d0786d2b32966710d2c465f1cd8a3865431ff64f63886d4007da06",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    },
+    {
+      "id": "smoke-1791727956598",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/smoke-1791727956598.log",
+      "originalLogSha256": "4a7304817ae8ada5ea73490d751e4814ffea7a2678206f1ee184ad99677bb9f0",
+      "resultLine": "RESULT: 60 checks / 1 failures",
+      "publicExcerptPath": "smoke-1791727956598.log",
+      "publicExcerptSha256": "b0d62e31a883577c03a46e837150b0b05f2e09680ff61435d05ecdb76a6a89a7",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    },
+    {
+      "id": "smoke-1791728012087",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/smoke-1791728012087.log",
+      "originalLogSha256": "1b9620d70aafa832aef15d759ebd84d8c3b6e8e72db26f3b18aab8f06dc73ade",
+      "resultLine": "RESULT: 61 checks / 0 failures",
+      "publicExcerptPath": "smoke-1791728012087.log",
+      "publicExcerptSha256": "d83c02b3246f29b51feffd12b94db0e6da1a7aa51d41c6312f004a7445a538ad",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    },
+    {
+      "id": "capture-1791728157359",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/capture-1791728157359.log",
+      "originalLogSha256": "7546783e21ccae13b42e12031783ce0e76b142eda076e5211b2e5cf0e8b2de94",
+      "resultLine": "RESULT: 578 checks / 0 failures",
+      "publicExcerptPath": "capture-1791728157359.log",
+      "publicExcerptSha256": "9cec6bb25af1bde48f0fe111062e731213265eecd98773fe86f722cfe9ae2bad",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    },
+    {
+      "id": "smoke-1791728417548",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/smoke-1791728417548.log",
+      "originalLogSha256": "d6f3f61b26ed22e2f542283a3db86f2b56bc602ab3dd9340828c49e35d2e06a0",
+      "resultLine": "RESULT: 61 checks / 1 failures",
+      "publicExcerptPath": "smoke-1791728417548.log",
+      "publicExcerptSha256": "94e45e97d852d05c7881872569568807fcd8e79135ca658f1b7c9c9d67d0ab2b",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    },
+    {
+      "id": "smoke-1791728474748",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/smoke-1791728474748.log",
+      "originalLogSha256": "3eb349538fdee91c1dbf34e57d1a136523e2c1b6dce5dc462f3ea41584b06e7e",
+      "resultLine": "RESULT: 61 checks / 0 failures",
+      "publicExcerptPath": "smoke-1791728474748.log",
+      "publicExcerptSha256": "9fe93a628cb38216724441a548ac3caddaae80fd26c20e4174ea1b5fba35f7d7",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    },
+    {
+      "id": "capture-1791728513314",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "originalLogPath": ".local/c1a-admission/capture-1791728513314.log",
+      "originalLogSha256": "407ca75fdfda0953b7a7afadd500e59d957aca9684cd753412c5d89b5a0afc9d",
+      "resultLine": "RESULT: 580 checks / 0 failures",
+      "publicExcerptPath": "capture-1791728513314.log",
+      "publicExcerptSha256": "029153bc7c60d5700a01019fcb82e7be242da70c36397d7832292bd82dda3b53",
+      "publicExcerptOmitsRepeatedPngPassLines": true
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "pocs/stylized_3d/c1a/project.godot",
+      "sha256": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.tscn",
+      "sha256": "7e8055a633901335d6e72eb53a5d3544b8eb8b2dd0c18e4a710628103e271947"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.gd",
+      "sha256": "7e399be6667cc318e15124e1cb691c2f7b37fe46ea4d270187bb2f5a53841180"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.gd",
+      "sha256": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/mary.tscn",
+      "sha256": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/strings.tres",
+      "sha256": "6b916223d26468d994701aff8728cb91610e0d0b8e3d9b115c95adff7fd83ea8"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/narrative_smoke.gd",
+      "sha256": "c90cfefe59750eecb27e57bb700ebb65e7f18bd0c5575161dbb9b6fdfc84c5cd"
+    }
+  ],
+  "review": "independent-review.json",
+  "ownerAccepted": false,
+  "c1aStatus": "VERIFYING",
+  "corrections": [
+    "59/3第一条RED未包括入口墙路线；60/4补齐实体入口遮挡",
+    "60/2和两次60/1是中间候选车体/入口/HUD问题，不算通过",
+    "首个61/0离开断言仅松键，独立复审发现证据不足；加强直退位移产生61/1，与同侧母亲实体相遇；改为真实A/S绕行，最终61/0，不改碰撞",
+    "收尾冻结探针补核真实docs/discovery路径及文件存在；不使用不存在路径的空git diff作证明"
+  ],
+  "limits": [
+    "不能用有限躯干/头手射线或投影证明任意站位/过渡无遮挡",
+    "绕行可行不等于单方向直退畅通",
+    "离线Movie Maker不能证明实时FPS/OS焦点/窗口变化",
+    "母亲动作强调与新镜头舒适须新L5，C1-B/Visual未授权"
+  ],
+  "render": {
+    "frames": 6220,
+    "behaviourChecks": 61,
+    "directoryChecks": 1,
+    "pngChecks": 518,
+    "totalChecks": 580,
+    "failures": 0,
+    "resolution": "1280x800",
+    "fps": 60,
+    "realTimePerformanceClaim": false,
+    "movieBytes": 341927610,
+    "movieSha256": "1ebc77597897b51f5315385fd439007093e8ff094a7a8da148e26e7ea9a556e0",
+    "moviePath": ".local/c1a-input.avi",
+    "sameEightRuntimeFilesAsFinalSmoke": true,
+    "inspectedFrames": [
+      {
+        "path": ".local/c1a-captures/frame_00064.png",
+        "sha256": "a424c24190d54014d7f8830245a300fd690ac13097404d6dca4e87c5eb931e3d"
+      },
+      {
+        "path": ".local/c1a-captures/frame_00439.png",
+        "sha256": "3fdba8140d4653d3b7457889ae75888308175906f02456e9f25b16c2dcaa7b54"
+      },
+      {
+        "path": ".local/c1a-captures/frame_00468.png",
+        "sha256": "b854577595cb0825c8dc54809daaab89c9ac915f984ff3c242c0a4d77aae12ca"
+      },
+      {
+        "path": ".local/c1a-captures/frame_00507.png",
+        "sha256": "544ca48b5402b3351446e6d2f0c2068a8f97fc68657bbb5a9e5fbd639f2ae9c7"
+      }
+    ],
+    "previousVersions": [
+      {
+        "version": "CHG005",
+        "path": ".local/c1a-chg005-render/c1a-input.avi",
+        "sha256": "49b85a19f2aaa917a856215832572c0fc1bcd80b8a952c324c6709cec9ff2c1b"
+      },
+      {
+        "version": "CHG006离开断言修正前",
+        "path": ".local/c1a-chg006-before-review-render/c1a-input.avi",
+        "sha256": "089c923d57f0bcc8b5436242f80531dece6c3530716f6bcebed162e423b9b9f8"
+      },
+      {
+        "version": "C1A首版",
+        "path": ".local/c1a-camera-original-render/c1a-input.avi",
+        "sha256": "edbf682461ae9bb73808b8096dc575efb65f00a818a1b99531457380e1419df8"
+      }
+    ],
+    "inspectionConclusion": "仅确认指定入口墙旁/双侧触碰人物可见；不作情感、动作全程或镜头舒适裁决"
+  },
+  "finalRead": {
+    "path": ".local/c1a-sides-final-read.json",
+    "sha256": "4544141fb8b24cfc34659b3c99ba4ec23c545c26dac3ed1511eaf7337860361c",
+    "basis": {
+      "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+      "observed_schema_version": 5,
+      "observed_design_revision": 17
+    },
+    "consistency": {
+      "canonical": "STABLE_DOUBLE_READ",
+      "runtimeAttestations": "EQUAL_DOUBLE_OBSERVATION_NOT_ATOMIC"
+    },
+    "fullCanonicalAndRuntimeEqualStart": true
+  },
+  "observedAt": "2026-10-11T14:32:36.991Z",
+  "lowWallHeightCandidateMeters": 0.8,
+  "leftDepartureActual": {
+    "from": [
+      -2.3,
+      0.000839,
+      -0.289057
+    ],
+    "to": [
+      -3.400001,
+      0.000839,
+      2.460942
+    ],
+    "keys": "A22/S55",
+    "routeAvoidsMother": true
+  },
+  "freezeVerification": {
+    "c0Baseline": "4fe6cd4",
+    "c0Path": "pocs/stylized_3d/c0",
+    "discoveryBaseline": "f5037f6",
+    "discoveryPath": "docs/discovery/RB-DISC-001_REPORT.md",
+    "filesExist": true,
+    "gitDiffEmpty": true
+  },
+  "contextCheck": "PASS",
+  "diffWhitespaceCheck": "PASS"
+}

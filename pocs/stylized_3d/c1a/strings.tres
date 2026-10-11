@@ -6,7 +6,7 @@ messages = {
 "HELP": "WASD 移动 · E 就近开门 / 触碰 · R 重置实验 · Esc 退出",
 "DOOR_HINT": "E 打开门",
 "TOUCH_HINT": "E 触碰车身",
-"FAR": "还碰不到，请靠近门或车身右侧。",
+"FAR": "还碰不到，请靠近门或车身。",
 "REACH": "伸手试着触碰车身。",
 "TOUCH_MISS": "手没有碰到车身，请靠近再试。",
 "OPEN": "门已打开。",

@@ -1,0 +1,56 @@
+{
+  "observedAt": "2026-10-11T14:23:27.454Z",
+  "task": "RB-C1A-001",
+  "entryCommit": "32eb2d5e6d96b7ad3a0da04a89da2ecb8a7d46de",
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "canonicalCount": 12,
+  "findingCount": 0,
+  "runtimeCount": 3,
+  "fullCanonicalAndRuntimeEqualPrevious": true,
+  "read": {
+    "path": ".local/c1a-continue-20261011-read.json",
+    "sha256": "4544141fb8b24cfc34659b3c99ba4ec23c545c26dac3ed1511eaf7337860361c"
+  },
+  "tools": {
+    "path": ".local/c1a-continue-20261011-tools.json",
+    "sha256": "28f081d59bd7709d6b33487cf61138b21605383c6c7b6d63baf41ce6e8f6cff3"
+  },
+  "smoke": {
+    "id": "smoke-1791726581010",
+    "outcome": "PASS",
+    "exitCode": 0,
+    "errorMarkers": false,
+    "originalLogPath": ".local/c1a-admission/smoke-1791726581010.log",
+    "originalLogSha256": "e01358a1e07e65a9ae5bea7adb959b0af1c2e66918afa27ca57b24c087860aa0",
+    "resultLine": "RESULT: 52 checks / 0 failures"
+  },
+  "eightRuntimeFilesEqualPrevious": true,
+  "processObservation": {
+    "observedAt": "2026-10-11T13:55:06.0951743Z",
+    "launchReceipt": "play-1791726724450.json",
+    "pid": 63388,
+    "processAlive": true,
+    "startTime": "2026-10-11T21:52:06.3803278+08:00",
+    "windowTitle": "C1-A First Meeting (DEBUG)",
+    "responding": true,
+    "duplicatePid": 66856,
+    "duplicateStillAlive": false,
+    "oldPid30344Alive": false,
+    "observationRequiresElevatedHostVisibility": true,
+    "manualAcceptance": false
+  },
+  "processObservationLimits": [
+    "普通沙箱看不到提权Godot进程导致一次重复启动；不是游戏退出的证据",
+    "核精确身份后正常关闭重复PID66856，保留63388供第二轮试玩",
+    "启动租约不覆盖全部试玩生命周期"
+  ],
+  "subsequentFeedback": "../../sources/2026-10-11-c1a-second-playtest.md",
+  "ownerAccepted": false,
+  "readinessRetried": false,
+  "dmcpWritten": false
+}

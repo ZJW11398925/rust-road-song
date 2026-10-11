@@ -5,7 +5,7 @@ const HumanScript = preload("res://human.gd")
 const PLAYER_START: Vector3 = Vector3(-0.75, 0.0, 6.8)
 const MOTHER_START: Vector3 = Vector3(0.75, 0.0, 6.8)
 const FIRST_CAMERA: Vector3 = Vector3(0.0, 4.5, 13.0)
-const RELATION_OFFSET: Vector3 = Vector3(-5.0, 4.4, 7.0)
+const RELATION_OFFSET: Vector3 = Vector3(0.0, 6.3, 7.0)
 const FIRST_TARGET: Vector3 = Vector3(0.0, 1.0, 0.0)
 const MOTHER_PATH: Array[Vector3] = [Vector3(0.75, 0.0, 2.4), Vector3(-2.35, 0.0, 2.4), Vector3(-2.35, 0.0, -0.68)]
 @onready var player: HumanScript = $Player
@@ -103,13 +103,15 @@ func _update_camera(delta: float) -> void:
 	var car_focus: Vector3 = $Mary.global_position + Vector3(0.0, 1.1, 0.3)
 	var mother_focus: Vector3 = mother.global_position + Vector3(0.0, 1.1, 0.0)
 	var relation_focus: Vector3 = car_focus.lerp(mother_focus, 0.62)
-	# A small continuous allowance keeps a wandering player in the shared space.
-	var player_offset: Vector3 = player.global_position - relation_focus
-	player_offset = Vector3(clampf(player_offset.x, -2.0, 2.0), 0.0, clampf(player_offset.z, -2.5, 2.5))
-	var wanted_focus: Vector3 = FIRST_TARGET.lerp(relation_focus + player_offset * 0.22, door_progress)
+	# Share the actual space with the player instead of capping their allowance.
+	var shared_focus: Vector3 = relation_focus.lerp(player.global_position + Vector3(0.0, 1.1, 0.0), 0.6)
+	var wanted_focus: Vector3 = FIRST_TARGET.lerp(shared_focus, door_progress)
 	var spread: float = maxf(player.global_position.distance_to(relation_focus) - 5.0, 0.0)
 	var distance_scale: float = 1.0 + minf(spread * 0.06, 0.3)
 	var wanted_position: Vector3 = FIRST_CAMERA.lerp(wanted_focus + RELATION_OFFSET * distance_scale, door_progress)
+	# Keep the camera inside the walls and on the approaching player's side.
+	# This changes continuously with position; crossing a region never switches shots.
+	wanted_position.x = lerpf(FIRST_CAMERA.x, clampf(player.position.x * 2.0 - 1.0, -5.2, 5.2), door_progress)
 	var response: float = 1.0 - exp(-delta * 2.2)
 	camera_focus = camera_focus.lerp(wanted_focus, response)
 	camera.position = camera.position.lerp(wanted_position, response)
@@ -173,8 +175,8 @@ func _update_player_touch(delta: float) -> void:
 	player.reach_amount = move_toward(player.reach_amount, 1.0 if attempting else 0.0, delta * 4.0)
 	if not attempting:
 		return
-	player.face(Vector3.LEFT, delta, 10.0)
-	# The existing hand must reach the actual right face of the body mesh.
+	player.face(Vector3.LEFT if player.position.x > $Mary.position.x else Vector3.RIGHT, delta, 10.0)
+	# Either side uses the same gesture and still requires real shell contact.
 	if not touch_contacted and player.reach_amount >= 0.98 and _player_hand_on_body():
 		touch_contacted = true
 		player_touched = true
@@ -191,16 +193,20 @@ func _player_hand_on_body() -> bool:
 	var body: MeshInstance3D = $Mary/Body
 	var bounds: AABB = body.mesh.get_aabb()
 	var hand_local: Vector3 = body.to_local(hand.global_position)
-	var shell_point: Vector3 = Vector3(bounds.end.x, clampf(hand_local.y, bounds.position.y, bounds.end.y), clampf(hand_local.z, bounds.position.z, bounds.end.z))
+	var shell_x: float = bounds.end.x if player.position.x > $Mary.position.x else bounds.position.x
+	var shell_point: Vector3 = Vector3(shell_x, clampf(hand_local.y, bounds.position.y, bounds.end.y), clampf(hand_local.z, bounds.position.z, bounds.end.z))
 	return hand.global_position.distance_to(body.to_global(shell_point)) <= 0.14
 
 func _near_door() -> bool:
 	return absf(player.position.x) < 1.9 and absf(player.position.z - 4.0) < 1.65
 
 func _near_touch() -> bool:
-	var touch_point: Vector3 = $Mary/TouchPoint.global_position
-	var horizontal: Vector2 = Vector2(player.position.x - touch_point.x, player.position.z - touch_point.z)
-	return player.position.x > 1.8 and horizontal.length() < 1.55
+	var body: MeshInstance3D = $Mary/Body
+	var bounds: AABB = body.mesh.get_aabb()
+	var local: Vector3 = body.to_local(player.global_position)
+	var shell_x: float = bounds.end.x if local.x > 0.0 else bounds.position.x
+	var horizontal: Vector2 = Vector2(local.x - shell_x, local.z - clampf(local.z, bounds.position.z, bounds.end.z))
+	return absf(local.x) > bounds.end.x and horizontal.length() < 1.55
 
 func _update_text(delta: float) -> void:
 	hint.text = tr("DOOR_HINT") if not door_open and _near_door() else (tr("TOUCH_HINT") if door_open and _near_touch() else "")

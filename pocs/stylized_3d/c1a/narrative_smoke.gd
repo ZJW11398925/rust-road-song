@@ -89,9 +89,24 @@ func player_hand_at_shell() -> bool:
 	var body: MeshInstance3D = scene.get_node("Mary/Body") as MeshInstance3D
 	var box: AABB = body.mesh.get_aabb()
 	var local: Vector3 = body.to_local(hand.global_position)
-	var side_distance: float = absf(local.x - box.end.x)
-	print("PLAYER_CONTACT: hand=", hand.global_position, " body_local=", local, " right_face_distance=", side_distance, " reach=", player.reach_amount, " clock=", scene.touch_clock)
+	var side_distance: float = minf(absf(local.x - box.end.x), absf(local.x - box.position.x))
+	print("PLAYER_CONTACT: hand=", hand.global_position, " body_local=", local, " side_face_distance=", side_distance, " reach=", player.reach_amount, " clock=", scene.touch_clock)
 	return side_distance <= 0.14 and local.y >= box.position.y and local.y <= box.end.y and local.z >= box.position.z and local.z <= box.end.z
+
+func view_clear(target: Vector3, label: String) -> bool:
+	var camera: Camera3D = scene.get_node("Camera3D") as Camera3D
+	var clear: bool = true
+	# Render geometry, including the upper body without its own physics collider.
+	for node_path: String in ["Mary/Body", "Mary/UpperBody", "EntryLeft/Mesh", "EntryRight/Mesh", "LeftWall/Mesh", "RightWall/Mesh", "VestibuleLeft/Mesh", "VestibuleRight/Mesh", "Door/Mesh"]:
+		var mesh: MeshInstance3D = scene.get_node(node_path) as MeshInstance3D
+		var intersection: Variant = mesh.mesh.get_aabb().intersects_segment(mesh.to_local(camera.global_position), mesh.to_local(target))
+		if intersection != null:
+			clear = false
+			print("VIEW_BLOCKED: ", label, " by=", node_path, " camera=", camera.global_position, " target=", target)
+	var size: Vector2 = camera.get_viewport().get_visible_rect().size
+	var on_screen: bool = not camera.is_position_behind(target) and Rect2(Vector2(16.0, 16.0), Vector2(size.x - 32.0, size.y * 0.67 - 16.0)).has_point(camera.unproject_position(target))
+	print("VIEW_SAMPLE: ", label, " screen=", camera.unproject_position(target), " clear=", clear, " above_hud=", on_screen)
+	return clear and on_screen
 
 func reset() -> void:
 	door_open_frame = -1
@@ -288,5 +303,44 @@ func _run() -> void:
 	check(camera.global_position.distance_to(boundary_inside) < 1.0, "反复回跨旧边界不反复切换视角")
 	await reset()
 	check(camera.global_position.distance_to(MeetingScript.FIRST_CAMERA) < 0.001, "镜头重置回实际门前构图")
+	# Reproduce the second human playtest through the same real keyboard path.
+	await open_and_enter()
+	await walk_to_x(3.1)
+	await frames(120)
+	check(view_clear(player.global_position + Vector3(0.0, 0.9, 0.0), "right entry"), "右侧入口玩家躯干不被前景墙或车体遮挡且在操作面板上方")
+	await walk(KEY_S, 20)
+	await walk_to_x(5.1)
+	await frames(120)
+	check(view_clear(player.global_position + Vector3(0.0, 0.9, 0.0), "right entry wall"), "入口墙旁横向走动时玩家躯干仍可见")
+	await walk(KEY_S, 45)
+	check(player.position.z < 3.7, "入口低墙的可见几何与碰撞匹配，不能穿墙离场")
+	await walk(KEY_W, 25)
+	await walk_to_x(3.1)
+	await walk_to_x(2.28)
+	await walk(KEY_W, 50)
+	await frames(120)
+	check(view_clear(player.global_position + Vector3(0.0, 0.9, 0.0), "right body"), "右侧靠车玩家躯干不被车体或墙遮挡")
+	await tap(KEY_E)
+	await frames(25)
+	check(scene.touch_contacted and player_hand_at_shell(), "右侧原有实际触壳路径保留")
+	await reset()
+	await open_and_enter()
+	await walk_to_x(-2.28)
+	await walk(KEY_W, 35)
+	await frames(120)
+	check(view_clear(player.global_position + Vector3(0.0, 0.9, 0.0), "left body"), "左侧靠车玩家躯干不被车体或墙遮挡")
+	await tap(KEY_E)
+	await frames(25)
+	print("LEFT_TOUCH: player=", player.position, " feedback=", scene.feedback_key, " touched=", scene.player_touched)
+	check(scene.touch_contacted and scene.player_touched and player_hand_at_shell(), "左侧同一合理触碰也需实际手触壳，不强制右侧")
+	await frames(30)
+	var left_departure: Vector3 = player.position
+	# Mother can physically occupy this same aisle; sidestep her before leaving.
+	await walk(KEY_A, 22)
+	await walk(KEY_S, 55)
+	print("LEFT_DEPARTURE: from=", left_departure, " to=", player.position, " mother=", mother.position)
+	check(player.position.z - left_departure.z > 2.5 and left_departure.x - player.position.x > 0.8 and not scene.held.has("left") and not scene.held.has("back") and scene.player_touched, "左侧触碰后绕过母亲实际自由离开且不残留按键")
+	await reset()
+	check(not scene.player_touched and not scene.touch_contacted, "双侧触碰后的重置清状态")
 	print("RESULT: ", checks, " checks / ", failures, " failures")
 	quit(0 if failures == 0 else 1)

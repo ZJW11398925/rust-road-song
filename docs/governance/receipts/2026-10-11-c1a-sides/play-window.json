@@ -1,0 +1,13 @@
+{
+  "observedAt": "2026-10-11T14:37:28.4997269+00:00",
+  "launchReceipt": "../2026-10-11-c1a-admission/play-1791729406620.json",
+  "pid": 35624,
+  "processAlive": true,
+  "startTime": "2026-10-11T22:36:48.6290161+08:00",
+  "windowTitle": "C1-A First Meeting (DEBUG)",
+  "responding": true,
+  "oldChg005Pid63388Alive": false,
+  "identityVerified": true,
+  "observationRequiresElevatedHostVisibility": true,
+  "ownerAcceptance": false
+}

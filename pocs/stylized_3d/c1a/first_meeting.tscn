@@ -35,13 +35,13 @@ size = Vector3(12.5, 2.8, 0.3)
 [sub_resource type="BoxShape3D" id="Shape4"]
 size = Vector3(12.5, 2.8, 0.3)
 [sub_resource type="BoxMesh" id="Mesh5"]
-size = Vector3(4.2, 3.0, 0.4)
+size = Vector3(4.2, 0.8, 0.4)
 [sub_resource type="BoxShape3D" id="Shape5"]
-size = Vector3(4.2, 3.0, 0.4)
+size = Vector3(4.2, 0.8, 0.4)
 [sub_resource type="BoxMesh" id="Mesh6"]
-size = Vector3(4.2, 3.0, 0.4)
+size = Vector3(4.2, 0.8, 0.4)
 [sub_resource type="BoxShape3D" id="Shape6"]
-size = Vector3(4.2, 3.0, 0.4)
+size = Vector3(4.2, 0.8, 0.4)
 [sub_resource type="BoxMesh" id="Mesh7"]
 size = Vector3(4.0, 6.0, 0.35)
 [sub_resource type="BoxShape3D" id="Shape7"]
@@ -110,21 +110,21 @@ shape = SubResource("Shape4")
 collision_layer = 1
 collision_mask = 0
 [node name="Mesh" type="MeshInstance3D" parent="EntryLeft"]
-position = Vector3(-4.1, 1.5, 4.0)
+position = Vector3(-4.1, 0.4, 4.0)
 mesh = SubResource("Mesh5")
 material_override = SubResource("Wall")
 [node name="MeshCollision" type="CollisionShape3D" parent="EntryLeft"]
-position = Vector3(-4.1, 1.5, 4.0)
+position = Vector3(-4.1, 0.4, 4.0)
 shape = SubResource("Shape5")
 [node name="EntryRight" type="StaticBody3D" parent="."]
 collision_layer = 1
 collision_mask = 0
 [node name="Mesh" type="MeshInstance3D" parent="EntryRight"]
-position = Vector3(4.1, 1.5, 4.0)
+position = Vector3(4.1, 0.4, 4.0)
 mesh = SubResource("Mesh6")
 material_override = SubResource("Wall")
 [node name="MeshCollision" type="CollisionShape3D" parent="EntryRight"]
-position = Vector3(4.1, 1.5, 4.0)
+position = Vector3(4.1, 0.4, 4.0)
 shape = SubResource("Shape6")
 [node name="Door" type="StaticBody3D" parent="."]
 collision_layer = 1

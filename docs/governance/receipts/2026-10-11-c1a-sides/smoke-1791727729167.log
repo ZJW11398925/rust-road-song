@@ -1,0 +1,81 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+
+PASS: 正式main scene入口
+PASS: 正式SceneTree生命周期与落地
+PASS: 母亲/玛丽实际同场，未spawn
+PASS: 门前初态未首见
+PASS: 实体门实际遮挡初始镜头到车体
+PASS: 远处E给玩家可见反馈
+PASS: 真实W键推动人物水平运动
+PASS: 闭门实体阻止穿越
+PASS: 实体门逐渐打开而非瞬间删车/门
+PASS: 开门显露期间保留玩家控制
+PASS: 就近E打开门并首见，非检查前置
+PASS: 打开后的实体门离开入口
+PASS: 重复E不关闭门
+PASS: 真实输入从门外进入
+PASS: 自由先到右边，不等母亲动作
+PASS: 远侧E仅启动手势，不以就近半径判完成
+PASS: 远侧手够不到车壳，不成功且有可见反馈
+PASS: 走近后E先启动新手势
+PLAYER_CONTACT: hand=(1.57, 1.420839, -0.916395) body_local=(1.57, 0.595839, 0.583605) side_face_distance=0.02999985218048 reach=1.0 clock=0.31666666666667
+PASS: 玩家手实际触壳后才完成触碰
+MOTHER_STATE: first right-side/untended begin from_open_s=8.13333333333333 stage=1 clock=6.99999999999998 reach=0.0 hand_distance=2.2752730846405
+MOTHER_STATE: first right-side/untended end from_open_s=11.45 stage=4 clock=1.41666666666667 reach=1.0 hand_distance=0.0594565756619
+PASS: 未看细节不阻塞母亲走/停/转身/搭扶（从开门起12秒有界）
+PASS: 母亲在车侧实际停下
+PASS: 母亲转向车而非面向玩家
+PASS: 母亲手与侧板真实空间接触关系
+PASS: 开门后车内动作镜头到母亲手不被入口墙或门遮挡
+PASS: 开门后车内动作镜头到玛丽不被入口墙或门遮挡
+PASS: 首见构图到搭扶手不被入口墙或门遮挡
+PASS: 首见构图到玛丽不被入口墙或门遮挡
+CAMERA_SCREEN: head=(552.4722, 397.6562) hand=(591.5784, 390.5373) viewport=(1280.0, 800.0) window_surface=(64, 64) camera=(-6.016175, 5.500526, 6.076256)
+PASS: 母亲头部在当前可见画面内，非面部特写
+PASS: 搭手接触在画面内且不落入底部操作面板
+PASS: 触碰后走开并回返，控制不锁
+PASS: R恢复完整实验初态
+PASS: R恢复门外位置
+PASS: 真实手触壳的先触碰路径无需等待母亲动作完成
+MOTHER_STATE: touch-first then leave begin from_open_s=8.0 stage=1 clock=6.86666666666665 reach=0.0 hand_distance=2.42987561225891
+MOTHER_STATE: touch-first then leave end from_open_s=11.45 stage=4 clock=1.41666666666667 reach=1.0 hand_distance=0.0594565756619
+PASS: 走开/未看母亲仍完成，非隐藏解锁（12秒有界）
+PASS: 回返前旧手势已结束
+PASS: 回返E启动本次新手势，非sticky已触碰状态
+PLAYER_CONTACT: hand=(1.617481, 1.420839, -0.900803) body_local=(1.617481, 0.595839, 0.599197) side_face_distance=0.01748049259186 reach=1.0 clock=0.31666666666667
+PASS: 回返手重新抬起并实际触壳
+PASS: 伸手期间WASD继续响应且朝车姿态不锁位
+PASS: 触壳前移开导致失败，且有可见反馈
+PASS: 真实输入也可自由接近车身左侧
+MOTHER_STATE: left-side then leave begin from_open_s=7.6 stage=1 clock=6.46666666666665 reach=0.0 hand_distance=3.0221962928772
+MOTHER_STATE: left-side then leave end from_open_s=11.45 stage=4 clock=1.41666666666667 reach=1.0 hand_distance=0.0594565756619
+PASS: 先左侧再走开不阻塞母亲动作（12秒有界）
+PASS: 构图变化不重映射W输入方向
+PASS: 失焦通知清held且停止，不代表OS焦点已验
+PASS: 恢复不消费旧按键
+PASS: 恢复后新真实键响应
+PASS: 重置清输入且不漏旧键
+MOTHER_STATE: camera stationary observer begin from_open_s=2.55 stage=1 clock=1.41666666666667 reach=0.0 hand_distance=6.37961626052856
+MOTHER_STATE: camera stationary observer end from_open_s=11.45 stage=4 clock=1.41666666666667 reach=1.0 hand_distance=0.0594565756619
+PASS: 门口静止观察者不阻塞母亲动作
+CAMERA_MOTHER: from=(-4.721615, 5.482741, 10.52412) to=(-6.757504, 5.902336, 7.34952) player=(-0.75, 0.000839, 5.550006)
+PASS: 玩家静止时构图仍随母亲走向车身，不靠玩家区域触发
+CAMERA_BOUNDARY: z=2.80001091957092 -> 2.20001101493835 distance=0.19641800224781
+PASS: 真实W路线跨过旧切镜边界
+PASS: 跨旧边界只作连续小幅构图调整，没有区域切镜
+PASS: 反复回跨旧边界不反复切换视角
+PASS: 镜头重置回实际门前构图
+PASS: 右侧入口玩家躯干不被前景墙或车体遮挡且在操作面板上方
+VIEW_BLOCKED: right entry wall by=EntryRight/Mesh camera=(-6.736449, 6.13661, 7.829859) target=(5.149992, 0.900839, 2.460942)
+FAIL: 入口墙旁横向走动时玩家躯干仍可见
+VIEW_BLOCKED: right body by=Mary/Body camera=(-6.0165, 5.500717, 6.119446) target=(2.25, 0.900839, -1.039057)
+FAIL: 右侧靠车玩家躯干不被车体或墙遮挡
+PLAYER_CONTACT: hand=(1.56748, 1.420839, -0.724467) body_local=(1.56748, 0.595839, 0.775533) side_face_distance=0.03251969814301 reach=1.0 clock=0.31666666666667
+PASS: 右侧原有实际触壳路径保留
+PASS: 左侧靠车玩家躯干不被车体或墙遮挡
+LEFT_TOUCH: player=(-2.3, 0.000839, -0.289057) feedback=FAR touched=false
+FAIL: 左侧同一合理触碰也需实际手触壳，不强制右侧
+FAIL: 左侧触碰后仍可自由离开且不残留按键
+PASS: 双侧触碰后的重置清状态
+RESULT: 60 checks / 4 failures
+

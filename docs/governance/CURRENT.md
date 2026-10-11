@@ -1,21 +1,17 @@
 # 当前状态 / 2026-10-11
 
-本文件只导航；新总控按[完整设计接续入口](CONTROLLER_TAKEOVER.md)先读完设计/真实来源与实时DMCP，再布置执行任务。依据[Owner接续要求](sources/2026-10-11-owner-controller-handoff.md)。
+本文件只导航；总控必须按[完整设计入口](CONTROLLER_TAKEOVER.md)读原文与实时DMCP，不能凭交接开工。本轮已先完整理解并汇报边界，再做C1-A接续验证，见[原接续检查点](receipts/2026-10-11-controller-resumption/checkpoint.md)。
 
-本轮新总控已完成完整设计/来源理解与实时正式对象/runtime读取，先向Owner核对后再布置当前镜头只读复审；见[接续检查点](receipts/2026-10-11-controller-resumption/checkpoint.md)。实时仍5/17、12canonical/0Finding/3runtime，八个运行文件匹配已测版本，没有游戏变更或准入重投。本轮复审Agent有中间阅读消息，最终429中断，不能作APPROVE；修后L5仍待记录。历史PID30344现场已不存在，后续试玩须沿固定消费者重新核依据后启动。
+当前仅 RB-C1A-001 First Meeting。C0已按RD-009阶段接受/六文件冻结，四项缺失主观评价保留；不做异常/启动/驾驶/C1-B/Visual或Legacy。
 
-## 当前方向
+[第二轮Owner原话](sources/2026-10-11-c1a-second-playtest.md)否定了CHG-005对右侧与入口视野的支持，也无法理解强制右侧。CHG-006已作局部修正：连续镜头随玩家所在侧、共享实际空间，双侧沿同一实际手触壳动作；前景入口墙降低且碰撞同步。不增剧情、资产或通用系统。
 
-RD-009接受C0探索阶段；六工程文件冻结，四项主观评价缺失保留，非最终3D选择。当前仅[RB-C1A-001](../tasks/RB-C1A-001.md)，不做异常/启动/驾驶/正式资产/C1-B/Visual。
+[本轮证据](receipts/2026-10-11-c1a-sides/verification.json)：有效RED60/4→最终正式输入61/0；渲染61行为+目录+518PNG=580/0、6220帧，无ERROR。八个运行文件与最终smoke/capture字节一致。[独立审查](receipts/2026-10-11-c1a-sides/independent-review.json)未发现产品阻断，提出一项离开证据缺陷并复核其修正；原直退与母亲实体相遇61/1保留，真实A/S绕行能离开。早期429失败不删除、不继承为审查通过。
 
-[首轮Owner试玩](sources/2026-10-11-c1a-first-playtest.md)读为“抚摸一个老朋友”，指出区域镜头价值低且突兀。CHG-005已改局部连续母亲/玛丽同框构图；[报告](../pocs/RB-C1A-001_REPORT.md)与[证据](receipts/2026-10-11-c1a-camera/verification.json)：真实RED50/3、最终smoke52/0，渲染441/0（52行为/目录/388PNG）；无ERROR。独立复审两次429未执行，修后镜头仍待真实反馈，**C1-A VERIFYING、CHG-004/005 IN_PROGRESS**。
+**C1-A仍VERIFYING，CHG-004/005/006仍IN_PROGRESS**；CHG-006实现与技术验证完成，新的L5尚待记录。有限躯干/模型采样不证明全身、过渡或任意站位无遮挡；母亲动作强调/镜头舒适、OS焦点、窗口变化与实时性能未知。不得因自动化通过进入C1-B。
 
-## 正式依据与下一步
+本轮末实时完整对象/runtime与入口逐项相同：schema/design5/17、12canonical/0Finding/3runtime；binding的DEC@2/PLAN@1/TASK@1，原C1-A实际PROTOTYPE READY四facts/requirements、十精确路径逐次消费者重核。无准入重投、正式写入、上游改动或policy override，旧DO_NOT_RETRY保持。
 
-本轮实时读回与前轮完整canonical/runtime逐项相同：schema/design5/17，12canonical/0Finding/3runtime；[binding](binding.json)的DEC@2/PLAN@1/TASK@1。原prototype READY4requirements/4facts逐次重核，只同任务局部修正，无新准入投递或上游修改。不能借C0/DiscoveryREADY授权本阶段。旧DO_NOT_RETRY不重试，原生TASK无DONE接口。
+下一步：沿固定play消费者打开本轮候选，记录非引导的实际复述、两侧/入口/母亲动作观察和误操作；必要时只修同任务。旧CHG-005窗口已核精确身份正常关闭，新窗口/进程以本轮play-window.json及现场为准。报告/来源保留历史52/441与44/318边界。
 
-新总控首先理解全设计，再完成当前镜头必要复审/真实试玩，不因局部老朋友读法启动C1-B。首版44/318证据和旧录像保留；最新52/441是修订版，探针视口尺寸纠正与录像输入差异单列。任意遮挡、OS焦点/窗口/实时性能未知。
-
-main；本轮提交与远端核验见Git和HANDOFF，不假设工作树干净。当前依赖同机.local/canonical；上游86a8fc1本地已提交未推送，迁机不能只克隆游戏仓库，见TOOLING。
-
-镜头修订与总控接续入口已发布：a25149ef20b8ecc504cf78cc44e8ce4d4ba4c1ab，见[真实远端核验](receipts/2026-10-11-c1a-camera/publication-verification.json)；最新元数据由Git历史定位。修订版已按固定play配置打开，PID30344/启动回执见play-window.json；进程/窗口接手仍现场核。
+main的实现提交/发布核验见本轮HANDOFF和Git历史；收尾先主动推送并核远端。迁机不能只克隆游戏库，Git外canonical与锁定同机依赖见TOOLING。

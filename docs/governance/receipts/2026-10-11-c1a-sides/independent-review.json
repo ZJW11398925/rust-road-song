@@ -1,0 +1,31 @@
+{
+  "reviewer": "/root/camera_review_compact",
+  "baseline": "32eb2d5",
+  "status": "READ_ONLY_REVIEW_COMPLETED_WITH_MINOR_RESOLVED",
+  "serviceFailureBeforeReview": "exceeded retry limit, last status: 429 Too Many Requests",
+  "failedAttemptNotApproval": true,
+  "originalReview": {
+    "critical": 0,
+    "important": 0,
+    "minor": "左侧离开原断言只检松键和旧触碰状态，不能证明位移",
+    "blockingProductFindings": 0,
+    "summary": [
+      "左右仍须实际手至对应车壳≤0.14米，半径只启动动作",
+      "镜头连续函数/指数平滑；WASD世界方向、伸手移动和重置保留",
+      "入口墙Mesh/Shape高度0.8米、中心0.4米，匹配",
+      "无异常/启动/驾驶/管理器或范围越权"
+    ]
+  },
+  "followup": {
+    "status": "MINOR_RESOLVED",
+    "statement": "经A22避让、S55离开，断言横向>0.8米、z位移>2.5米并检查两方向held清除；完全不动不能再通过",
+    "finalProbeSha256": "c90cfefe59750eecb27e57bb700ebb65e7f18bd0c5575161dbb9b6fdfc84c5cd"
+  },
+  "limits": [
+    "未运行Godot/写入/调用DMCP，非人类试玩",
+    "躯干点/有限模型AABB及投影不证明全身、人物互遮/侧板车轮或过渡遮挡",
+    "仅S直退会与同侧母亲实体相遇，原61/1保留；绕行路线不证明任意路线畅通",
+    "母亲动作强调/构图舒适须新的L5"
+  ],
+  "ownerAcceptance": false
+}
