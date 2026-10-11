@@ -26,4 +26,4 @@ main；CHG007实现提交`6d9ac2f3d11373b941de5cb80bc1e3d9c3a2e8ab`已主动推�
 
 现行native仍为C1-A的schema/design5/17、12canonical/0Finding/3runtime，完整对象/runtime及八运行文件逐项未变。本轮未投递正式写入、未修改binding/profile/policy、未创建C1-B工程/未做游戏运行；新L1–L5为N/A（未准入），不能用文档校验PASS冒称游戏验证。
 
-准备提案及哈希记录已本地提交；本轮push与随后ls-remote均报GitHub 443连接失败，未核实远端送达，不声称完成发布。网络恢复后先读回再完成持续授权推送。详细错误及完成准备部分见CHG008；这不阻碍Owner审查本地具体方案。
+准备提案及本次采用/源包/计划已发布，至`a19639f930770152a95bb03d6644b4fb01967c8a`远端与本地相同，见[真实发布回执](receipts/2026-10-11-c1b-preparation/publication-verification.json)。此前连接失败原样保留，后续元数据由Git历史定位。当前只缺受信Owner转录入口，不再要求重复范围批准，也不把恢复推送当新原型准入。

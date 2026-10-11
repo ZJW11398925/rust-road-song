@@ -1,0 +1,14 @@
+{
+  "observedAt": "2026-10-11T16:18:50.7425459+00:00",
+  "change": "CHG-20261011-008",
+  "localReviewId": "RB-C1B-REVIEW-001",
+  "preparationCommit": "48273ee9bad1b31af736d89c9078e0c965c2256b",
+  "publishedCommit": "a19639f930770152a95bb03d6644b4fb01967c8a",
+  "remoteCommit": "a19639f930770152a95bb03d6644b4fb01967c8a",
+  "trackingCommit": "a19639f930770152a95bb03d6644b4fb01967c8a",
+  "verifiedEqual": true,
+  "previousNetworkFailuresPreserved": true,
+  "trustedOwnerChannelStillMissing": true,
+  "newGameImplementation": false,
+  "covers": "本轮提案、采用来源、准入准备、真实失败与完成部分；后续发布核验元数据由Git历史定位"
+}
