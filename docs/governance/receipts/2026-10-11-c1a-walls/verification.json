@@ -1,0 +1,211 @@
+{
+  "observedAt": "2026-10-11T15:24:50.292Z",
+  "task": "RB-C1A-001",
+  "change": "CHG-20261011-007",
+  "baseline": "638d8839ace38cb960ef54ccc287aa5178721485",
+  "ownerSource": "../../sources/2026-10-11-c1a-wall-transparency.md",
+  "ownerSourceSha256": "357d03c0f72ef506b1148c7d50d485b070a0093e1ff77d43881847b4a9ea1e75",
+  "wallCandidateReplaces": "CHG006低墙被Owner否定，原3米入口墙恢复",
+  "workspaceId": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+  "basis": {
+    "observed_canonical_state_id": "CST-d3a92a52-a4b8-4d37-affa-f7e1584a83c3",
+    "observed_schema_version": 5,
+    "observed_design_revision": 17
+  },
+  "canonicalCount": 12,
+  "findingCount": 0,
+  "runtimeCount": 3,
+  "fullCanonicalAndRuntimeUnchanged": true,
+  "read": {
+    "path": ".local/c1a-walls-final-read.json",
+    "sha256": "4544141fb8b24cfc34659b3c99ba4ec23c545c26dac3ed1511eaf7337860361c"
+  },
+  "sameExistingPrototypeReady": true,
+  "readinessRetried": false,
+  "dmcpWritten": false,
+  "upstreamChanged": false,
+  "c0Frozen": true,
+  "originalDiscoveryFrozen": true,
+  "runs": [
+    {
+      "id": "smoke-1791731302346",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "resultLine": "RESULT: 66 checks / 3 failures",
+      "rawLogPath": ".local/c1a-admission/smoke-1791731302346.log",
+      "rawLogSha256": "b4549239fedfe542d86b2585fc18f6b039f5f51c01620a979790b0699baa9386",
+      "publicExcerptPath": "smoke-1791731302346.log",
+      "publicExcerptSha256": "709874d5900593e3d5f4612306691474e0ada0027fafbc62705e0dbe3a2fb733",
+      "excerptOmitsRepeatedPngPassLines": true,
+      "excerptTrailingWhitespaceNormalized": true
+    },
+    {
+      "id": "smoke-1791731375966",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "resultLine": "RESULT: 66 checks / 0 failures",
+      "rawLogPath": ".local/c1a-admission/smoke-1791731375966.log",
+      "rawLogSha256": "3fb6ae1c5c1fc0d7e9153ac2ad870cf5264919ec3c28c6f80668d3c6294ac352",
+      "publicExcerptPath": "smoke-1791731375966.log",
+      "publicExcerptSha256": "d736a8b0f2cb2028f7e0977c5f36ca4be023556e8b8f47ed51a6300bd3b6f29d",
+      "excerptOmitsRepeatedPngPassLines": true,
+      "excerptTrailingWhitespaceNormalized": true
+    },
+    {
+      "id": "capture-1791731443046",
+      "outcome": "FAIL",
+      "exitCode": 3221225477,
+      "errorMarkers": true,
+      "resultLine": null,
+      "rawLogPath": ".local/c1a-admission/capture-1791731443046.log",
+      "rawLogSha256": "d94dae42f5de314fd17464bcd87d48297697b8c88725944ff8390b369d09586e",
+      "publicExcerptPath": "capture-1791731443046.log",
+      "publicExcerptSha256": "c4cce035559c86900681a569dc73d309e8d94a3875a8ee0d1c2b7cae23e61967",
+      "excerptOmitsRepeatedPngPassLines": true,
+      "excerptTrailingWhitespaceNormalized": true
+    },
+    {
+      "id": "capture-1791732097773",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "resultLine": "RESULT: 585 checks / 0 failures",
+      "rawLogPath": ".local/c1a-admission/capture-1791732097773.log",
+      "rawLogSha256": "cc247ba5e3fabbb6eef03e428e2679cc6e44de003c0d36286827c406b7a16c4e",
+      "publicExcerptPath": "capture-1791732097773.log",
+      "publicExcerptSha256": "2d325e7b19be73ccf1695456228b641d4b5594b8ca2ee8e9d876087777254092",
+      "excerptOmitsRepeatedPngPassLines": true,
+      "excerptTrailingWhitespaceNormalized": true
+    }
+  ],
+  "runtimeFiles": [
+    {
+      "path": "pocs/stylized_3d/c1a/project.godot",
+      "sha256": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.tscn",
+      "sha256": "615cdace8c09efffecd1a8a1f07e77d0346654a61419f147af9d313b9c7e952e"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.gd",
+      "sha256": "534700de932f606f2c4727148eb2c96babbd6c7750674afae227bb4f28e45db9"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.gd",
+      "sha256": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/mary.tscn",
+      "sha256": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/strings.tres",
+      "sha256": "6b916223d26468d994701aff8728cb91610e0d0b8e3d9b115c95adff7fd83ea8"
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/narrative_smoke.gd",
+      "sha256": "7cf9c9dddd5c7e26cd9a45fa0b005e8b4273f3cb9684850454585512b18ca9dc"
+    }
+  ],
+  "render": {
+    "frames": 6220,
+    "behaviourChecks": 66,
+    "directoryChecks": 1,
+    "pngChecks": 518,
+    "totalChecks": 585,
+    "failures": 0,
+    "moviePath": ".local/c1a-input.avi",
+    "movieBytes": 341347482,
+    "movieSha256": "ba3b2aa4ce69afdc7e4293c3260fd624f9f90240938b40cfca20bf7400e435a4",
+    "fps": 60,
+    "resolution": "1280x800",
+    "realTimePerformanceClaim": false,
+    "sameEightRuntimeFilesAsSmokeAndFailedCapture": true,
+    "inspectedFrames": [
+      {
+        "path": ".local/c1a-captures/frame_00000.png",
+        "sha256": "4e12fe5946553d543b5451f000417c47f31c138661ddb809e17ecb6dc3eaa360"
+      },
+      {
+        "path": ".local/c1a-captures/frame_00439.png",
+        "sha256": "791943e8728a56670a542aed82bc81ac75d24c7b6afe5116a5b268b0ad6652c3"
+      },
+      {
+        "path": ".local/c1a-captures/frame_00465.png",
+        "sha256": "75e0ac2613aec7e2be83f39a183b7311f8731482ded164e0138ca3b5e2ecb31c"
+      },
+      {
+        "path": ".local/c1a-captures/frame_00507.png",
+        "sha256": "b06ba12857581e9fbdf5e98bf4182d867994e75fb4d49b65bf9a6c654fb4e680"
+      }
+    ],
+    "inspectionConclusion": "总控仅核指定初态、入口自动透明、离开后墙恢复、双侧姿态可见，不作L5裁决"
+  },
+  "failedCapture": {
+    "id": "capture-1791731443046",
+    "outcome": "FAIL",
+    "exitCode": 3221225477,
+    "errorMarkers": true,
+    "reason": "Godot mem null / alloc_exact内存分配错误及signal11崩溃",
+    "partialMoviePath": ".local/c1a-walls-failed-render/c1a-input.avi",
+    "partialMovieBytes": 11644928,
+    "partialMovieSha256": "9da1ce9961c7908933f1cec080bdc408ec64ff33f6da1c6d486e45430c96732a",
+    "notAcceptance": true
+  },
+  "resourceRecovery": {
+    "ownerSource": "../../sources/2026-10-11-c1a-resource-recovery.md",
+    "authorization": "允许退出并重启 OneDrive",
+    "before": {
+      "observedAt": "2026-10-11T15:15:36.0074879+00:00",
+      "freePhysicalKiB": 340648,
+      "totalPhysicalKiB": 16013876,
+      "freeVirtualKiB": 1297484,
+      "totalVirtualKiB": 64248372
+    },
+    "after": {
+      "at": "2026-10-11T15:21:24.6281899+00:00",
+      "freePhysicalKiB": 1810616,
+      "freeVirtualKiB": 26540388
+    },
+    "operation": {
+      "at": "2026-10-11T15:20:38.0541549+00:00",
+      "oldPid": 15816,
+      "oldPidAlive": false,
+      "shutdownHelperPid": 55540,
+      "helperAlive": false,
+      "restartPid": 10592,
+      "restartStarted": true,
+      "authorized": true,
+      "scope": "仅OneDrive退出并重启，未删除文件或改配置"
+    },
+    "restartObservation": {
+      "pid": 10592,
+      "privateBytes": 162074624,
+      "startTime": "2026-10-11T23:20:38.0393096+08:00",
+      "sameExecutable": true
+    },
+    "sameCodeRetested": true,
+    "interpretation": "释放资源后同字节实现渲染通过，支持资源压力解释；不证明任意环境或长时运行无代码/驱动问题"
+  },
+  "previousLowWallMovie": {
+    "path": ".local/c1a-chg006-render/c1a-input.avi",
+    "sha256": "1ebc77597897b51f5315385fd439007093e8ff094a7a8da148e26e7ea9a556e0"
+  },
+  "independentReview": "independent-review.json",
+  "ownerAccepted": false,
+  "c1aStatus": "VERIFYING",
+  "limits": [
+    "有限采样/八墙未逐项走遍，快速过渡/全身/母亲全动作未知",
+    "alpha诊断不等于画面可读；透明排序/叠层/阴影/淡化速度须L5",
+    "直退同侧母亲实体相遇仍保留",
+    "离线渲染不证明实时性能/OS焦点/窗口变化",
+    "不批准C1-B/Visual或最终3D"
+  ]
+}

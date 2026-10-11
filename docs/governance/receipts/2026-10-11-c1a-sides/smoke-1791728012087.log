@@ -82,4 +82,3 @@ PASS: 左侧同一合理触碰也需实际手触壳，不强制右侧
 PASS: 左侧触碰后仍可自由离开且不残留按键
 PASS: 双侧触碰后的重置清状态
 RESULT: 61 checks / 0 failures
-

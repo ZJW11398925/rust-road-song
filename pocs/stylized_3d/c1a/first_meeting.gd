@@ -8,6 +8,7 @@ const FIRST_CAMERA: Vector3 = Vector3(0.0, 4.5, 13.0)
 const RELATION_OFFSET: Vector3 = Vector3(0.0, 6.3, 7.0)
 const FIRST_TARGET: Vector3 = Vector3(0.0, 1.0, 0.0)
 const MOTHER_PATH: Array[Vector3] = [Vector3(0.75, 0.0, 2.4), Vector3(-2.35, 0.0, 2.4), Vector3(-2.35, 0.0, -0.68)]
+const WALL_MESH_PATHS: Array[String] = ["LeftWall/Mesh", "RightWall/Mesh", "BackWall/Mesh", "EntryLeft/Mesh", "EntryRight/Mesh", "VestibuleLeft/Mesh", "VestibuleRight/Mesh", "VestibuleBack/Mesh"]
 @onready var player: HumanScript = $Player
 @onready var mother: HumanScript = $Mother
 @onready var door: StaticBody3D = $Door
@@ -32,6 +33,7 @@ var narrative_clock: float = 0.0
 var feedback_key: String = ""
 var feedback_clock: float = 0.0
 var camera_focus: Vector3 = FIRST_TARGET
+var wall_meshes: Array[MeshInstance3D] = []
 
 func _ready() -> void:
 	var copy: Translation = load("res://strings.tres") as Translation
@@ -39,6 +41,12 @@ func _ready() -> void:
 	TranslationServer.set_locale("zh_CN")
 	$HUD/Title.text = tr("TITLE")
 	$HUD/Help.text = tr("HELP")
+	for node_path: String in WALL_MESH_PATHS:
+		var wall: MeshInstance3D = get_node(node_path) as MeshInstance3D
+		var material: StandardMaterial3D = wall.material_override.duplicate() as StandardMaterial3D
+		material.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+		wall.material_override = material
+		wall_meshes.append(wall)
 	_install_inputs()
 	reset_experiment()
 
@@ -96,7 +104,26 @@ func _physics_process(delta: float) -> void:
 			first_reveal = true
 		_update_mother(delta)
 	_update_camera(delta)
+	_update_wall_visibility(delta)
 	_update_text(delta)
+
+func _update_wall_visibility(delta: float) -> void:
+	# The current stage owns its wall appearance; solid geometry stays in the scene.
+	var mother_hand: Marker3D = mother.get_node("Visual/LeftUpperArm/LeftLowerArm/Hand") as Marker3D
+	var targets: Array[Vector3] = [player.global_position + Vector3(0.0, 0.45, 0.0), player.global_position + Vector3(0.0, 0.9, 0.0), player.global_position + Vector3(0.0, 1.65, 0.0), mother.global_position + Vector3(0.0, 0.9, 0.0), mother_hand.global_position, $Mary/Body.global_position]
+	var response: float = 1.0 - exp(-delta * 10.0)
+	for wall: MeshInstance3D in wall_meshes:
+		var blocking: bool = false
+		if first_reveal:
+			var origin: Vector3 = wall.to_local(camera.global_position)
+			for target: Vector3 in targets:
+				if wall.mesh.get_aabb().intersects_segment(origin, wall.to_local(target)) != null:
+					blocking = true
+					break
+		var material: StandardMaterial3D = wall.material_override as StandardMaterial3D
+		var color: Color = material.albedo_color
+		color.a = lerpf(color.a, 0.12 if blocking else 1.0, response)
+		material.albedo_color = color
 
 func _update_camera(delta: float) -> void:
 	# Frame the existing relationship, not which side of a boundary the player crossed.
@@ -223,6 +250,11 @@ func show_feedback(copy_key: String) -> void:
 
 func reset_experiment() -> void:
 	held.clear()
+	for wall: MeshInstance3D in wall_meshes:
+		var material: StandardMaterial3D = wall.material_override as StandardMaterial3D
+		var color: Color = material.albedo_color
+		color.a = 1.0
+		material.albedo_color = color
 	player.position = PLAYER_START
 	mother.position = MOTHER_START
 	player.reset_pose()

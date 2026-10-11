@@ -1,0 +1,13 @@
+{
+  "observedAt": "2026-10-11T15:32:12.1840654+00:00",
+  "playReceipt": "play-1791732504252",
+  "pid": 53204,
+  "executableVerified": true,
+  "projectArgumentsVerified": true,
+  "startTime": "2026-10-11T23:28:26.2832576+08:00",
+  "responding": true,
+  "mainWindowHandle": 459956,
+  "mainWindowTitle": "C1-A First Meeting (DEBUG)",
+  "oldLowWallPidAlive": false,
+  "outcome": "WINDOW_OBSERVED_NOT_MANUAL_ACCEPTANCE"
+}

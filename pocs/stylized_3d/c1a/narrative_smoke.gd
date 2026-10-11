@@ -99,8 +99,10 @@ func view_clear(target: Vector3, label: String) -> bool:
 	# Render geometry, including the upper body without its own physics collider.
 	for node_path: String in ["Mary/Body", "Mary/UpperBody", "EntryLeft/Mesh", "EntryRight/Mesh", "LeftWall/Mesh", "RightWall/Mesh", "VestibuleLeft/Mesh", "VestibuleRight/Mesh", "Door/Mesh"]:
 		var mesh: MeshInstance3D = scene.get_node(node_path) as MeshInstance3D
+		var material: StandardMaterial3D = mesh.material_override as StandardMaterial3D
 		var intersection: Variant = mesh.mesh.get_aabb().intersects_segment(mesh.to_local(camera.global_position), mesh.to_local(target))
-		if intersection != null:
+		var translucent_wall: bool = not node_path.begins_with("Mary/") and node_path != "Door/Mesh" and material != null and material.transparency == BaseMaterial3D.TRANSPARENCY_ALPHA and material.albedo_color.a <= 0.2
+		if intersection != null and not translucent_wall:
 			clear = false
 			print("VIEW_BLOCKED: ", label, " by=", node_path, " camera=", camera.global_position, " target=", target)
 	var size: Vector2 = camera.get_viewport().get_visible_rect().size
@@ -311,14 +313,21 @@ func _run() -> void:
 	await walk(KEY_S, 20)
 	await walk_to_x(5.1)
 	await frames(120)
+	var right_wall: MeshInstance3D = scene.get_node("EntryRight/Mesh") as MeshInstance3D
+	var right_material: StandardMaterial3D = right_wall.material_override as StandardMaterial3D
+	var left_material: StandardMaterial3D = scene.get_node("EntryLeft/Mesh").material_override as StandardMaterial3D
+	check(right_wall.mesh.get_aabb().size.y == 3.0 and scene.get_node("EntryRight/MeshCollision").shape.size.y == 3.0 and right_wall.position.y == 1.5, "入口墙恢复原3米高度且显示/碰撞匹配，不靠变矮")
+	check(right_material.transparency == BaseMaterial3D.TRANSPARENCY_ALPHA and right_material.albedo_color.a <= 0.2, "遮挡玩家的入口高墙自动透明化")
+	check(left_material != right_material and left_material.albedo_color.a > 0.95, "未遮挡的入口墙独立保持实心")
 	check(view_clear(player.global_position + Vector3(0.0, 0.9, 0.0), "right entry wall"), "入口墙旁横向走动时玩家躯干仍可见")
 	await walk(KEY_S, 45)
-	check(player.position.z < 3.7, "入口低墙的可见几何与碰撞匹配，不能穿墙离场")
+	check(player.position.z < 3.7, "入口墙透明后实体碰撞仍阻止穿墙离场")
 	await walk(KEY_W, 25)
 	await walk_to_x(3.1)
 	await walk_to_x(2.28)
 	await walk(KEY_W, 50)
 	await frames(120)
+	check(right_material.albedo_color.a > 0.95, "视线离开前景高墙后自动恢复实心")
 	check(view_clear(player.global_position + Vector3(0.0, 0.9, 0.0), "right body"), "右侧靠车玩家躯干不被车体或墙遮挡")
 	await tap(KEY_E)
 	await frames(25)
@@ -342,5 +351,6 @@ func _run() -> void:
 	check(player.position.z - left_departure.z > 2.5 and left_departure.x - player.position.x > 0.8 and not scene.held.has("left") and not scene.held.has("back") and scene.player_touched, "左侧触碰后绕过母亲实际自由离开且不残留按键")
 	await reset()
 	check(not scene.player_touched and not scene.touch_contacted, "双侧触碰后的重置清状态")
+	check(right_material.albedo_color.a > 0.95 and left_material.albedo_color.a > 0.95, "R恢复门前实心墙，不残留透明")
 	print("RESULT: ", checks, " checks / ", failures, " failures")
 	quit(0 if failures == 0 else 1)

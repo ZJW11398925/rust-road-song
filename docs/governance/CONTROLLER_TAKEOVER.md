@@ -1,6 +1,6 @@
 # 新总控接续入口 / 2026-10-11
 
-依据：[Owner 总控接续要求](sources/2026-10-11-owner-controller-handoff.md)。本文件只导航，不能替代设计正文、Owner 原话或 DMCP 实时状态。当前主线 main；最新局部修订属于 RB-C1A-001 / CHG-20261011-006。开始前核最新 Git，而不是沿交接中的历史哈希盲续。
+依据：[Owner 总控接续要求](sources/2026-10-11-owner-controller-handoff.md)。本文件只导航，不能替代设计正文、Owner 原话或 DMCP 实时状态。当前主线 main；最新局部修订属于 RB-C1A-001 / CHG-20261011-007。开始前核最新 Git，而不是沿交接中的历史哈希盲续。
 
 ## 第一轮：理解设计，然后才布置任务
 
@@ -14,7 +14,7 @@
 4. docs/05_VISUAL_DIRECTION.md、06_VISUAL_POC_PLAN.md、07_LEGACY_REUSE_POLICY.md、DECISION_LOG.md。
 5. 本目录 binding.json、CURRENT.md、WORKFLOW.md、HANDOFF.md、TOOLING.md。
 6. sources/2026-10-10-owner-reset.md、2026-10-11-owner-discovery-review.md、2026-10-11-owner-c0-execution.md、2026-10-11-owner-c0-close-c1a.md、2026-10-11-c0-first-playtest.md、2026-10-11-c1a-first-playtest.md：区分评审建议、Owner采用范围、真实试玩与未验证推论。其他来源按正文链接补读。
-7. 完整 Discovery/C0/C1-A 报告、当前工单、CHG-004/005/006和各轮证据，并读[第二轮真实试玩](sources/2026-10-11-c1a-second-playtest.md)。C0与Discovery有冻结边界；不要回头把旧实现/方案当现行要求。
+7. 完整 Discovery/C0/C1-A 报告、当前工单、CHG-004/005/006/007和各轮证据；读[第二轮真实试玩](sources/2026-10-11-c1a-second-playtest.md)、[自动透明要求](sources/2026-10-11-c1a-wall-transparency.md)与[资源恢复授权](sources/2026-10-11-c1a-resource-recovery.md)。C0与Discovery有冻结边界；不要回头把旧实现/方案当现行要求。
 8. 按下面入口读取完整正式对象、当前工具schema、runtime与真实回执，再检查匹配的当前执行依据。原始 DMCP 正文不能仅依赖可能截断的 design_get/status 输出。
 
 读完先给 Owner 一个有来源的简短理解核对：为什么重启；两项产品承诺怎样共存；家庭/玛丽/战争哪些已定与未定；可操作叙事为何不能锁顺序；当前实验能证明什么；当前授权到哪里；最新反例与下一项最小未知是什么。**这项核对先于执行任务分派**；不是要求新 Owner 再批准已有决定。
@@ -39,7 +39,8 @@ Garage POC不证明爱上玛丽/玛丽成为家/完整旅行欲望；完整情�
 - 首轮Owner真实复述：“感觉在抚摸一个老朋友”；同时指出区域自动切镜价值低、缺母亲强调且怪。这个证据支持局部熟悉感，不是C1-A整体接受。
 - CHG-005已删除player区域往返切镜，连续构图跟随母亲/玛丽同框并保留玩家空间；未改动作/台词/输入。真实RED50/3，最终smoke52/0，无ERROR；渲染52行为+1目录+388PNG=441/0、4661帧。探针混用无窗口表面64×64/可见视口1280×800的问题已修正，录像与最终探针字节差异单列。截图/射线不等于镜头舒服。
 - 上述52/441归CHG-005历史。随后接续只读复审完成，但[第二轮真实试玩](sources/2026-10-11-c1a-second-playtest.md)指出右侧视角、强制右侧和入口墙遮挡。CHG-006复现RED60/4后最小修正连续侧向镜头、双侧真实触壳与匹配碰撞的低前景墙；最终61/0、渲染580/0，独立审查提出离开证据缺陷并复核解决，见[实际证据](receipts/2026-10-11-c1a-sides/verification.json)。直退与同侧母亲实体相遇61/1及早期429保留；绕行可离开不能证明所有路线畅通。
-- 最新候选**待新L5**；C1-A仍VERIFYING，CHG-004/005/006仍IN_PROGRESS。有限躯干/模型检查不证明全身/过渡/任意站位无遮挡，母亲动作强调和镜头舒适、窗口/OS焦点/实时性能未知。不能继承旧APPROVE或自动进入C1-B。
+- 随后Owner明确要求墙自动透明、否定CHG-006低墙；RD-010 / CHG-007恢复原3米墙，仅对已有墙独立材质按当前遮挡自动淡化/恢复，实体边界保留。有效RED66/3→66/0、实际渲染585/0；首个capture内存分配崩溃保留FAIL，经Owner授权重启OneDrive释放资源后同字节复跑通过，见[最新证据](receipts/2026-10-11-c1a-walls/verification.json)。独立静态复审完成，无可行动缺陷，原429保留。
+- 最新自动透明候选**待新L5**；C1-A仍VERIFYING，CHG-004/005/006/007仍IN_PROGRESS。有限采样不证明八墙所有路径/全身/快速过渡/排序阴影叠层，母亲动作强调/镜头舒适、窗口/OS焦点/实时性能未知。资源恢复不证明永无代码/驱动问题。不能继承旧APPROVE或自动进入C1-B。
 - C1-B、A/B实施、Visual及最终3D选择都未授权。下一项工作只应完成当前镜头必要复审/真实反馈；不要因一句“老朋友”自行进入异常/启动。
 
 ## DMCP与首轮只读动作
@@ -63,7 +64,7 @@ node scripts/check_context.mjs
 
 上游86a8fc1已本地提交未推送，Git之外canonical及.local依赖不随public克隆携带。当前同机已验证可读；若迁机须按TOOLING迁完整身份/descriptor/状态/审计/runtime/锁定工具，不能只靠克隆重新造状态。新总控若不在canonical仓库根，先停实现并纠正项目上下文，绝不能沿Legacy提示继续旧路线。
 
-当前public工程：pocs/stylized_3d/c1a；最新运行回执在 receipts/2026-10-11-c1a-sides/verification.json及c1a-admission；c1a-camera为CHG-005历史。原始日志/各版录像保存在.local，它们不是L5。当前候选录像.local/c1a-input.avi；最新交互启动若有见sides/play-window.json，不假设进程仍在或窗口已人工接受。
+当前public工程：pocs/stylized_3d/c1a；最新运行回执在 receipts/2026-10-11-c1a-walls/verification.json及c1a-admission；sides/camera为CHG-006/005历史。原始日志/各版录像含失败保存在.local，它们不是L5。当前候选录像.local/c1a-input.avi；最新交互启动若有见walls/play-window.json，不假设进程仍在或窗口已人工接受。
 
 ## 分派与收尾纪律
 

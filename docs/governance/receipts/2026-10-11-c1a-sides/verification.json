@@ -29,8 +29,9 @@
       "originalLogSha256": "504d7f5a1189c40a21a7ff52515399ab08cb80ec294ccdc09e620c0d17c728bd",
       "resultLine": "RESULT: 59 checks / 3 failures",
       "publicExcerptPath": "smoke-1791727630561.log",
-      "publicExcerptSha256": "05ed0d983ef9a21876093ded782848b2fc0bfc7305c7c1b990dcbd5642feb631",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "8490fcb3397d32cb6f15d0cb26b79d521e1ffe66c904a643ca86259f8a0fdbff",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     },
     {
       "id": "smoke-1791727729167",
@@ -41,8 +42,9 @@
       "originalLogSha256": "4c8ae7cc4bda1afa502c8fcd4b87ebaee52f4568ba8f4610fb507cf56448fcf5",
       "resultLine": "RESULT: 60 checks / 4 failures",
       "publicExcerptPath": "smoke-1791727729167.log",
-      "publicExcerptSha256": "061f45103fad8e37df894e554eb4f882f46237ba0763722ee7a8694f6225251d",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "f98ba415cc8db78c709c70dcb298797acdd77ccab8d07a68432921899b2f7faf",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     },
     {
       "id": "smoke-1791727795930",
@@ -53,8 +55,9 @@
       "originalLogSha256": "2b3134bb0c5e42952fe3e03088c81cc45b9e8efff93556c1851e7af800ad825a",
       "resultLine": "RESULT: 60 checks / 2 failures",
       "publicExcerptPath": "smoke-1791727795930.log",
-      "publicExcerptSha256": "d4665f6d7346ea2657c02684fd1c435d112e3f0a59414fcae381d01a4c687e02",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "aba157fbb3ece281bbb4374f525d16b476ff027aaf00ac1dfe63c2b6eab51072",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     },
     {
       "id": "smoke-1791727889810",
@@ -65,8 +68,9 @@
       "originalLogSha256": "909198838eb8b5d377b9abe5653041b71dbcb61805095892c4522b9e5d21c247",
       "resultLine": "RESULT: 60 checks / 1 failures",
       "publicExcerptPath": "smoke-1791727889810.log",
-      "publicExcerptSha256": "4ef2c12b85d0786d2b32966710d2c465f1cd8a3865431ff64f63886d4007da06",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "6fe8fd2961f0237bd060545a38a7133b145876278a753385d547d71694a95621",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     },
     {
       "id": "smoke-1791727956598",
@@ -77,8 +81,9 @@
       "originalLogSha256": "4a7304817ae8ada5ea73490d751e4814ffea7a2678206f1ee184ad99677bb9f0",
       "resultLine": "RESULT: 60 checks / 1 failures",
       "publicExcerptPath": "smoke-1791727956598.log",
-      "publicExcerptSha256": "b0d62e31a883577c03a46e837150b0b05f2e09680ff61435d05ecdb76a6a89a7",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "45280d2b3166a7493ed9de542e046e053da29d2ee87bc5d9b41311f241024991",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     },
     {
       "id": "smoke-1791728012087",
@@ -89,8 +94,9 @@
       "originalLogSha256": "1b9620d70aafa832aef15d759ebd84d8c3b6e8e72db26f3b18aab8f06dc73ade",
       "resultLine": "RESULT: 61 checks / 0 failures",
       "publicExcerptPath": "smoke-1791728012087.log",
-      "publicExcerptSha256": "d83c02b3246f29b51feffd12b94db0e6da1a7aa51d41c6312f004a7445a538ad",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "3674df18f946c98b99ed63cf5e5cac84b2ff9f1c4d19d037bc834986b5a75651",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     },
     {
       "id": "capture-1791728157359",
@@ -101,8 +107,9 @@
       "originalLogSha256": "7546783e21ccae13b42e12031783ce0e76b142eda076e5211b2e5cf0e8b2de94",
       "resultLine": "RESULT: 578 checks / 0 failures",
       "publicExcerptPath": "capture-1791728157359.log",
-      "publicExcerptSha256": "9cec6bb25af1bde48f0fe111062e731213265eecd98773fe86f722cfe9ae2bad",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "1fc8a62e77ff86b24976e300f702d9d58350bfdf23dc495f993efa6d77bfe401",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     },
     {
       "id": "smoke-1791728417548",
@@ -113,8 +120,9 @@
       "originalLogSha256": "d6f3f61b26ed22e2f542283a3db86f2b56bc602ab3dd9340828c49e35d2e06a0",
       "resultLine": "RESULT: 61 checks / 1 failures",
       "publicExcerptPath": "smoke-1791728417548.log",
-      "publicExcerptSha256": "94e45e97d852d05c7881872569568807fcd8e79135ca658f1b7c9c9d67d0ab2b",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "c54bf8ea8980a44d7700ff761b77bd0c22c635e719090647d150d3574a11a1bb",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     },
     {
       "id": "smoke-1791728474748",
@@ -125,8 +133,9 @@
       "originalLogSha256": "3eb349538fdee91c1dbf34e57d1a136523e2c1b6dce5dc462f3ea41584b06e7e",
       "resultLine": "RESULT: 61 checks / 0 failures",
       "publicExcerptPath": "smoke-1791728474748.log",
-      "publicExcerptSha256": "9fe93a628cb38216724441a548ac3caddaae80fd26c20e4174ea1b5fba35f7d7",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "fffc3343d1225f454ee78d5daa0dcfb4604505ddfc62ec7b10ac180ad37682c1",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     },
     {
       "id": "capture-1791728513314",
@@ -137,8 +146,9 @@
       "originalLogSha256": "407ca75fdfda0953b7a7afadd500e59d957aca9684cd753412c5d89b5a0afc9d",
       "resultLine": "RESULT: 580 checks / 0 failures",
       "publicExcerptPath": "capture-1791728513314.log",
-      "publicExcerptSha256": "029153bc7c60d5700a01019fcb82e7be242da70c36397d7832292bd82dda3b53",
-      "publicExcerptOmitsRepeatedPngPassLines": true
+      "publicExcerptSha256": "56eef405f5564e260b8774caa38654c6db627996e5e50f3588abdb50d4b69a9f",
+      "publicExcerptOmitsRepeatedPngPassLines": true,
+      "publicExcerptNormalizesTrailingWhitespace": true
     }
   ],
   "runtimeFiles": [
@@ -182,7 +192,8 @@
     "59/3第一条RED未包括入口墙路线；60/4补齐实体入口遮挡",
     "60/2和两次60/1是中间候选车体/入口/HUD问题，不算通过",
     "首个61/0离开断言仅松键，独立复审发现证据不足；加强直退位移产生61/1，与同侧母亲实体相遇；改为真实A/S绕行，最终61/0，不改碰撞",
-    "收尾冻结探针补核真实docs/discovery路径及文件存在；不使用不存在路径的空git diff作证明"
+    "收尾冻结探针补核真实docs/discovery路径及文件存在；不使用不存在路径的空git diff作证明",
+    "暂存检查发现公开节选多余末尾空行，先前组合命令后续核验覆盖了检查退出状态；只规范公开节选并更新摘要，原始日志不改，单独重跑检查"
   ],
   "limits": [
     "不能用有限躯干/头手射线或投影证明任意站位/过渡无遮挡",
@@ -280,5 +291,11 @@
     "gitDiffEmpty": true
   },
   "contextCheck": "PASS",
-  "diffWhitespaceCheck": "PASS"
+  "diffWhitespaceCheck": "PASS independent rerun after excerpt normalization",
+  "supersededWallCandidate": {
+    "source": "../../sources/2026-10-11-c1a-wall-transparency.md",
+    "ownerRejectedLowWalls": true,
+    "change": "CHG-20261011-007",
+    "newL5Accepted": false
+  }
 }

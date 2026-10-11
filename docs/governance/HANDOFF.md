@@ -1,23 +1,23 @@
 # 新总控交接 / 2026-10-11
 
-本轮已完成Owner要求的完整设计/原始决定/真实试玩/实时正式对象阅读，并先汇报理解再分派；[原检查点](receipts/2026-10-11-controller-resumption/checkpoint.md)保存来源。后续总控仍须按[CONTROLLER_TAKEOVER](CONTROLLER_TAKEOVER.md)重新核设计与实时依据，不能凭本摘要实现。
+必须按[CONTROLLER_TAKEOVER](CONTROLLER_TAKEOVER.md)读全设计/真实来源/正式对象，不凭本摘要开工。本轮已完整理解后先汇报边界，再分派；[原接续检查点](receipts/2026-10-11-controller-resumption/checkpoint.md)保留。
 
-产品并存玩家自己的旅程与少量人物/物件逐渐改变意义；玛丽先是旧家庭车，不是神器。世界/家庭基本处境已定，父亲结局/战争真相/异常本质/正式3D未定。合理操作不能由作者节拍硬锁。当前人物戏不证明完整家庭情感或离家后自由旅行。
+产品两项承诺是玩家自己的旅程与少量人物/物件逐渐改变意义；玛丽先是旧家庭车。世界/家庭基本处境已定，父亲结局/战争真相/异常本质/最终3D未定。合理操作不能由节拍硬锁，当前首见戏不证明完整家庭情感或自由旅行。
 
-RD-009只接受C0探索阶段并批准C1-A；C0六文件冻结、四项缺失主观评价保留。C1-A另建最小舞台，首见、母亲一个动作与停顿、自由接近触碰结束。无异常/发动/驾驶、正式资产、C1-B/Visual、Legacy复用或新系统。
+C0按RD-009接受探索阶段、六文件冻结/四项主观缺失保留。只实施另建C1-A小舞台：首见、母亲一个动作/停顿、自由接近触碰结束。无异常/发动/驾驶、正式资产、C1-B/Visual或Legacy/新系统。
 
-最新真实反例：[第二轮Owner反馈](sources/2026-10-11-c1a-second-playtest.md)称无法兼顾右侧、不理解非去右侧、入口墙挡视野。此前CHG-005接续只读复审已完成、52/0重新运行，但不能否定真实反馈；[接续验证](receipts/2026-10-11-c1a-resume-verification/verification.json)保留普通沙箱无法观察提权PID导致重复启动的误判，重复窗口核身份后正常关闭，不声称修复游戏崩溃。
+最新Owner指令：[墙应自动透明而非变矮](sources/2026-10-11-c1a-wall-transparency.md)，替代CHG-006低墙；RD-010本地登记真实来源，非新native DEC。前一[真实反例](sources/2026-10-11-c1a-second-playtest.md)为右侧视角、强制右侧/入口遮挡。当前CHG-007恢复原3米墙与匹配碰撞，对八面现有墙独立材质按相机至人物/车点的AABB视线局部平滑淡化/恢复，首见前实心、R复位。双侧仍同一实际手触壳，世界WASD/移动保留，无管理器或资产。
 
-CHG-006仅修当前反例：提高并连续侧向调整局部相机，共享实际人物/车焦点；左右侧同一伸手动作仍需真实触壳；FAR文字去掉右侧；两入口前景墙Mesh/Shape同步0.8米。无区域切镜、输入重映射、碰撞穿透、手势锁位或新增管理器。建筑/构图参数只是灰盒候选。
+[报告](../pocs/RB-C1A-001_REPORT.md)、[CHG007](../changes/CHG-20261011-007.md)、[最新证据](receipts/2026-10-11-c1a-walls/verification.json)：RED66/3→66/0；重跑实际渲染585/0（66行为+目录+518PNG）、6220帧。最终smoke与两次capture八运行文件相同。首个capture mem null / alloc_exact及signal11崩溃保留FAIL；本机可用物理约0.3GB、OneDrive私有约24GB，经[Owner授权重启](sources/2026-10-11-c1a-resource-recovery.md)并核新实例后同字节重跑通过，支持资源压力解释，不证明代码/驱动永远无责。原/失败/低墙各录像与日志保留，不美化。
 
-[报告](../pocs/RB-C1A-001_REPORT.md)、[CHG006](../changes/CHG-20261011-006.md)、[实际证据](receipts/2026-10-11-c1a-sides/verification.json)：RED60/4→最终61/0；渲染580/0（61行为+目录+518PNG），6220帧，无ERROR；最终smoke/capture八个运行文件字节相同。总控查看指定两侧/入口真实帧，仅确认这些采样可见。[独立审查](receipts/2026-10-11-c1a-sides/independent-review.json)无产品阻断，一项离开断言缺陷已复核解决；早期429失败和加强直退61/1保留。
+[独立静态审查](receipts/2026-10-11-c1a-walls/independent-review.json)完成，未发现可行动缺陷；首个429失败不删。审查未运行，不代表L5。总控看指定初态、墙淡化/恢复、双侧姿态，只确认这些画面。尚未逐项走全部八墙，点采样不证明全身/母亲全动作/快速过渡，透明排序/阴影叠层/残余墙色、动作强调与舒适、OS焦点/窗口/实时性能仍未知。直退与同侧母亲实体相遇保留，A/S绕行可离开不证明任意路线畅通。
 
-同侧母亲可实体挡住直线S退路，A22避让再S55实际横移1.1米、z移2.75米；绕行可行不证明任意路线畅通。有限模型AABB/躯干点检查不保证全身、人物互遮、车轮侧板/过渡无遮挡。新的母亲动作读法与镜头舒适、OS焦点/窗口/实时性能仍未知。**C1-A VERIFYING，CHG-004/005/006 IN_PROGRESS；不得DONE或进入C1-B。**
+**C1-A VERIFYING，CHG-004/005/006/007 IN_PROGRESS**；低墙被否定，自动透明版新的L5未接受，不DONE/不进入C1-B。历史44/318、52/441、61/580及各版独立复审不能继承。
 
-正式状态：末轮完整read与入口逐项相同，schema/design5/17、12canonical/0Finding/3runtime；binding的真实workspace、DEC@2/PLAN@1/TASK@1不变。现有实际C1-A PROTOTYPE READY四facts/requirements、十路径及固定Godot参数逐次消费者共享native lease重核，无重投/正式写入/上游修改。桌面DMCP facade固定其他项目不可借用，CLI仅read/tools/get；原生TASK无DONE接口，不自授ORG/改policy/手改.design。
+正式末读与前轮完整对象/runtime相同：schema/design5/17、12canonical/0Finding/3runtime，binding的workspace/DEC@2/PLAN@1/TASK@1与既有实际C1-A READY四facts/requirements、十路径/固定Godot参数逐次消费者共享native lease重核。无正式写入/准入重投/scope或policy override/上游改动。桌面DMCP facade固定其他项目不能借用，CLI只读；原生TASK无DONE，不自授ORG或手改.design。
 
-工程pocs/stylized_3d/c1a：WASD世界方向，E开门/从左右车侧尝试触碰，R重置，Esc退出。最新录像.local/c1a-input.avi；首版、CHG005、CHG006审查修正前录像分别保存在.local/c1a-camera-original-render、c1a-chg005-render、c1a-chg006-before-review-render。新交互启动及观察见本轮play-window.json；启动回执不保证后来存活，更不等于L5接受。旧CHG005/PID63388已核身份正常关闭。
+工程pocs/stylized_3d/c1a：WASD世界移动、E开门/左右车侧尝试触碰，R重置、Esc退出。新窗口与观察见walls/play-window.json，启动不保证之后存活或接受。旧低墙PID35624核身份关闭。最新录像.local/c1a-input.avi，失败半录像.local/c1a-walls-failed-render；低墙原录像.local/c1a-chg006-render，其余更旧归档见报告。
 
-main；Owner已授权验证后主动提交/推送。实现真实哈希与发布核验补入CHG006，最新元数据从Git历史定位，不假设工作树干净。Git外canonical/descriptor/.local消费者与锁定engine/toolchain仍是同机依赖；上游86a8fc1本地提交未推送，迁机依TOOLING完整核身份迁移，不重造workspace。
+main；Owner持续授权验证后主动提交/推送，真实哈希与完成部分记录到CHG007，最终元数据由Git历史定位。Git外canonical/.local消费者/descriptor与锁定engine/toolchain是同机依赖，上游86a8fc1本地提交未推送，迁机依TOOLING完整核身份，不重造workspace。
 
-第一项可执行工作：完整理解/实时依据核对后，记录CHG006新真实试玩，必要时仅修本任务。不能把前版“老朋友”或当前61/580作为新阶段授权。
+第一项可执行工作：完整设计与实时依据核对后，记录自动透明版实际试玩并仅修当前任务；不能因“老朋友”、66/585或重启成功扩大阶段。

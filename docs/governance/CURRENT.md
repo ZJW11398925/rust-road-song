@@ -1,17 +1,15 @@
 # 当前状态 / 2026-10-11
 
-本文件只导航；总控必须按[完整设计入口](CONTROLLER_TAKEOVER.md)读原文与实时DMCP，不能凭交接开工。本轮已先完整理解并汇报边界，再做C1-A接续验证，见[原接续检查点](receipts/2026-10-11-controller-resumption/checkpoint.md)。
+本文件只导航；新总控须按[完整设计入口](CONTROLLER_TAKEOVER.md)读设计/Owner原话/真实试玩及实时DMCP，不能凭摘要开工。本轮已先完整理解并汇报，再做同任务修正。
 
-当前仅 RB-C1A-001 First Meeting。C0已按RD-009阶段接受/六文件冻结，四项缺失主观评价保留；不做异常/启动/驾驶/C1-B/Visual或Legacy。
+唯一实施范围RB-C1A-001 First Meeting。C0按RD-009阶段接受/六文件冻结，四项主观缺失保留；C1-B/Visual/异常/启动/驾驶/Legacy未授权。
 
-[第二轮Owner原话](sources/2026-10-11-c1a-second-playtest.md)否定了CHG-005对右侧与入口视野的支持，也无法理解强制右侧。CHG-006已作局部修正：连续镜头随玩家所在侧、共享实际空间，双侧沿同一实际手触壳动作；前景入口墙降低且碰撞同步。不增剧情、资产或通用系统。
+[第二轮反馈](sources/2026-10-11-c1a-second-playtest.md)指出右侧视角、强制右侧和入口墙挡视线。CHG-006修正双侧触壳/连续构图，但低墙随后被[Owner明确否定](sources/2026-10-11-c1a-wall-transparency.md)。当前RD-010 / CHG-007恢复原3米入口墙，已有墙各独立材质，初见显露后按遮挡自动淡化、无遮挡恢复，实体边界保留；无通用系统/新资产。
 
-[本轮证据](receipts/2026-10-11-c1a-sides/verification.json)：有效RED60/4→最终正式输入61/0；渲染61行为+目录+518PNG=580/0、6220帧，无ERROR。八个运行文件与最终smoke/capture字节一致。[独立审查](receipts/2026-10-11-c1a-sides/independent-review.json)未发现产品阻断，提出一项离开证据缺陷并复核其修正；原直退与母亲实体相遇61/1保留，真实A/S绕行能离开。早期429失败不删除、不继承为审查通过。
+[最新证据](receipts/2026-10-11-c1a-walls/verification.json)：RED66/3→66/0；实际渲染585/0（66行为+目录+518PNG），6220帧，八运行文件与smoke/首个崩溃capture/重跑一致。[独立静态审查](receipts/2026-10-11-c1a-walls/independent-review.json)完成，无可行动缺陷，早期429保留。首个渲染发生内存分配错误/崩溃，记FAIL不删除；[Owner授权重启OneDrive](sources/2026-10-11-c1a-resource-recovery.md)后同字节重跑通过，支持资源压力解释，不保证所有环境或长时运行无问题。
 
-**C1-A仍VERIFYING，CHG-004/005/006仍IN_PROGRESS**；CHG-006实现与技术验证完成，新的L5尚待记录。有限躯干/模型采样不证明全身、过渡或任意站位无遮挡；母亲动作强调/镜头舒适、OS焦点、窗口变化与实时性能未知。不得因自动化通过进入C1-B。
+**C1-A VERIFYING，CHG-004/005/006/007 IN_PROGRESS**；实现/技术完成部分取得真实哈希后登记，自动透明版尚无新L5。有限点/AABB与指定渲染不证明全身、八墙所有路径、透明排序/阴影叠层、快速过渡或母亲动作强调/镜头舒适。直退与同侧母亲实体相遇仍保留，绕行可行不代表任意路线畅通。
 
-本轮末实时完整对象/runtime与入口逐项相同：schema/design5/17、12canonical/0Finding/3runtime；binding的DEC@2/PLAN@1/TASK@1，原C1-A实际PROTOTYPE READY四facts/requirements、十精确路径逐次消费者重核。无准入重投、正式写入、上游改动或policy override，旧DO_NOT_RETRY保持。
+本轮实时正式全对象/runtime逐项相同：schema/design5/17、12canonical/0Finding/3runtime；binding的DEC@2/PLAN@1/TASK@1，原实际PROTOTYPE READY四facts/requirements、十路径逐次消费者重核。RD-010只登记真实Owner当前表现要求，不冒称新native DEC。无正式写入/准入重投/上游或policy改动。
 
-下一步：沿固定play消费者打开本轮候选，记录非引导的实际复述、两侧/入口/母亲动作观察和误操作；必要时只修同任务。旧CHG-005窗口已核精确身份正常关闭，新窗口/进程以本轮play-window.json及现场为准。报告/来源保留历史52/441与44/318边界。
-
-main的实现提交/发布核验见本轮HANDOFF和Git历史；收尾先主动推送并核远端。迁机不能只克隆游戏库，Git外canonical与锁定同机依赖见TOOLING。
+下一步仅新候选真实试玩和必要局部修正；旧低墙窗口已核身份关闭，新窗口/现场进程见walls/play-window.json。报告中61/580、52/441、44/318属于各历史版本，不能挪作最新接受。main持续授权主动提交/推送，哈希及发布核验见CHG007/Git历史；迁机依TOOLING核Git外canonical与同机锁定依赖。

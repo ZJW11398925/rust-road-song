@@ -1,0 +1,49 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 Core Profile Context 26.8.1.260810 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon TM Graphics
+
+Movie Maker mode enabled, recording movie in 1280×800 @ 60 FPS...
+PASS: 渲染采样目录创建
+PASS: 正式main scene入口
+PASS: 正式SceneTree生命周期与落地
+PASS: 母亲/玛丽实际同场，未spawn
+PASS: 门前初态未首见
+PASS: 实体门实际遮挡初始镜头到车体
+PASS: 远处E给玩家可见反馈
+PASS: 真实W键推动人物水平运动
+PASS: 闭门实体阻止穿越
+PASS: 实体门逐渐打开而非瞬间删车/门
+PASS: 开门显露期间保留玩家控制
+ERROR: Parameter "mem" is null.
+   at: alloc_static (core/os/memory.cpp:104)
+ERROR: Parameter "mem_new" is null.
+   at: _alloc_exact (./core/templates/cowdata.h:476)
+
+================================================================
+CrashHandlerException: Program crashed with signal 11
+Engine version: Godot Engine v4.7.1.stable.official (a13da4feb8d8aefc283c3763d33a2f170a18d541)
+Dumping the backtrace. Please include this when reporting the bug on: https://github.com/godotengine/godot/issues
+Load address: 7ff6226d0000
+
+[1] 7ff7667a24a1 (main+40d24a1) - no debug info in PE/COFF executable
+[2] 7fff29524702 (ntdll.dll+124702) - no debug info in PE/COFF executable
+[3] 7fff295654fe (ntdll.dll+1654fe) - no debug info in PE/COFF executable
+[4] 7fff294cbd24 (ntdll.dll+cbd24) - no debug info in PE/COFF executable
+[5] 7fff29564e3d (ntdll.dll+164e3d) - no debug info in PE/COFF executable
+[6] 7fff2780be86 (msvcrt.dll+7be86) - no debug info in PE/COFF executable
+[7] 7ff7660d8b8a (main+3a08b8a) - no debug info in PE/COFF executable
+[8] 7ff7660da39a (main+3a0a39a) - no debug info in PE/COFF executable
+[9] 7ff763328c65 (main+c58c65) - no debug info in PE/COFF executable
+[10] 7ff7660b636e (main+39e636e) - no debug info in PE/COFF executable
+[11] 7ff76332a579 (main+c5a579) - no debug info in PE/COFF executable
+[12] 7ff76593f7c1 (main+326f7c1) - no debug info in PE/COFF executable
+[13] 7ff76272d939 (main+5d939) - no debug info in PE/COFF executable
+[14] 7ff7626d2ef0 (main+2ef0) - no debug info in PE/COFF executable
+[15] 7ff7627225c1 (main+525c1) - no debug info in PE/COFF executable
+[16] 7ff7627225fd (main+525fd) - no debug info in PE/COFF executable
+[17] 7ff7626d10c8 (main+10c8) - no debug info in PE/COFF executable
+[18] 7ff7626d13f5 (main+13f5) - no debug info in PE/COFF executable
+[19] 7fff2768cd86 (kernel32.dll+2cd86) - no debug info in PE/COFF executable
+[20] 7fff294acaeb (ntdll.dll+acaeb) - no debug info in PE/COFF executable
+[21] -1 (main+-7ff7626d0001) - no debug info in PE/COFF executable
+-- END OF C++ BACKTRACE --
+================================================================

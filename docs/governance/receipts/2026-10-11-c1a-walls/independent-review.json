@@ -1,0 +1,26 @@
+{
+  "reviewer": "/root/camera_review_compact",
+  "baseline": "638d8839ace38cb960ef54ccc287aa5178721485",
+  "status": "READ_ONLY_REVIEW_COMPLETED",
+  "failedAttemptBeforeCompletedReview": "429 Too Many Requests",
+  "failedAttemptNotApproval": true,
+  "critical": 0,
+  "important": 0,
+  "minor": 0,
+  "summaryNotVerbatim": true,
+  "conclusions": [
+    "八面已有墙各复制材质，某墙alpha不影响其他墙",
+    "只在first_reveal后淡化，门/车/人物不在列表；此前实心",
+    "局部AABB视线和平滑淡至0.12、无遮挡恢复1、R立即复位",
+    "入口Mesh/Shape恢复3米/中心1.5米，碰撞未删改",
+    "仅当前C1-A，不增管理器或新阶段；未发现可行动静态缺陷"
+  ],
+  "limits": [
+    "未运行Godot/写入，非L5",
+    "alpha小于0.2作为不透明遮挡消除仅是材质和几何诊断，不能证明实际画面可读",
+    "探针未逐项运行全部八墙路径，点采样不证明全身/母亲全动作/快速过渡",
+    "透明排序、残余墙色、阴影与叠层须真实渲染及L5",
+    "capture内存分配崩溃必须保留FAIL，资源压力线索不证明代码无责"
+  ],
+  "ownerAcceptance": false
+}

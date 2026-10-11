@@ -13,6 +13,7 @@
 | RD-007 | 2026-10-11 | CONFIRMED / Owner | [原话“认同”及采用范围](governance/sources/2026-10-11-owner-discovery-review.md)：接受 Discovery，采用七项修订与两条保护；替代 OD-015 和原方案实施语义，批准 POC 环境与 C0 先试 | C0 正式 PLAN/TASK 已登记，代码准入未成立；C1/Visual/B 实施另审 |
 | RD-008 | 2026-10-11 | CONFIRMED / Owner | [原话“执行”](governance/sources/2026-10-11-owner-c0-execution.md)：单次进入驾驶、门只打开、局部机械迟钝比较；完成必需正规原型依据后实现 | RB-C0-001；独立试玩后才可裁决 C1 |
 | RD-009 | 2026-10-11 | CONFIRMED / Owner | [认同来源](governance/sources/2026-10-11-owner-c0-close-c1a.md)：C0阶段接受/工程冻结/四主观未知保留；C1-A最小人物戏另建，重量感不等于惯性 | RB-C1A-001，新正式对象/准入；C1-B和Visual未批准 |
+| RD-010 | 2026-10-11 | CONFIRMED / Owner（当前表现要求，非新的native DEC） | [本轮原话](governance/sources/2026-10-11-c1a-wall-transparency.md)：墙体自动透明，而不是变矮；替代CHG-006低入口墙候选 | 同RB-C1A-001恢复原墙高度/实体边界，只做场景内自动遮挡淡化；无新阶段或视觉胜出 |
 
 RD-003 的路线胜出仍未定；RD-005 的 POC 环境已由 RD-007 采用，其预算/比例不因此批准。原报告及旧正式对象保留，读取新决定时识别明确被替代条款。
 
