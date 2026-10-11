@@ -12,7 +12,7 @@ C0按RD-009阶段接受，六工程文件冻结，四项主观评价缺失不补
 
 C1-A首个capture内存分配崩溃保留FAIL；经[Owner授权重启OneDrive](sources/2026-10-11-c1a-resource-recovery.md)后同字节重跑通过，不证明长期资源/驱动/代码永无问题。有限点/AABB不证明全身/所有墙路线、透明排序/阴影、快速过渡；同侧母亲实体相遇、直退受阻的历史反例保留。新轮若重现应记失败，不挪历史52/441、61/580、66/585当新证据。
 
-同机绑定及Git外canonical/.local消费者/锁定工具链必须保留；桌面DMCP facade固定其他项目不可用。本项目CLI仅read/tools/get，消费器.local/c1b-consumer.mjs；未知结果先查原意图/回执，DO_NOT_RETRY不重试。迁机依TOOLING，不造workspace。main已持续授权主动提交/推送，命令级HTTP/1.1/单请求曾恢复网络，无持久配置改动。上轮发布至1f8829572ab98e0f7323cc150014a1153d137b2d已核远端；本轮新实现哈希/发布待完成。
+同机绑定及Git外canonical/.local消费者/锁定工具链必须保留；桌面DMCP facade固定其他项目不可用。本项目CLI仅read/tools/get，消费器.local/c1b-consumer.mjs；未知结果先查原意图/回执，DO_NOT_RETRY不重试。迁机依TOOLING，不造workspace。main已持续授权主动提交/推送，命令级HTTP/1.1/单请求曾恢复网络，无持久配置改动。上轮发布至1f8829572ab98e0f7323cc150014a1153d137b2d已核远端；本轮实现提交d724c41e6d7dae66279d4386c75023a8b138470f；技术部分已完成，main发布待本轮真实核验。
 
 新小轮[真实核验](receipts/2026-10-12-c1b-verification/verification.json)：有效对照RED37/7→GREEN37/0；最终真实输入37/0、实际渲染51/0，1020物理/1022录像帧、6PNG，smoke/capture八运行字节一致。手臂残余旋转和右侧旧bool探针已修；首个渲染技术通过但共面条纹视觉FAIL保留，核心网格/碰撞同步内缩后指定样本条纹消失。独立规格/代码审查及聚焦复核通过，[发布前全轮复审](receipts/2026-10-12-c1b-verification/independent-final-review.json)Approved。L5开放待反馈，不裁决异常可读/镜头舒适或完整情感。
 
