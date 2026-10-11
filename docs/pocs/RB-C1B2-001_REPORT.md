@@ -1,6 +1,6 @@
 # RB-C1B2-001 首见POC剩余链条 / 技术核验报告
 
-2026-10-12；CHG-20261012-010；状态 IN_PROGRESS / VERIFYING；正式部署与最终真实输入89/0已完成，实际渲染115/0、任务复审及全轮终审Approved；提交/发布正在核验。依据[实施计划](../plans/RB-C1B2-001_IMPLEMENTATION_PLAN.md)与[Owner继续来源](../governance/sources/2026-10-12-owner-graybox-continue.md)。方向、独立准入、候选实现、实际验证与 Owner 接受分别记录；本报告不是新产品决定。
+2026-10-12；CHG-20261012-010；状态 IN_PROGRESS / VERIFYING；正式部署与最终真实输入89/0已完成，实际渲染115/0、任务复审及全轮终审Approved；实现已提交并发布，独立远端核验一致；后段人工体验未接受。依据[实施计划](../plans/RB-C1B2-001_IMPLEMENTATION_PLAN.md)与[Owner继续来源](../governance/sources/2026-10-12-owner-graybox-continue.md)。方向、独立准入、候选实现、实际验证与 Owner 接受分别记录；本报告不是新产品决定。
 
 ## 依据与范围
 
@@ -36,6 +36,6 @@ RED / GREEN 唯一行为差异：departure.gd 中可靠启动阈值后的 `engin
 
 初次GREEN89/1：驶出后R玩家从x=-.75被推到-1.518387，母亲正确。实际碰撞诊断第一重置walk撞到Mary旧外部位置，平台速度ZERO。force_update_transform和调整调用顺序两种假设经同线路仍89/1，被否定并撤回；完整日志/字节回执保留。最终R使用一帧reset_physics_pending，暂关闭人物碰撞，Mary实际物理步进后恢复配置，下一帧再走人；不重写人物位置、不放宽原断言。三个R诊断均正确，最终89/0。临时打印已清除。物理重置的一帧不是剧情/观察门槛。
 
-正式渲染capture-1791741580273为115/0：89行为检查、2目录/表面检查、24保存/渲染检查（12截图调用，其中05/06各两次覆盖，10独立PNG）。MovieMaker输出3447录像帧，1280×800@60，57.45秒；离线编码耗时不代表实时FPS。总控实际逐张查看：接点、启动、双方就座、门框停/反馈、整车驶出/反馈和R入口复位指定样本可见；旧共面条纹未见于这些样本，初始HUD仍遮部分腿。不能据截图证明连续动作/所有视角。独立任务复审Critical0/Important0/Minor2，实际八运行字节一致。踏步纯Mesh突出底盘0.17m，保守驶出角点包括它，但碰撞验证只覆盖实体底盘，不涵盖所有视觉外沿；smoke强标签按状态断言与指定画面缩窄。完整证据见[本轮验证](../governance/receipts/2026-10-12-departure-verification/verification.json)及[独立复审](../governance/receipts/2026-10-12-departure-verification/task-review.md)。[全轮终审](../governance/receipts/2026-10-12-departure-verification/whole-review.md)Approved，Critical0/Important0，两个Minor已限定；审查者独立实时DMCP读回受沙箱限制，核完整原件/回执，实际末读由总控取得。发布完成后追加真实实现哈希与远端核验。旧25文件冻结、实际新basis5/25及18对象/5运行保持；不复用旧READY。后段人工体验未接受，不借旧轮“可以”补PASS，不发灰盒问卷。
+正式渲染capture-1791741580273为115/0：89行为检查、2目录/表面检查、24保存/渲染检查（12截图调用，其中05/06各两次覆盖，10独立PNG）。MovieMaker输出3447录像帧，1280×800@60，57.45秒；离线编码耗时不代表实时FPS。总控实际逐张查看：接点、启动、双方就座、门框停/反馈、整车驶出/反馈和R入口复位指定样本可见；旧共面条纹未见于这些样本，初始HUD仍遮部分腿。不能据截图证明连续动作/所有视角。独立任务复审Critical0/Important0/Minor2，实际八运行字节一致。踏步纯Mesh突出底盘0.17m，保守驶出角点包括它，但碰撞验证只覆盖实体底盘，不涵盖所有视觉外沿；smoke强标签按状态断言与指定画面缩窄。完整证据见[本轮验证](../governance/receipts/2026-10-12-departure-verification/verification.json)及[独立复审](../governance/receipts/2026-10-12-departure-verification/task-review.md)。[全轮终审](../governance/receipts/2026-10-12-departure-verification/whole-review.md)Approved，Critical0/Important0，两个Minor已限定；审查者独立实时DMCP读回受沙箱限制，核完整原件/回执，实际末读由总控取得。实现提交56326793423f9083991ef5dd2ee6c10727af756c；日志专属规则修正3dd0486b2f4e0e43d3f7efbedbaea89d37f2258b已发布且独立远端main读回一致。提交运行8、旧冻结25及12真实日志SHA均一致；真实窗口已打开并核PID/精确项目/响应/启动无ERROR，见[窗口证据](../governance/receipts/2026-10-12-departure-verification/play-window.json)。两次直连推送失败均先读远端确认未接受；采用本机现有代理逐命令发布成功，无全局配置改变。完整[发布记录](../governance/receipts/2026-10-12-departure-verification/publication.json)保留失败、恢复与末尾空行检查过程。后续仅元数据提交，不改已测运行字节。旧25文件冻结、实际新basis5/25及18对象/5运行保持；不复用旧READY。后段人工体验未接受，不借旧轮“可以”补PASS，不发灰盒问卷。
 
 未覆盖：真实OS切焦、长期资源/驱动及实时FPS、全身全墙/所有镜头/透明排序/快速过渡、自然异常可读性/人物戏/情感。最小登乘、接点和机械模型仍候选；不裁定正式故事/产品技术/Visual。

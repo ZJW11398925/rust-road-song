@@ -867,5 +867,8 @@
     "长期资源/驱动及实时FPS",
     "正式产品技术/故事/Visual未裁定",
     "踏步装饰外沿无独立碰撞形状；仅底盘实体边界已验"
-  ]
+  ],
+  "implementationCommit": "56326793423f9083991ef5dd2ee6c10727af756c",
+  "publication": "publication.json",
+  "interactiveWindow": "play-window.json"
 }

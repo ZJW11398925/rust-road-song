@@ -1,0 +1,27 @@
+{
+  "at": "2026-10-11T18:24:39.194Z",
+  "task": "RB-C1B2-001",
+  "change": "CHG-20261012-010",
+  "implementationCommit": "56326793423f9083991ef5dd2ee6c10727af756c",
+  "publishedReleaseCommit": "3dd0486b2f4e0e43d3f7efbedbaea89d37f2258b",
+  "independentRemoteMainRead": "3dd0486b2f4e0e43d3f7efbedbaea89d37f2258b\trefs/heads/main",
+  "status": "PUBLISHED_REMOTE_MAIN_VERIFIED",
+  "committedRuntime8AndFrozen25And12LogsShaMatch": true,
+  "finalSmoke": {
+    "checks": 89,
+    "failures": 0
+  },
+  "finalCapture": {
+    "checks": 115,
+    "failures": 0,
+    "uniquePng": 10
+  },
+  "firstDirectPushFailure": "Recv failure: Connection was reset",
+  "directGitReadFailure": "Recv failure: Connection was reset",
+  "secondDirectPushFailure": "Failed to connect to github.com port 443 after 21134 ms: Could not connect to server",
+  "failureRecovery": "GitHub连接器及Git实时核远端仍90982c0后再投；发现Git未使用已启用系统代理，仅逐命令使用既有本机代理成功，不改全局配置",
+  "originalLogRuleCorrection": "首次本地提交后修原生启动日志专属规则，完整提交范围git diff --check通过；原字节与SHA始终保留",
+  "scope": "只发布既有玛丽首见POC剩余最小灰盒；新后段人工体验/产品/Visual不称完成",
+  "interactiveLaunch": "play-1791742466764，真实窗口证据见play-window.json，非人工验收",
+  "recordCommitNote": "此记录为发布3dd0486后的元数据，后续元数据提交及推送在本机另核最终HEAD"
+}
