@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-11T09:23:20.952Z",
+  "repository": "https://github.com/ZJW11398925/rust-road-song",
+  "branch": "main",
+  "visibility": "PUBLIC",
+  "implementationCommit": "2d52121b7cef356c196dfdb86acba23d87b4899d",
+  "observedRemoteMain": "2d52121b7cef356c196dfdb86acba23d87b4899d",
+  "exactMatch": true,
+  "authorization": "Existing Owner main push instruction; no new permission required",
+  "taskState": "VERIFYING",
+  "notC1Authorization": true,
+  "metadataPublishedInSubsequentCommit": true
+}

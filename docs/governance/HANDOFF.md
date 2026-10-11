@@ -2,7 +2,7 @@
 
 ## 接手结论
 
-Owner 已“执行” RD-008；C0 正式准入 READY，最小 Godot 灰盒已运行，**RB-C0-001 VERIFYING**。首次真实试玩偏好2，发现持续撞障碍横移；已局部修复、保留RED→GREEN并获Owner实际确认；后续惯性反馈要求第2组取消松油门滑行，保留缓起步/有限转向。最新响应与完整五项独立验收尚未成立，不继续 C1。
+Owner 已“执行” RD-008；C0 正式准入 READY，最小 Godot 灰盒已运行，**RB-C0-001 VERIFYING**。首次真实试玩偏好2，发现持续撞障碍横移；已局部修复、保留RED→GREEN并获Owner实际确认；后续惯性反馈要求第2组取消松油门滑行，保留缓起步/有限转向。最新响应已获Owner“更符合，当前可用”的实玩确认；完整五项整体评估仍未完成，不继续 C1。
 
 ## 先读与范围
 
@@ -18,10 +18,12 @@ schema/design 5/13，9 canonical/0 FINDING/2 runtime，新 DEC@2/PLAN@1/TASK@1 �
 
 分支 main；本轮所有 tracked/untracked 修改归当前 Agent，私有 .local 被忽略；真实内容提交见 [CHG](../changes/CHG-20261011-003.md)，发布证据由后续实际回执补充。接手运行 git status/log，不能把这里的历史记录代替现场。
 
-L1/L2局部行为数据在真实SceneTree探针中合并验证，未移入Legacy测试框架；L3上下文范围/只读边界，L4正式入口真实键盘事件与GPU离线录像。L5已有Owner初次物理键盘反馈，修后与五项完整结论仍待独立确认。OS失焦、任意门柱斜转/旋转扫掠、窗口变化、实时性能未验。
+L1/L2局部行为数据在真实SceneTree探针中合并验证，未移入Legacy测试框架；L3上下文范围/只读边界，L4正式入口真实键盘事件与GPU离线录像。L5已有Owner初次物理键盘反馈，横移/倒退及最新响应均获Owner实际确认，五项完整结论仍待独立评估。OS失焦、任意门柱斜转/旋转扫掠、窗口变化、实时性能未验。
 
 ## 首轮动作
 
 在 canonical 根执行 git status --short --branch、git log -5 --oneline、node scripts/dmcp.mjs read、node scripts/check_context.mjs。运行项目 pocs/stylized_3d/c0/project.godot，按2比较，先检撞后持续W是否横移及S能否脱离，再记录构图/尺度/环绕/进入/离库的自然行为。无需重新开发上游协议；同类C0缺陷仍属当前范围。不要重投已完成readiness，未知操作先查原回执。
 
 Legacy冻结，不续176..179；无新视觉胜出、产品引擎锁定或完整家庭情感结论。完整人工验收后由Owner决定下一轮，而不是自动扩大任务。
+
+已发布的实现提交：2d52121b7cef356c196dfdb86acba23d87b4899d，实际远端读回一致，见 [发布核验](receipts/2026-10-11-c0-admission/publication-verification.json)。最新元数据修订通过Git历史定位，不以本文自述替代现场状态。

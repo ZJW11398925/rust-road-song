@@ -81,8 +81,13 @@
     },
     {
       "path": "pocs/stylized_3d/c0/README.md",
-      "sha256": "e9eea28e58948a82ffa8f12273d497660f9c0f51215f5590bb265bf51384d77a"
+      "sha256": "630838597311192c381154b4d3a065adcea442f42036bdeb59926859b1fe0f70"
     }
   ],
-  "notIndependentHumanReplay": true
+  "notIndependentHumanReplay": true,
+  "subsequentOwnerFeedback": {
+    "quote": "更符合，当前可用",
+    "scope": "local profile 2 response",
+    "fiveQuestionAssessment": "PENDING"
+  }
 }

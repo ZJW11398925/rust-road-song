@@ -36,5 +36,11 @@
       "path": "pocs/stylized_3d/c0/strings.tres",
       "sha256": "1e7d9d6183680059c96b3aa2ee77baa3443bec4a18fe5242c05a9c814b328b7b"
     }
-  ]
+  ],
+  "subsequentOwnerResponse": {
+    "at": "2026-10-11T09:23:20.943Z",
+    "quote": "更符合，当前可用",
+    "scope": "current local profile 2 response only",
+    "notFiveQuestionAcceptance": true
+  }
 }
