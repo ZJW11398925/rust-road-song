@@ -19,3 +19,5 @@ Owner[“可以”](sources/2026-10-13-owner-visual-v0.md)采用RD-013：先V0�
 main持续授权完成验证后主动提交/推送并独立核远端。上一发布f6c10a918b75055af06fcab59736ba8241a26eaa。当前V0基线与最终正式入口输入89/0；最终实际渲染101/0、3445物理/3447录像帧、五独立PNG，八运行与旧34冻结SHA核验通过。任务代码/范围Approved；全轮0Critical/0Important/1Minor旧时态已纠正。限定技术实现提交cc7981db60bfe4b366a35fc6de9eb39646d26ac1已完成，发布以[真实记录](receipts/2026-10-13-visual-v0-verification/publication.json)核对。一次渲染55/16未重现，原因UNKNOWN；右侧仍暗、积木感/金属层次不足，均保留VERIFYING，不称视觉语言/稳定性/L5通过。最终证据写[本轮报告](../pocs/RB-V0-001_REPORT.md)。
 
 当前纠错RB-V0-FIX-001 / CHG-20261013-013；DEC DEC-OPI-441c9dbc-2dd8-4ae1-a866-486bac55fca3.2@2，PLAN PLAN-OPI-66a14447-a331-4105-b3a5-b7cc0bae9036.2@1，TASK TASK-OPI-463747d5-f38f-4f10-9534-35c42b674d92.2@1，独立READY RDY-OPI-ee70e78f-9287-4ad2-b072-cc1bf7ac9b56.2；24对象/7运行，schema/design5/33。旧V0选择已归档binding.archivedV0Prototype；当前.local/steer-consumer.mjs固定十路径与原过程。这里只修左右，不扩大治理或美术范围。
+
+纠错实现提交c825e653aa4e9df5bbc62befefa058b5eb370a65，限定技术核验完成；实际推送/远端读回由宿主保存，不据此接受视觉。

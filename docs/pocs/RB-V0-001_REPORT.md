@@ -49,4 +49,4 @@ Owner[“马上修复”](../governance/sources/2026-10-13-owner-steering-fix.md
 
 保留原89断言，新增四组真实W/S+A/D，分别验证航向和实际侧向位移。修前首次97/9包含探针延迟导致旧镜头断言失效；把探针移至原镜头检查之后，旧断言不变，隔离RED97/8；修后97/0。实际渲染首次109/1，在537帧窗口失焦，中断按住F启动；方向八项通过，仍记录整轮FAIL。第二次109/12同样真实失焦中断；最终同字节重跑109/0，真实Esc退出。日志/摘要/完整读回见[纠错证据](../governance/receipts/2026-10-13-steering-fix-verification/verification.json)。未修复通用焦点稳定性。
 
-独立新DEC/PLAN/TASK及READY，24canonical/7runtime、basis5/33，旧21/6原样保留，旧34文件SHA不变。技术哈希取得后补记；视觉负面、金属表现与造型距离仍未解决，V1/V2未启动。
+独立新DEC/PLAN/TASK及READY，24canonical/7runtime、basis5/33，旧21/6原样保留，旧34文件SHA不变。限定技术纠错实现提交 c825e653aa4e9df5bbc62befefa058b5eb370a65，独立终审0/0/0。随后推送并核远端；视觉负面、金属表现与造型距离仍未解决，V1/V2未启动。
