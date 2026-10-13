@@ -21,9 +21,11 @@ for (const file of required) if (!files.includes(file)) failures.push('缺少项
 const owner = fs.readFileSync(path.join(root, 'docs/00_OWNER_DECISIONS.md'), 'utf8');
 const ids = [...owner.matchAll(/^\| (OD-\d{3}) \|/gm)].map(m => m[1]);
 if (ids.length !== 22 || new Set(ids).size !== 22) failures.push('Owner 决定覆盖或编号不完整');
-// RD-009/C1-A、RD-011异常与RD-012独立READY后段的精确文件；静态范围不构成 DMCP 实施准入。
+// 已采用POC与Owner开源优先规则下的实际依赖；静态范围不构成DMCP实施准入。
 const prototypeFiles = new Set([
   ...['project.godot','visual_v0.tscn','visual_v0.gd','human.tscn','human.gd','mary.tscn','strings.tres','visual_v0_smoke.gd','README.md'].map(f => 'pocs/stylized_3d/visual_v0/' + f),
+  'pocs/stylized_3d/visual_v0/third_party/phantom_camera/smooth_damp.gd',
+  'pocs/stylized_3d/visual_v0/third_party/godot_demo_material/old_paint.tres',
   "pocs/stylized_3d/c0/project.godot", "pocs/stylized_3d/c0/garage.tscn",
   "pocs/stylized_3d/c0/garage.gd", "pocs/stylized_3d/c0/spatial_smoke.gd",
   "pocs/stylized_3d/c0/strings.tres", "pocs/stylized_3d/c0/README.md",
@@ -57,7 +59,7 @@ const prototypeFiles = new Set([
 ]);
 for (const file of files) {
   if (/(^|\/)(inventory|equipment|bounty_system|shop|crew_jobs|skill_tree|world_state)(\/|$)/.test(file)) failures.push("冻结系统：" + file);
-  if (/\.(gd|tscn|tres|godot|uid)$/.test(file) && !prototypeFiles.has(file)) failures.push("超出 C0/C1-A/C1-B小轮精确范围：" + file);
+  if (/\.(gd|tscn|tres|godot|uid)$/.test(file) && !prototypeFiles.has(file)) failures.push("超出已采用POC与实际依赖精确范围：" + file);
 }
 if (failures.length) { console.error(failures.join('\n')); process.exitCode = 1; }
-else console.log('CONTEXT PASS：22 项 Owner 决定、入口/链接、编码、C0/C1-A/C1-B小轮精确文件范围；不代表玩法或 DMCP 准入。');
+else console.log('CONTEXT PASS：22 项 Owner 决定、入口/链接、编码、已采用POC与实际依赖精确范围；不代表玩法或DMCP准入。');

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3]
+[gd_scene load_steps=30 format=3]
 [ext_resource type="Script" path="res://visual_v0.gd" id="1"]
 [ext_resource type="PackedScene" path="res://human.tscn" id="2"]
 [ext_resource type="PackedScene" path="res://mary.tscn" id="3"]
@@ -12,12 +12,24 @@ roughness = 0.97
 [sub_resource type="StandardMaterial3D" id="DoorPaint"]
 albedo_color = Color(0.38, 0.30, 0.23, 1)
 roughness = 0.97
+[sub_resource type="ProceduralSkyMaterial" id="ReflectionSkyMaterial"]
+sky_top_color = Color(0.25, 0.34, 0.43, 1)
+sky_horizon_color = Color(0.46, 0.5, 0.51, 1)
+sky_energy_multiplier = 0.55
+ground_bottom_color = Color(0.12, 0.13, 0.13, 1)
+ground_horizon_color = Color(0.34, 0.36, 0.35, 1)
+ground_energy_multiplier = 0.35
+[sub_resource type="Sky" id="ReflectionSky"]
+sky_material = SubResource("ReflectionSkyMaterial")
 [sub_resource type="Environment" id="Environment"]
 background_mode = 1
 background_color = Color(0.075, 0.095, 0.115, 1)
 ambient_light_source = 2
+ambient_light_sky_contribution = 0.0
 ambient_light_color = Color(0.68, 0.76, 0.82, 1)
-ambient_light_energy = 1.15
+ambient_light_energy = 0.55
+sky = SubResource("ReflectionSky")
+reflected_light_source = 2
 [sub_resource type="BoxMesh" id="Mesh1"]
 size = Vector3(12.5, 0.4, 20.0)
 [sub_resource type="BoxShape3D" id="Shape1"]
@@ -67,6 +79,11 @@ rotation_degrees = Vector3(-50, -28, 0)
 light_color = Color(0.90, 0.88, 0.82, 1)
 light_energy = 0.85
 shadow_enabled = true
+[node name="SoftFill" type="OmniLight3D" parent="."]
+position = Vector3(3.5, 3.0, 2.0)
+light_color = Color(0.76, 0.80, 0.86, 1)
+light_energy = 4.0
+omni_range = 8.0
 [node name="Floor" type="StaticBody3D" parent="."]
 collision_layer = 1
 collision_mask = 0

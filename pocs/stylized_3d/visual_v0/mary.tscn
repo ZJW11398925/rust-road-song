@@ -1,9 +1,6 @@
-[gd_scene load_steps=45 format=3]
+[gd_scene load_steps=44 format=3]
 
-[sub_resource type="StandardMaterial3D" id="Paint"]
-albedo_color = Color(0.34, 0.40, 0.34, 1)
-metallic = 0.22
-roughness = 0.88
+[ext_resource type="Material" path="res://third_party/godot_demo_material/old_paint.tres" id="Paint"]
 
 [sub_resource type="StandardMaterial3D" id="Dark"]
 albedo_color = Color(0.16, 0.19, 0.19, 1)
@@ -42,40 +39,13 @@ size = Vector3(0.012, 0.035, 0.60)
 [sub_resource type="BoxMesh" id="ShoulderMesh"]
 size = Vector3(2.45, 0.15, 0.40)
 
-[sub_resource type="BoxMesh" id="Box1"]
-size = Vector3(2.88, 1.41, 5.4)
-
 [sub_resource type="BoxShape3D" id="ShapeBox1"]
 size = Vector3(2.88, 1.41, 5.4)
 
-[sub_resource type="BoxMesh" id="Box2"]
-size = Vector3(0.04, 1.45, 5.4)
-
 [sub_resource type="BoxMesh" id="Box3"]
-size = Vector3(3.2, 0.03, 5.4)
-
-[sub_resource type="BoxMesh" id="Box4"]
-size = Vector3(0.06, 1.45, 2.54)
-
-[sub_resource type="BoxMesh" id="Box5"]
-size = Vector3(0.06, 1.45, 1.54)
-
-[sub_resource type="BoxMesh" id="Box6"]
-size = Vector3(0.06, 0.84, 1.32)
-
-[sub_resource type="BoxMesh" id="Box7"]
-size = Vector3(0.06, 0.12, 1.32)
-
-[sub_resource type="BoxMesh" id="Box8"]
-size = Vector3(2.36, 0.52, 2.65)
-
-[sub_resource type="BoxMesh" id="Box9"]
-size = Vector3(0.26, 0.95, 5.4)
+size = Vector3(3.2, 0.03, 4.5)
 
 [sub_resource type="BoxShape3D" id="ShapeBox9"]
-size = Vector3(0.26, 0.95, 5.4)
-
-[sub_resource type="BoxMesh" id="Box10"]
 size = Vector3(0.26, 0.95, 5.4)
 
 [sub_resource type="BoxShape3D" id="ShapeBox10"]
@@ -186,58 +156,92 @@ size = Vector3(0.12, 0.18, 0.18)
 [sub_resource type="BoxMesh" id="SeatMesh"]
 size = Vector3(0.65, 0.08, 0.65)
 
+[sub_resource type="CapsuleMesh" id="TrackBand"]
+radius = 0.47
+height = 5.4
+radial_segments = 12
+rings = 4
+[sub_resource type="StandardMaterial3D" id="WheelSteel"]
+albedo_color = Color(0.30, 0.32, 0.29, 1)
+metallic = 0.45
+roughness = 0.72
+[sub_resource type="CylinderMesh" id="RoadWheel"]
+top_radius = 0.37
+bottom_radius = 0.37
+height = 0.04
+radial_segments = 16
+rings = 1
+[sub_resource type="BoxMesh" id="Mantlet"]
+size = Vector3(0.64, 0.36, 0.45)
+[sub_resource type="CylinderMesh" id="Barrel"]
+top_radius = 0.14
+bottom_radius = 0.17
+height = 1.75
+radial_segments = 12
+rings = 1
+[sub_resource type="CylinderMesh" id="Bore"]
+top_radius = 0.10
+bottom_radius = 0.10
+height = 0.018
+radial_segments = 12
+rings = 1
+[sub_resource type="BoxMesh" id="FrontArmor"]
+size = Vector3(3.16, 1.572, 0.035)
+[sub_resource type="BoxMesh" id="RearArmor"]
+size = Vector3(3.16, 1.465, 0.035)
+
 [node name="Mary" type="CharacterBody3D"]
 collision_layer = 1
 collision_mask = 7
-[node name="Body" type="MeshInstance3D" parent="."]
+[node name="Body" type="Node3D" parent="."]
 position = Vector3(0.10, 0.805, 0)
-mesh = SubResource("Box1")
-material_override = SubResource("Dark")
+[node name="Hull" type="CSGPolygon3D" parent="Body"]
+position = Vector3(1.44, 0, 0)
+rotation = Vector3(0, 1.5707963, 0)
+polygon = PackedVector2Array(-2.7, -0.705, 2.7, -0.705, 2.5, 0.705, -2.05, 0.705)
+depth = 2.88
+material = SubResource("Dark")
 
 [node name="BodyCollision" type="CollisionShape3D" parent="."]
 position = Vector3(0.10, 0.805, 0)
 shape = SubResource("ShapeBox1")
 
-[node name="RightShell" type="MeshInstance3D" parent="."]
-position = Vector3(1.58, 0.825, 0)
-mesh = SubResource("Box2")
-material_override = SubResource("Paint")
+[node name="RightShell" type="CSGPolygon3D" parent="."]
+position = Vector3(1.60, 0.825, 0)
+rotation = Vector3(0, 1.5707963, 0)
+polygon = PackedVector2Array(-2.7, -0.725, 2.7, -0.725, 2.5, 0.725, -2.05, 0.725)
+depth = 0.04
+material = ExtResource("Paint")
 
 [node name="Roof" type="MeshInstance3D" parent="."]
-position = Vector3(0, 1.535, 0)
+position = Vector3(0, 1.535, -0.25)
 mesh = SubResource("Box3")
-material_override = SubResource("Paint")
+material_override = ExtResource("Paint")
 
-[node name="LeftRearShell" type="MeshInstance3D" parent="."]
-position = Vector3(-1.57, 0.825, -1.43)
-mesh = SubResource("Box4")
-material_override = SubResource("Paint")
+[node name="LeftShell" type="CSGCombiner3D" parent="."]
+[node name="Armor" type="CSGPolygon3D" parent="LeftShell"]
+position = Vector3(-1.54, 0.825, 0)
+rotation = Vector3(0, 1.5707963, 0)
+polygon = PackedVector2Array(-2.7, -0.725, 2.7, -0.725, 2.5, 0.725, -2.05, 0.725)
+depth = 0.06
+material = ExtResource("Paint")
+[node name="OldDamageCut" type="CSGBox3D" parent="LeftShell"]
+position = Vector3(-1.57, 1.2, 0.5)
+operation = 2
+size = Vector3(0.20, 0.48, 1.32)
+material = SubResource("Dark")
 
-[node name="LeftFrontShell" type="MeshInstance3D" parent="."]
-position = Vector3(-1.57, 0.825, 1.93)
-mesh = SubResource("Box5")
-material_override = SubResource("Paint")
-
-[node name="LeftLowerShell" type="MeshInstance3D" parent="."]
-position = Vector3(-1.57, 0.52, 0.5)
-mesh = SubResource("Box6")
-material_override = SubResource("Paint")
-
-[node name="LeftUpperShell" type="MeshInstance3D" parent="."]
-position = Vector3(-1.57, 1.49, 0.5)
-mesh = SubResource("Box7")
-material_override = SubResource("Paint")
-
-[node name="UpperBody" type="MeshInstance3D" parent="."]
-position = Vector3(0, 1.79, -0.78)
-mesh = SubResource("Box8")
-material_override = SubResource("Paint")
+[node name="UpperBody" type="CSGPolygon3D" parent="."]
+position = Vector3(0, 1.79, 0.545)
+polygon = PackedVector2Array(-1.18, -0.26, 1.18, -0.26, 0.95, 0.26, -0.95, 0.26)
+depth = 2.65
+material = ExtResource("Paint")
 
 [node name="FrontShoulder" type="MeshInstance3D" parent="."]
 position = Vector3(0, 1.705, 0.62)
 rotation = Vector3(0.20, 0, 0)
 mesh = SubResource("ShoulderMesh")
-material_override = SubResource("Paint")
+material_override = ExtResource("Paint")
 
 [node name="RightRepair" type="MeshInstance3D" parent="."]
 position = Vector3(1.62, 1.15, -1.74)
@@ -265,7 +269,9 @@ material_override = SubResource("RepairSteel")
 
 [node name="LeftBase" type="MeshInstance3D" parent="."]
 position = Vector3(-1.68, 0.5, 0)
-mesh = SubResource("Box9")
+rotation = Vector3(1.5707963, 0, 0)
+scale = Vector3(0.23404255, 1, 1)
+mesh = SubResource("TrackBand")
 material_override = SubResource("Dark")
 
 [node name="LeftBaseCollision" type="CollisionShape3D" parent="."]
@@ -274,8 +280,95 @@ shape = SubResource("ShapeBox9")
 
 [node name="RightBase" type="MeshInstance3D" parent="."]
 position = Vector3(1.68, 0.5, 0)
-mesh = SubResource("Box10")
+rotation = Vector3(1.5707963, 0, 0)
+scale = Vector3(0.23404255, 1, 1)
+mesh = SubResource("TrackBand")
 material_override = SubResource("Dark")
+[node name="FrontArmor" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.8175, 2.359)
+rotation = Vector3(-0.42657, 0, 0)
+mesh = SubResource("FrontArmor")
+material_override = ExtResource("Paint")
+[node name="RearArmor" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.825, -2.5823)
+rotation = Vector3(0.137, 0, 0)
+mesh = SubResource("RearArmor")
+material_override = ExtResource("Paint")
+[node name="Mantlet" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1.79, 0.73)
+mesh = SubResource("Mantlet")
+material_override = ExtResource("Paint")
+[node name="Barrel" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1.79, 1.65)
+rotation = Vector3(1.5707963, 0, 0)
+mesh = SubResource("Barrel")
+material_override = SubResource("RepairSteel")
+[node name="Bore" type="MeshInstance3D" parent="."]
+position = Vector3(0, 1.79, 2.53)
+rotation = Vector3(1.5707963, 0, 0)
+mesh = SubResource("Bore")
+material_override = SubResource("Dark")
+[node name="RoadWheels" type="Node3D" parent="."]
+[node name="Left1" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(-1.79, 0.5, -2.1)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Left2" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(-1.79, 0.5, -1.26)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Left3" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(-1.79, 0.5, -0.42)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Left4" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(-1.79, 0.5, 0.42)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Left5" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(-1.79, 0.5, 1.26)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Left6" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(-1.79, 0.5, 2.1)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Right1" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(1.79, 0.5, -2.1)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Right2" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(1.79, 0.5, -1.26)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Right3" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(1.79, 0.5, -0.42)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Right4" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(1.79, 0.5, 0.42)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Right5" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(1.79, 0.5, 1.26)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
+[node name="Right6" type="MeshInstance3D" parent="RoadWheels"]
+position = Vector3(1.79, 0.5, 2.1)
+rotation = Vector3(0, 0, 1.5707963)
+mesh = SubResource("RoadWheel")
+material_override = SubResource("WheelSteel")
 
 [node name="RightBaseCollision" type="CollisionShape3D" parent="."]
 position = Vector3(1.68, 0.5, 0)
