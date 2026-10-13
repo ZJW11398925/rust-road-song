@@ -1,0 +1,11 @@
+# 像素二维候选05：完整输入
+
+输入1：style_03_painted.png，共同构图/车形来源。内置image_gen；2026-10-13；概念候选不证明渲染管线。
+
+Use case: style-transfer / stylized-concept. Image 1 is the spatial/vehicle/pose reference for ONE PIXEL 2D visual-direction trial of the same Rust Road Song scene. Translate the ENTIRE scene into carefully authored true-looking pixel art: the vehicle, people, contact shadow, wall and floor all use the same crisp square-pixel language and restrained palette. Do not merely add a mosaic/downsample filter to the existing 3D render. Redraw the silhouette and material shapes with intentional pixel clusters. Design on a coarse uniform virtual grid around 400x250 pixels, shown enlarged with nearest-neighbour-like crisp edges, no smooth painting, no gradients/anti-aliased blend, no vector outlines, no 3D glossy render.
+
+Keep the same elevated three-quarter composition and relative scales, two full-body figures and their exact positions/interaction: mother warm-brown in foreground right, one hand visibly resting on front plate, youth cool slate-blue to left, walking room around the large vehicle. Mary keeps the exact same low armoured shape with integrated left-offset upper body, short barrel, continuous tracks, several big wheels and warm-grey right repair shoulder. One old jagged left-side damaged slit is crossed by a few irregular muted rust-red new strands; draw it as a distinct localized cluster rather than a glowing effect. No extra gear, props, flags, household objects, words, HUD or text.
+
+Limited muted colours: charcoal structure, grey-green paint, warm-grey repaired plate, muted terracotta local strands, quiet cool grey-blue background. Use large deliberate clusters for material/form, 2-3 values per material. Emphasize weight, used edges, hand contact and figure posture. Keep backgrounds quiet with broad flat areas and very sparse clusters, not a repetitive floor/wall pattern. Selective broken dark contours, no thick sticker border, no speckled dithering across all surfaces, no tiny details too fine for the pixel scale.
+
+This is a serious exploratory RPG scene of a maintained old family battle wagon, not a cute miniature, retro arcade combat screen, cinematic poster, ruined scrapheap or steam fantasy. No second angle/inset/collage. Same normal gameplay viewing distance as reference, shared pixel scale throughout.

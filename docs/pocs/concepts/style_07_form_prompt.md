@@ -1,0 +1,13 @@
+# 大形打磨07：完整输入
+
+输入1：style_03_painted.png，编辑目标。只重做上车体/肩线整体结构，保持画法、两人动作、损伤和空间。内置image_gen；2026-10-13。
+
+Use case: precise-object-edit. Image 1 is the EDIT TARGET. Change ONLY THE VEHICLE'S UPPER HULL AND SHOULDER BIG SHAPES. Preserve the image's quiet gouache-painted material language, palette, normal game camera, two full-body figures, mother's exact relaxed palm contact, vehicle footprint and lower tracks, the local damaged slit/new rust-red strands and empty garage. No extra props, marks or story information.
+
+The current vehicle is still a conventional military armoured hull with a big symmetric trapezoid above it. REMOVE THAT ENTIRE TRAPEZOID and its flat circular hatch, tiny hatch fittings, tall fin and projecting square gun-mount box. Do not just add welds or turn down its height. Redesign that area as an integrated low armoured machine that could have been reshaped through practical maintenance.
+
+New silhouette: a squat rounded rectangular upper housing, visibly lower and shorter than the original, nestled near the rear LEFT of the hull. Broad subtly curved roof flowing into a bulging cast LEFT shoulder, with a long shallow curve rather than a flat tall rectangle. A RIGHT shoulder of folded warm-grey replacement sheet steel steps DOWN and FORWARD from that left housing; the two shoulder lines are visibly different in height and length, so the asymmetry is evident from a thumbnail silhouette. An angled dark join separates the fitted replacement from the old cast shell. It must have structural thickness and meet the lower hull properly; no sticker repair plate, no big gold badge.
+
+Shift the short thick barrel gently left with the housing and tuck it close into a shallow built-in front opening, not an enormous cannon or square protruding mount. At the front of the lower hull retain the mother's current contact plane, but connect its top edge coherently to the new shoulders. The track pods and remaining lower hull stay weighty and complete. A heavy, stubborn useful old machine, not a cute cartoon car, anthropomorphic face, robot, steam engine, shiny future rover or historical tank replica. No eyes, light faces, windows, pipes, luggage, symbols or named military decoration.
+
+Surfaces continue broad muted sage-grey/charcoal colour masses, one warm-grey repair structure, sparse seams and worn hand-contact edges. Keep every background surface quiet, preserve restrained cast shadows and both people's original poses. Output one coherent practical game-view art trial, no labels/inset/collage/film lighting. The silhouette redesign must be visibly substantial while keeping the same story and camera.
