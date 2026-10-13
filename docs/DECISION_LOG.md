@@ -24,3 +24,5 @@ RD-003 的路线胜出仍未定；RD-005 的 POC 环境已由 RD-007 采用，�
 正式 IDs 与当前修订只在 [binding](governance/binding.json) / [CURRENT](governance/CURRENT.md)及回执维护。建库不批准视觉路线，POC实施不批准全序章，Owner来源不授予 Agent 自主组织裁决权。
 
 RD-014 / 2026-10-13 / Owner CONFIRMED：[马上修复](governance/sources/2026-10-13-owner-steering-fix.md)，仅RB-V0-FIX-001驾驶方向纠错，新独立准入；非视觉接受。
+
+RD-015 / 2026-10-13 / Owner CONFIRMED（当前外观参照，非新增native DEC）：[“可以借鉴其风格制作游戏”及概念图纠正](governance/sources/2026-10-13-owner-disco-adoption.md)，整体外观以《极乐迪斯科》为主参照；概念图不证明实际画质/生产能力。先以真实Godot可复用资产小样判断表现程度和成本，不能用几何体调色声称风格成立，不自动进入V1/V2或裁决C胜出。

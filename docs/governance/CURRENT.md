@@ -1,5 +1,7 @@
 # 当前V0 / 2026-10-13
 
+最新Owner已[明确采用《极乐迪斯科》为制作参照，并纠正概念图期待](sources/2026-10-13-owner-disco-adoption.md)。参照已定，实际画质和制作能力未定：概念图不能作承诺或验收标准。环境+人物图01已保存但比例/密度偏离要求；本轮几何人物/照明试改遭遇shader cache ERROR及失焦输入失败，随后三份运行文件全部恢复本轮前HEAD，代码没有留下改动。见[本轮记录](../changes/CHG-20261013-024.md)。下一件以可复用资产的真实Godot小样检验正常距离的阅读、移动遮挡与整理成本，停止用理想概念图和几何体调色证明风格；不自动进入V1/V2。下文“未采用主参照/尚未制作样张”是被替代的历史状态。
+
 最新Owner[要求参照成熟游戏先定整体风格](sources/2026-10-13-owner-reference-style-first.md)，在看到完整原图后[偏好1《极乐迪斯科》、要求纠正调研不足并提供创游社入口](sources/2026-10-13-owner-disco-preference.md)。已补充核对Sable、The Long Dark、Harold Halibut、Road 96、Pacific Drive、FAR Changing Tides、Jalopy、Dordogne原图，结合前轮DREDGE及像素旁证做有证据范围的初筛；主参照仍Disco，未宣称最终风格采用。见[取舍/实际来源/制作标准](../pocs/VISUAL_STYLE_REFERENCES.md)和[原站资源短名单](../pocs/RESOURCE_SHORTLIST.md)。原远程图表未加载及错标菜单已纠正，不计入场景证据。停止独立玛丽形体；下一件为不含玛丽的环境+人物风格验证。游戏代码未变，未安装/导入新资源，尚未制作依参照的样张，风格目标未完成，V1/V2未启动。下文旧图/车形是历史过程，不能当当前艺术依据。
 
 最新Owner[持续风格目标](sources/2026-10-13-owner-style-goal.md)与[否定灰盒底图链](sources/2026-10-13-owner-reject-greybox-base.md)：已读开发者/官方画面研究，实际制作并保存独立玛丽三组造型及全新首见构图；图02—07旧转绘保留为失败过程，不再用于要求Owner选视觉路线。新构图也仍有比例/材质/密度与车辆出路缺口，风格未成立，不称游戏实现或Owner接受。见[实际成果/失败](../pocs/VISUAL_STYLE_STUDY.md)及[本轮](../changes/CHG-20261013-023.md)。游戏代码未变；V1/V2未启动。下文“不再次生成图像”是此前阶段安排，已被新目标替代。
