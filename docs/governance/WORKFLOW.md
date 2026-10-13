@@ -1,5 +1,7 @@
 # DMCP 项目工作流
 
+2026-10-13 [Owner减负与开源优先](sources/2026-10-13-owner-open-source-first.md)优先：已有授权范围内小修直接定位、修改、验证相关行为并提交推送，不重复全文读回/依赖摘要遍历/多轮评审，不逐个小修新造DEC/PLAN/TASK。只有实际范围或依据变化才补必要治理动作。新产品阶段仍需真实依据；历史记录不改写。新建设先复用已有能力和适合的开源实现，不自建通用轮子。
+
 ## 首轮恢复
 
 总控按[Owner接续要求](sources/2026-10-11-owner-controller-handoff.md)先遵循[CONTROLLER_TAKEOVER](CONTROLLER_TAKEOVER.md)：完整理解设计和原始决定，读回实时状态，给出有来源的理解/边界核对后再布置执行任务。交接摘要和READY不能替代这一顺序。
