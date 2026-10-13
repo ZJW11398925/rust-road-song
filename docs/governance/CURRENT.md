@@ -1,27 +1,17 @@
-# 当前状态 / 2026-10-13
+# 当前V0 / 2026-10-13
 
-Owner最新[“可以继续”](sources/2026-10-13-owner-continue.md)后，总控完成完整设计/原始来源/实时正式对象核对，提出[第一轮表现试样](../pocs/VISUAL_FIRST_SAMPLE_PROPOSAL.md)（RB-VIS-PROP-001 / CHG-20261013-011）。推荐C同一可玩首见链条的车辆形体/修补材质、人物接触动作、照明和必要提示修正；A可玩对照及仅人物动作保留。五项需求、候选十路径、反例、成本/退出条件已写明。当前仅方案文档，待Owner采用Visual范围；未创建新工程/正式TASK/READY，不改变下述binding和灰盒体验UNKNOWN。最新完整读回与上一发布原件逐项一致，basis5/25、18canonical/5runtime，核验见[方案检查点](receipts/2026-10-13-visual-proposal/context-verification.json)。
+总控已完整理解设计/Owner原始决定/真实试玩，再读取正式对象与运行记录；交接不能代替设计正文。
 
-本文件只导航；总控按[完整设计入口](CONTROLLER_TAKEOVER.md)读正文/Owner原话/真实试玩，再读实时正式对象。不能凭摘要布置任务。本总控已完成核对。
+Owner[“可以”](sources/2026-10-13-owner-visual-v0.md)采用RD-013：先V0视觉语言，V1/V2留候选。当前RB-V0-001 / CHG-20261013-012，只独立当前场景副本的形/面/色/光/密度、一页候选主张、3—5真实游戏帧及实际走动/继承输入回归。母亲回应信提醒并习惯性帮助，未决定离家；接点/座位/履带/按键仍占位，不精修成正式结构。具体视觉参数由SERVICE试验，不称Owner选定。
 
-Owner最新[“我认为可以，就继续”](sources/2026-10-12-owner-graybox-continue.md)按RD-012阶段接受RB-C1B-001，并反对反复承担小灰盒复述。总控继续既定玛丽首见POC剩余启动、母亲具体参与和短距驶出，技术灰盒取舍由SERVICE承担；不称Owner指定新的机械结构/动作/按键。正式故事/异常真相/离家决定/Visual未裁定。
+五项需求与验证见[计划](../plans/RB-V0-001_PLAN.md)、[一页候选](../pocs/VISUAL_THESIS_V0.md)，原[完整首见提案](../pocs/VISUAL_FIRST_SAMPLE_PROPOSAL.md)保留历史但未原样采用。无需重复小灰盒复述，L5未知不补PASS；A保留、B缺假设，C未胜出；AI/正式资产、V1/V2、整段样片、全序章另审。
 
-当前RB-C1B2-001 / CHG-20261012-010，独立工程c1b_departure。五项需求及候选因果见[计划](../plans/RB-C1B2-001_IMPLEMENTATION_PLAN.md)：母亲实际压住接点供电，玩家亲手启动；观察/触碰/对白不解锁、晚到可首次成功；启动后母亲上车、低速驶出到短空地。只是可撤回灰盒候选。旧三工程/Discovery原报告25文件冻结。
+实时schema/design5/29，21canonical/0Finding/6runtime，CST-cf07cf6b-16f1-4b06-89b1-79092167b080。新DEC-OPI-a2cced96-4eb7-4530-b8c5-7d121a27fbcb.2@2、PLAN-OPI-10ca7c03-19f0-40e0-992d-1c632dcac151.2@1、TASK-OPI-292e011d-3536-40ce-ab9f-565712661dc4.2@1；RDY-OPI-89f8a63f-7db3-4137-8228-127e3ffc0033.2实际READY。四NON_WAIVABLE事实/要求，十路径/固定Godot配置见binding及[新准入](receipts/2026-10-13-visual-v0-admission/assessment-projection.json)；旧18对象/5运行原样保留，见[读回核验](receipts/2026-10-13-visual-v0-direction/readback-verification.json)。native TASK无DONE接口。
 
-最新完整读回schema/design5/25，18canonical/0Finding/5runtime，CST-982a0fd9-4c16-407d-8bc9-e491b99921f8。DEC-OPI-40894329-8bfb-43cd-947b-591dc7d570cc.2@2、PLAN-OPI-55598956-003d-4787-8f17-7784f4324298.2@1、TASK-OPI-e53db210-2e1a-46d3-b5a7-dccdb3dd0df6.2@1；RDY-OPI-1c48e7dc-9c7d-4aa4-ac0e-79791b5e9799.2 READY。四事实/要求、十精确路径及固定Godot过程见[新方向读回](receipts/2026-10-12-departure-direction/readback-verification.json)、[独立新准入](receipts/2026-10-12-departure-admission/assessment-projection.json)及binding。旧15canonical/4runtime完整保留；新任务不是旧READY消费，TASK无DONE接口。
+当前新工程visual_v0；固定.local/v0-consumer.mjs每次共享native lease核实时依据、事实/READY/精确路径/工具运行摘要。CLI只read/tools/get；桌面DMCP固定其他项目不能用。总控[就是宿主](sources/2026-10-12-owner-host-clarification.md)，普通执行SERVICE，组织身份只转录真实Owner指令。未知结果先查原操作，不重投DO_NOT_RETRY，不改.design或建替代workspace。
 
-C0阶段接受/六工程冻结/四缺失主观评价保留；C1-A仍VERIFYING，其自动高墙透明/双侧触碰是当前候选。[右侧/入口遮挡反例](sources/2026-10-11-c1a-second-playtest.md)、[不准低墙](sources/2026-10-11-c1a-wall-transparency.md)、[“暂时就这样吧”](sources/2026-10-11-c1a-provisional-feedback.md)都不补完整L5。历史内存崩溃FAIL、OneDrive授权恢复后同字节通过保留，不证明长期资源无问题。全身遮挡/快速过渡/透明排序/镜头舒适、同侧实体母亲阻路等未知继续保留。
+旧四工程与Discovery34文件冻结。C0阶段接受仍保留四主观未知；C1-A仍VERIFYING。[老朋友原话](sources/2026-10-11-c1a-first-playtest.md)是关系提问下的局部正向反馈，伴镜头反例，不算无提示发现；[第二轮遮挡](sources/2026-10-11-c1a-second-playtest.md)、[高墙自动透明](sources/2026-10-11-c1a-wall-transparency.md)、[暂时收束](sources/2026-10-11-c1a-provisional-feedback.md)不补全L5。历史资源崩溃及Owner授权恢复保留，不证明长期资源。
 
-异常小轮[报告](../pocs/RB-C1B-001_REPORT.md)与[证据](receipts/2026-10-12-c1b-verification/verification.json)：有效RED37/7→GREEN37/0、最终输入37/0/实际渲染51/0、1020物理/1022录像帧、6PNG、八运行字节一致；初34/6、34/1及共面条纹视觉FAIL保留，修后指定样本无条纹。独立任务及全轮Approved。实际Owner“可以”是阶段接受，自然可读性/镜头/情感具体假设未观测。旧工程冻结，不用旧轮接受代替新后段人工验收。
+异常小轮见[报告](../pocs/RB-C1B-001_REPORT.md)：37/7→37/0、渲染51/0，共面条纹FAIL与修后样本保留；阶段接受不证明自然异常可读。后段[报告](../pocs/RB-C1B2-001_REPORT.md)：45/1→89/0、渲染115/0/10PNG；真实R位置推移89/1及两种失败假设保留，一帧物理同步解决；HUD遮腿/踏步0.17m碰撞差异和smoke标签限制已列。后段人工仍未知，旧报告原字节冻结。
 
-本总控[已被Owner明确为宿主](sources/2026-10-12-owner-host-clarification.md)，沿既有本项目通道只做真实Owner转录；普通计划/任务/执行SERVICE，不自授产品裁决。Git外canonical、私有profile、锁定273项运行依赖和本机固定消费者须保留；桌面DMCP facade固定其他项目不能用。CLI仅read/tools/get；当前.local/departure-consumer.mjs逐次共享native lease重核basis/事实/READY/policy/精确路径。未知結果先查原回执，不自动重试DO_NOT_RETRY。迁机见TOOLING，不造workspace。
-
-main已持续授权主动提交/推送。异常实现d724c41e6d7dae66279d4386c75023a8b138470f和技术记录90982c0cec3ea88f763464d01d3ddc983b33ccb2已成功发布且远端main独立核对一致；之前Connection reset失败保留，读远端确认未写后才重投。新轮技术实现与验证已取得实际证据，保持VERIFYING，后段尚无人类体验接受；不宣称产品完工或原生TASK DONE。
-
-本轮实际最终RED45/1→GREEN89/0、3445物理帧；实际渲染115/0、3447录像帧、10独立PNG，八运行字节一致。R驶出后玩家被旧Mary物理位置推移的89/1失败保留；force_update_transform和调用顺序两种修正均失败并撤回，一物理帧同步后原断言通过。总控逐图限定检查完成，独立任务复审Critical0/Important0/Minor2；踏步突出底盘碰撞0.17m、强smoke标签限制均明确。见[本轮报告](../pocs/RB-C1B2-001_REPORT.md)和[真实证据](receipts/2026-10-12-departure-verification/verification.json)。
-
-全轮独立终审Approved，Critical0/Important0；两个Minor已限定，审查者独立实时读回受沙箱限制，核保存原件；总控实际末读保持18/5、basis5/25。日志按原字节提交（-text），暂存8运行文件及12日志SHA核验一致。
-
-新实现56326793423f9083991ef5dd2ee6c10727af756c，交付3dd0486b2f4e0e43d3f7efbedbaea89d37f2258b已推送且独立远端main一致；提交运行8/冻结25/真实日志12的SHA核验一致。[发布记录](receipts/2026-10-12-departure-verification/publication.json)保留两次直连失败及读远端后恢复；使用已启用本机代理仅逐命令配置。新片段已真实打开，窗口PID/精确项目/响应/无启动ERROR见[窗口证据](receipts/2026-10-12-departure-verification/play-window.json)，启动lease不冒称人工全生命周期准入/验收。
-
-下一动作：既定首见POC最小链条已技术贯通，保持灰盒候选与后段人工体验未知；无需继续小灰盒复述。新故事/路线/Visual的执行须先形成有来源的体验问题、五项需求及独立正式准入。当前不可按灰盒技术通过自行宣布路线胜出或实现全序章。
+main持续授权完成验证后主动提交/推送并独立核远端。上一发布f6c10a918b75055af06fcab59736ba8241a26eaa。当前V0基线与最终正式入口输入89/0；最终实际渲染101/0、3445物理/3447录像帧、五独立PNG，八运行与旧34冻结SHA核验通过。任务代码/范围Approved，整轮在技术提交/发布收尾。一次渲染55/16未重现，原因UNKNOWN；右侧仍暗、积木感/金属层次不足，均保留VERIFYING，不称视觉语言/稳定性/L5通过。最终证据写[本轮报告](../pocs/RB-V0-001_REPORT.md)。

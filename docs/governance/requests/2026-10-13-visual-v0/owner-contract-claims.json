@@ -1,0 +1,69 @@
+{
+  "status": "PREPARED_CLAIMS_NOT_RECEIPT",
+  "source": "docs/governance/sources/2026-10-13-owner-visual-v0.md",
+  "sourceSha256": "d1da664a7a336ee5abf3acaeaf4946d290cdf12ebc7e18c62fc0a248fe850591",
+  "allowedPaths": [
+    "pocs/stylized_3d/visual_v0/project.godot",
+    "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+    "pocs/stylized_3d/visual_v0/visual_v0.gd",
+    "pocs/stylized_3d/visual_v0/human.tscn",
+    "pocs/stylized_3d/visual_v0/human.gd",
+    "pocs/stylized_3d/visual_v0/mary.tscn",
+    "pocs/stylized_3d/visual_v0/strings.tres",
+    "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+    "pocs/stylized_3d/visual_v0/README.md",
+    "docs/pocs/RB-V0-001_REPORT.md"
+  ],
+  "mutations": [
+    {
+      "kind": "SET_SCALAR_CLAIM",
+      "field": "GOAL",
+      "assertion_action": "CONFIRM",
+      "value": "V0先确定候选视觉语言，防止灰盒机械占位被资产化；不实施V1/V2。"
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "IN_SCOPE",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "独立当前场景副本，形体/比例、材质语言、色、光、正常距离密度，一个候选组合及一次集中修正。",
+        "3—5真实游戏帧，实际走动核入口/两侧/高墙透明，继承输入启动/短驶出/恢复回归。",
+        "母亲回应信提醒、习惯性帮助而未决定离家作为场景意图，不新增对白或故事演出。"
+      ]
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "TECHNICAL_CONSTRAINTS",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "Godot/Windows/键盘POC、同prototype_execution@1、新十路径/固定进程、新DEC/PLAN/TASK/独立READY。",
+        "原四工程与Discovery34文件冻结；Reboot八运行文件必要复制，Legacy NONE。",
+        "仅现有内建几何/材质；接点/座位/履带/按键是功能占位，具体参数是SERVICE候选。",
+        "同一任务内表现修正增量记录，不逐厘米新建产品决定；范围/工具/许可变化另审。"
+      ]
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "OUT_OF_SCOPE",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "V1玛丽正式品质资产、V2正式人物同场、整段样片、全序章/离家/信演出/标题/音乐。",
+        "精细接点/正式驾驶舱/电路解释/新下车回屋机制、异常真相/最终车型/轮履结构。",
+        "AI生成服务/插件/付费资产/SDK/外部工具管线、新系统/未来抽象/Legacy复用。",
+        "用截图判路线胜出、补L5 PASS、改旧工程/旧报告/旧原生对象、复用旧READY或手改.design。"
+      ]
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "ACCEPTANCE",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "一个可运行V0副本及一页候选视觉主张，3—5选定真实正常游玩帧，记录表现/工量/修正/来源与未覆盖。",
+        "正式主入口真实键路径覆盖自由走动/两侧/门/启动/短驶出/R/Esc，高墙自动透明，无ERROR/脚本错误/崩溃。",
+        "新形体/材质/照明不使现有操作失效；原R物理失败及已知遮挡回归，改变碰撞须重验，不伪造视觉可读性自动PASS。",
+        "L1/L2/L3继承与L4实际过程、独立核验分列；不适用写原因，L5自然理解/情感UNKNOWN。",
+        "旧34文件SHA不变，保持灰盒结构可撤回，V1/V2与C胜出仍另审。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 Core Profile Context 26.8.1.260810 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon TM Graphics
+
+Movie Maker mode enabled, recording movie in 1280×800 @ 60 FPS...
+PASS capture uses visible rendering
+PASS capture directory
+PASS actualMainScene is visual_v0
+PASS distant F has feedback and no board
+PASS walking keys cannot drive before boarding
+PASS real walking z=5.5
+PASS real E door reveals Mary
+PASS real walking z=2.4
+PASS rendered 01-first-reveal
+PASS PNG 01-first-reveal
+PASS real walking x=-2.4
+PASS real walking z=0.5
+PASS near step F boards
+PASS player visibly finishes climb
+PASS early route ignores anomaly and touch
+PASS early arrival precedes contact
+PASS pre-engine W reports mechanical stop
+PASS early F gives unsteady contact cause
+PASS power requires actual mother hand within .14m
+PASS rendered 04-assistance-contact
+PASS PNG 04-assistance-contact
+PASS powered partial hold accumulates only current attempt
+PASS release F stops and clears incomplete crank
+PASS logical focus probe clears crank and held input
+PASS fresh F resumes after logical focus recovery
+PASS R restores car transform
+PASS R restores both people
+PASS R clears seating engine departure
+PASS R clears input progress and mother route
+PASS R restores visible solid people
+PASS R restores camera
+PASS R restores wall opacity
+PASS real walking z=5.5
+PASS real E door reveals Mary
+FAIL real walking z=2.4
+FAIL real walking x=-3.1
+FAIL real walking z=-1.0
+FAIL real walking x=-2.3
+FAIL real E left-side hand contact
+PASS rendered 02-left-touch
+PASS PNG 02-left-touch
+FAIL real walking x=-3.1
+FAIL real walking z=2.4
+FAIL real walking x=2.3
+FAIL real walking z=-1.0
+FAIL real E right-side hand contact
+PASS rendered 03-right-touch
+PASS PNG 03-right-touch
+FAIL real walking z=2.4
+FAIL real walking x=-2.4
+FAIL real walking z=0.5
+FAIL near step F boards
+FAIL player visibly finishes climb
+PASS power requires actual mother hand within .14m
+FAIL held F starts with actual power on first powered attempt
+VISUAL_V0_SMOKE checks=55 failures=16 frames=3688
+--------------------------------------------------------------------------------
+Done recording movie at path: <REPOSITORY>/.local/v0-input.avi
+3689 frames at 60 FPS (movie length: 00:01:01:29), recorded in 00:00:55 (110% of real-time speed).
+CPU render time: 2.14 seconds (average: 0.58 ms/frame)
+GPU render time: 9.22 seconds (average: 2.50 ms/frame)
+Encoding time: 30.64 seconds (average: 8.31 ms/frame)
+--------------------------------------------------------------------------------

@@ -6,6 +6,8 @@
 
 当前唯一首要里程碑是**玛丽第一次出现 POC**：进入地下车库 → 看见玛丽 → 接近并检查 → 发现异常 → 发动 → 开出车库。Discovery 交付已被 Owner 接受，下一阶段方案按 RD-007 修订：先 C0 Spatial Spike，检验空间与操作，再审 C1/Visual。当前 [C0 灰盒](pocs/stylized_3d/c0/README.md) 与 [报告](docs/pocs/RB-C0-001_REPORT.md) 已阶段接受并冻结，四项缺失主观评价保留；当前 [C1-A First Meeting](pocs/stylized_3d/c1a/README.md) 已可运行，报告/任务保持 VERIFYING，首轮已读出“老朋友”但镜头有反例，修后体验待接受；RD-011已采用独立异常可读小轮，新的真实正式依据与独立READY已取得，该轮已阶段接受并冻结。RD-012最新“可以，就继续”阶段接受异常灰盒；独立剩余最小启动/母亲参与/驶出片段已完成技术核验并发布，技术取舍由总控承担。尚无获胜视觉路线，车库实验不证明完整家庭情感。
 
+2026-10-13 RD-013：Owner采用[先V0视觉语言](docs/governance/sources/2026-10-13-owner-visual-v0.md)，当前[五项需求与计划](docs/plans/RB-V0-001_PLAN.md)、[候选一页主张](docs/pocs/VISUAL_THESIS_V0.md)。只形/面/色/光/密度、3—5真实游戏帧与实际走动，不把接点/座位等灰盒占位做成正式结构；V1/V2与C胜出仍另审。新正式对象与独立READY见CURRENT/binding，旧四工程及Discovery冻结。
+
 ## 从这里进入
 
 1. [项目宪法](AGENTS.md)：进入项目必须先读。

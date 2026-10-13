@@ -17,6 +17,8 @@
 | RD-011 | 2026-10-11 | CONFIRMED / Owner（2026-10-12真实native转录，见binding） | [具体提案后“推送并继续”](governance/sources/2026-10-11-owner-c1b-anomaly.md)：携带C1-A未决项，采用C1-B第一小轮仅异常可读 | 替代RD-009中这一小轮待裁定范围；先合法Owner操作/新PLAN/TASK与独立READY，无完整C1-B/发动/驾驶/Visual |
 | RD-012 | 2026-10-12 | CONFIRMED / Owner（真实native转录；技术机制仍候选） | [“我认为可以，就继续”](governance/sources/2026-10-12-owner-graybox-continue.md)：当前异常灰盒阶段接受，继续承担最低POC取舍；不反复要求小灰盒复述 | RB-C1B2-001剩余启动/母亲参与/短距驶出，新对象/独立READY；只替代RD-011后段禁令，不确认故事/Visual或逐项L5 |
 
+| RD-013 | 2026-10-13 | CONFIRMED / Owner（真实native转录；视觉参数仍候选） | [核对外审后“可以”](governance/sources/2026-10-13-owner-visual-v0.md)：先V0视觉语言，不把机械占位资产化、不提前离家；V1/V2后续 | RB-V0-001，新独立对象/READY，十路径、3—5真实帧及走动；不裁定C胜出或补L5 |
+
 RD-003 的路线胜出仍未定；RD-005 的 POC 环境已由 RD-007 采用，其预算/比例不因此批准。原报告及旧正式对象保留，读取新决定时识别明确被替代条款。
 
 正式 IDs 与当前修订只在 [binding](governance/binding.json) / [CURRENT](governance/CURRENT.md)及回执维护。建库不批准视觉路线，POC实施不批准全序章，Owner来源不授予 Agent 自主组织裁决权。

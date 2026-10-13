@@ -1,0 +1,566 @@
+{
+  "at": "2026-10-13T01:27:07.080Z",
+  "conversationDate": "2026-10-13",
+  "task": "RB-V0-001",
+  "change": "CHG-20261013-012",
+  "runs": [
+    {
+      "id": "smoke-1791853836745",
+      "mode": "smoke",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/visual_v0/project.godot",
+          "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+          "sha256": "6a36d6b8a76bc58ef4d45ff16cc5c58502963d8e3b66980b7fdc42feb45ef489"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.tscn",
+          "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+          "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/strings.tres",
+          "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+          "sha256": "6261db42d2c3b359582c6949be2abf650aa7ca47991610ce214fafe4dc73c9b3"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/README.md",
+          "sha256": "1e7a267563552b1bbbd1e90a45d2e95ec7f88e969968582b6cbe3af70c73600a"
+        },
+        {
+          "path": "docs/pocs/RB-V0-001_REPORT.md",
+          "sha256": "47746c85c05a527fb4052e585f770f4944264a5ba4bbc79b96a22256cf670d16"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 0,
+        "frames": 3445
+      },
+      "originalLogSha256": "1f8860c36eb07303368cf12df99e2c4af8751a98092746e20dec25e3d18df7b1",
+      "projectedLogSha256": "1f8860c36eb07303368cf12df99e2c4af8751a98092746e20dec25e3d18df7b1",
+      "log": "logs/smoke-1791853836745.txt"
+    },
+    {
+      "id": "smoke-1791854369166",
+      "mode": "smoke",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/visual_v0/project.godot",
+          "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+          "sha256": "ef68eaa1df1676914b1c462f14eae40025e68aa7b14df576899a4889e5910f3e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.tscn",
+          "sha256": "9f8bae2bdea0ac3c823f08ebe334330e95ee8cd7b5b15c8628ed36f453902a29"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+          "sha256": "f656856bdef28d8df30fd40637882a90cd89af8a7612bf73953a5a6bb1db9649"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/strings.tres",
+          "sha256": "53e0fdd1967a85199973c67620af8b2f2aba026935c70374518873bf3ce5b4de"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+          "sha256": "47807e3c2ff9bf8d8d30cc4848d15cb51d322c3b7935e9c79659872b20def18e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/README.md",
+          "sha256": "862bb63cfe72026793fea949c3b134a59a9d8f80d7be7656baf4bb30e81dc949"
+        },
+        {
+          "path": "docs/pocs/RB-V0-001_REPORT.md",
+          "sha256": "47746c85c05a527fb4052e585f770f4944264a5ba4bbc79b96a22256cf670d16"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 0,
+        "frames": 3445
+      },
+      "originalLogSha256": "c531825b952fe05584dcdca960aeff6a6c32b1b59af5487c03fe6c167c2c7f99",
+      "projectedLogSha256": "c531825b952fe05584dcdca960aeff6a6c32b1b59af5487c03fe6c167c2c7f99",
+      "log": "logs/smoke-1791854369166.txt"
+    },
+    {
+      "id": "capture-1791854380425",
+      "mode": "capture",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/visual_v0/project.godot",
+          "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+          "sha256": "ef68eaa1df1676914b1c462f14eae40025e68aa7b14df576899a4889e5910f3e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.tscn",
+          "sha256": "9f8bae2bdea0ac3c823f08ebe334330e95ee8cd7b5b15c8628ed36f453902a29"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+          "sha256": "f656856bdef28d8df30fd40637882a90cd89af8a7612bf73953a5a6bb1db9649"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/strings.tres",
+          "sha256": "53e0fdd1967a85199973c67620af8b2f2aba026935c70374518873bf3ce5b4de"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+          "sha256": "47807e3c2ff9bf8d8d30cc4848d15cb51d322c3b7935e9c79659872b20def18e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/README.md",
+          "sha256": "862bb63cfe72026793fea949c3b134a59a9d8f80d7be7656baf4bb30e81dc949"
+        },
+        {
+          "path": "docs/pocs/RB-V0-001_REPORT.md",
+          "sha256": "47746c85c05a527fb4052e585f770f4944264a5ba4bbc79b96a22256cf670d16"
+        }
+      ],
+      "counters": {
+        "checks": 101,
+        "failures": 0,
+        "frames": 3445
+      },
+      "originalLogSha256": "2b695e2bcecc799aaf7c60c57127d90f2bb05b0bdfb20d1d0ab8aee9f4a899a1",
+      "projectedLogSha256": "6bda030ce91486ad77ed24fb6c80855a48b3dddd6b32324715aeea318f77f868",
+      "log": "logs/capture-1791854380425.txt"
+    },
+    {
+      "id": "smoke-1791854534107",
+      "mode": "smoke",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/visual_v0/project.godot",
+          "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+          "sha256": "8171ecf1f68f0666971abb8473e7ed6c6e21d420e224e08653271acc77d45e39"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.tscn",
+          "sha256": "9f8bae2bdea0ac3c823f08ebe334330e95ee8cd7b5b15c8628ed36f453902a29"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+          "sha256": "f656856bdef28d8df30fd40637882a90cd89af8a7612bf73953a5a6bb1db9649"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/strings.tres",
+          "sha256": "53e0fdd1967a85199973c67620af8b2f2aba026935c70374518873bf3ce5b4de"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+          "sha256": "47807e3c2ff9bf8d8d30cc4848d15cb51d322c3b7935e9c79659872b20def18e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/README.md",
+          "sha256": "862bb63cfe72026793fea949c3b134a59a9d8f80d7be7656baf4bb30e81dc949"
+        },
+        {
+          "path": "docs/pocs/RB-V0-001_REPORT.md",
+          "sha256": "47746c85c05a527fb4052e585f770f4944264a5ba4bbc79b96a22256cf670d16"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 0,
+        "frames": 3445
+      },
+      "originalLogSha256": "c531825b952fe05584dcdca960aeff6a6c32b1b59af5487c03fe6c167c2c7f99",
+      "projectedLogSha256": "c531825b952fe05584dcdca960aeff6a6c32b1b59af5487c03fe6c167c2c7f99",
+      "log": "logs/smoke-1791854534107.txt"
+    },
+    {
+      "id": "capture-1791854543472",
+      "mode": "capture",
+      "outcome": "FAIL",
+      "exitCode": 1,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/visual_v0/project.godot",
+          "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+          "sha256": "8171ecf1f68f0666971abb8473e7ed6c6e21d420e224e08653271acc77d45e39"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.tscn",
+          "sha256": "9f8bae2bdea0ac3c823f08ebe334330e95ee8cd7b5b15c8628ed36f453902a29"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+          "sha256": "f656856bdef28d8df30fd40637882a90cd89af8a7612bf73953a5a6bb1db9649"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/strings.tres",
+          "sha256": "53e0fdd1967a85199973c67620af8b2f2aba026935c70374518873bf3ce5b4de"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+          "sha256": "47807e3c2ff9bf8d8d30cc4848d15cb51d322c3b7935e9c79659872b20def18e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/README.md",
+          "sha256": "862bb63cfe72026793fea949c3b134a59a9d8f80d7be7656baf4bb30e81dc949"
+        },
+        {
+          "path": "docs/pocs/RB-V0-001_REPORT.md",
+          "sha256": "47746c85c05a527fb4052e585f770f4944264a5ba4bbc79b96a22256cf670d16"
+        }
+      ],
+      "counters": {
+        "checks": 55,
+        "failures": 16,
+        "frames": 3688
+      },
+      "originalLogSha256": "54cf7c03fe237ff39c18b7fbfe8446ecc365de0e399cfa0aa79d2f5188146cb5",
+      "projectedLogSha256": "47f83d6f70f22a59f2859b38bf3b013dd679c2a241dff24d2a44f43e3ebff1d5",
+      "log": "logs/capture-1791854543472.txt"
+    },
+    {
+      "id": "capture-1791854716604",
+      "mode": "capture",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/visual_v0/project.godot",
+          "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+          "sha256": "8171ecf1f68f0666971abb8473e7ed6c6e21d420e224e08653271acc77d45e39"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.tscn",
+          "sha256": "9f8bae2bdea0ac3c823f08ebe334330e95ee8cd7b5b15c8628ed36f453902a29"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+          "sha256": "f656856bdef28d8df30fd40637882a90cd89af8a7612bf73953a5a6bb1db9649"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/strings.tres",
+          "sha256": "53e0fdd1967a85199973c67620af8b2f2aba026935c70374518873bf3ce5b4de"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+          "sha256": "39624180b7070a939d04f7caecaebeb362d712b0e0d5e5e5fd53398ac73f57da"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/README.md",
+          "sha256": "862bb63cfe72026793fea949c3b134a59a9d8f80d7be7656baf4bb30e81dc949"
+        },
+        {
+          "path": "docs/pocs/RB-V0-001_REPORT.md",
+          "sha256": "47746c85c05a527fb4052e585f770f4944264a5ba4bbc79b96a22256cf670d16"
+        }
+      ],
+      "counters": {
+        "checks": 101,
+        "failures": 0,
+        "frames": 3445
+      },
+      "originalLogSha256": "67b7a259865666284e3c57e573bc44777c818950267dc0814fc3ed51b2229add",
+      "projectedLogSha256": "1043b5bf8d20b0e48844fbb5b7893234763e4c61f92cd2f243f230578d996668",
+      "log": "logs/capture-1791854716604.txt"
+    },
+    {
+      "id": "smoke-1791854822853",
+      "mode": "smoke",
+      "outcome": "PASS",
+      "exitCode": 0,
+      "errorMarkers": false,
+      "inputFiles": [
+        {
+          "path": "pocs/stylized_3d/visual_v0/project.godot",
+          "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+          "sha256": "8171ecf1f68f0666971abb8473e7ed6c6e21d420e224e08653271acc77d45e39"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+          "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.tscn",
+          "sha256": "9f8bae2bdea0ac3c823f08ebe334330e95ee8cd7b5b15c8628ed36f453902a29"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/human.gd",
+          "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+          "sha256": "f656856bdef28d8df30fd40637882a90cd89af8a7612bf73953a5a6bb1db9649"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/strings.tres",
+          "sha256": "53e0fdd1967a85199973c67620af8b2f2aba026935c70374518873bf3ce5b4de"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+          "sha256": "39624180b7070a939d04f7caecaebeb362d712b0e0d5e5e5fd53398ac73f57da"
+        },
+        {
+          "path": "pocs/stylized_3d/visual_v0/README.md",
+          "sha256": "862bb63cfe72026793fea949c3b134a59a9d8f80d7be7656baf4bb30e81dc949"
+        },
+        {
+          "path": "docs/pocs/RB-V0-001_REPORT.md",
+          "sha256": "47746c85c05a527fb4052e585f770f4944264a5ba4bbc79b96a22256cf670d16"
+        }
+      ],
+      "counters": {
+        "checks": 89,
+        "failures": 0,
+        "frames": 3445
+      },
+      "originalLogSha256": "c531825b952fe05584dcdca960aeff6a6c32b1b59af5487c03fe6c167c2c7f99",
+      "projectedLogSha256": "c531825b952fe05584dcdca960aeff6a6c32b1b59af5487c03fe6c167c2c7f99",
+      "log": "logs/smoke-1791854822853.txt"
+    }
+  ],
+  "finalSmoke": "smoke-1791854822853",
+  "finalCapture": "capture-1791854716604",
+  "actualSmokeCounters": {
+    "checks": 89,
+    "failures": 0,
+    "frames": 3445
+  },
+  "actualCaptureCounters": {
+    "checks": 101,
+    "failures": 0,
+    "frames": 3445
+  },
+  "runtimeHashes": [
+    {
+      "path": "pocs/stylized_3d/visual_v0/project.godot",
+      "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+      "sha256": "8171ecf1f68f0666971abb8473e7ed6c6e21d420e224e08653271acc77d45e39"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+      "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/human.tscn",
+      "sha256": "9f8bae2bdea0ac3c823f08ebe334330e95ee8cd7b5b15c8628ed36f453902a29"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/human.gd",
+      "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+      "sha256": "f656856bdef28d8df30fd40637882a90cd89af8a7612bf73953a5a6bb1db9649"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/strings.tres",
+      "sha256": "53e0fdd1967a85199973c67620af8b2f2aba026935c70374518873bf3ce5b4de"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+      "sha256": "39624180b7070a939d04f7caecaebeb362d712b0e0d5e5e5fd53398ac73f57da"
+    }
+  ],
+  "frozen34Sha256": {
+    "docs/discovery/RB-DISC-001_REPORT.md": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512",
+    "pocs/stylized_3d/c0/README.md": "630838597311192c381154b4d3a065adcea442f42036bdeb59926859b1fe0f70",
+    "pocs/stylized_3d/c0/garage.gd": "69fa84c0ae47d8bd7f8dfcee7389f88f5e332589ef8522413dfa28890bc4c2e5",
+    "pocs/stylized_3d/c0/garage.tscn": "d79e378dcce29acb8c1ad5bfd02a862542a5b4d3883393be10f9f0cf32626097",
+    "pocs/stylized_3d/c0/project.godot": "1813cce85de841235a4c5064435f410a28ff6671bee5446cf2bf87aba676f21f",
+    "pocs/stylized_3d/c0/spatial_smoke.gd": "c30b4540e4381ebd8b1a4f92fb18270d75e09a585970b3bb345f477adb453de9",
+    "pocs/stylized_3d/c0/strings.tres": "1e7d9d6183680059c96b3aa2ee77baa3443bec4a18fe5242c05a9c814b328b7b",
+    "pocs/stylized_3d/c1a/README.md": "42bcb96369791ad83f221437f6ffba1820f4ab99e353ecab43fff5cf5087c422",
+    "pocs/stylized_3d/c1a/first_meeting.gd": "534700de932f606f2c4727148eb2c96babbd6c7750674afae227bb4f28e45db9",
+    "pocs/stylized_3d/c1a/first_meeting.tscn": "615cdace8c09efffecd1a8a1f07e77d0346654a61419f147af9d313b9c7e952e",
+    "pocs/stylized_3d/c1a/human.gd": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5",
+    "pocs/stylized_3d/c1a/human.tscn": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+    "pocs/stylized_3d/c1a/mary.tscn": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f",
+    "pocs/stylized_3d/c1a/narrative_smoke.gd": "7cf9c9dddd5c7e26cd9a45fa0b005e8b4273f3cb9684850454585512b18ca9dc",
+    "pocs/stylized_3d/c1a/project.godot": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4",
+    "pocs/stylized_3d/c1a/strings.tres": "6b916223d26468d994701aff8728cb91610e0d0b8e3d9b115c95adff7fd83ea8",
+    "pocs/stylized_3d/c1b_anomaly/README.md": "6f46899c7862b3f2690bb9d28371cfbaeeae5321d51a761db9628aee5153d0aa",
+    "pocs/stylized_3d/c1b_anomaly/anomaly.gd": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf",
+    "pocs/stylized_3d/c1b_anomaly/anomaly.tscn": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1",
+    "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b",
+    "pocs/stylized_3d/c1b_anomaly/human.gd": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534",
+    "pocs/stylized_3d/c1b_anomaly/human.tscn": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+    "pocs/stylized_3d/c1b_anomaly/mary.tscn": "0d7d3caebb48e5aa65d87c93e0b8dd7b2177f907560cccf88c1f9379f250f082",
+    "pocs/stylized_3d/c1b_anomaly/project.godot": "5108cc818c4f33655d5061285e6f0e722590a75559ae7e4c739138c152ebb672",
+    "pocs/stylized_3d/c1b_anomaly/strings.tres": "0c6cd98e9cb582dbd22e26f400dc502c673d99436a705b199fefe4032b55332c",
+    "pocs/stylized_3d/c1b_departure/README.md": "c4cd507f9d94b5c58a01c83bfdc4be4ed2f8e876d289b4523355621ecf301a53",
+    "pocs/stylized_3d/c1b_departure/departure.gd": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e",
+    "pocs/stylized_3d/c1b_departure/departure.tscn": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524",
+    "pocs/stylized_3d/c1b_departure/departure_smoke.gd": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f",
+    "pocs/stylized_3d/c1b_departure/human.gd": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68",
+    "pocs/stylized_3d/c1b_departure/human.tscn": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+    "pocs/stylized_3d/c1b_departure/mary.tscn": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568",
+    "pocs/stylized_3d/c1b_departure/project.godot": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8",
+    "pocs/stylized_3d/c1b_departure/strings.tres": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb"
+  },
+  "frozen34Preserved": true,
+  "images": [
+    {
+      "file": "01-first-reveal.png",
+      "path": ".local/v0-captures/01-first-reveal.png",
+      "sha256": "537a88764686a9f8a0e4d17c53a03c15e247fbbc41697d78156ed7474c6db9f0"
+    },
+    {
+      "file": "02-left-touch.png",
+      "path": ".local/v0-captures/02-left-touch.png",
+      "sha256": "7a271613d2f2f8f5fc612612d21d15442fe7361737cda6647c42cc4a1ee2c458"
+    },
+    {
+      "file": "03-right-touch.png",
+      "path": ".local/v0-captures/03-right-touch.png",
+      "sha256": "0021c6c2f5485245e84626d5b2e50e9370ad6da0782c4372930243afdfbcd952"
+    },
+    {
+      "file": "04-assistance-contact.png",
+      "path": ".local/v0-captures/04-assistance-contact.png",
+      "sha256": "05886f825612329b9f03bc1b2db489a614566396e12c50fe49036c1b40dc2276"
+    },
+    {
+      "file": "05-outside-parked.png",
+      "path": ".local/v0-captures/05-outside-parked.png",
+      "sha256": "98ad10b9adc95d33ccd950028eca3c36eb232e0ab051f9d0bcc3fc1ae2091713"
+    }
+  ],
+  "aviSha256": "525c040116cbadd28b3ff21ffc9bc03f4079f0dc6b8db13746e53af8fd1f65de",
+  "fullReadSha256": "c3709c33b83c3681a351fde7e65fe9bbf4f5ddf11e67435cc3eb2f4acf52725e",
+  "basis": {
+    "observed_canonical_state_id": "CST-cf07cf6b-16f1-4b06-89b1-79092167b080",
+    "observed_schema_version": 5,
+    "observed_design_revision": 29
+  },
+  "canonicalCount": 21,
+  "runtimeCount": 6,
+  "old18CanonicalAnd5RuntimePreserved": true,
+  "visualInspection": {
+    "by": "root",
+    "kind": "实现总控逐张查看，非L5",
+    "frames": [
+      "01-first-reveal.png",
+      "02-left-touch.png",
+      "03-right-touch.png",
+      "04-assistance-contact.png",
+      "05-outside-parked.png"
+    ],
+    "observations": [
+      "首见/两侧/协助/外部停车指定样本可见；HUD缩小，选定画面未再盖人物脚",
+      "普通钢灰补板与暗红分枝在指定左侧样本形色不同，仍不能证明玩家读懂",
+      "一次提高环境光/降低方向光后右侧人物仍偏暗；软光与材质差异未充分成立",
+      "车体仍明显由规则积木构成，补板尚不构成家庭归属证明",
+      "高墙未降低，指定样本淡化；全身全墙/排序未知"
+    ]
+  },
+  "independentReview": "任务Approved 0/0/0；全轮0Critical/0Important/1Minor，记录旧时态已在提交前纠正；技术可收尾，产品VERIFYING",
+  "L5": "UNKNOWN",
+  "newMechanism": false,
+  "red": "N/A：本轮嵌入网格/表现参数未改机制。89原行为断言与已知R失败回归保留；另有真实渲染55/16失败，不能以配置镜像测试或伪RED替代。",
+  "limitations": [
+    "离线录像不证明实时FPS或OS切焦",
+    "接点/座位/履带仍功能占位",
+    "素材语言与情感未人工接受",
+    "V1/V2未授权，C未勝出"
+  ],
+  "renderFailure": {
+    "id": "capture-1791854543472",
+    "checks": 55,
+    "failures": 16,
+    "frames": 3688,
+    "diagnosis": "首次路线通过，第二次开门后走动停止；加焦点与失败输入诊断后同光照重跑101/0，窗口只记录起始FOCUS_IN。失败未重现，原失败没有焦点日志，根因UNKNOWN，不宣称OS焦点已证实或稳定性修复。",
+    "images": "失败仅归档4张实际产生帧；未用旧第5张补齐",
+    "archive": ".local/v0-render-history/capture-1791854543472"
+  },
+  "finalReadSha256": "c3709c33b83c3681a351fde7e65fe9bbf4f5ddf11e67435cc3eb2f4acf52725e",
+  "finalFullReadUnchanged": true
+}

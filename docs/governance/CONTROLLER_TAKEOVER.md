@@ -1,4 +1,6 @@
-# 新总控接续入口 / 2026-10-12
+# 新总控接续入口 / 2026-10-13
+
+最新RD-013：Owner采用先V0视觉语言，V1/V2仍候选。先按下方完整阅读纪律理解设计/原话/试玩，再读[CURRENT](CURRENT.md)、[新计划](../plans/RB-V0-001_PLAN.md)和实时对象；历史后段/Visual禁令不能覆盖新V0范围，也不能据此扩大。当前21对象/6运行、新独立READY及精确十路径，见binding。下方保留历史快照。
 
 2026-10-12最新：Owner[“我认为可以，就继续”](sources/2026-10-12-owner-graybox-continue.md)阶段接受异常灰盒，不再要求小灰盒复述；当前RB-C1B2-001首见POC剩余启动/母亲具体参与/短距驶出，新独立对象与READY已取，具体机制仍SERVICE候选。读[最新计划](../plans/RB-C1B2-001_IMPLEMENTATION_PLAN.md)和[新方向/准入](receipts/2026-10-12-departure-admission/assessment-projection.json)，核当前完整设计与真实状态后接续。下方RD-011阶段“后段未授权”为历史，不套为当前禁令。完整序章/离家决定/Visual仍未批准。
 

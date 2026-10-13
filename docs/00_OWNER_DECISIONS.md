@@ -86,6 +86,12 @@
 
 另建RB-C1B2-001：新DEC@2/PLAN@1/TASK@1和独立READY见[binding](governance/binding.json)、[方向读回](governance/receipts/2026-10-12-departure-direction/readback-verification.json)、[新准入](governance/receipts/2026-10-12-departure-admission/assessment-projection.json)。旧工程冻结，不用旧READY授新阶段。具体因果和五项需求见[执行计划](plans/RB-C1B2-001_IMPLEMENTATION_PLAN.md)；新后段不借旧轮“可以”冒称人工已验。
 
+## 2026-10-13 Owner采用视觉语言V0 / RD-013
+
+来源：[核对外审后“可以”](governance/sources/2026-10-13-owner-visual-v0.md)。采用先V0，V1/V2后续候选；替代原完整首见表现提案的本轮实施方式，不裁定C胜出。一个候选组合、一轮集中修正，形/面/色/光/密度、一页主张、3—5真实游戏帧及最低实际走动。母亲回应信提醒、做熟悉的事而未决定离家作为片段工作意图；不追加信/离家/下车回屋演出。
+
+独立RB-V0-001新DEC@2/PLAN@1/TASK@1及READY见[binding](governance/binding.json)。接点/座位/启动操作/履带继续功能占位，不精修成正式结构；仅内建资源。外部工具/许可/资产生产、V1/V2和最终艺术参数另审。旧34文件冻结，L5未知保留；同一有界任务内表现细修不逐项另开产品决定。
+
 ## 尚未裁定 / 不得自行确认
 
 - V-01：暗红锈蚀 / 新生金属组织是首个异常的候选表现；像腐败又像修复/生长，不等于设定真相。

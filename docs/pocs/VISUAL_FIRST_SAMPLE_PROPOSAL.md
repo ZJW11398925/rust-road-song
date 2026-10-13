@@ -1,6 +1,6 @@
 # 玛丽首见：第一轮表现试样提案
 
-2026-10-13；RB-VIS-PROP-001；SERVICE / PROPOSED。这是供Owner采用的本地提案，不是正式TASK，也没有Visual实施READY。关联[变更记录](../changes/CHG-20261013-011.md)。
+2026-10-13；RB-VIS-PROP-001；原提案历史正文保留。Owner随后[采用修订后的先V0](../governance/sources/2026-10-13-owner-visual-v0.md)，本页下方“完整首见表现试样”未原样采用；当前执行按[RB-V0-001计划](../plans/RB-V0-001_PLAN.md)与[一页视觉主张](VISUAL_THESIS_V0.md)，独立正式对象/READY见binding。本页原十路径不作为当前准入。关联[原提案变更](../changes/CHG-20261013-011.md)。
 
 ## 要解决的体验问题
 

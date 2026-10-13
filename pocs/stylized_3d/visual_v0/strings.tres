@@ -1,0 +1,28 @@
+[gd_resource type="Translation" format=3]
+[resource]
+locale = "zh_CN"
+messages = {
+"TITLE": "V0 表现试样",
+"HELP": "WASD 步行 · E 门 / 触碰 · F 登车 / 按住启动 · W/S 驾车 A/D 转向 · R 重置 · Esc 退出",
+"DOOR_HINT": "E 打开门",
+"TOUCH_HINT": "E 触碰车身",
+"FAR": "还碰不到，请靠近门或车身。",
+"REACH": "伸手试着触碰车身。",
+"TOUCH_MISS": "手没有碰到车身，请靠近再试。",
+"OPEN": "门已打开。",
+"FOCUS": "输入已清除，恢复后重新按键。",
+"MOTHER": "这裂口，他走之前还没补上。",
+"TOUCH": "手碰到了车身。",
+"BOARD_HINT": "F 从踏步登车",
+"BOARD_FAR": "还够不到登车踏步，请到车身左前侧。",
+"BOARDED": "从踏步登车；坐稳后按住 F 启动。",
+"START_HINT": "按住 F 启动；松开停止",
+"NO_CONTACT": "启动接点还未压稳，母亲正在靠近协助。",
+"CRANKING": "母亲压住接点；正在带动启动。",
+"RUNNING": "引擎着了。母亲收手，走向乘员位置。",
+"ENGINE_OFF": "引擎还没有启动，车没有动力。",
+"WAIT_MOTHER": "母亲还未坐稳，先压住制动。",
+"DRIVE_HINT": "W/S 前进 / 倒车 · A/D 有限转向 · 松键停止",
+"COLLISION": "车体碰到实体边界，已停住。",
+"EXITED": "玛丽已完全驶出车库。片段到此；R 可重来。"
+}
