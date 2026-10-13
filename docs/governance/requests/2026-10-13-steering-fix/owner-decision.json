@@ -1,0 +1,32 @@
+{
+  "status": "PREPARED_NOT_RECEIPT",
+  "source": "docs/governance/sources/2026-10-13-owner-steering-fix.md",
+  "sourceSha256": "a97ecc065eb77b9aced18821f9e8d45943dc6dce6cf16db4beb119129263d58c",
+  "arguments": {
+    "decision": {
+      "question": "是否立即修正V0驾驶A/D反向并验证前进/倒车方向？",
+      "alternatives": [
+        {
+          "key": "fix",
+          "description": "仅修转向符号与实际输入方向回归。"
+        },
+        {
+          "key": "retain",
+          "description": "保留已确认错误，Owner未采用。"
+        }
+      ],
+      "selected_key": "fix",
+      "reason": "Owner明确“马上修复”。来源docs/governance/sources/2026-10-13-owner-steering-fix.md SHA256 a97ecc065eb77b9aced18821f9e8d45943dc6dce6cf16db4beb119129263d58c",
+      "related_constraint_refs": [
+        {
+          "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca",
+          "kind": "DECISION",
+          "id": "DEC-OPI-a2cced96-4eb7-4530-b8c5-7d121a27fbcb.2"
+        }
+      ],
+      "tradeoffs": [
+        "仅纠错，不授予视觉接受或V1/V2；旧工程/旧证据冻结。"
+      ]
+    }
+  }
+}

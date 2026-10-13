@@ -1,0 +1,120 @@
+{
+  "task": "RB-V0-FIX-001",
+  "change": "CHG-20261013-013",
+  "runs": [
+    {
+      "name": "steer-red",
+      "checks": 97,
+      "failures": 9,
+      "frames": 3533,
+      "originalSha256": "3527399a32458d2eab4f9d87eb1293f61605fb687fe090a5c85963b1c2933075",
+      "publicSha256": "3527399a32458d2eab4f9d87eb1293f61605fb687fe090a5c85963b1c2933075",
+      "id": "smoke-1791856393818",
+      "focusEvents": []
+    },
+    {
+      "name": "steer-red2",
+      "checks": 97,
+      "failures": 8,
+      "frames": 3533,
+      "originalSha256": "a53601f34d00bfabd01b737f36f94e663b943449f7550c4195112d73b678d904",
+      "publicSha256": "a53601f34d00bfabd01b737f36f94e663b943449f7550c4195112d73b678d904",
+      "id": "smoke-1791856432485",
+      "focusEvents": []
+    },
+    {
+      "name": "steer-green",
+      "checks": 97,
+      "failures": 0,
+      "frames": 3533,
+      "originalSha256": "d9ef3ec5015810385c88f38f6cb57361a5689a3f000346db01f0d7098ea1fe3e",
+      "publicSha256": "d9ef3ec5015810385c88f38f6cb57361a5689a3f000346db01f0d7098ea1fe3e",
+      "id": "smoke-1791856467338",
+      "focusEvents": []
+    },
+    {
+      "name": "steer-render",
+      "checks": 109,
+      "failures": 1,
+      "frames": 3533,
+      "originalSha256": "6e5946f0fd2b763179f80c65663a39cc3ae76a60ff1a120cbca3f659e176fa41",
+      "publicSha256": "56a58c85bf619a745dd8b11203d4a4714474948a0e85c605f6892ea81ec2244f",
+      "id": "capture-1791856480538",
+      "focusEvents": [
+        "WINDOW_FOCUS_IN frames=0",
+        "WINDOW_FOCUS_OUT frames=537"
+      ]
+    },
+    {
+      "name": "steer-render2",
+      "checks": 109,
+      "failures": 12,
+      "frames": 4564,
+      "originalSha256": "c1fda76d635e3ce9fa08a310f2361c423d29045ecd1d99e14c8a131fbd140132",
+      "publicSha256": "f163a8fda19d25a5330d441329699c49bd8d9b2921624e222bd9e7dd7f9d7e6b",
+      "id": "capture-1791856570541",
+      "focusEvents": [
+        "WINDOW_FOCUS_IN frames=0",
+        "WINDOW_FOCUS_OUT frames=34"
+      ]
+    },
+    {
+      "name": "steer-render3",
+      "checks": 109,
+      "failures": 0,
+      "frames": 3533,
+      "originalSha256": "0b592a665ef846bda359f83eabcc07db68676d10ba62a5a2bdae84f541b45ea9",
+      "publicSha256": "44101e3fdbbe02a801131f0ae14797d083db73237dc0e2aaa453935a039bfa54",
+      "id": "capture-1791856729734",
+      "focusEvents": [
+        "WINDOW_FOCUS_IN frames=0"
+      ]
+    }
+  ],
+  "runtimeHashes": [
+    {
+      "path": "pocs/stylized_3d/visual_v0/project.godot",
+      "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+      "sha256": "8171ecf1f68f0666971abb8473e7ed6c6e21d420e224e08653271acc77d45e39"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+      "sha256": "b161ec50e1c1732886d107cfd1ed88fbd2aec8d67e091c79fba6be71c8bf2fdd"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/human.tscn",
+      "sha256": "9f8bae2bdea0ac3c823f08ebe334330e95ee8cd7b5b15c8628ed36f453902a29"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/human.gd",
+      "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+      "sha256": "f656856bdef28d8df30fd40637882a90cd89af8a7612bf73953a5a6bb1db9649"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/strings.tres",
+      "sha256": "53e0fdd1967a85199973c67620af8b2f2aba026935c70374518873bf3ce5b4de"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+      "sha256": "4711ebfe11070df5f4d0a5b8a46ae6edab40586aba7a795c49b26ad8dbacfc07"
+    }
+  ],
+  "frozen34Preserved": true,
+  "fullReadOriginalSha256": "046cb0f08b36aecacaea37f3fec17042fccde76eb47690c566ee2f55b69d9b25",
+  "basis": {
+    "observed_canonical_state_id": "CST-6cf4d15a-12dc-4b11-afcf-df691ee21dd4",
+    "observed_schema_version": 5,
+    "observed_design_revision": 33
+  },
+  "canonicalCount": 24,
+  "runtimeCount": 7,
+  "review": "独立只读终审0Critical/0Important/0Minor，技术可收尾；八运行、旧34、六日志SHA相符；97/0及109/0，同样保留109/1、109/12切焦失败，不授予视觉/L5接受",
+  "L5": "No new human acceptance; visual rejected",
+  "limits": "First render interrupted by actual focus-out during F; direction checks themselves passed. No general focus stability fix."
+}

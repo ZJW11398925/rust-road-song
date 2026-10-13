@@ -75,3 +75,5 @@ ERROR/脚本错误/崩溃即失败，退出码 0 无效；交互失败需玩家�
 ## 8. 开场动作
 
 先完成必读与 `git status --short --branch`，运行 `node scripts/dmcp.mjs read` 与 `node scripts/check_context.mjs`。取得实时依据后读 RD-009、RB-C1A-001与本轮C1-A试玩来源；总控依CONTROLLER_TAKEOVER先核完整设计再分派。核对新的代码执行准入，不能继续按原报告下一阶段方案开工。不得从 Legacy HANDOFF 继续 176..179。
+
+RD-014最新Owner“马上修复”仅授权当前visual_v0驾驶方向纠错及实际回归，见CURRENT；新独立DEC/PLAN/TASK/READY已取得。V0造型负面反馈保留，旧34冻结，V1/V2不进入。

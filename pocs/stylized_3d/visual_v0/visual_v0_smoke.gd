@@ -230,6 +230,24 @@ func _run() -> void:
 	_check(mary.position.z < stopped.z - 0.03 and float(stage.get("speed")) == 0.0, "real S reverses and release stops")
 	_check((stage.get_node("Camera3D") as Camera3D).position.distance_to(camera_before) > 0.1, "drive camera follows smoothly")
 	_check(player.global_position.distance_to(mary.to_global(Vector3(0.65, 0.95, 1.8))) < 0.03, "driver follows car in seat")
+	# Regression: real keys, vehicle-local heading and displacement, both travel signs.
+	for drive_key: int in [KEY_W, KEY_S]:
+		for steer_key: int in [KEY_D, KEY_A]:
+			var start_yaw: float = mary.rotation.y
+			var start_position: Vector3 = mary.position
+			var vehicle_right: Vector3 = -mary.global_basis.x
+			var expected_yaw: float = (-1.0 if steer_key == KEY_D else 1.0) * (1.0 if drive_key == KEY_W else -1.0)
+			_key(drive_key, true)
+			_key(steer_key, true)
+			await _wait(20)
+			_key(steer_key, false)
+			_key(drive_key, false)
+			await _wait(2)
+			var yaw_change: float = wrapf(mary.rotation.y - start_yaw, -PI, PI)
+			var lateral: float = (mary.position - start_position).dot(vehicle_right)
+			print("STEERING drive=", drive_key, " steer=", steer_key, " yaw=", yaw_change, " lateral_right=", lateral)
+			_check(yaw_change * expected_yaw > 0.02, "real steering heading W/S A/D %s %s" % [drive_key, steer_key])
+			_check(lateral * (1.0 if steer_key == KEY_D else -1.0) > 0.003, "real steering displacement W/S A/D %s %s" % [drive_key, steer_key])
 	_key(KEY_W, true)
 	_key(KEY_D, true)
 	await _wait(50)

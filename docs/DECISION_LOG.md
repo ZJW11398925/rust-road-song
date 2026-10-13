@@ -22,3 +22,5 @@
 RD-003 的路线胜出仍未定；RD-005 的 POC 环境已由 RD-007 采用，其预算/比例不因此批准。原报告及旧正式对象保留，读取新决定时识别明确被替代条款。
 
 正式 IDs 与当前修订只在 [binding](governance/binding.json) / [CURRENT](governance/CURRENT.md)及回执维护。建库不批准视觉路线，POC实施不批准全序章，Owner来源不授予 Agent 自主组织裁决权。
+
+RD-014 / 2026-10-13 / Owner CONFIRMED：[马上修复](governance/sources/2026-10-13-owner-steering-fix.md)，仅RB-V0-FIX-001驾驶方向纠错，新独立准入；非视觉接受。

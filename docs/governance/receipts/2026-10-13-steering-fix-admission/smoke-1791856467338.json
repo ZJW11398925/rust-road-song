@@ -1,0 +1,61 @@
+{
+  "at": "2026-10-13T01:54:27.338Z",
+  "mode": "smoke",
+  "assessmentRef": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-ee70e78f-9287-4ad2-b072-cc1bf7ac9b56.2",
+  "sharedNativeLease": true,
+  "engineCommit": "86a8fc1c019bd6fc3199fedaaab4bd5ca80ce2ca",
+  "policySha256": "974287f2ad4bb3d1c2950217931cf59c4517ea7ff11963f0f697a5ba6a480271",
+  "basis": {
+    "canonical_state_id": "CST-6cf4d15a-12dc-4b11-afcf-df691ee21dd4",
+    "schema_version": 5,
+    "design_revision": 33
+  },
+  "processProfile": "smoke",
+  "argumentSha256": "fdbbf75f5530b213e1b6bd2833c8a6a8ec0013aa321894827d4843751821ad4f",
+  "inputFiles": [
+    {
+      "path": "pocs/stylized_3d/visual_v0/project.godot",
+      "sha256": "9fbfc74c60e1a0d93320b69f0335ee856cab61e63f7e1fa6fd9495c02bad55da"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+      "sha256": "8171ecf1f68f0666971abb8473e7ed6c6e21d420e224e08653271acc77d45e39"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/visual_v0.gd",
+      "sha256": "b161ec50e1c1732886d107cfd1ed88fbd2aec8d67e091c79fba6be71c8bf2fdd"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/human.tscn",
+      "sha256": "9f8bae2bdea0ac3c823f08ebe334330e95ee8cd7b5b15c8628ed36f453902a29"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/human.gd",
+      "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/mary.tscn",
+      "sha256": "f656856bdef28d8df30fd40637882a90cd89af8a7612bf73953a5a6bb1db9649"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/strings.tres",
+      "sha256": "53e0fdd1967a85199973c67620af8b2f2aba026935c70374518873bf3ce5b4de"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+      "sha256": "4711ebfe11070df5f4d0a5b8a46ae6edab40586aba7a795c49b26ad8dbacfc07"
+    },
+    {
+      "path": "pocs/stylized_3d/visual_v0/README.md",
+      "sha256": "1cb18916c18a6bb1c25c5a3de425d9e1f0b14ce57a5fbd4952eb8355c12746c9"
+    },
+    {
+      "path": "docs/pocs/RB-V0-001_REPORT.md",
+      "sha256": "ed59913bba30b69ecf4e99c8b63086a90b4ac9339badb672bd9c92cd1a4de9c1"
+    }
+  ],
+  "exitCode": 0,
+  "errorMarkers": false,
+  "logSha256": "ebd486c6b7f7bdcc174e379c6e7a57f2819f1518f1a998abc52589e97f62a3b8",
+  "outcome": "PASS"
+}

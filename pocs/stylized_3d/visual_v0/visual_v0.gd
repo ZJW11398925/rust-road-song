@@ -316,7 +316,7 @@ func _update_drive(delta: float) -> void:
 		speed = move_toward(speed, target_speed, delta * 2.6)
 	if absf(speed) > 0.05:
 		var old_rotation: float = mary.rotation.y
-		mary.rotation.y += turn_axis * 0.40 * delta * signf(speed)
+		mary.rotation.y -= turn_axis * 0.40 * delta * signf(speed)
 		# Check rotation overlaps, but do not mistake floor support for a wall.
 		var rotation_probe: KinematicCollision3D = KinematicCollision3D.new()
 		if turn_axis != 0.0 and mary.test_move(mary.global_transform, Vector3.ZERO, rotation_probe, 0.001, true, 8):

@@ -1,0 +1,62 @@
+{
+  "status": "PREPARED_CLAIMS_NOT_RECEIPT",
+  "source": "docs/governance/sources/2026-10-13-owner-steering-fix.md",
+  "sourceSha256": "a97ecc065eb77b9aced18821f9e8d45943dc6dce6cf16db4beb119129263d58c",
+  "allowedPaths": [
+    "pocs/stylized_3d/visual_v0/project.godot",
+    "pocs/stylized_3d/visual_v0/visual_v0.tscn",
+    "pocs/stylized_3d/visual_v0/visual_v0.gd",
+    "pocs/stylized_3d/visual_v0/human.tscn",
+    "pocs/stylized_3d/visual_v0/human.gd",
+    "pocs/stylized_3d/visual_v0/mary.tscn",
+    "pocs/stylized_3d/visual_v0/strings.tres",
+    "pocs/stylized_3d/visual_v0/visual_v0_smoke.gd",
+    "pocs/stylized_3d/visual_v0/README.md",
+    "docs/pocs/RB-V0-001_REPORT.md"
+  ],
+  "mutations": [
+    {
+      "kind": "SET_SCALAR_CLAIM",
+      "field": "GOAL",
+      "assertion_action": "CONFIRM",
+      "value": "立即修复当前V0驾驶A/D方向错误。"
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "IN_SCOPE",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "仅当前visual_v0控制器转向符号和真实输入方向回归，前进D右/A左，倒车航向随物理方向反转。",
+        "保留原89断言，真实启动/坐席/碰撞/驶出/R/Esc及实际渲染；报告反例和修复证据。"
+      ]
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "TECHNICAL_CONSTRAINTS",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "现有Godot键盘POC，同prototype_execution@1、十精确路径、固定过程，新DEC/PLAN/TASK及独立READY。",
+        "旧四工程/Discovery34文件冻结；不修改造型/碰撞/相机/剧情/其他输入。"
+      ]
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "OUT_OF_SCOPE",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "战车造型/资产管线/V1/V2/全序章/新机制/Legacy/旧证据重写。",
+        "产品或情感接受、伪造READY/ID/回执、手改.design。"
+      ]
+    },
+    {
+      "kind": "SET_LIST_CLAIM",
+      "field": "ACCEPTANCE",
+      "assertion_action": "CONFIRM",
+      "value": [
+        "真实InputEventKey前进D右/A左、倒车D使航向左/A使航向右，方向角与实际位移均验证。",
+        "新方向探针在修前RED、修后GREEN，原行为断言保留，正式主入口实际渲染无ERROR/崩溃。",
+        "旧34SHA不变，独立核验；视觉负面反馈仍开放，不签原生TASK DONE。"
+      ]
+    }
+  ]
+}

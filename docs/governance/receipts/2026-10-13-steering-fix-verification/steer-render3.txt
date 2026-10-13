@@ -1,0 +1,129 @@
+Godot Engine v4.7.1.stable.official.a13da4feb - https://godotengine.org
+OpenGL API 3.3.0 Core Profile Context 26.8.1.260810 - Compatibility - Using Device: ATI Technologies Inc. - AMD Radeon TM Graphics
+
+Movie Maker mode enabled, recording movie in 1280×800 @ 60 FPS...
+WINDOW_FOCUS_IN frames=0
+PASS capture uses visible rendering
+PASS capture directory
+PASS actualMainScene is visual_v0
+PASS distant F has feedback and no board
+PASS walking keys cannot drive before boarding
+PASS real walking z=5.5
+PASS real E door reveals Mary
+PASS real walking z=2.4
+PASS rendered 01-first-reveal
+PASS PNG 01-first-reveal
+PASS real walking x=-2.4
+PASS real walking z=0.5
+PASS near step F boards
+PASS player visibly finishes climb
+PASS early route ignores anomaly and touch
+PASS early arrival precedes contact
+PASS pre-engine W reports mechanical stop
+PASS early F gives unsteady contact cause
+PASS power requires actual mother hand within .14m
+PASS rendered 04-assistance-contact
+PASS PNG 04-assistance-contact
+PASS powered partial hold accumulates only current attempt
+PASS release F stops and clears incomplete crank
+PASS logical focus probe clears crank and held input
+PASS fresh F resumes after logical focus recovery
+PASS R restores car transform
+PASS R restores both people
+PASS R clears seating engine departure
+PASS R clears input progress and mother route
+PASS R restores visible solid people
+PASS R restores camera
+PASS R restores wall opacity
+PASS real walking z=5.5
+PASS real E door reveals Mary
+PASS real walking z=2.4
+PASS real walking x=-3.1
+PASS real walking z=-1.0
+PASS real walking x=-2.3
+PASS real E left-side hand contact
+PASS rendered 02-left-touch
+PASS PNG 02-left-touch
+PASS real walking x=-3.1
+PASS real walking z=2.4
+PASS real walking x=2.3
+PASS real walking z=-1.0
+PASS real E right-side hand contact
+PASS rendered 03-right-touch
+PASS PNG 03-right-touch
+PASS real walking z=2.4
+PASS real walking x=-2.4
+PASS real walking z=0.5
+PASS near step F boards
+PASS player visibly finishes climb
+PASS power requires actual mother hand within .14m
+PASS held F starts with actual power on first powered attempt
+PASS physical unseated mother brakes early driving with feedback
+PASS mother walks outside solid car and visibly climbs to seat
+PASS running engine no longer needs mother hand on contact
+PASS both occupants remain visible
+PASS W accelerates Mary toward +Z
+PASS release W clears speed immediately
+PASS release W produces no coasting
+PASS real S reverses and release stops
+PASS drive camera follows smoothly
+PASS driver follows car in seat
+STEERING drive=87 steer=68 yaw=-0.12666670978069 lateral_right=0.01278606615961
+PASS real steering heading W/S A/D 87 68
+PASS real steering displacement W/S A/D 87 68
+STEERING drive=87 steer=65 yaw=0.12666668261091 lateral_right=-0.01278608478606
+PASS real steering heading W/S A/D 87 65
+PASS real steering displacement W/S A/D 87 65
+STEERING drive=83 steer=68 yaw=0.12666666244467 lateral_right=0.01278605684638
+PASS real steering heading W/S A/D 83 68
+PASS real steering displacement W/S A/D 83 68
+STEERING drive=83 steer=65 yaw=-0.12666669006149 lateral_right=-0.01278607547283
+PASS real steering heading W/S A/D 83 65
+PASS real steering displacement W/S A/D 83 65
+PASS real turned car strikes door frame and stops same frame
+PASS held forward at frame does not slide sideways
+PASS R restores car transform
+PASS R restores both people
+PASS R clears seating engine departure
+PASS R clears input progress and mother route
+PASS R restores visible solid people
+PASS R restores camera
+PASS R restores wall opacity
+PASS real walking z=5.5
+PASS real E door reveals Mary
+PASS real walking z=2.4
+PASS real walking x=-2.4
+PASS real walking z=0.5
+PASS near step F boards
+PASS player visibly finishes climb
+PASS power requires actual mother hand within .14m
+PASS final route has no touch requirement
+PASS held F starts with actual power on first powered attempt
+PASS physical unseated mother brakes early driving with feedback
+PASS mother walks outside solid car and visibly climbs to seat
+PASS running engine no longer needs mother hand on contact
+PASS both occupants remain visible
+PASS logical focus probe stops driving
+PASS entire rotated vehicle clears door before end
+PASS short departure ends on supported outside floor
+PASS mother travels with Mary
+PASS rendered 05-outside-parked
+PASS PNG 05-outside-parked
+PASS R restores car transform
+PASS R restores both people
+PASS R clears seating engine departure
+PASS R clears input progress and mother route
+PASS R restores visible solid people
+PASS R restores camera
+PASS R restores wall opacity
+VISUAL_V0_SMOKE checks=109 failures=0 frames=3533
+VISUAL_V0_SMOKE ESC_INPUT_SENT
+--------------------------------------------------------------------------------
+Done recording movie at path: <REPOSITORY>/.local/steer-input.avi
+3535 frames at 60 FPS (movie length: 00:00:58:55), recorded in 00:00:56 (103% of real-time speed).
+CPU render time: 2.15 seconds (average: 0.61 ms/frame)
+GPU render time: 10.13 seconds (average: 2.86 ms/frame)
+Encoding time: 30.10 seconds (average: 8.51 ms/frame)
+--------------------------------------------------------------------------------
+
+V0 bounded consumer PASS capture-1791856729734

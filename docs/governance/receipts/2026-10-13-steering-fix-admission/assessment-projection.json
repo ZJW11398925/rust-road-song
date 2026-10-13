@@ -1,0 +1,38 @@
+{
+  "contract": {
+    "contract_id": "dmcp.design_readiness",
+    "contract_version": 1
+  },
+  "payload_kind": "RESULT",
+  "workspace_ref": {
+    "workspace_id": "ws-217bac29-7a08-437c-be5f-472693bf16ca"
+  },
+  "operation_intent_ref": "OPI-ee70e78f-9287-4ad2-b072-cc1bf7ac9b56.2",
+  "result": {
+    "primary_ref": "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-ee70e78f-9287-4ad2-b072-cc1bf7ac9b56.2",
+    "result_refs": [
+      "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-ee70e78f-9287-4ad2-b072-cc1bf7ac9b56.2",
+      "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:DEC-OPI-441c9dbc-2dd8-4ae1-a866-486bac55fca3.2"
+    ],
+    "domain_verdict": "READY",
+    "effective_state": "READY",
+    "summary": "readiness READY for PROTOTYPE"
+  },
+  "basis": {
+    "observed_canonical_state_id": "CST-6cf4d15a-12dc-4b11-afcf-df691ee21dd4",
+    "observed_schema_version": 5,
+    "observed_design_revision": 33
+  },
+  "effects": {
+    "semantic_revision_changed": false,
+    "design_revision_before": 33,
+    "design_revision_after": 33,
+    "attestation_refs": [
+      "OBJECT_REF:ws-217bac29-7a08-437c-be5f-472693bf16ca:READINESS_ASSESSMENT-RDY-OPI-ee70e78f-9287-4ad2-b072-cc1bf7ac9b56.2"
+    ]
+  },
+  "audit_refs": [
+    "EVT-000073.yaml"
+  ],
+  "warnings": []
+}
