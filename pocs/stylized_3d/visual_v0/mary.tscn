@@ -1,9 +1,9 @@
-[gd_scene load_steps=47 format=3]
+[gd_scene load_steps=45 format=3]
 
 [ext_resource type="Material" path="res://third_party/godot_demo_material/old_paint.tres" id="Paint"]
 
 [sub_resource type="StandardMaterial3D" id="Dark"]
-albedo_color = Color(0.16, 0.19, 0.19, 1)
+albedo_color = Color(0.12, 0.15, 0.15, 1)
 metallic = 0.18
 roughness = 0.92
 
@@ -18,7 +18,7 @@ metallic = 0.18
 roughness = 0.82
 
 [sub_resource type="StandardMaterial3D" id="RepairSteel"]
-albedo_color = Color(0.43, 0.44, 0.38, 1)
+albedo_color = Color(0.46, 0.43, 0.35, 1)
 metallic = 0.32
 roughness = 0.80
 
@@ -28,7 +28,7 @@ metallic = 0.30
 roughness = 0.84
 
 [sub_resource type="StandardMaterial3D" id="RepaintedRepair"]
-albedo_color = Color(0.29, 0.32, 0.24, 1)
+albedo_color = Color(0.44, 0.43, 0.34, 1)
 metallic = 0.10
 roughness = 0.94
 
@@ -38,19 +38,19 @@ metallic = 0.16
 roughness = 0.96
 
 [sub_resource type="BoxMesh" id="TopWeldMesh"]
-size = Vector3(0.93, 0.024, 0.74)
+size = Vector3(1.26, 0.024, 1.08)
 
 [sub_resource type="BoxMesh" id="SideRepairMesh"]
-size = Vector3(0.024, 0.36, 0.76)
+size = Vector3(0.024, 0.46, 0.95)
 
 [sub_resource type="BoxMesh" id="TopRepairMesh"]
-size = Vector3(0.84, 0.028, 0.65)
+size = Vector3(1.17, 0.028, 0.99)
 
 [sub_resource type="BoxMesh" id="RepairSeamMesh"]
 size = Vector3(0.012, 0.035, 0.60)
 
 [sub_resource type="BoxMesh" id="ShoulderMesh"]
-size = Vector3(2.45, 0.15, 0.40)
+size = Vector3(2.45, 0.15, 0.32)
 
 [sub_resource type="BoxShape3D" id="ShapeBox1"]
 size = Vector3(2.88, 1.41, 5.4)
@@ -169,13 +169,8 @@ size = Vector3(0.12, 0.18, 0.18)
 [sub_resource type="BoxMesh" id="SeatMesh"]
 size = Vector3(0.65, 0.08, 0.65)
 
-[sub_resource type="CapsuleMesh" id="TrackBand"]
-radius = 0.47
-height = 5.4
-radial_segments = 12
-rings = 4
 [sub_resource type="StandardMaterial3D" id="WheelSteel"]
-albedo_color = Color(0.30, 0.32, 0.29, 1)
+albedo_color = Color(0.25, 0.29, 0.25, 1)
 metallic = 0.45
 roughness = 0.72
 [sub_resource type="CylinderMesh" id="RoadWheel"]
@@ -198,8 +193,6 @@ bottom_radius = 0.10
 height = 0.018
 radial_segments = 12
 rings = 1
-[sub_resource type="BoxMesh" id="FrontArmor"]
-size = Vector3(3.16, 1.572, 0.035)
 [sub_resource type="BoxMesh" id="RearArmor"]
 size = Vector3(3.16, 1.465, 0.035)
 
@@ -245,9 +238,9 @@ size = Vector3(0.20, 0.48, 1.32)
 material = SubResource("Dark")
 
 [node name="UpperBody" type="CSGPolygon3D" parent="."]
-position = Vector3(0, 1.79, 0.545)
-polygon = PackedVector2Array(-1.18, -0.26, 1.18, -0.26, 0.95, 0.26, -0.95, 0.26)
-depth = 2.65
+position = Vector3(-0.14, 1.79, 0.545)
+polygon = PackedVector2Array(-1.18, -0.26, 1.18, -0.26, 0.96, 0.26, -0.74, 0.26, -1.18, 0.04)
+depth = 2.50
 material = ExtResource("Paint")
 
 [node name="FrontShoulder" type="MeshInstance3D" parent="."]
@@ -257,14 +250,16 @@ mesh = SubResource("ShoulderMesh")
 material_override = ExtResource("Paint")
 
 [node name="RightRepair" type="MeshInstance3D" parent="."]
-position = Vector3(1.62, 1.15, -1.74)
+position = Vector3(1.62, 1.15, -1.65)
 rotation = Vector3(0.055, 0, 0)
+scale = Vector3(1, 1.22, 1.55)
 mesh = SubResource("SideRepairMesh")
 material_override = SubResource("RepaintedRepair")
 
 [node name="RightRepairSeam" type="MeshInstance3D" parent="."]
-position = Vector3(1.64, 1.08, -1.74)
+position = Vector3(1.64, 1.08, -1.65)
 rotation = Vector3(0.055, 0, 0)
+scale = Vector3(1, 1, 1.8)
 mesh = SubResource("RepairSeamMesh")
 material_override = SubResource("RepairSeamPaint")
 
@@ -275,39 +270,66 @@ mesh = SubResource("SideRepairMesh")
 material_override = SubResource("RepairSteel")
 
 [node name="TopWeld" type="MeshInstance3D" parent="."]
-position = Vector3(-0.24, 2.054, -1.10)
+position = Vector3(0.04, 2.054, -1.20)
 rotation = Vector3(0, 0.045, 0)
 mesh = SubResource("TopWeldMesh")
 material_override = SubResource("Weld")
 
 [node name="TopRepair" type="MeshInstance3D" parent="."]
-position = Vector3(-0.24, 2.075, -1.10)
+position = Vector3(0.04, 2.075, -1.20)
 rotation = Vector3(0, 0.045, 0)
 mesh = SubResource("TopRepairMesh")
 material_override = SubResource("RepaintedRepair")
 
-[node name="LeftBase" type="MeshInstance3D" parent="."]
-position = Vector3(-1.68, 0.5, 0)
-rotation = Vector3(1.5707963, 0, 0)
-scale = Vector3(0.23404255, 1, 1)
-mesh = SubResource("TrackBand")
-material_override = SubResource("Dark")
+[node name="LeftBase" type="CSGCombiner3D" parent="."]
+position = Vector3(-1.55, 0.5, 0)
+rotation = Vector3(0, 1.5707963, 0)
+[node name="Belt" type="CSGPolygon3D" parent="LeftBase"]
+polygon = PackedVector2Array(-2.7, 0, -2.63, -0.25, -2.43, -0.43, -2.23, -0.47, 2.23, -0.47, 2.43, -0.43, 2.63, -0.25, 2.7, 0, 2.63, 0.25, 2.43, 0.43, 2.23, 0.47, -2.23, 0.47, -2.43, 0.43, -2.63, 0.25)
+depth = 0.26
+material = SubResource("Dark")
+[node name="WheelSpace" type="CSGPolygon3D" parent="LeftBase"]
+position = Vector3(0, 0, 0.02)
+operation = 2
+polygon = PackedVector2Array(-2.50, 0, -2.42, -0.18, -2.23, -0.29, 2.23, -0.29, 2.42, -0.18, 2.50, 0, 2.42, 0.18, 2.23, 0.29, -2.23, 0.29, -2.42, 0.18)
+depth = 0.30
+material = SubResource("Dark")
 
 [node name="LeftBaseCollision" type="CollisionShape3D" parent="."]
 position = Vector3(-1.68, 0.5, 0)
 shape = SubResource("ShapeBox9")
 
-[node name="RightBase" type="MeshInstance3D" parent="."]
-position = Vector3(1.68, 0.5, 0)
-rotation = Vector3(1.5707963, 0, 0)
-scale = Vector3(0.23404255, 1, 1)
-mesh = SubResource("TrackBand")
-material_override = SubResource("Dark")
-[node name="FrontArmor" type="MeshInstance3D" parent="."]
-position = Vector3(0, 0.8175, 2.359)
+[node name="RightBase" type="CSGCombiner3D" parent="."]
+position = Vector3(1.81, 0.5, 0)
+rotation = Vector3(0, 1.5707963, 0)
+[node name="Belt" type="CSGPolygon3D" parent="RightBase"]
+polygon = PackedVector2Array(-2.7, 0, -2.63, -0.25, -2.43, -0.43, -2.23, -0.47, 2.23, -0.47, 2.43, -0.43, 2.63, -0.25, 2.7, 0, 2.63, 0.25, 2.43, 0.43, 2.23, 0.47, -2.23, 0.47, -2.43, 0.43, -2.63, 0.25)
+depth = 0.26
+material = SubResource("Dark")
+[node name="WheelSpace" type="CSGPolygon3D" parent="RightBase"]
+position = Vector3(0, 0, 0.02)
+operation = 2
+polygon = PackedVector2Array(-2.50, 0, -2.42, -0.18, -2.23, -0.29, 2.23, -0.29, 2.42, -0.18, 2.50, 0, 2.42, 0.18, 2.23, 0.29, -2.23, 0.29, -2.42, 0.18)
+depth = 0.30
+material = SubResource("Dark")
+[node name="FrontArmor" type="CSGPolygon3D" parent="."]
+position = Vector3(0, 0.8175, 2.394)
 rotation = Vector3(-0.42657, 0, 0)
-mesh = SubResource("FrontArmor")
-material_override = ExtResource("Paint")
+polygon = PackedVector2Array(-1.58, -0.786, 1.58, -0.786, 1.58, 0.57, 1.37, 0.786, -1.37, 0.786, -1.58, 0.57)
+depth = 0.035
+material = ExtResource("Paint")
+[node name="FrontRepairWeld" type="CSGPolygon3D" parent="."]
+position = Vector3(-0.75, 0.84, 2.412)
+rotation = Vector3(-0.42657, 0, 0)
+polygon = PackedVector2Array(-0.60, -0.465, 0.60, -0.465, 0.60, 0.29, 0.40, 0.465, -0.46, 0.465, -0.60, 0.31)
+depth = 0.024
+material = SubResource("Weld")
+[node name="FrontRepair" type="CSGPolygon3D" parent="."]
+position = Vector3(-0.75, 0.847, 2.427)
+rotation = Vector3(-0.42657, 0, 0)
+polygon = PackedVector2Array(-0.55, -0.42, 0.55, -0.42, 0.55, 0.27, 0.38, 0.42, -0.44, 0.42, -0.55, 0.29)
+depth = 0.024
+material = SubResource("RepairSteel")
 [node name="RearArmor" type="MeshInstance3D" parent="."]
 position = Vector3(0, 0.825, -2.5823)
 rotation = Vector3(0.137, 0, 0)
