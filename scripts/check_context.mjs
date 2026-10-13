@@ -25,6 +25,7 @@ if (ids.length !== 22 || new Set(ids).size !== 22) failures.push('Owner 决定�
 const prototypeFiles = new Set([
   ...['project.godot','visual_v0.tscn','visual_v0.gd','human.tscn','human.gd','mary.tscn','strings.tres','visual_v0_smoke.gd','README.md'].map(f => 'pocs/stylized_3d/visual_v0/' + f),
   'pocs/stylized_3d/visual_v0/third_party/phantom_camera/smooth_damp.gd',
+  'pocs/stylized_3d/visual_v0/third_party/phantom_camera/framed_follow.gd',
   'pocs/stylized_3d/visual_v0/third_party/godot_demo_material/old_paint.tres',
   'pocs/stylized_3d/visual_v0/third_party/godot_demo_material/concrete.tres',
   "pocs/stylized_3d/c0/project.godot", "pocs/stylized_3d/c0/garage.tscn",

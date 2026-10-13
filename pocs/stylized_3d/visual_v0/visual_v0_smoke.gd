@@ -42,6 +42,25 @@ func _tap(code: Key) -> void:
 	_key(code, false)
 	await _wait(1)
 
+func _quiet_right_frame_check() -> void:
+	await _wait(120)
+	var camera: Camera3D = stage.get_node("Camera3D") as Camera3D
+	var settled_view: Transform3D = camera.global_transform
+	_key(KEY_A, true)
+	await _wait(6)
+	_key(KEY_A, false)
+	_key(KEY_D, true)
+	await _wait(6)
+	_key(KEY_D, false)
+	await _wait(30)
+	var quiet_distance: float = settled_view.origin.distance_to(camera.global_position)
+	var quiet_turn: float = settled_view.basis.z.angle_to(camera.global_basis.z)
+	print("CAMERA_RIGHT_SMALL_REVERSAL distance=", quiet_distance, " turn=", quiet_turn)
+	_check(quiet_distance < 0.02 and quiet_turn < 0.003, "small real right-side reversals preserve settled framing")
+	var pause_view: Transform3D = camera.global_transform
+	await _wait(60)
+	_check(pause_view.origin.distance_to(camera.global_position) < 0.02, "stationary right-side player does not cause continuing recomposition")
+
 func _check(ok: bool, label: String) -> void:
 	checks += 1
 	if not ok:
@@ -50,6 +69,11 @@ func _check(ok: bool, label: String) -> void:
 		print("INPUT_DIAGNOSTIC enabled=", stage.get("input_enabled"), " held=", stage.get("held"), " player=", (stage.get_node("Player") as CharacterBody3D).position, " feedback=", stage.get("feedback_key"), " frames=", frames)
 	else:
 		print("PASS ", label)
+
+func _in_play_view(point: Vector3) -> bool:
+	var camera: Camera3D = stage.get_node("Camera3D") as Camera3D
+	var size: Vector2 = camera.get_viewport().get_visible_rect().size
+	return not camera.is_position_behind(point) and Rect2(Vector2.ZERO, Vector2(size.x, size.y * 0.85)).has_point(camera.unproject_position(point))
 
 # Inputs retain the current greybox's world X/Z walking convention. No teleport.
 func _travel(axis: String, goal: float, limit: int = 240) -> void:
@@ -168,6 +192,7 @@ func _run() -> void:
 	_check(mary.position.distance_to(Vector3(0, 0, -1.5)) < 0.1, "walking keys cannot drive before boarding")
 	await _enter()
 	await _capture("01-first-reveal")
+	_check(_in_play_view((stage.get_node("Mother") as Node3D).global_position + Vector3(0, 0.1, 0)), "first reveal retains mother above HUD while entering")
 	await _board()
 	_check(not bool(stage.get("player_touched")), "early route ignores anomaly and touch")
 	_check(not bool(stage.get("contact_valid")), "early arrival precedes contact")
@@ -212,6 +237,27 @@ func _run() -> void:
 	_check(bool(stage.get("touch_contacted")), "real E left-side hand contact")
 	_check((stage.get_node("Camera3D") as Camera3D).position.x < -1.0, "left approach still changes observation angle")
 	await _capture("02-left-touch")
+	var mother_foot: Vector3 = (stage.get_node("Mother") as Node3D).global_position + Vector3(0, 0.1, 0)
+	print("CAMERA_MOTHER_FOOT ", (stage.get_node("Camera3D") as Camera3D).unproject_position(mother_foot))
+	_check(_in_play_view(mother_foot), "left contact retains mother feet above HUD")
+	# Real small reversals after settling must not continually recompose the view.
+	await _wait(120)
+	var framed_camera: Camera3D = stage.get_node("Camera3D") as Camera3D
+	var settled_view: Transform3D = framed_camera.global_transform
+	_key(KEY_D, true)
+	await _wait(6)
+	_key(KEY_D, false)
+	_key(KEY_A, true)
+	await _wait(6)
+	_key(KEY_A, false)
+	await _wait(30)
+	var quiet_distance: float = settled_view.origin.distance_to(framed_camera.global_position)
+	var quiet_turn: float = settled_view.basis.z.angle_to(framed_camera.global_basis.z)
+	print("CAMERA_SMALL_REVERSAL distance=", quiet_distance, " turn=", quiet_turn)
+	_check(quiet_distance < 0.02 and quiet_turn < 0.003, "small real walking reversals preserve settled framing")
+	var pause_view: Transform3D = framed_camera.global_transform
+	await _wait(60)
+	_check(pause_view.origin.distance_to(framed_camera.global_position) < 0.02 and pause_view.basis.z.angle_to(framed_camera.global_basis.z) < 0.003, "stationary player does not cause continuing recomposition")
 	await _travel("x", -3.10)
 	await _travel("z", 2.4)
 	await _travel("x", 2.30)
@@ -219,8 +265,11 @@ func _run() -> void:
 	await _tap(KEY_E)
 	await _wait(35)
 	_check(bool(stage.get("touch_contacted")) and player.position.x > 0.0, "real E right-side hand contact")
+	var right_view: Camera3D = stage.get_node("Camera3D") as Camera3D
+	print("CAMERA_RIGHT origin=", right_view.position, " head=", right_view.unproject_position(player.position + Vector3(0, 1.3, 0)), " viewport=", right_view.get_viewport().get_visible_rect().size, " active=", stage.get("framing_active"), " obscured=", stage.call("_body_side_is_hidden"), " target=", stage.get("framed_follow").get("_follow_target_output_position"))
 	_check((stage.get_node("Camera3D") as Camera3D).position.x > 0.5, "right approach still changes observation angle")
 	await _capture("03-right-touch")
+	await _quiet_right_frame_check()
 	await _travel("z", 2.4)
 	await _board()
 	await _contact()
@@ -305,7 +354,13 @@ func _run() -> void:
 	_check(bool(stage.get("exited")) and float(stage.get("rear_clear_z")) > 4.2, "entire rotated vehicle clears door before end")
 	_check(mary.position.z < 11.0 and absf(mary.position.y) < 0.1 and float(stage.get("speed")) == 0.0, "short departure ends on supported outside floor")
 	_check((stage.get_node("Mother") as Node3D).global_position.distance_to(mary.to_global(Vector3(-0.65, 0.95, 1.8))) < 0.03, "mother travels with Mary")
+	await _wait(30)
 	await _capture("05-outside-parked")
+	_check(_in_play_view(mary.to_global(Vector3(0, 0.1, 2.7))), "parked Mary front remains above HUD after driving")
+	var front_wall: MeshInstance3D = stage.get_node("VestibuleBack/Mesh") as MeshInstance3D
+	var front_blocked: bool = front_wall.mesh.get_aabb().intersects_segment(front_wall.to_local((stage.get_node("Camera3D") as Camera3D).global_position), front_wall.to_local(mary.to_global(Vector3(0, 0.1, 2.7)))) != null
+	print("CAMERA_FRONT_WALL blocked=", front_blocked, " alpha=", (front_wall.material_override as StandardMaterial3D).albedo_color.a)
+	_check(not front_blocked or (front_wall.material_override as StandardMaterial3D).albedo_color.a < 0.2, "foreground wall fades for parked Mary lower front")
 	await _reset_check()
 	print("VISUAL_V0_SMOKE checks=", checks, " failures=", failures, " frames=", frames)
 	if failures > 0:

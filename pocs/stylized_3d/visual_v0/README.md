@@ -4,11 +4,13 @@ RB-V0-001 / CHG-20261013-012。这个独立工程沿首见、自由触碰、母�
 
 直接打开本目录 `project.godot`，正式入口为 `visual_v0.tscn`。WASD 步行，E 开门或触碰，F 登车或按住启动；驾驶时 W/S 前进或倒车，A/D 有限转向，松键停住。R 重置，Esc 退出。车库门保持原高度和实体碰撞，挡住人物或玛丽时仅表现自动淡化。
 
+当前相机直接复用Phantom Camera v0.11.0.3的MIT Framed边界/轴锁定与阻尼摘录：构图区内小步保持机位，越界或车侧不可见才跟进，另保护母亲脚部不落入HUD。登车延续观察方向，驶出随车平移；墙体视线目标覆盖脚部及车头/履带低处。场景取景适配由本项目负责，未采用完整插件。最终正式入口实际渲染123/0、4009帧，五帧已查看；舒适度仍未作Owner接受。见[修正记录](../../../docs/changes/CHG-20261013-018.md)。
+
 ## 来源与修改闭包
 
 - [Owner采用V0](../../../docs/governance/sources/2026-10-13-owner-visual-v0.md)、[五项需求与计划](../../../docs/plans/RB-V0-001_PLAN.md)、[候选视觉主张](../../../docs/pocs/VISUAL_THESIS_V0.md)是本轮来源；旧轮的接受不授予本轮验收。
 - Reboot源为 `56326793423f9083991ef5dd2ee6c10727af756c` 的 `c1b_departure` 八运行文件；本副本重命名入口/脚本/烟测并沿用该输入与物理因果。没有复制Legacy代码、场景、插件或素材。
-- 当前依赖包括本目录运行文件、Godot内建造型/材质、集中 `strings.tres`，以及 `third_party` 中Phantom Camera的MIT阻尼摘录和[Godot官方MIT静态材质资源](third_party/godot_demo_material/README.md)。没有外部服务或新资产管线。Godot版本与真实运行/渲染记录集中在[本轮报告](../../../docs/pocs/RB-V0-001_REPORT.md)。
+- 当前依赖包括本目录运行文件、Godot内建造型/材质、集中 `strings.tres`，以及 `third_party` 中Phantom Camera的MIT阻尼/Framed摘录和[Godot官方MIT静态材质资源](third_party/godot_demo_material/README.md)。没有外部服务或新资产管线。Godot版本与真实运行/渲染记录集中在[本轮报告](../../../docs/pocs/RB-V0-001_REPORT.md)。
 - 表现增量在 `mary.tscn`、`human.tscn`、`visual_v0.tscn`；`strings.tres`只将标题改为试样标识，保留候选短句和操作反馈。`visual_v0_smoke.gd`保留原行为回归，采集五个独立真实输入帧；逻辑脚本没有新增机制。
 
 ## 本轮候选结构

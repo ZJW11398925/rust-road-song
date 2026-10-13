@@ -2,6 +2,7 @@ extends Node3D
 
 const HumanScript = preload("res://human.gd")
 const CameraDamping = preload("res://third_party/phantom_camera/smooth_damp.gd")
+const FramedFollow = preload("res://third_party/phantom_camera/framed_follow.gd")
 const PLAYER_START: Vector3 = Vector3(-0.75, 0.0, 6.8)
 const MOTHER_START: Vector3 = Vector3(0.75, 0.0, 6.8)
 const MARY_START: Vector3 = Vector3(0.0, 0.0, -1.5)
@@ -56,9 +57,12 @@ var feedback_clock: float = 0.0
 var camera_focus: Vector3 = FIRST_TARGET
 var camera_motion: CameraDamping = CameraDamping.new()
 var focus_motion: CameraDamping = CameraDamping.new()
+var framed_follow: FramedFollow = FramedFollow.new()
+var framing_active: bool = false
 var driving_view_captured: bool = false
 var driving_camera_offset: Vector3 = Vector3.ZERO
 var driving_focus_offset: Vector3 = Vector3.ZERO
+var driving_previous_origin: Vector3 = Vector3.ZERO
 var wall_meshes: Array[MeshInstance3D] = []
 var reset_physics_pending: bool = false
 
@@ -357,7 +361,12 @@ func _update_drive(delta: float) -> void:
 
 func _update_wall_visibility(delta: float) -> void:
 	var mother_hand: Marker3D = mother.get_node("Visual/LeftUpperArm/LeftLowerArm/Hand") as Marker3D
-	var targets: Array[Vector3] = [player.global_position + Vector3(0.0, 0.45, 0.0), player.global_position + Vector3(0.0, 0.9, 0.0), player.global_position + Vector3(0.0, 1.65, 0.0), mother.global_position + Vector3(0.0, 0.9, 0.0), mother_hand.global_position, $Mary/Body.global_position, $Mary/Anomaly.global_position]
+	var targets: Array[Vector3] = [
+		player.global_position + Vector3(0.0, 0.45, 0.0), player.global_position + Vector3(0.0, 0.9, 0.0), player.global_position + Vector3(0.0, 1.65, 0.0),
+		mother.global_position + Vector3(0.0, 0.1, 0.0), mother.global_position + Vector3(0.0, 0.9, 0.0), mother_hand.global_position,
+		$Mary/Body.global_position, $Mary/Anomaly.global_position,
+		mary.to_global(Vector3(0.0, 0.1, 2.7)), mary.to_global(Vector3(-1.7, 0.2, 2.4)), mary.to_global(Vector3(1.7, 0.2, 2.4))
+	]
 	var response: float = 1.0 - exp(-delta * 10.0)
 	for wall: MeshInstance3D in wall_meshes:
 		var blocking: bool = false
@@ -372,25 +381,62 @@ func _update_wall_visibility(delta: float) -> void:
 		color.a = lerpf(color.a, 0.12 if blocking else 1.0, response)
 		material.albedo_color = color
 
+func _body_side_is_hidden() -> bool:
+	var local_player: Vector3 = mary.to_local(player.global_position)
+	if absf(local_player.x) < 1.8 or absf(local_player.z) > 4.4:
+		return false
+	var contact_point: Vector3 = mary.to_global(Vector3(signf(local_player.x) * 1.6, 1.15, clampf(local_player.z, -2.5, 2.5)))
+	# A clear ray from above can still show the back of the touched plate.
+	# Require the exterior plate normal to face the camera before holding this view.
+	var surface_normal: Vector3 = mary.global_basis.x * signf(local_player.x)
+	if surface_normal.dot((camera.global_position - contact_point).normalized()) < 0.12:
+		return true
+	var query: PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.create(camera.global_position, contact_point, 1)
+	var hit: Dictionary = get_world_3d().direct_space_state.intersect_ray(query)
+	return not hit.is_empty() and hit.get("collider") == mary and (hit.get("position") as Vector3).distance_to(contact_point) > 0.20
+
 func _update_camera(delta: float) -> void:
-	var car_focus: Vector3 = mary.global_position + Vector3(0.0, 1.1, 0.3)
-	var mother_focus: Vector3 = mother.global_position + Vector3(0.0, 1.1, 0.0)
-	var relation_focus: Vector3 = car_focus.lerp(mother_focus, 0.52)
-	var shared_focus: Vector3 = relation_focus.lerp(player.global_position + Vector3(0.0, 1.1, 0.0), 0.52)
-	var wanted_focus: Vector3 = FIRST_TARGET.lerp(shared_focus, door_progress)
-	var spread: float = maxf(player.global_position.distance_to(relation_focus) - 5.0, 0.0)
-	var wanted_position: Vector3 = FIRST_CAMERA.lerp(wanted_focus + RELATION_OFFSET * (1.0 + minf(spread * 0.06, 0.3)), door_progress)
-	wanted_position.x = lerpf(FIRST_CAMERA.x, clampf(player.position.x * 2.0 - 1.0, -5.2, 5.2), door_progress)
+	# Stable front-of-car composition includes the standing people without following each step.
+	var car_focus: Vector3 = mary.global_position + Vector3(0.0, 1.1, 1.3)
+	var close_position: Vector3 = car_focus + RELATION_OFFSET + Vector3(-2.5, 0.0, 0.0)
+	# The reveal can close in as both people enter, without cropping the one still at the door.
+	var entry_progress: float = door_progress * clampf((6.8 - maxf(player.position.z, mother.position.z)) / 3.8, 0.0, 1.0)
+	var wanted_focus: Vector3 = FIRST_TARGET.lerp(car_focus, entry_progress)
+	var wanted_position: Vector3 = FIRST_CAMERA.lerp(close_position, entry_progress)
+	var follow_target: Vector3 = player.global_position + Vector3(0.0, 1.3, 0.0)
+	if not framing_active and entry_progress >= 0.999:
+		framed_follow.reset(close_position, follow_target)
+		framing_active = true
+	if framing_active and not boarded:
+		var viewport_size: Vector2 = camera.get_viewport().get_visible_rect().size
+		# Keep the existing HUD out of the usable composition region.
+		var usable_rect: Rect2 = Rect2(Vector2(0.0, viewport_size.y * 0.04), Vector2(viewport_size.x, viewport_size.y * 0.80))
+		var candidate_position: Vector3 = close_position
+		candidate_position.x = mary.position.x + clampf((player.position.x - mary.position.x) * 2.0 - 1.0, -5.2, 5.2)
+		candidate_position.z = clampf(close_position.z + (player.position.z - 2.4) * 0.30, mary.position.z + 5.7, mary.position.z + 10.0)
+		var mother_foot: Vector3 = mother.global_position + Vector3(0.0, 0.1, 0.0)
+		var protect_bottom: bool = camera.is_position_behind(mother_foot) or camera.unproject_position(mother_foot).y > viewport_size.y * 0.82
+		if protect_bottom:
+			candidate_position.z = maxf(candidate_position.z, minf(camera.position.z + 0.6, mary.position.z + 10.0))
+		wanted_position = framed_follow.step(camera, follow_target, usable_rect, candidate_position, _body_side_is_hidden(), protect_bottom)
 	if boarded:
 		if not driving_view_captured:
 			driving_camera_offset = camera.position - mary.global_position
 			driving_focus_offset = camera_focus - mary.global_position
+			driving_previous_origin = mary.global_position
 			driving_view_captured = true
+		# Carry the established view in the vehicle's translating frame, with no yaw inheritance.
+		# Damping smooths residual shot changes rather than falling behind the 3 m/s car.
+		var drive_displacement: Vector3 = mary.global_position - driving_previous_origin
+		camera.position += drive_displacement
+		camera_focus += drive_displacement
+		driving_previous_origin = mary.global_position
 		wanted_focus = mary.global_position + driving_focus_offset
 		wanted_position = mary.global_position + driving_camera_offset
-	# Preserve the original close framing; upstream damping carries velocity through changes.
+	# Framed admission chooses when to move; damping only carries the admitted motion.
 	camera_focus = focus_motion.step(camera_focus, wanted_focus, 0.65, delta, 4.0)
-	camera.position = camera_motion.step(camera.position, wanted_position, 0.65, delta, 2.5)
+	var observing: bool = framing_active and not boarded
+	camera.position = camera_motion.step(camera.position, wanted_position, 0.45 if observing else 0.65, delta, 3.2 if observing else 2.5)
 	camera.look_at(camera_focus, Vector3.UP)
 
 func _interact() -> void:
@@ -512,9 +558,11 @@ func reset_experiment() -> void:
 	camera_focus = FIRST_TARGET
 	camera_motion.reset()
 	focus_motion.reset()
+	framing_active = false
 	driving_view_captured = false
 	driving_camera_offset = Vector3.ZERO
 	driving_focus_offset = Vector3.ZERO
+	driving_previous_origin = Vector3.ZERO
 	narrative.text = ""
 	feedback.text = ""
 	camera.position = FIRST_CAMERA
