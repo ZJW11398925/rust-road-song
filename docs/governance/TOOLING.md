@@ -1,5 +1,7 @@
 # 工具及本机配置
 
+2026-10-13：Owner[采用本次单张内置image_gen概念预览](sources/2026-10-13-owner-concept-preview.md)。一次生成已完成，仅设计摘要与现有游戏空间帧为输入；未采购、接SDK或导入游戏资产。底层模型/版本、按张费用和正式资产使用权未披露，保持UNKNOWN。[完整输入/图/检查](../changes/CHG-20261013-021.md)留存。下文建库及POC“无AI工具”的描述属于当时历史；本次采用不批准通用AI生产管线、正式资产或V1/V2。
+
 建库实际使用 Node 24.18.0、Git、官方 DMCP native 引擎与既有薄客户端。没有游戏插件、外部网络服务、AI 美术生产、付费工具或 Legacy 游戏模块接入。
 
 引擎版本、工具链基线与实际客户端文件 SHA-256 见 [binding.json](binding.json)。建库时引擎为 DMCP resolution basis，历史 commit `a7cd1171dd3496a0bfd8e0bf4ff2fe9febc6e7dc`；工具链来源 commit `678c4dc64ae61ad7d57c42e9a7ebbf16d0dfb3be`。当前读取器校验客户端文件 hashes 与引擎 HEAD；不是供应链审计，也不独立认证全部 dist 文件或 sidecar 证据。

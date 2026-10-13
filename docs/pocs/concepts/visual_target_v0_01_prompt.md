@@ -1,0 +1,20 @@
+# “手绘旧机械”概念预览 01 — 完整生成输入
+
+用途：Owner已授权的单张概念预览；不作Godot帧或正式资产。空间参考为既有试玩02-left-touch.png；输入只含该游戏画面与以下摘要。
+
+Use case: stylized-concept / sketch-to-render.
+Create ONE strong visual-target concept frame for the Chinese game "Rust Road Song" (锈路长歌). This is an art-direction preview, not a real engine screenshot or final production asset.
+
+Input image 1 is a spatial/composition reference of our playable Godot greybox. Transform it into a distinctive "hand-painted old machinery" game art direction. Preserve the usable elevated three-quarter game-camera distance, the room scale, walking space around the vehicle, and the human-to-vehicle scale. Remove all HUD/text. Do NOT merely texture the existing boxes: redesign the visible silhouette with coherent, achievable stylized 3D forms.
+
+Scene: a modest, worn concrete family garage, only one wall corner and a small piece of floor visible. Muted cool blue-grey/charcoal background, sparse, low contrast, no decorative props. The whole frame must feel like an actual playable view, not a cinematic poster.
+
+Mary, the main subject: an old family battle wagon which has been kept running through repeated practical repairs. Low, broad, weighty hull; wide COMPLETE continuous dark track belts with a few large readable tread blocks, softened round-front track pods, compact upper armoured crown slightly offset from the centre, and one short thick barrel tucked close to the body. The silhouette should have an understated, almost stubborn personality WITHOUT a face, eyes, mascots, anthropomorphic accessories, or heroic weapon styling. Integrated broad shoulders and one visibly mismatched but well-fitted welded repair panel create purposeful asymmetry. This is a design candidate, not a recognisable historical tank model. Keep enough clearance for a standing person beside the track.
+
+Surface grammar: hand-painted gouache-like materials on controlled stylized 3D volumes; visible confident broad brushwork, 2-3 large value areas per surface, not photoreal PBR, not procedural noise. Weathered muted grey-green old paint, charcoal structure, one warm-grey repainted panel, a few quiet bare-steel edges, large seams rather than dozens of microdetails. Wear concentrated on naturally handled edges and repaired areas. Repairs look maintained and useful, not random scrap bolted everywhere. Keep one subtle pre-existing dark old crack with a small muted rust-red branching irregularity at the side; it must stay local, non-glowing, secondary, unexplained.
+
+People: keep the two existing people, full body visible, naturally proportioned stylized adults/young person with simple believable clothes rather than ball heads and box limbs. The mother has a subdued warm brown work coat, plain trousers, a simple tied-back hair silhouette; she is at the visible near side, resting one relaxed palm against a worn panel as a habitual, quiet gesture toward an old familiar machine. Her shoulder/elbow/wrist position must make physical sense and the palm touches the plate. The young player in muted cool blue stands slightly behind, leaving space, observing. No facial close-up, theatrical expression, weapons in hands, text or dialogue bubbles. Clothing/hair are tentative visual silhouettes, not locked story identities.
+
+Lighting: soft broad daylight, readable shaded hands and car side, warm-grey highlights against a cool restrained garage; shadows preserve mass but don't swallow the figures. No god rays, heroic backlight, sunrise departure, dramatic explosion, emissive anomaly, or vignette hiding the environment.
+
+Composition/output: landscape single frame, coherent game-ready-looking art grammar shared by vehicle, people and wall corner. Mary dominates but both bodies and ground contact are readable at the normal game viewing distance. Restrained detail density. Distinctive strong silhouette, tactile brush-painted materials, quiet domestic familiarity. No title, labels, UI, watermark, additional people, photo props, symbols, flags, numbers, straps covered in gear, or extra story objects.
