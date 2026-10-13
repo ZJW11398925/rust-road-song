@@ -1,4 +1,6 @@
-# 新总控交接 / 2026-10-12
+# 新总控交接 / 2026-10-13
+
+Owner最新[“可以继续”](sources/2026-10-13-owner-continue.md)后，总控完成完整设计/原始来源/实时正式对象核对，提出[第一轮表现试样](../pocs/VISUAL_FIRST_SAMPLE_PROPOSAL.md)（RB-VIS-PROP-001 / CHG-20261013-011）。推荐C同一可玩首见链条的车辆形体/修补材质、人物接触动作、照明和必要提示修正；A可玩对照及仅人物动作保留。五项需求、候选十路径、反例、成本/退出条件已写明。当前仅方案文档，待Owner采用Visual范围；未创建新工程/正式TASK/READY，不改变下述binding和灰盒体验UNKNOWN。最新完整读回与上一发布原件逐项一致，basis5/25、18canonical/5runtime，核验见[方案检查点](receipts/2026-10-13-visual-proposal/context-verification.json)。
 
 本文件只导航；总控按[完整设计入口](CONTROLLER_TAKEOVER.md)读正文/Owner原话/真实试玩，再读实时正式对象。不能凭摘要布置任务。本总控已完成核对。
 

@@ -1,0 +1,190 @@
+{
+  "at": "2026-10-13T00:44:15.484Z",
+  "conversationDate": "2026-10-13",
+  "task": "RB-VIS-PROP-001",
+  "change": "CHG-20261013-011",
+  "role": "SERVICE",
+  "outcome": "PASS",
+  "implementationAuthorized": false,
+  "nativeMutation": false,
+  "baselineHead": "2e13de3775df43dc0dc3b475e39886bb92d99ce4",
+  "fullReadSha256": "233be14fc5dd49d413425c9250f04abc6721698f0c3670c99aaf7d7420f52eec",
+  "fullReadDeepEqualToPriorRelease": true,
+  "schemaVersion": 5,
+  "designRevision": 25,
+  "canonicalCount": 18,
+  "runtimeCount": 5,
+  "protectedFiles": [
+    {
+      "path": "docs/discovery/RB-DISC-001_REPORT.md",
+      "sha256": "6c0e18b3e32443ae336223fc6199a4b85236fced0a6d3f84de217f8e87e46512",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c0/README.md",
+      "sha256": "630838597311192c381154b4d3a065adcea442f42036bdeb59926859b1fe0f70",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c0/garage.gd",
+      "sha256": "69fa84c0ae47d8bd7f8dfcee7389f88f5e332589ef8522413dfa28890bc4c2e5",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c0/garage.tscn",
+      "sha256": "d79e378dcce29acb8c1ad5bfd02a862542a5b4d3883393be10f9f0cf32626097",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c0/project.godot",
+      "sha256": "1813cce85de841235a4c5064435f410a28ff6671bee5446cf2bf87aba676f21f",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c0/spatial_smoke.gd",
+      "sha256": "c30b4540e4381ebd8b1a4f92fb18270d75e09a585970b3bb345f477adb453de9",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c0/strings.tres",
+      "sha256": "1e7d9d6183680059c96b3aa2ee77baa3443bec4a18fe5242c05a9c814b328b7b",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/README.md",
+      "sha256": "42bcb96369791ad83f221437f6ffba1820f4ab99e353ecab43fff5cf5087c422",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.gd",
+      "sha256": "534700de932f606f2c4727148eb2c96babbd6c7750674afae227bb4f28e45db9",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/first_meeting.tscn",
+      "sha256": "615cdace8c09efffecd1a8a1f07e77d0346654a61419f147af9d313b9c7e952e",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.gd",
+      "sha256": "9713c2fc3dc8ffc57bf6726fd3128017d420fab724ac5ab224f248fecb6394a5",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/mary.tscn",
+      "sha256": "d4d1f032358d72499eec4d886abc2bc65b54fb6d808801539482c3be999be54f",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/narrative_smoke.gd",
+      "sha256": "7cf9c9dddd5c7e26cd9a45fa0b005e8b4273f3cb9684850454585512b18ca9dc",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/project.godot",
+      "sha256": "f6b92d3145d4945f8803d75dc0b3841e2924add58d2fcbfa82411f7f418225d4",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1a/strings.tres",
+      "sha256": "6b916223d26468d994701aff8728cb91610e0d0b8e3d9b115c95adff7fd83ea8",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/README.md",
+      "sha256": "6f46899c7862b3f2690bb9d28371cfbaeeae5321d51a761db9628aee5153d0aa",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/anomaly.gd",
+      "sha256": "4baa6c539be64d8aeb86cd864920c47fbd0ada709a998bdbd910c0fec959c6bf",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/anomaly.tscn",
+      "sha256": "a04cfe0640616fa83f3ac1df517158c3f30392d3b166e720375f4636566f66c1",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/anomaly_smoke.gd",
+      "sha256": "c2269ca5346590596d0cdf9eea9694b4b96f29d262bc5b00923b049fbf319f9b",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/human.gd",
+      "sha256": "909b1593346d4aca56fb42a8833d477b3df39ad684755e6c601da68f86239534",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/mary.tscn",
+      "sha256": "0d7d3caebb48e5aa65d87c93e0b8dd7b2177f907560cccf88c1f9379f250f082",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/project.godot",
+      "sha256": "5108cc818c4f33655d5061285e6f0e722590a75559ae7e4c739138c152ebb672",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_anomaly/strings.tres",
+      "sha256": "0c6cd98e9cb582dbd22e26f400dc502c673d99436a705b199fefe4032b55332c",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/README.md",
+      "sha256": "c4cd507f9d94b5c58a01c83bfdc4be4ed2f8e876d289b4523355621ecf301a53",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure.gd",
+      "sha256": "8a034763d375ec82b0037fd9afd3c77bdd11dc63cce968ec9b4d43505a84411e",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure.tscn",
+      "sha256": "7f529b05ea6ebfb1a6acc109b3b61ba22dba877586c8cc4f902a5e394f22a524",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/departure_smoke.gd",
+      "sha256": "3510ade20dff8359531148e66c8875dd5b156efc9e672a96d412bd093179017f",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/human.gd",
+      "sha256": "d492d6d69e6529784f7453552a9ed99a9e2f1f551d48b3e5a3fb89ade1816d68",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/human.tscn",
+      "sha256": "d6b420572c78d81570ca3257eda9140c6e8a0c3efec6a7c98d83bf1ce352c6a0",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/mary.tscn",
+      "sha256": "96e6ce3fe7042c322bac5f5405e1625d3205d7fd1ac10cc955daac4503056568",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/project.godot",
+      "sha256": "b15e327416c8f4cf6b0e1bb13b98c2cf1c837a23cb45a714af094f845a30a2b8",
+      "unchanged": true
+    },
+    {
+      "path": "pocs/stylized_3d/c1b_departure/strings.tres",
+      "sha256": "c192154d38d5e75b5e9115dca82f5945045abcc86cd0c51af686d00a508f2fcb",
+      "unchanged": true
+    }
+  ],
+  "scope": "仅方案文档；没有新Visual代码/资产或产品CONFIRM"
+}
