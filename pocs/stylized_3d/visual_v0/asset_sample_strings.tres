@@ -1,0 +1,8 @@
+[gd_resource type="Translation" format=3]
+
+[resource]
+locale = "zh_CN"
+messages = {
+"ASSET_TITLE": "真实资产小样 · 免费人体／衣物导入",
+"ASSET_HELP": "WASD 走动　R 复位　Esc 退出　｜　基础资产与动作测试，非最终美术"
+}

@@ -24,6 +24,7 @@ if (ids.length !== 22 || new Set(ids).size !== 22) failures.push('Owner 决定�
 // 已采用POC与Owner开源优先规则下的实际依赖；静态范围不构成DMCP实施准入。
 const prototypeFiles = new Set([
   ...['project.godot','visual_v0.tscn','visual_v0.gd','human.tscn','human.gd','mary.tscn','strings.tres','visual_v0_smoke.gd','README.md'].map(f => 'pocs/stylized_3d/visual_v0/' + f),
+  ...['asset_sample.tscn','asset_sample.gd','asset_sample_smoke.gd','asset_sample_strings.tres'].map(f => 'pocs/stylized_3d/visual_v0/' + f),
   'pocs/stylized_3d/visual_v0/third_party/phantom_camera/smooth_damp.gd',
   'pocs/stylized_3d/visual_v0/third_party/phantom_camera/framed_follow.gd',
   'pocs/stylized_3d/visual_v0/third_party/godot_demo_material/old_paint.tres',
