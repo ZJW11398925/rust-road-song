@@ -2,7 +2,13 @@
   "task": "RB-V0-001",
   "change": "CHG-20261013-012",
   "implementationCommit": "cc7981db60bfe4b366a35fc6de9eb39646d26ac1",
-  "status": "PENDING_PUSH",
+  "status": "PUBLISHED",
   "product": "VERIFYING",
-  "runtime8Sha256Preserved": true
+  "runtime8Sha256Preserved": true,
+  "verifiedAt": "2026-10-13T01:40:21.932Z",
+  "publishedTechnicalHead": "3683c7839868190e2d3b9c57cd4bb60e84e53a91",
+  "remoteMainReadback": "3683c7839868190e2d3b9c57cd4bb60e84e53a91",
+  "remote": "https://github.com/ZJW11398925/rust-road-song.git",
+  "transport": "git push then independent ls-remote",
+  "metadataClosure": "This publication proof is committed separately; final closure commit is verified in host receipt."
 }
