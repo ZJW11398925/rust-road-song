@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3]
+[gd_scene load_steps=47 format=3]
 
 [ext_resource type="Material" path="res://third_party/godot_demo_material/old_paint.tres" id="Paint"]
 
@@ -18,14 +18,27 @@ metallic = 0.18
 roughness = 0.82
 
 [sub_resource type="StandardMaterial3D" id="RepairSteel"]
-albedo_color = Color(0.49, 0.52, 0.49, 1)
-metallic = 0.55
-roughness = 0.63
+albedo_color = Color(0.43, 0.44, 0.38, 1)
+metallic = 0.32
+roughness = 0.80
 
 [sub_resource type="StandardMaterial3D" id="RepairSeamPaint"]
 albedo_color = Color(0.24, 0.27, 0.25, 1)
 metallic = 0.30
 roughness = 0.84
+
+[sub_resource type="StandardMaterial3D" id="RepaintedRepair"]
+albedo_color = Color(0.29, 0.32, 0.24, 1)
+metallic = 0.10
+roughness = 0.94
+
+[sub_resource type="StandardMaterial3D" id="Weld"]
+albedo_color = Color(0.21, 0.19, 0.14, 1)
+metallic = 0.16
+roughness = 0.96
+
+[sub_resource type="BoxMesh" id="TopWeldMesh"]
+size = Vector3(0.93, 0.024, 0.74)
 
 [sub_resource type="BoxMesh" id="SideRepairMesh"]
 size = Vector3(0.024, 0.36, 0.76)
@@ -247,7 +260,7 @@ material_override = ExtResource("Paint")
 position = Vector3(1.62, 1.15, -1.74)
 rotation = Vector3(0.055, 0, 0)
 mesh = SubResource("SideRepairMesh")
-material_override = SubResource("RepairSteel")
+material_override = SubResource("RepaintedRepair")
 
 [node name="RightRepairSeam" type="MeshInstance3D" parent="."]
 position = Vector3(1.64, 1.08, -1.74)
@@ -261,11 +274,17 @@ rotation = Vector3(-0.035, 0, 0)
 mesh = SubResource("SideRepairMesh")
 material_override = SubResource("RepairSteel")
 
+[node name="TopWeld" type="MeshInstance3D" parent="."]
+position = Vector3(-0.24, 2.054, -1.10)
+rotation = Vector3(0, 0.045, 0)
+mesh = SubResource("TopWeldMesh")
+material_override = SubResource("Weld")
+
 [node name="TopRepair" type="MeshInstance3D" parent="."]
-position = Vector3(-0.24, 2.08, -1.10)
+position = Vector3(-0.24, 2.075, -1.10)
 rotation = Vector3(0, 0.045, 0)
 mesh = SubResource("TopRepairMesh")
-material_override = SubResource("RepairSteel")
+material_override = SubResource("RepaintedRepair")
 
 [node name="LeftBase" type="MeshInstance3D" parent="."]
 position = Vector3(-1.68, 0.5, 0)

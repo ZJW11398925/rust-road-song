@@ -3,14 +3,12 @@
 [ext_resource type="PackedScene" path="res://human.tscn" id="2"]
 [ext_resource type="PackedScene" path="res://mary.tscn" id="3"]
 
-[sub_resource type="StandardMaterial3D" id="Concrete"]
-albedo_color = Color(0.25, 0.30, 0.32, 1)
-roughness = 0.97
+[ext_resource type="Material" path="res://third_party/godot_demo_material/concrete.tres" id="Concrete"]
 [sub_resource type="StandardMaterial3D" id="Wall"]
-albedo_color = Color(0.32, 0.37, 0.40, 1)
+albedo_color = Color(0.34, 0.37, 0.36, 1)
 roughness = 0.97
 [sub_resource type="StandardMaterial3D" id="DoorPaint"]
-albedo_color = Color(0.38, 0.30, 0.23, 1)
+albedo_color = Color(0.31, 0.28, 0.22, 1)
 roughness = 0.97
 [sub_resource type="ProceduralSkyMaterial" id="ReflectionSkyMaterial"]
 sky_top_color = Color(0.25, 0.34, 0.43, 1)
@@ -76,7 +74,7 @@ script = ExtResource("1")
 environment = SubResource("Environment")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 rotation_degrees = Vector3(-50, -28, 0)
-light_color = Color(0.90, 0.88, 0.82, 1)
+light_color = Color(0.96, 0.86, 0.72, 1)
 light_energy = 0.85
 shadow_enabled = true
 [node name="SoftFill" type="OmniLight3D" parent="."]
@@ -90,7 +88,7 @@ collision_mask = 0
 [node name="Mesh" type="MeshInstance3D" parent="Floor"]
 position = Vector3(0, -0.2, 2.8)
 mesh = SubResource("Mesh1")
-material_override = SubResource("Concrete")
+material_override = ExtResource("Concrete")
 [node name="MeshCollision" type="CollisionShape3D" parent="Floor"]
 position = Vector3(0, -0.2, 2.8)
 shape = SubResource("Shape1")

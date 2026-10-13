@@ -1,0 +1,28 @@
+[gd_resource type="StandardMaterial3D" load_steps=4 format=3]
+
+[sub_resource type="Gradient" id="Gradient_57yod"]
+offsets = PackedFloat32Array(0, 0.45, 0.7, 1)
+colors = PackedColorArray(0.26, 0.28, 0.27, 1, 0.27, 0.29, 0.28, 1, 0.28, 0.30, 0.29, 1, 0.29, 0.31, 0.30, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_vdicb"]
+seed = 37
+frequency = 0.085
+fractal_type = 1
+fractal_octaves = 3
+fractal_lacunarity = 2.0
+fractal_gain = 0.5
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_oc5fq"]
+width = 256
+height = 256
+seamless = true
+color_ramp = SubResource("Gradient_57yod")
+noise = SubResource("FastNoiseLite_vdicb")
+
+[resource]
+albedo_texture = SubResource("NoiseTexture2D_oc5fq")
+metallic = 0.0
+roughness = 0.98
+uv1_triplanar = true
+uv1_scale = Vector3(0.8, 0.8, 0.8)
+texture_filter = 5
