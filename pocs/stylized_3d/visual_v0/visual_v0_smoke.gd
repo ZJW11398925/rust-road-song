@@ -5,6 +5,9 @@ var failures: int = 0
 var checks: int = 0
 var frames: int = 0
 var capture_dir: String = ""
+var sample_camera: bool = false
+var camera_peak_step: float = 0.0
+var camera_peak_turn: float = 0.0
 
 func _initialize() -> void:
 	root.focus_entered.connect(func() -> void: print("WINDOW_FOCUS_IN frames=", frames))
@@ -23,8 +26,15 @@ func _key(code: Key, pressed: bool) -> void:
 
 func _wait(count: int) -> void:
 	for index: int in range(count):
+		var previous_camera: Transform3D = Transform3D.IDENTITY
+		if sample_camera:
+			previous_camera = (stage.get_node("Camera3D") as Camera3D).global_transform
 		await physics_frame
 		frames += 1
+		if sample_camera:
+			var current_camera: Transform3D = (stage.get_node("Camera3D") as Camera3D).global_transform
+			camera_peak_step = maxf(camera_peak_step, previous_camera.origin.distance_to(current_camera.origin))
+			camera_peak_turn = maxf(camera_peak_turn, previous_camera.basis.z.angle_to(current_camera.basis.z))
 
 func _tap(code: Key) -> void:
 	_key(code, true)
@@ -77,10 +87,13 @@ func _enter() -> void:
 func _board() -> void:
 	await _travel("x", -2.4)
 	await _travel("z", 0.5)
+	var before_boarding: Transform3D = (stage.get_node("Camera3D") as Camera3D).global_transform
 	await _tap(KEY_F)
 	_check(bool(stage.get("boarded")), "near step F boards")
 	await _wait(65)
 	_check(bool(stage.get("player_seated")), "player visibly finishes climb")
+	var after_boarding: Transform3D = (stage.get_node("Camera3D") as Camera3D).global_transform
+	_check(before_boarding.origin.distance_to(after_boarding.origin) < 2.0 and before_boarding.basis.z.angle_to(after_boarding.basis.z) < 0.25, "boarding preserves the approach view rather than orbiting to the opposite side")
 
 func _contact() -> void:
 	for tick: int in range(500):
@@ -189,6 +202,7 @@ func _run() -> void:
 	await _reset_check()
 	_key(KEY_F, false)
 	# Late first attempt: real walking around both sides, without narrative gates.
+	sample_camera = true
 	await _enter()
 	await _travel("x", -3.10)
 	await _travel("z", -1.0)
@@ -196,6 +210,7 @@ func _run() -> void:
 	await _tap(KEY_E)
 	await _wait(35)
 	_check(bool(stage.get("touch_contacted")), "real E left-side hand contact")
+	_check((stage.get_node("Camera3D") as Camera3D).position.x < -1.0, "left approach still changes observation angle")
 	await _capture("02-left-touch")
 	await _travel("x", -3.10)
 	await _travel("z", 2.4)
@@ -204,6 +219,7 @@ func _run() -> void:
 	await _tap(KEY_E)
 	await _wait(35)
 	_check(bool(stage.get("touch_contacted")) and player.position.x > 0.0, "real E right-side hand contact")
+	_check((stage.get_node("Camera3D") as Camera3D).position.x > 0.5, "right approach still changes observation angle")
 	await _capture("03-right-touch")
 	await _travel("z", 2.4)
 	await _board()
@@ -212,6 +228,9 @@ func _run() -> void:
 		_finish_failed()
 		return
 	await _seat_mother()
+	sample_camera = false
+	print("CAMERA_MOTION peak_step=", camera_peak_step, " peak_turn=", camera_peak_turn)
+	_check(camera_peak_step < 0.075, "walking and boarding camera speed remains bounded at 60 Hz")
 	var before: Vector3 = mary.position
 	var camera_before: Vector3 = (stage.get_node("Camera3D") as Camera3D).position
 	_key(KEY_W, true)

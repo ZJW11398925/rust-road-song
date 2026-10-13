@@ -1,6 +1,7 @@
 extends Node3D
 
 const HumanScript = preload("res://human.gd")
+const CameraDamping = preload("res://third_party/phantom_camera/smooth_damp.gd")
 const PLAYER_START: Vector3 = Vector3(-0.75, 0.0, 6.8)
 const MOTHER_START: Vector3 = Vector3(0.75, 0.0, 6.8)
 const MARY_START: Vector3 = Vector3(0.0, 0.0, -1.5)
@@ -53,6 +54,11 @@ var narrative_clock: float = 0.0
 var feedback_key: String = ""
 var feedback_clock: float = 0.0
 var camera_focus: Vector3 = FIRST_TARGET
+var camera_motion: CameraDamping = CameraDamping.new()
+var focus_motion: CameraDamping = CameraDamping.new()
+var driving_view_captured: bool = false
+var driving_camera_offset: Vector3 = Vector3.ZERO
+var driving_focus_offset: Vector3 = Vector3.ZERO
 var wall_meshes: Array[MeshInstance3D] = []
 var reset_physics_pending: bool = false
 
@@ -376,11 +382,15 @@ func _update_camera(delta: float) -> void:
 	var wanted_position: Vector3 = FIRST_CAMERA.lerp(wanted_focus + RELATION_OFFSET * (1.0 + minf(spread * 0.06, 0.3)), door_progress)
 	wanted_position.x = lerpf(FIRST_CAMERA.x, clampf(player.position.x * 2.0 - 1.0, -5.2, 5.2), door_progress)
 	if boarded:
-		wanted_focus = mary.global_position + Vector3(0.0, 1.3, 0.5)
-		wanted_position = wanted_focus + Vector3(-5.0, 6.5, -7.6)
-	var response: float = 1.0 - exp(-delta * 2.2)
-	camera_focus = camera_focus.lerp(wanted_focus, response)
-	camera.position = camera.position.lerp(wanted_position, response)
+		if not driving_view_captured:
+			driving_camera_offset = camera.position - mary.global_position
+			driving_focus_offset = camera_focus - mary.global_position
+			driving_view_captured = true
+		wanted_focus = mary.global_position + driving_focus_offset
+		wanted_position = mary.global_position + driving_camera_offset
+	# Preserve the original close framing; upstream damping carries velocity through changes.
+	camera_focus = focus_motion.step(camera_focus, wanted_focus, 0.65, delta, 4.0)
+	camera.position = camera_motion.step(camera.position, wanted_position, 0.65, delta, 2.5)
 	camera.look_at(camera_focus, Vector3.UP)
 
 func _interact() -> void:
@@ -500,6 +510,11 @@ func reset_experiment() -> void:
 	feedback_key = ""
 	feedback_clock = 0.0
 	camera_focus = FIRST_TARGET
+	camera_motion.reset()
+	focus_motion.reset()
+	driving_view_captured = false
+	driving_camera_offset = Vector3.ZERO
+	driving_focus_offset = Vector3.ZERO
 	narrative.text = ""
 	feedback.text = ""
 	camera.position = FIRST_CAMERA
